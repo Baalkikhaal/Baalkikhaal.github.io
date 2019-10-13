@@ -7,8 +7,8 @@
 	],
 	"sourcesContent": [
 		"@import \"main\";\r\n",
-		".current {\r\n  color: green;\r\n}\r\n"
+		"@import \"native.css\";   /* Pygments (deprecated and not supported in Jekyll 4; superseded by Ruby's own Rouge) module stylesheet for syntax highlighting. Refer: [Tags Filters](https://jekyllrb.com/docs/liquid/tags/#stylesheets-for-syntax-highlighting) */\r\n"
 	],
 	"names": [],
-	"mappings": "ACAA,AAAA,QAAQ,CAAC,EACP,KAAK,EAAE,KAAK,GACb"
+	"mappings": "ACAA,OAAO,CAAP,eAAO;AAAiB,sOAAsO"
 }

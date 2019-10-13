@@ -1,3 +1,4 @@
-.current { color: green; }
+@import url(native.css);
+/* Pygments (deprecated and not supported in Jekyll 4; superseded by Ruby's own Rouge) module stylesheet for syntax highlighting. Refer: [Tags Filters](https://jekyllrb.com/docs/liquid/tags/#stylesheets-for-syntax-highlighting) */
 
 /*# sourceMappingURL=styles.css.map */

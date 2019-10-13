@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>/authors/fubar.html</loc>
+<lastmod>2019-10-13T22:28:18+05:30</lastmod>
+</url>
+<url>
 <loc>/authors/jill.html</loc>
-<lastmod>2019-10-13T21:42:37+05:30</lastmod>
+<lastmod>2019-10-13T22:28:18+05:30</lastmod>
 </url>
 <url>
 <loc>/authors/ted.html</loc>
-<lastmod>2019-10-13T21:42:37+05:30</lastmod>
+<lastmod>2019-10-13T22:28:18+05:30</lastmod>
+</url>
+<url>
+<loc>/2019/08/25/ADSL-modem+router-as-WAP.html</loc>
+<lastmod>2019-08-25T00:00:00+05:30</lastmod>
 </url>
 <url>
 <loc>/2019/08/30/bananas.html</loc>
@@ -15,6 +23,10 @@
 <url>
 <loc>/2019/08/31/apples.html</loc>
 <lastmod>2019-08-31T00:00:00+05:30</lastmod>
+</url>
+<url>
+<loc>/2019/09/30/Scripts-to-set-IP-Address-Statically-or-Dynamically.html</loc>
+<lastmod>2019-09-30T00:00:00+05:30</lastmod>
 </url>
 <url>
 <loc>/about.html</loc>

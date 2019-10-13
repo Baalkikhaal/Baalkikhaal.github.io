@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Python Scripts to set static or dynamic  IP address</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link type="application/atom+xml" rel="alternate" href="/feed.xml" />
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Python Scripts to set static or dynamic IP address</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Python Scripts to set static or dynamic IP address" />
+<meta name="author" content="fubar" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The reason to set up a ADSL router as a switch was to enhance the WiFi signal at my office desk. However sometimes I need to switch back to the iiscwlan WiFi interface when I move my laptop. Setting dynamic IP Firstly my laptop WiFi adaptor has connected to the wololo WAP of the ADSL modem+router Disconnect from the wololo WAP Enable the WiFi interface to have DHCP enabled Get-NetAdapter -Name WiFi | Set-NetIPInterface -Dhcp Enabled Connect to the iiscwlan WAP. The DHCP server at 10.43.240.1 and 10.43.79.1 dynamically assigns 10.43.240.122 IP Address to the WiFi interface having index 17 and alias WiFi. Notice the DNS servers set to 10.16.25.13 and 10.16.25.15. However sometimes these are not set and need to be fetched from the DHCP servers Set-DnsClientServerAddress -InterfaceIndex 17 -ResetServerAddresses In this way, the IP set dynamically. Thats it! Setting static IP Run a powershell as an Administrator and check the interface index for the WiFi interface. The Interface has index 17 with alias WiFi. It is connected to the iiscwlan WAP using the IP address 10.43.240.122. GetNetIPConfiguration Disconnect from the iiscwlan WAP. To connect to the wololo WAP we need to know its network address. We know it belongs to 10.43.79.x network address with the available IP addresss starting from 10.43.79.16-255 as the router addresss is 10.43.79.1. Let us set the IP address of the WiFi interface to belong to this range. Let us reserve 10.43.79.16 for the desktop computer’s ethernet interface. New-NetIPAddress -InterfaceIndex 17 -IPAddress 10.43.79.17 -PrefixLength 24 -DefaultGateway 10.43.79.1 This pops a Windows System Error 87 which says that the default Gateway already exists. Let us remove the Default Gateway option and try again New-NetIPAddress -InterfaceIndex 17 -IPAddress 10.43.79.17 -PrefixLength 24 Again pops up an Windows System Error 87 To resolve this first connect to the wololo WAP then execute the command without the default gateway as already the previous iiscwlan WAP had the same default gateway 10.43.79.1 We need to set the DNS servers. Set-DnsClientServerAddress -InterfaceIndex 17 -ServerAddresses 10.16.25.13, 10.16.25.15 In this way, the IP set statically. Thats it! Setting the IP address dynamically using a Python script Entering these commands is useful. However due to the correct sequence required as well as accuracy requirements, it is better to have a script individually for the static or dynamic setting of IP addresses. Thanks to Python’s scripting capability to handle system command execution, we use the subprocess module for the task Python script to set Static IP #!python &#39;&#39;&#39;Script to set Static IP to the WiFi adaptor of laptop. so that it belongs to the same network address range as that of the WAP of the router configured to work like a switch.&#39;&#39;&#39; import subprocess staticIP = &#39;&#39;&#39;netsh interface ip set address name=&quot;WiFi&quot; static 10.43.79.17 255.255.255.0 10.43.79.1&#39;&#39;&#39; command1 = staticIP.split() subprocess.run(command1) staticDNS1 = &#39;&#39;&#39;netsh interface ip set dns name=&quot;WiFi&quot; static 10.16.25.13&#39;&#39;&#39; command2 = staticDNS1.split() subprocess.run(command2) staticDNS2 = &#39;&#39;&#39;netsh interface ip add dns name=&quot;WiFi&quot; 10.16.25.15 index=2&#39;&#39;&#39; command3 = staticDNS2.split() subprocess.run(command3) Python script to set Dynamic IP #!python &#39;&#39;&#39;Script to set Dynamic IP to the WiFi adaptor of laptop so that it auto configure to have an IP address that belongs to the same network address as that of the iiscwlan WAP.&#39;&#39;&#39; import subprocess dhcpCommand = &#39;&#39;&#39;netsh interface ip set address &quot;WiFi&quot; dhcp&#39;&#39;&#39; command = dhcpCommand.split() subprocess.run(command)" />
+<meta property="og:description" content="The reason to set up a ADSL router as a switch was to enhance the WiFi signal at my office desk. However sometimes I need to switch back to the iiscwlan WiFi interface when I move my laptop. Setting dynamic IP Firstly my laptop WiFi adaptor has connected to the wololo WAP of the ADSL modem+router Disconnect from the wololo WAP Enable the WiFi interface to have DHCP enabled Get-NetAdapter -Name WiFi | Set-NetIPInterface -Dhcp Enabled Connect to the iiscwlan WAP. The DHCP server at 10.43.240.1 and 10.43.79.1 dynamically assigns 10.43.240.122 IP Address to the WiFi interface having index 17 and alias WiFi. Notice the DNS servers set to 10.16.25.13 and 10.16.25.15. However sometimes these are not set and need to be fetched from the DHCP servers Set-DnsClientServerAddress -InterfaceIndex 17 -ResetServerAddresses In this way, the IP set dynamically. Thats it! Setting static IP Run a powershell as an Administrator and check the interface index for the WiFi interface. The Interface has index 17 with alias WiFi. It is connected to the iiscwlan WAP using the IP address 10.43.240.122. GetNetIPConfiguration Disconnect from the iiscwlan WAP. To connect to the wololo WAP we need to know its network address. We know it belongs to 10.43.79.x network address with the available IP addresss starting from 10.43.79.16-255 as the router addresss is 10.43.79.1. Let us set the IP address of the WiFi interface to belong to this range. Let us reserve 10.43.79.16 for the desktop computer’s ethernet interface. New-NetIPAddress -InterfaceIndex 17 -IPAddress 10.43.79.17 -PrefixLength 24 -DefaultGateway 10.43.79.1 This pops a Windows System Error 87 which says that the default Gateway already exists. Let us remove the Default Gateway option and try again New-NetIPAddress -InterfaceIndex 17 -IPAddress 10.43.79.17 -PrefixLength 24 Again pops up an Windows System Error 87 To resolve this first connect to the wololo WAP then execute the command without the default gateway as already the previous iiscwlan WAP had the same default gateway 10.43.79.1 We need to set the DNS servers. Set-DnsClientServerAddress -InterfaceIndex 17 -ServerAddresses 10.16.25.13, 10.16.25.15 In this way, the IP set statically. Thats it! Setting the IP address dynamically using a Python script Entering these commands is useful. However due to the correct sequence required as well as accuracy requirements, it is better to have a script individually for the static or dynamic setting of IP addresses. Thanks to Python’s scripting capability to handle system command execution, we use the subprocess module for the task Python script to set Static IP #!python &#39;&#39;&#39;Script to set Static IP to the WiFi adaptor of laptop. so that it belongs to the same network address range as that of the WAP of the router configured to work like a switch.&#39;&#39;&#39; import subprocess staticIP = &#39;&#39;&#39;netsh interface ip set address name=&quot;WiFi&quot; static 10.43.79.17 255.255.255.0 10.43.79.1&#39;&#39;&#39; command1 = staticIP.split() subprocess.run(command1) staticDNS1 = &#39;&#39;&#39;netsh interface ip set dns name=&quot;WiFi&quot; static 10.16.25.13&#39;&#39;&#39; command2 = staticDNS1.split() subprocess.run(command2) staticDNS2 = &#39;&#39;&#39;netsh interface ip add dns name=&quot;WiFi&quot; 10.16.25.15 index=2&#39;&#39;&#39; command3 = staticDNS2.split() subprocess.run(command3) Python script to set Dynamic IP #!python &#39;&#39;&#39;Script to set Dynamic IP to the WiFi adaptor of laptop so that it auto configure to have an IP address that belongs to the same network address as that of the iiscwlan WAP.&#39;&#39;&#39; import subprocess dhcpCommand = &#39;&#39;&#39;netsh interface ip set address &quot;WiFi&quot; dhcp&#39;&#39;&#39; command = dhcpCommand.split() subprocess.run(command)" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-09-30T00:00:00+05:30" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/2019/09/30/Scripts-to-set-IP-Address-Statically-or-Dynamically.html"},"url":"/2019/09/30/Scripts-to-set-IP-Address-Statically-or-Dynamically.html","headline":"Python Scripts to set static or dynamic IP address","dateModified":"2019-09-30T00:00:00+05:30","datePublished":"2019-09-30T00:00:00+05:30","description":"The reason to set up a ADSL router as a switch was to enhance the WiFi signal at my office desk. However sometimes I need to switch back to the iiscwlan WiFi interface when I move my laptop. Setting dynamic IP Firstly my laptop WiFi adaptor has connected to the wololo WAP of the ADSL modem+router Disconnect from the wololo WAP Enable the WiFi interface to have DHCP enabled Get-NetAdapter -Name WiFi | Set-NetIPInterface -Dhcp Enabled Connect to the iiscwlan WAP. The DHCP server at 10.43.240.1 and 10.43.79.1 dynamically assigns 10.43.240.122 IP Address to the WiFi interface having index 17 and alias WiFi. Notice the DNS servers set to 10.16.25.13 and 10.16.25.15. However sometimes these are not set and need to be fetched from the DHCP servers Set-DnsClientServerAddress -InterfaceIndex 17 -ResetServerAddresses In this way, the IP set dynamically. Thats it! Setting static IP Run a powershell as an Administrator and check the interface index for the WiFi interface. The Interface has index 17 with alias WiFi. It is connected to the iiscwlan WAP using the IP address 10.43.240.122. GetNetIPConfiguration Disconnect from the iiscwlan WAP. To connect to the wololo WAP we need to know its network address. We know it belongs to 10.43.79.x network address with the available IP addresss starting from 10.43.79.16-255 as the router addresss is 10.43.79.1. Let us set the IP address of the WiFi interface to belong to this range. Let us reserve 10.43.79.16 for the desktop computer’s ethernet interface. New-NetIPAddress -InterfaceIndex 17 -IPAddress 10.43.79.17 -PrefixLength 24 -DefaultGateway 10.43.79.1 This pops a Windows System Error 87 which says that the default Gateway already exists. Let us remove the Default Gateway option and try again New-NetIPAddress -InterfaceIndex 17 -IPAddress 10.43.79.17 -PrefixLength 24 Again pops up an Windows System Error 87 To resolve this first connect to the wololo WAP then execute the command without the default gateway as already the previous iiscwlan WAP had the same default gateway 10.43.79.1 We need to set the DNS servers. Set-DnsClientServerAddress -InterfaceIndex 17 -ServerAddresses 10.16.25.13, 10.16.25.15 In this way, the IP set statically. Thats it! Setting the IP address dynamically using a Python script Entering these commands is useful. However due to the correct sequence required as well as accuracy requirements, it is better to have a script individually for the static or dynamic setting of IP addresses. Thanks to Python’s scripting capability to handle system command execution, we use the subprocess module for the task Python script to set Static IP #!python &#39;&#39;&#39;Script to set Static IP to the WiFi adaptor of laptop. so that it belongs to the same network address range as that of the WAP of the router configured to work like a switch.&#39;&#39;&#39; import subprocess staticIP = &#39;&#39;&#39;netsh interface ip set address name=&quot;WiFi&quot; static 10.43.79.17 255.255.255.0 10.43.79.1&#39;&#39;&#39; command1 = staticIP.split() subprocess.run(command1) staticDNS1 = &#39;&#39;&#39;netsh interface ip set dns name=&quot;WiFi&quot; static 10.16.25.13&#39;&#39;&#39; command2 = staticDNS1.split() subprocess.run(command2) staticDNS2 = &#39;&#39;&#39;netsh interface ip add dns name=&quot;WiFi&quot; 10.16.25.15 index=2&#39;&#39;&#39; command3 = staticDNS2.split() subprocess.run(command3) Python script to set Dynamic IP #!python &#39;&#39;&#39;Script to set Dynamic IP to the WiFi adaptor of laptop so that it auto configure to have an IP address that belongs to the same network address as that of the iiscwlan WAP.&#39;&#39;&#39; import subprocess dhcpCommand = &#39;&#39;&#39;netsh interface ip set address &quot;WiFi&quot; dhcp&#39;&#39;&#39; command = dhcpCommand.split() subprocess.run(command)","author":{"@type":"Person","name":"fubar"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+  <body>
+    <nav>
+  
+    <a href="/" >Home</a>
+  
+    <a href="/about.html" >About</a>
+  
+    <a href="/blog.html" >Blog</a>
+  
+    <a href="/staff.html" >Staff</a>
+  
+</nav>
+
+    <h1>Python Scripts to set static or dynamic  IP address</h1>
+<p>
+  30 Sep 2019 - fubar
+  
+  
+    - <a href="/authors/fubar.html">Sreekar Guddeti</a>
+  
+</p>
+
+<p>The reason to set up a <a href="/2019/08/25/ADSL-modem+router-as-WAP.html">ADSL router as a switch</a> was to enhance the WiFi signal at my office desk. However sometimes I need to switch back to the <code class="highlighter-rouge">iiscwlan</code> WiFi interface when I move my laptop.</p>
+
+<hr />
+
+<h1 id="setting-dynamic-ip">Setting dynamic IP</h1>
+
+<p>Firstly my laptop WiFi adaptor has connected to the <code class="highlighter-rouge">wololo</code> WAP of the ADSL modem+router</p>
+
+<p><img src="/assets/images/Networking/SetDynamicIPusingPowershell0.png" alt="Connected to wololo interface" /></p>
+
+<p>Disconnect from the <code class="highlighter-rouge">wololo</code> WAP</p>
+
+<p><img src="/assets/images/Networking/SetDynamicIPusingPowershell1.png" alt="WiFi interface is floating" /></p>
+
+<p>Enable the <code class="highlighter-rouge">WiFi</code> interface to have DHCP enabled</p>
+
+<p><code class="highlighter-rouge">Get-NetAdapter -Name WiFi | Set-NetIPInterface -Dhcp Enabled</code></p>
+
+<p><img src="/assets/images/Networking/SetDynamicIPusingPowershell2.png" alt="DHCP is enabled" /></p>
+
+<p>Connect to the <code class="highlighter-rouge">iiscwlan</code> WAP. The DHCP server at <code class="highlighter-rouge">10.43.240.1</code> and <code class="highlighter-rouge">10.43.79.1</code> dynamically assigns <code class="highlighter-rouge">10.43.240.122</code> IP Address to the WiFi interface having index <code class="highlighter-rouge">17</code> and alias  <code class="highlighter-rouge">WiFi</code>.</p>
+
+<p><img src="/assets/images/Networking/SetDynamicIPusingPowershell3.png" alt="Set IP dynamically" /></p>
+
+<p>Notice the DNS servers set to <code class="highlighter-rouge">10.16.25.13</code> and <code class="highlighter-rouge">10.16.25.15</code>. However sometimes these are not set and need to be fetched from the DHCP servers</p>
+
+<p><code class="highlighter-rouge">Set-DnsClientServerAddress -InterfaceIndex 17 -ResetServerAddresses</code></p>
+
+<p><img src="/assets/images/Networking/SetDynamicIPusingPowershell4.png" alt="Set DHCP servers dynamically" /></p>
+
+<p>In this way, the IP set dynamically. Thats it!</p>
+
+<hr />
+
+<h1 id="setting-static-ip">Setting static IP</h1>
+
+<p>Run a powershell as an Administrator and check the interface index for the WiFi interface. The Interface has index <code class="highlighter-rouge">17</code> with alias <code class="highlighter-rouge">WiFi</code>. It is connected to the <code class="highlighter-rouge">iiscwlan</code> WAP using the IP address <code class="highlighter-rouge">10.43.240.122</code>.</p>
+
+<p><code class="highlighter-rouge">GetNetIPConfiguration</code></p>
+
+<p><img src="/assets/images/Networking/SetStaticIPusingPowershell0.png" alt="Check the interface parameters" /></p>
+
+<p>Disconnect from the <code class="highlighter-rouge">iiscwlan</code> WAP.</p>
+
+<p><img src="/assets/images/Networking/SetStaticIPusingPowershell1.png" alt="Interface is disconnected" /></p>
+
+<p>To connect to the <code class="highlighter-rouge">wololo</code> WAP we need to know its network address. We know it belongs to <code class="highlighter-rouge">10.43.79.x</code> network address with the available IP addresss starting from <code class="highlighter-rouge">10.43.79.16-255</code> as the router addresss is <code class="highlighter-rouge">10.43.79.1</code>. Let us set the IP address of the <code class="highlighter-rouge">WiFi</code> interface to belong to this range. Let us reserve <code class="highlighter-rouge">10.43.79.16</code> for the desktop computer’s ethernet interface.</p>
+
+<p><code class="highlighter-rouge">New-NetIPAddress -InterfaceIndex 17 -IPAddress 10.43.79.17 -PrefixLength 24 -DefaultGateway 10.43.79.1</code></p>
+
+<p>This pops a <code class="highlighter-rouge">Windows System Error 87</code> which says that the default Gateway already exists. Let us remove the Default Gateway option and try again</p>
+
+<p><code class="highlighter-rouge">New-NetIPAddress -InterfaceIndex 17 -IPAddress 10.43.79.17 -PrefixLength 24</code></p>
+
+<p>Again pops up an <code class="highlighter-rouge">Windows System Error 87</code></p>
+
+<p><img src="/assets/images/Networking/SetStaticIPusingPowershell2.png" alt="Set the static IP fails" /></p>
+
+<blockquote>
+  <p>To resolve this first connect to the <code class="highlighter-rouge">wololo</code> WAP then execute the command without the default gateway as already the previous <code class="highlighter-rouge">iiscwlan</code> WAP had the same default gateway <code class="highlighter-rouge">10.43.79.1</code></p>
+</blockquote>
+
+<p><img src="/assets/images/Networking/SetStaticIPusingPowershell3.png" alt="Set the static IP passes" /></p>
+
+<p>We need to set the DNS servers.</p>
+
+<p><code class="highlighter-rouge">Set-DnsClientServerAddress -InterfaceIndex 17 -ServerAddresses 10.16.25.13, 10.16.25.15</code></p>
+
+<p><img src="/assets/images/Networking/SetStaticIPusingPowershell4.png" alt="Set the DNS server" /></p>
+
+<p>In this way, the IP set statically. Thats it!</p>
+
+<hr />
+
+<h1 id="setting-the-ip-address-dynamically-using-a-python-script">Setting the IP address dynamically using a Python script</h1>
+
+<p>Entering these commands is useful. However due to the correct sequence required as well as accuracy requirements, it is better to have a script individually for the static or dynamic setting of IP addresses.</p>
+
+<p>Thanks to Python’s scripting capability to handle system command execution, we use the <code class="highlighter-rouge">subprocess</code> module for the task</p>
+
+<h2 id="python-script-to-set-static-ip">Python script to set Static IP</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#!python
+</span><span class="s">'''Script to set Static IP to the WiFi adaptor of laptop.
+ so that it belongs to the same network address range
+  as that of the WAP of the router configured to work like a switch.'''</span>
+
+<span class="kn">import</span> <span class="nn">subprocess</span>
+<span class="n">staticIP</span> <span class="o">=</span> <span class="s">'''netsh interface ip set address name="WiFi" static 10.43.79.17 255.255.255.0 10.43.79.1'''</span>
+<span class="n">command1</span> <span class="o">=</span> <span class="n">staticIP</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+<span class="n">subprocess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">command1</span><span class="p">)</span>
+
+<span class="n">staticDNS1</span> <span class="o">=</span> <span class="s">'''netsh interface ip set dns name="WiFi" static 10.16.25.13'''</span>
+<span class="n">command2</span> <span class="o">=</span> <span class="n">staticDNS1</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+<span class="n">subprocess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">command2</span><span class="p">)</span>
+
+<span class="n">staticDNS2</span> <span class="o">=</span> <span class="s">'''netsh interface ip add dns name="WiFi" 10.16.25.15 index=2'''</span>
+<span class="n">command3</span> <span class="o">=</span> <span class="n">staticDNS2</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+<span class="n">subprocess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">command3</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="python-script-to-set-dynamic-ip">Python script to set Dynamic IP</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#!python
+</span><span class="s">'''Script to set Dynamic IP to the WiFi adaptor of laptop
+ so that it auto configure to have an IP address that
+ belongs to the same network address as that of the iiscwlan WAP.'''</span>
+ 
+<span class="kn">import</span> <span class="nn">subprocess</span>
+<span class="n">dhcpCommand</span> <span class="o">=</span> <span class="s">'''netsh interface ip set address "WiFi" dhcp'''</span>
+<span class="n">command</span> <span class="o">=</span> <span class="n">dhcpCommand</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+<span class="n">subprocess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">command</span><span class="p">)</span>
+</code></pre></div></div>
+
+
+  </body>
+</html>

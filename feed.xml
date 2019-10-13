@@ -1,4 +1,116 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-10-13T21:42:37+05:30</updated><id>/feed.xml</id><entry><title type="html">Apples</title><link href="/2019/08/31/apples.html" rel="alternate" type="text/html" title="Apples" /><published>2019-08-31T00:00:00+05:30</published><updated>2019-08-31T00:00:00+05:30</updated><id>/2019/08/31/apples</id><content type="html" xml:base="/2019/08/31/apples.html">&lt;p&gt;An apple is a sweet, edible fruit produced by an apple tree.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-10-13T22:28:18+05:30</updated><id>/feed.xml</id><entry><title type="html">Python Scripts to set static or dynamic IP address</title><link href="/2019/09/30/Scripts-to-set-IP-Address-Statically-or-Dynamically.html" rel="alternate" type="text/html" title="Python Scripts to set static or dynamic  IP address" /><published>2019-09-30T00:00:00+05:30</published><updated>2019-09-30T00:00:00+05:30</updated><id>/2019/09/30/Scripts-to-set-IP-Address-Statically-or-Dynamically</id><content type="html" xml:base="/2019/09/30/Scripts-to-set-IP-Address-Statically-or-Dynamically.html">&lt;p&gt;The reason to set up a &lt;a href=&quot;/2019/08/25/ADSL-modem+router-as-WAP.html&quot;&gt;ADSL router as a switch&lt;/a&gt; was to enhance the WiFi signal at my office desk. However sometimes I need to switch back to the &lt;code class=&quot;highlighter-rouge&quot;&gt;iiscwlan&lt;/code&gt; WiFi interface when I move my laptop.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;setting-dynamic-ip&quot;&gt;Setting dynamic IP&lt;/h1&gt;
+
+&lt;p&gt;Firstly my laptop WiFi adaptor has connected to the &lt;code class=&quot;highlighter-rouge&quot;&gt;wololo&lt;/code&gt; WAP of the ADSL modem+router&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/Networking/SetDynamicIPusingPowershell0.png&quot; alt=&quot;Connected to wololo interface&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Disconnect from the &lt;code class=&quot;highlighter-rouge&quot;&gt;wololo&lt;/code&gt; WAP&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/Networking/SetDynamicIPusingPowershell1.png&quot; alt=&quot;WiFi interface is floating&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Enable the &lt;code class=&quot;highlighter-rouge&quot;&gt;WiFi&lt;/code&gt; interface to have DHCP enabled&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Get-NetAdapter -Name WiFi | Set-NetIPInterface -Dhcp Enabled&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/Networking/SetDynamicIPusingPowershell2.png&quot; alt=&quot;DHCP is enabled&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Connect to the &lt;code class=&quot;highlighter-rouge&quot;&gt;iiscwlan&lt;/code&gt; WAP. The DHCP server at &lt;code class=&quot;highlighter-rouge&quot;&gt;10.43.240.1&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;10.43.79.1&lt;/code&gt; dynamically assigns &lt;code class=&quot;highlighter-rouge&quot;&gt;10.43.240.122&lt;/code&gt; IP Address to the WiFi interface having index &lt;code class=&quot;highlighter-rouge&quot;&gt;17&lt;/code&gt; and alias  &lt;code class=&quot;highlighter-rouge&quot;&gt;WiFi&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/Networking/SetDynamicIPusingPowershell3.png&quot; alt=&quot;Set IP dynamically&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Notice the DNS servers set to &lt;code class=&quot;highlighter-rouge&quot;&gt;10.16.25.13&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;10.16.25.15&lt;/code&gt;. However sometimes these are not set and need to be fetched from the DHCP servers&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Set-DnsClientServerAddress -InterfaceIndex 17 -ResetServerAddresses&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/Networking/SetDynamicIPusingPowershell4.png&quot; alt=&quot;Set DHCP servers dynamically&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In this way, the IP set dynamically. Thats it!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;setting-static-ip&quot;&gt;Setting static IP&lt;/h1&gt;
+
+&lt;p&gt;Run a powershell as an Administrator and check the interface index for the WiFi interface. The Interface has index &lt;code class=&quot;highlighter-rouge&quot;&gt;17&lt;/code&gt; with alias &lt;code class=&quot;highlighter-rouge&quot;&gt;WiFi&lt;/code&gt;. It is connected to the &lt;code class=&quot;highlighter-rouge&quot;&gt;iiscwlan&lt;/code&gt; WAP using the IP address &lt;code class=&quot;highlighter-rouge&quot;&gt;10.43.240.122&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GetNetIPConfiguration&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/Networking/SetStaticIPusingPowershell0.png&quot; alt=&quot;Check the interface parameters&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Disconnect from the &lt;code class=&quot;highlighter-rouge&quot;&gt;iiscwlan&lt;/code&gt; WAP.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/Networking/SetStaticIPusingPowershell1.png&quot; alt=&quot;Interface is disconnected&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To connect to the &lt;code class=&quot;highlighter-rouge&quot;&gt;wololo&lt;/code&gt; WAP we need to know its network address. We know it belongs to &lt;code class=&quot;highlighter-rouge&quot;&gt;10.43.79.x&lt;/code&gt; network address with the available IP addresss starting from &lt;code class=&quot;highlighter-rouge&quot;&gt;10.43.79.16-255&lt;/code&gt; as the router addresss is &lt;code class=&quot;highlighter-rouge&quot;&gt;10.43.79.1&lt;/code&gt;. Let us set the IP address of the &lt;code class=&quot;highlighter-rouge&quot;&gt;WiFi&lt;/code&gt; interface to belong to this range. Let us reserve &lt;code class=&quot;highlighter-rouge&quot;&gt;10.43.79.16&lt;/code&gt; for the desktop computer’s ethernet interface.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;New-NetIPAddress -InterfaceIndex 17 -IPAddress 10.43.79.17 -PrefixLength 24 -DefaultGateway 10.43.79.1&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This pops a &lt;code class=&quot;highlighter-rouge&quot;&gt;Windows System Error 87&lt;/code&gt; which says that the default Gateway already exists. Let us remove the Default Gateway option and try again&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;New-NetIPAddress -InterfaceIndex 17 -IPAddress 10.43.79.17 -PrefixLength 24&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Again pops up an &lt;code class=&quot;highlighter-rouge&quot;&gt;Windows System Error 87&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/Networking/SetStaticIPusingPowershell2.png&quot; alt=&quot;Set the static IP fails&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;To resolve this first connect to the &lt;code class=&quot;highlighter-rouge&quot;&gt;wololo&lt;/code&gt; WAP then execute the command without the default gateway as already the previous &lt;code class=&quot;highlighter-rouge&quot;&gt;iiscwlan&lt;/code&gt; WAP had the same default gateway &lt;code class=&quot;highlighter-rouge&quot;&gt;10.43.79.1&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/Networking/SetStaticIPusingPowershell3.png&quot; alt=&quot;Set the static IP passes&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We need to set the DNS servers.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Set-DnsClientServerAddress -InterfaceIndex 17 -ServerAddresses 10.16.25.13, 10.16.25.15&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/Networking/SetStaticIPusingPowershell4.png&quot; alt=&quot;Set the DNS server&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In this way, the IP set statically. Thats it!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;setting-the-ip-address-dynamically-using-a-python-script&quot;&gt;Setting the IP address dynamically using a Python script&lt;/h1&gt;
+
+&lt;p&gt;Entering these commands is useful. However due to the correct sequence required as well as accuracy requirements, it is better to have a script individually for the static or dynamic setting of IP addresses.&lt;/p&gt;
+
+&lt;p&gt;Thanks to Python’s scripting capability to handle system command execution, we use the &lt;code class=&quot;highlighter-rouge&quot;&gt;subprocess&lt;/code&gt; module for the task&lt;/p&gt;
+
+&lt;h2 id=&quot;python-script-to-set-static-ip&quot;&gt;Python script to set Static IP&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;#!python
+&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'''Script to set Static IP to the WiFi adaptor of laptop.
+ so that it belongs to the same network address range
+  as that of the WAP of the router configured to work like a switch.'''&lt;/span&gt;
+
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;subprocess&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;staticIP&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'''netsh interface ip set address name=&quot;WiFi&quot; static 10.43.79.17 255.255.255.0 10.43.79.1'''&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;command1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;staticIP&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;subprocess&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;command1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;staticDNS1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'''netsh interface ip set dns name=&quot;WiFi&quot; static 10.16.25.13'''&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;command2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;staticDNS1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;subprocess&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;command2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;staticDNS2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'''netsh interface ip add dns name=&quot;WiFi&quot; 10.16.25.15 index=2'''&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;command3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;staticDNS2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;subprocess&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;command3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;python-script-to-set-dynamic-ip&quot;&gt;Python script to set Dynamic IP&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;#!python
+&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'''Script to set Dynamic IP to the WiFi adaptor of laptop
+ so that it auto configure to have an IP address that
+ belongs to the same network address as that of the iiscwlan WAP.'''&lt;/span&gt;
+ 
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;subprocess&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;dhcpCommand&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'''netsh interface ip set address &quot;WiFi&quot; dhcp'''&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;command&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dhcpCommand&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;subprocess&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;command&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>fubar</name></author><summary type="html">The reason to set up a ADSL router as a switch was to enhance the WiFi signal at my office desk. However sometimes I need to switch back to the iiscwlan WiFi interface when I move my laptop. Setting dynamic IP Firstly my laptop WiFi adaptor has connected to the wololo WAP of the ADSL modem+router Disconnect from the wololo WAP Enable the WiFi interface to have DHCP enabled Get-NetAdapter -Name WiFi | Set-NetIPInterface -Dhcp Enabled Connect to the iiscwlan WAP. The DHCP server at 10.43.240.1 and 10.43.79.1 dynamically assigns 10.43.240.122 IP Address to the WiFi interface having index 17 and alias WiFi. Notice the DNS servers set to 10.16.25.13 and 10.16.25.15. However sometimes these are not set and need to be fetched from the DHCP servers Set-DnsClientServerAddress -InterfaceIndex 17 -ResetServerAddresses In this way, the IP set dynamically. Thats it! Setting static IP Run a powershell as an Administrator and check the interface index for the WiFi interface. The Interface has index 17 with alias WiFi. It is connected to the iiscwlan WAP using the IP address 10.43.240.122. GetNetIPConfiguration Disconnect from the iiscwlan WAP. To connect to the wololo WAP we need to know its network address. We know it belongs to 10.43.79.x network address with the available IP addresss starting from 10.43.79.16-255 as the router addresss is 10.43.79.1. Let us set the IP address of the WiFi interface to belong to this range. Let us reserve 10.43.79.16 for the desktop computer’s ethernet interface. New-NetIPAddress -InterfaceIndex 17 -IPAddress 10.43.79.17 -PrefixLength 24 -DefaultGateway 10.43.79.1 This pops a Windows System Error 87 which says that the default Gateway already exists. Let us remove the Default Gateway option and try again New-NetIPAddress -InterfaceIndex 17 -IPAddress 10.43.79.17 -PrefixLength 24 Again pops up an Windows System Error 87 To resolve this first connect to the wololo WAP then execute the command without the default gateway as already the previous iiscwlan WAP had the same default gateway 10.43.79.1 We need to set the DNS servers. Set-DnsClientServerAddress -InterfaceIndex 17 -ServerAddresses 10.16.25.13, 10.16.25.15 In this way, the IP set statically. Thats it! Setting the IP address dynamically using a Python script Entering these commands is useful. However due to the correct sequence required as well as accuracy requirements, it is better to have a script individually for the static or dynamic setting of IP addresses. Thanks to Python’s scripting capability to handle system command execution, we use the subprocess module for the task Python script to set Static IP #!python '''Script to set Static IP to the WiFi adaptor of laptop. so that it belongs to the same network address range as that of the WAP of the router configured to work like a switch.''' import subprocess staticIP = '''netsh interface ip set address name=&quot;WiFi&quot; static 10.43.79.17 255.255.255.0 10.43.79.1''' command1 = staticIP.split() subprocess.run(command1) staticDNS1 = '''netsh interface ip set dns name=&quot;WiFi&quot; static 10.16.25.13''' command2 = staticDNS1.split() subprocess.run(command2) staticDNS2 = '''netsh interface ip add dns name=&quot;WiFi&quot; 10.16.25.15 index=2''' command3 = staticDNS2.split() subprocess.run(command3) Python script to set Dynamic IP #!python '''Script to set Dynamic IP to the WiFi adaptor of laptop so that it auto configure to have an IP address that belongs to the same network address as that of the iiscwlan WAP.''' import subprocess dhcpCommand = '''netsh interface ip set address &quot;WiFi&quot; dhcp''' command = dhcpCommand.split() subprocess.run(command)</summary></entry><entry><title type="html">Apples</title><link href="/2019/08/31/apples.html" rel="alternate" type="text/html" title="Apples" /><published>2019-08-31T00:00:00+05:30</published><updated>2019-08-31T00:00:00+05:30</updated><id>/2019/08/31/apples</id><content type="html" xml:base="/2019/08/31/apples.html">&lt;p&gt;An apple is a sweet, edible fruit produced by an apple tree.&lt;/p&gt;
 
 &lt;p&gt;Apple trees are cultivated worldwide, and are the most widely grown species in
 the genus Malus. The tree originated in Central Asia, where its wild ancestor,
@@ -11,4 +123,163 @@ of large herbaceous flowering plants in the genus Musa.&lt;/p&gt;
 distinguishing them from dessert bananas. The fruit is variable in size, color,
 and firmness, but is usually elongated and curved, with soft flesh rich in
 starch covered with a rind, which may be green, yellow, red, purple, or brown
-when ripe.&lt;/p&gt;</content><author><name>jill</name></author><summary type="html">A banana is an edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus Musa. In some countries, bananas used for cooking may be called “plantains”, distinguishing them from dessert bananas. The fruit is variable in size, color, and firmness, but is usually elongated and curved, with soft flesh rich in starch covered with a rind, which may be green, yellow, red, purple, or brown when ripe.</summary></entry></feed>
+when ripe.&lt;/p&gt;</content><author><name>jill</name></author><summary type="html">A banana is an edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus Musa. In some countries, bananas used for cooking may be called “plantains”, distinguishing them from dessert bananas. The fruit is variable in size, color, and firmness, but is usually elongated and curved, with soft flesh rich in starch covered with a rind, which may be green, yellow, red, purple, or brown when ripe.</summary></entry><entry><title type="html">Connecting ADSL (modem + router) as a WiFi Access Point</title><link href="/2019/08/25/ADSL-modem+router-as-WAP.html" rel="alternate" type="text/html" title="Connecting ADSL (modem + router) as a WiFi Access Point" /><published>2019-08-25T00:00:00+05:30</published><updated>2019-08-25T00:00:00+05:30</updated><id>/2019/08/25/ADSL-modem+router-as-WAP</id><content type="html" xml:base="/2019/08/25/ADSL-modem+router-as-WAP.html">&lt;p&gt;I have a TP-Link ADSL modem + router (M+R) with me. It can be used in the following modes:&lt;/p&gt;
+&lt;ul class=&quot;task-list&quot;&gt;
+  &lt;li&gt;[] high speed DSL modem&lt;/li&gt;
+  &lt;li&gt;[] NAT router&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;4 port switch&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;Wireless Access Point&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I want to use the (M+R) as a &lt;a href=&quot;path/to/switchpage #TODO&quot;&gt;switch&lt;/a&gt; to connect my desktop computer to the LAN. Also I want to use the (M+R) as a WiFi Access Point (WAP) as the &lt;code class=&quot;highlighter-rouge&quot;&gt;iiscwlan&lt;/code&gt; WiFi signal at my office desk is feeble. I want to take the ethernet port as input to the (M+R).&lt;/p&gt;
+
+&lt;p&gt;Following are the steps  to setup the (M+R) as a switch:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Setup the laptop - router interface to first talk to the router,&lt;/li&gt;
+  &lt;li&gt;Match router’s network address to that of ethernet’s,&lt;/li&gt;
+  &lt;li&gt;Reconfigure the laptop’s network address to match that of the router’s,&lt;/li&gt;
+  &lt;li&gt;Apply the physical connections between the router and the ethernet,&lt;/li&gt;
+  &lt;li&gt;[Optional] Configure the SSID parameters of the WAP.&lt;/li&gt;
+  &lt;li&gt;[Optional] Create &lt;a href=&quot;/2019/09/30/Scripts-to-set-IP-Address-Statically-or-Dynamically.html&quot;&gt;scripts&lt;/a&gt; to automate these configurations&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;laptop---router-interface&quot;&gt;Laptop - Router interface&lt;/h1&gt;
+
+&lt;p&gt;Currently I am connected to the &lt;code class=&quot;highlighter-rouge&quot;&gt;iiscwlan&lt;/code&gt; WiFi on my laptop. This is confirmed by &lt;code class=&quot;highlighter-rouge&quot;&gt;arp&lt;/code&gt; command; Address Resolution Protocol. The current IP address is &lt;code class=&quot;highlighter-rouge&quot;&gt;10.43.241.108&lt;/code&gt; which is dynamically allocated by the router at &lt;code class=&quot;highlighter-rouge&quot;&gt;10.43.240.1&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/Networking/NetworkingModemRouterAsAccessPoint.png&quot; alt=&quot;Connected to iiscwlan&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Disconnect from &lt;code class=&quot;highlighter-rouge&quot;&gt;iiscwlan&lt;/code&gt;. Switch on the (M+R) and reset to factory defaults. Connect to the TP-LINK WiFi from the laptop. After successful connection, the IP address is set to &lt;code class=&quot;highlighter-rouge&quot;&gt;192.168.1.100&lt;/code&gt;. The DHCP server in the (M+R) automatically allocates the above IP to the laptop. The router is at &lt;code class=&quot;highlighter-rouge&quot;&gt;192.168.1.1&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/Networking/NetworkingModemRouterAsAccessPoint3.png&quot; alt=&quot;Connected to TP-LINK&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Similar information related to the address can be accessed by &lt;code class=&quot;highlighter-rouge&quot;&gt;ipconfig&lt;/code&gt; program. This information is network interface centric.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/Networking/NetworkingModemRouterAsAccessPoint4.png&quot; alt=&quot;ipconfig info&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;One can check the connection is successful by pinging the server by using either names at &lt;code class=&quot;highlighter-rouge&quot;&gt;192.168.1.1&lt;/code&gt; IP address or &lt;code class=&quot;highlighter-rouge&quot;&gt;http://tplinkmodem.net&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/Networking/NetworkingModemRouterAsAccessPoint8.png&quot; alt=&quot;ping the router&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;configure-the-routers-network-address-to-that-of-the-ethernets&quot;&gt;Configure the router’s network address to that of the ethernet’s&lt;/h1&gt;
+
+&lt;p&gt;Now access the (M+R) settings page using Firefox by fetching the page at &lt;code class=&quot;highlighter-rouge&quot;&gt;192.168.1.1&lt;/code&gt; IP address or &lt;code class=&quot;highlighter-rouge&quot;&gt;http://tplinkmodem.net&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/Networking/NetworkingModemRouterAsAccessPoint9.png&quot; alt=&quot;Access Settings Page&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Using default admin:admin login credentials log into the settings page.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Since we want to setup (M+R) as a switch, we do not tamper with the &lt;code class=&quot;highlighter-rouge&quot;&gt;internet&lt;/code&gt; tab.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;On the &lt;code class=&quot;highlighter-rouge&quot;&gt;LAN&lt;/code&gt; tab, set the IP address to the ethernet port address designated by the department sysad.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Set the 24 bit subnet mask.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Most importantly, disable the DHCP server. We only want to set the (M+R) as a switch.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/Networking/NetworkingModemRouterAsAccessPoint12.png&quot; alt=&quot;Settings Page&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now save the settings, this will reassign a new IP address &lt;code class=&quot;highlighter-rouge&quot;&gt;10.43.79.15&lt;/code&gt; to the (M+R). This is shown as a &lt;code class=&quot;highlighter-rouge&quot;&gt;The connection was reset&lt;/code&gt; error As a result, there will not be a connection to the (M+R) using the previous &lt;code class=&quot;highlighter-rouge&quot;&gt;192.168.1.1&lt;/code&gt; IP address.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/Networking/NetworkingModemRouterAsAccessPoint13.png&quot; alt=&quot;New IP address&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Till now we have not connected any cables to the router from either the ethernet port or the desktop.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Now try to connect to the internet by plugging in the ethernet cable from the ethernet port to one of the four LAN ports on the router and pinging the internet from the laptop. &lt;strong&gt;This will not connect the connect to the internet.&lt;/strong&gt; That is because we have only set the IP address of the router. When the WiFi adaptor of the laptop tries to connect to the WAP, it needs an IP address. However the router cannot assign an IP to the adaptor as the DHCP is disabled. This is reflected in the &lt;code class=&quot;highlighter-rouge&quot;&gt;ipconfig /all&lt;/code&gt; output. The info still points to the iiscwlan connection. We need to reconfigure the laptop’s address to point to the router’s network address.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Unplug the ethernet cable from the router.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The hardware address of the WiFi adaptor is 60-57-18-9E-97-CF.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/Networking/NetworkingModemRouterAsAccessPoint14.png&quot; alt=&quot;DNS server error&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;reconfigure-the-laptops-network-address-to-match-that-of-the-routers&quot;&gt;Reconfigure the laptop’s network address to match that of the router’s&lt;/h1&gt;
+
+&lt;p&gt;This is when manual assignment of the IP address to the laptop’s WiFi adaptor needs to be done to match the network address of the router. This is accomplished using &lt;code class=&quot;highlighter-rouge&quot;&gt;netsh&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;netsh interface ip set address name=&quot;WiFi&quot; static 10.43.79.17 255.255.255.0 10.43.79.1&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;netsh interface ip set dns name=&quot;WiFi&quot; static 10.16.25.13&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;netsh interface ip add dns name=&quot;WiFi&quot; 10.16.25.15 index=2&lt;/code&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Run the command prompt as Administrator.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/Networking/NetworkingModemRouterAsAccessPoint15.png&quot; alt=&quot;Match network address statically&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;However, there is a problem with setting the DNS server addresses. &lt;a href=&quot;/page/to/DNS-server&quot;&gt;DNS server&lt;/a&gt; serves name resolution service to the client. This is because the (M+R) is not connected to the ethernet port and able to locate the DNS server.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;physically-connect-the-router-to-the-ethernet-sub-network&quot;&gt;Physically connect the router to the ethernet sub network&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Now is the time to connect to the connnect the switch to the rest of the sub network using an ethernet cable running from the wall mounted ethernet port to one of the 4 ethernet ports of the (M+R). For this configuration, we do not have business with the modem port.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Repeating the above &lt;code class=&quot;highlighter-rouge&quot;&gt;netsh&lt;/code&gt; commands will do the trick. However let us try using powershell to set the configuration.&lt;/p&gt;
+
+&lt;p&gt;Using powershell, we can set the static configuration.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Get-NetIPConfiguration&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Note the InterfaceIndex
+IP addresses
+IP defaultGateway
+DNS server&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Net-NetIPAddress -InterfaceIndex 4 -IPAddress 10.43.79.17 -PrefixLength 24 -defaultGateway 10.43.79.1&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Set-DnsClientServerAddress -InterfaceIndex 4 -ServerAddresses 10.16.25.13, 10.16.25.15&lt;/code&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Run the powershell as Administrator&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;You can see that you are able to connect to the router &lt;code class=&quot;highlighter-rouge&quot;&gt;10.43.79.1&lt;/code&gt; as well as the DNS servers &lt;code class=&quot;highlighter-rouge&quot;&gt;10.16.25.15&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;10.16.25.13&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/Networking/NetworkingModemRouterAsAccessPoint16.png&quot; alt=&quot;Match network address statically with powershell&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now the configuration is almost done. We need to change the SSID of the WiFi interface to something more relatable. Access the settings page and change the SSID name and password. Thats it!&lt;/p&gt;
+
+&lt;p&gt;If needed perform the same thing with the desktop computer. Connect a cable to the Set statically the IP address.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;optional-configure-the-wap&quot;&gt;Optional: Configure the WAP&lt;/h1&gt;
+
+&lt;p&gt;The router comes with default SSID (Service Set Identifier) name and password for its WAP interface. However if needed, these can be reconfigured by accessing the router’s settings page and changing these parameters in the &lt;code class=&quot;highlighter-rouge&quot;&gt;Wireless&lt;/code&gt; tab of the &lt;code class=&quot;highlighter-rouge&quot;&gt;Interface Setup&lt;/code&gt; tab. I have set SSID as &lt;code class=&quot;highlighter-rouge&quot;&gt;wololo&lt;/code&gt; with password as &lt;code class=&quot;highlighter-rouge&quot;&gt;*********&lt;/code&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;optional-scripts-to-automate-the-configuration&quot;&gt;Optional: Scripts to automate the configuration&lt;/h1&gt;
+
+&lt;p&gt;It is convenient to automate certain aspects of the network configuration like setting the static IP address of the laptop’s WiFi adaptor. This is discussed in the post on &lt;a href=&quot;/2019/09/30/Scripts-to-set-IP-Address-Statically-or-Dynamically.html&quot;&gt;Python scripts to set IP address&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;references&quot;&gt;&lt;strong&gt;References:&lt;/strong&gt;&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pureinfotech.com/set-static-ip-address-windows-10/&quot;&gt;How to set IP address manually in Windows&lt;/a&gt;&lt;/p&gt;</content><author><name>fubar</name></author><summary type="html">I have a TP-Link ADSL modem + router (M+R) with me. It can be used in the following modes: [] high speed DSL modem [] NAT router 4 port switch Wireless Access Point I want to use the (M+R) as a switch to connect my desktop computer to the LAN. Also I want to use the (M+R) as a WiFi Access Point (WAP) as the iiscwlan WiFi signal at my office desk is feeble. I want to take the ethernet port as input to the (M+R). Following are the steps to setup the (M+R) as a switch: Setup the laptop - router interface to first talk to the router, Match router’s network address to that of ethernet’s, Reconfigure the laptop’s network address to match that of the router’s, Apply the physical connections between the router and the ethernet, [Optional] Configure the SSID parameters of the WAP. [Optional] Create scripts to automate these configurations Laptop - Router interface Currently I am connected to the iiscwlan WiFi on my laptop. This is confirmed by arp command; Address Resolution Protocol. The current IP address is 10.43.241.108 which is dynamically allocated by the router at 10.43.240.1. Disconnect from iiscwlan. Switch on the (M+R) and reset to factory defaults. Connect to the TP-LINK WiFi from the laptop. After successful connection, the IP address is set to 192.168.1.100. The DHCP server in the (M+R) automatically allocates the above IP to the laptop. The router is at 192.168.1.1. Similar information related to the address can be accessed by ipconfig program. This information is network interface centric. One can check the connection is successful by pinging the server by using either names at 192.168.1.1 IP address or http://tplinkmodem.net. Configure the router’s network address to that of the ethernet’s Now access the (M+R) settings page using Firefox by fetching the page at 192.168.1.1 IP address or http://tplinkmodem.net. Using default admin:admin login credentials log into the settings page. Since we want to setup (M+R) as a switch, we do not tamper with the internet tab. On the LAN tab, set the IP address to the ethernet port address designated by the department sysad. Set the 24 bit subnet mask. Most importantly, disable the DHCP server. We only want to set the (M+R) as a switch. Now save the settings, this will reassign a new IP address 10.43.79.15 to the (M+R). This is shown as a The connection was reset error As a result, there will not be a connection to the (M+R) using the previous 192.168.1.1 IP address. Till now we have not connected any cables to the router from either the ethernet port or the desktop. Now try to connect to the internet by plugging in the ethernet cable from the ethernet port to one of the four LAN ports on the router and pinging the internet from the laptop. This will not connect the connect to the internet. That is because we have only set the IP address of the router. When the WiFi adaptor of the laptop tries to connect to the WAP, it needs an IP address. However the router cannot assign an IP to the adaptor as the DHCP is disabled. This is reflected in the ipconfig /all output. The info still points to the iiscwlan connection. We need to reconfigure the laptop’s address to point to the router’s network address. Unplug the ethernet cable from the router. The hardware address of the WiFi adaptor is 60-57-18-9E-97-CF. Reconfigure the laptop’s network address to match that of the router’s This is when manual assignment of the IP address to the laptop’s WiFi adaptor needs to be done to match the network address of the router. This is accomplished using netsh netsh interface ip set address name=&quot;WiFi&quot; static 10.43.79.17 255.255.255.0 10.43.79.1 netsh interface ip set dns name=&quot;WiFi&quot; static 10.16.25.13 netsh interface ip add dns name=&quot;WiFi&quot; 10.16.25.15 index=2 Run the command prompt as Administrator. However, there is a problem with setting the DNS server addresses. DNS server serves name resolution service to the client. This is because the (M+R) is not connected to the ethernet port and able to locate the DNS server. Physically connect the router to the ethernet sub network Now is the time to connect to the connnect the switch to the rest of the sub network using an ethernet cable running from the wall mounted ethernet port to one of the 4 ethernet ports of the (M+R). For this configuration, we do not have business with the modem port. Repeating the above netsh commands will do the trick. However let us try using powershell to set the configuration. Using powershell, we can set the static configuration. Get-NetIPConfiguration Note the InterfaceIndex IP addresses IP defaultGateway DNS server Net-NetIPAddress -InterfaceIndex 4 -IPAddress 10.43.79.17 -PrefixLength 24 -defaultGateway 10.43.79.1 Set-DnsClientServerAddress -InterfaceIndex 4 -ServerAddresses 10.16.25.13, 10.16.25.15 Run the powershell as Administrator You can see that you are able to connect to the router 10.43.79.1 as well as the DNS servers 10.16.25.15, 10.16.25.13 Now the configuration is almost done. We need to change the SSID of the WiFi interface to something more relatable. Access the settings page and change the SSID name and password. Thats it! If needed perform the same thing with the desktop computer. Connect a cable to the Set statically the IP address. Optional: Configure the WAP The router comes with default SSID (Service Set Identifier) name and password for its WAP interface. However if needed, these can be reconfigured by accessing the router’s settings page and changing these parameters in the Wireless tab of the Interface Setup tab. I have set SSID as wololo with password as *********. Optional: Scripts to automate the configuration It is convenient to automate certain aspects of the network configuration like setting the static IP address of the laptop’s WiFi adaptor. This is discussed in the post on Python scripts to set IP address References: How to set IP address manually in Windows</summary></entry></feed>
