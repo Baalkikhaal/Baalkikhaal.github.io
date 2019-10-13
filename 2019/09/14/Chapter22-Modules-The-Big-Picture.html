@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chapter22 Modules The Big Picture</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="javascript" href="/js/snap.svg-min.js">
+    <link type="application/atom+xml" rel="alternate" href="/feed.xml" />
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Chapter22 Modules The Big Picture</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Chapter22 Modules The Big Picture" />
+<meta name="author" content="fubar" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Introduction In this chapter, the author introduces modules. Modules form the highest organization structure in a Python program. The rationale behind modules lies in code reusability, a primary feature that Python wants you to do. Using module as an example for namespace, the author tries to drive home the point that a program is about managing namespaces, i.e. the space of names. This concept is revisted in other topics like functions and classes. This is followed by explaining the internal process when modules are imported, how existing modules are searched, and the freedom of type of module imported. Module What is a module? Modules serve as the highest organizational structure in the architecture of a Python program. Essentially, a Python program is a system of modules. Modules are glorified namespaces. In concrete terms, a module typically corresponds to a Python file. Why use a module? Code reuse Modules lets you save code in files permanently. So, code is persistent unlike the code run in Python interactive prompt Namespace partitioning As a self contained system of variables/names known as namespace, module minimizes variable name clashes across the program. Implementing shared services or metadata A shared resources usually entails a single copy across the system. A module can serve to contain such shared resources like global variables. How to access the module namespace? The names of a module namespace can be accessed/imported by two statements and and one important function import statement fetches a whole module. from statement fetches particular names from a module. imp.reload function reloads a module without stopping Python. All names defined at the top level of module file become attributes of the imported module object. In OOP jargon, the module file’s global scope morphs into the module object’s attribute namespace when it is imported. Python Program architecture A program is a system of modules, with one main top-level file and zero or more supplemental files called modules. The top-level file (a.k.a script) contains the main flow of control of the program. Modules are collections/libraries of tools to be used by the script. Script uses the tools defined in module files, and modules use tools defined in other modules. Module don’t do anything when run directly; they define the tools intended for use in other files. TODO Standard Library modules A Python installation comes with a set of standard library modules (around 200 modules) for various programming tasks like operating system interfaces (os, sys), object persistence, text pattern matching (re), network (requests) and Internet scripting, GUI construction (tkinter) They are not part of the Python language, but come installed with a standard Python installation. Due to the standard nature, they are expected to wok portably on most platforms. How imports work In contrast to C/C++ #include, which are textual insertions of file into another, Python’s import are runtime operations involving Find the module’s files. Compile it to byte code (if needed). Run the module code to build the objects it defines. Finding the module involves searching the module search path On first import, the code is compiled to generate a byte code .pyc file. Unless the source code is modified, subsequent imports simply reuses the byte code. .pyc speed future imports. Compilation happens when file is imported. So the top-level script file is usually not compiled. To have the script file both executed as well as imported, __name__ and __main__ are used. Running/executing the bytecode assigns names in the importee namespace to the attributes of the imported module object. Module search path Imports mention only the filename without extension, which is searched in a path formed by concatenation of following directories and the left most search result is taken as the file path. home directory of the importee files. PYTHONPATH directories. Standard library Modules. .pth path file listing custom directories. site-packages subdirectory in the Python installation for listing the third-party extensions. The module search path is assigned to path attribute of the sys standard modules import sys print sys.path Since only the filename without extension is searched, an import mod can resolve to any of the following files: mod.py source code file. mod.pyc byte code file. mod.pyo optimized byte code file (Generated when the script is executed using -O flag). mod.so or mod.dll compiled extension module which is dynamically linked when imported. mod directory for package imports. Summary The idea of structuring program is the rationale behind modules. Modules act as namespaces so that names in one module cannot be seen by another module, unless the former is imported. This Python Program architecture helps in dividing the logic into self-contained components. In addition to the home directory and standard library modules, custom modules can be searched via the module search path setting the PYTHONPATH environment variable or .pth files in top-level. While importing a module, Pythons allows freedom to choose from a variety of file extensions like .py, .pyc, .pyo, .so or a directory also (as we will see in the next chapter). This is a link that refers to past post. The permalink to this page is _posts/2019-09-14-Chapter22-Modules-The-Big-Picture.md/#excerpt This is an internal link in Jekyll Module Search-Path" />
+<meta property="og:description" content="Introduction In this chapter, the author introduces modules. Modules form the highest organization structure in a Python program. The rationale behind modules lies in code reusability, a primary feature that Python wants you to do. Using module as an example for namespace, the author tries to drive home the point that a program is about managing namespaces, i.e. the space of names. This concept is revisted in other topics like functions and classes. This is followed by explaining the internal process when modules are imported, how existing modules are searched, and the freedom of type of module imported. Module What is a module? Modules serve as the highest organizational structure in the architecture of a Python program. Essentially, a Python program is a system of modules. Modules are glorified namespaces. In concrete terms, a module typically corresponds to a Python file. Why use a module? Code reuse Modules lets you save code in files permanently. So, code is persistent unlike the code run in Python interactive prompt Namespace partitioning As a self contained system of variables/names known as namespace, module minimizes variable name clashes across the program. Implementing shared services or metadata A shared resources usually entails a single copy across the system. A module can serve to contain such shared resources like global variables. How to access the module namespace? The names of a module namespace can be accessed/imported by two statements and and one important function import statement fetches a whole module. from statement fetches particular names from a module. imp.reload function reloads a module without stopping Python. All names defined at the top level of module file become attributes of the imported module object. In OOP jargon, the module file’s global scope morphs into the module object’s attribute namespace when it is imported. Python Program architecture A program is a system of modules, with one main top-level file and zero or more supplemental files called modules. The top-level file (a.k.a script) contains the main flow of control of the program. Modules are collections/libraries of tools to be used by the script. Script uses the tools defined in module files, and modules use tools defined in other modules. Module don’t do anything when run directly; they define the tools intended for use in other files. TODO Standard Library modules A Python installation comes with a set of standard library modules (around 200 modules) for various programming tasks like operating system interfaces (os, sys), object persistence, text pattern matching (re), network (requests) and Internet scripting, GUI construction (tkinter) They are not part of the Python language, but come installed with a standard Python installation. Due to the standard nature, they are expected to wok portably on most platforms. How imports work In contrast to C/C++ #include, which are textual insertions of file into another, Python’s import are runtime operations involving Find the module’s files. Compile it to byte code (if needed). Run the module code to build the objects it defines. Finding the module involves searching the module search path On first import, the code is compiled to generate a byte code .pyc file. Unless the source code is modified, subsequent imports simply reuses the byte code. .pyc speed future imports. Compilation happens when file is imported. So the top-level script file is usually not compiled. To have the script file both executed as well as imported, __name__ and __main__ are used. Running/executing the bytecode assigns names in the importee namespace to the attributes of the imported module object. Module search path Imports mention only the filename without extension, which is searched in a path formed by concatenation of following directories and the left most search result is taken as the file path. home directory of the importee files. PYTHONPATH directories. Standard library Modules. .pth path file listing custom directories. site-packages subdirectory in the Python installation for listing the third-party extensions. The module search path is assigned to path attribute of the sys standard modules import sys print sys.path Since only the filename without extension is searched, an import mod can resolve to any of the following files: mod.py source code file. mod.pyc byte code file. mod.pyo optimized byte code file (Generated when the script is executed using -O flag). mod.so or mod.dll compiled extension module which is dynamically linked when imported. mod directory for package imports. Summary The idea of structuring program is the rationale behind modules. Modules act as namespaces so that names in one module cannot be seen by another module, unless the former is imported. This Python Program architecture helps in dividing the logic into self-contained components. In addition to the home directory and standard library modules, custom modules can be searched via the module search path setting the PYTHONPATH environment variable or .pth files in top-level. While importing a module, Pythons allows freedom to choose from a variety of file extensions like .py, .pyc, .pyo, .so or a directory also (as we will see in the next chapter). This is a link that refers to past post. The permalink to this page is _posts/2019-09-14-Chapter22-Modules-The-Big-Picture.md/#excerpt This is an internal link in Jekyll Module Search-Path" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-09-14T00:00:00+05:30" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/2019/09/14/Chapter22-Modules-The-Big-Picture.html"},"url":"/2019/09/14/Chapter22-Modules-The-Big-Picture.html","headline":"Chapter22 Modules The Big Picture","dateModified":"2019-09-14T00:00:00+05:30","datePublished":"2019-09-14T00:00:00+05:30","description":"Introduction In this chapter, the author introduces modules. Modules form the highest organization structure in a Python program. The rationale behind modules lies in code reusability, a primary feature that Python wants you to do. Using module as an example for namespace, the author tries to drive home the point that a program is about managing namespaces, i.e. the space of names. This concept is revisted in other topics like functions and classes. This is followed by explaining the internal process when modules are imported, how existing modules are searched, and the freedom of type of module imported. Module What is a module? Modules serve as the highest organizational structure in the architecture of a Python program. Essentially, a Python program is a system of modules. Modules are glorified namespaces. In concrete terms, a module typically corresponds to a Python file. Why use a module? Code reuse Modules lets you save code in files permanently. So, code is persistent unlike the code run in Python interactive prompt Namespace partitioning As a self contained system of variables/names known as namespace, module minimizes variable name clashes across the program. Implementing shared services or metadata A shared resources usually entails a single copy across the system. A module can serve to contain such shared resources like global variables. How to access the module namespace? The names of a module namespace can be accessed/imported by two statements and and one important function import statement fetches a whole module. from statement fetches particular names from a module. imp.reload function reloads a module without stopping Python. All names defined at the top level of module file become attributes of the imported module object. In OOP jargon, the module file’s global scope morphs into the module object’s attribute namespace when it is imported. Python Program architecture A program is a system of modules, with one main top-level file and zero or more supplemental files called modules. The top-level file (a.k.a script) contains the main flow of control of the program. Modules are collections/libraries of tools to be used by the script. Script uses the tools defined in module files, and modules use tools defined in other modules. Module don’t do anything when run directly; they define the tools intended for use in other files. TODO Standard Library modules A Python installation comes with a set of standard library modules (around 200 modules) for various programming tasks like operating system interfaces (os, sys), object persistence, text pattern matching (re), network (requests) and Internet scripting, GUI construction (tkinter) They are not part of the Python language, but come installed with a standard Python installation. Due to the standard nature, they are expected to wok portably on most platforms. How imports work In contrast to C/C++ #include, which are textual insertions of file into another, Python’s import are runtime operations involving Find the module’s files. Compile it to byte code (if needed). Run the module code to build the objects it defines. Finding the module involves searching the module search path On first import, the code is compiled to generate a byte code .pyc file. Unless the source code is modified, subsequent imports simply reuses the byte code. .pyc speed future imports. Compilation happens when file is imported. So the top-level script file is usually not compiled. To have the script file both executed as well as imported, __name__ and __main__ are used. Running/executing the bytecode assigns names in the importee namespace to the attributes of the imported module object. Module search path Imports mention only the filename without extension, which is searched in a path formed by concatenation of following directories and the left most search result is taken as the file path. home directory of the importee files. PYTHONPATH directories. Standard library Modules. .pth path file listing custom directories. site-packages subdirectory in the Python installation for listing the third-party extensions. The module search path is assigned to path attribute of the sys standard modules import sys print sys.path Since only the filename without extension is searched, an import mod can resolve to any of the following files: mod.py source code file. mod.pyc byte code file. mod.pyo optimized byte code file (Generated when the script is executed using -O flag). mod.so or mod.dll compiled extension module which is dynamically linked when imported. mod directory for package imports. Summary The idea of structuring program is the rationale behind modules. Modules act as namespaces so that names in one module cannot be seen by another module, unless the former is imported. This Python Program architecture helps in dividing the logic into self-contained components. In addition to the home directory and standard library modules, custom modules can be searched via the module search path setting the PYTHONPATH environment variable or .pth files in top-level. While importing a module, Pythons allows freedom to choose from a variety of file extensions like .py, .pyc, .pyo, .so or a directory also (as we will see in the next chapter). This is a link that refers to past post. The permalink to this page is _posts/2019-09-14-Chapter22-Modules-The-Big-Picture.md/#excerpt This is an internal link in Jekyll Module Search-Path","author":{"@type":"Person","name":"fubar"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+  <body>
+    <nav>
+  
+    <a href="/" >Home</a>
+  
+    <a href="/about.html" >About</a>
+  
+    <a href="/blog.html" >Blog</a>
+  
+    <a href="/staff.html" >Staff</a>
+  
+</nav>
+
+    <h1>Chapter22 Modules The Big Picture</h1>
+<p>
+  14 Sep 2019 - fubar
+  
+  
+    - <a href="/authors/fubar.html">Sreekar Guddeti</a>
+  
+</p>
+
+<h2 id="introduction">Introduction</h2>
+<p>In this chapter, the author introduces modules. Modules form the highest organization structure in a Python program. The <em>rationale</em> behind modules lies in code reusability, a primary feature that Python <em>wants</em> you to do. Using module as an example for <em>namespace</em>, the author tries to drive home the point that a program is about managing namespaces, i.e. the space of names. This concept is revisted in other topics like <a href="chapter-on-functions">functions</a> and <a href="chapter-on-classes">classes</a>. This is followed by explaining the internal process when modules are imported, how existing modules are searched, and the freedom of type of module imported.</p>
+
+<hr />
+
+<h2 id="module">Module</h2>
+
+<h3 id="what-is-a-module">What is a module?</h3>
+
+<ul>
+  <li>Modules serve as the <strong>highest organizational structure</strong> in the architecture of a Python program. Essentially, a Python program is a system of modules.</li>
+  <li>Modules are glorified namespaces.</li>
+  <li>In concrete terms, a module typically corresponds to a Python file.</li>
+</ul>
+
+<h3 id="why-use-a-module">Why use a module?</h3>
+
+<p>Code reuse</p>
+<ul>
+  <li>Modules lets you save code in files permanently. So, code is <em>persistent</em> unlike the code run in Python interactive prompt</li>
+</ul>
+
+<p>Namespace partitioning</p>
+<ul>
+  <li>As a self contained system of variables/names known as <strong>namespace</strong>, module minimizes variable name clashes across the program.</li>
+</ul>
+
+<p>Implementing shared services or metadata</p>
+<ul>
+  <li>A shared resources usually entails a single copy across the system. A module can serve to contain such shared resources like global variables.</li>
+</ul>
+
+<h3 id="how-to-access-the-module-namespace">How to access the module namespace?</h3>
+
+<p>The names of a module <em>namespace</em> can be accessed/imported by two statements and and one important function</p>
+<ul>
+  <li><code class="highlighter-rouge">import</code> statement fetches a whole module.</li>
+  <li><code class="highlighter-rouge">from</code> statement fetches particular names from a module.</li>
+  <li><code class="highlighter-rouge">imp.reload</code> function reloads a module without stopping Python.
+All names defined at the top level of module file become attributes of the imported module object. In OOP jargon,</li>
+</ul>
+
+<blockquote>
+  <p>the module file’s global scope <em>morphs</em> into the module object’s attribute namespace when it is imported.</p>
+</blockquote>
+
+<hr />
+
+<h3 id="python-program-architecture">Python Program architecture</h3>
+
+<ul>
+  <li>A program is a system of modules, with one main top-level file and zero or more supplemental files called <em>modules</em>.</li>
+  <li>The top-level file (a.k.a script) contains the main flow of control of the program.</li>
+  <li>Modules are collections/libraries of tools to be used by the script.</li>
+  <li>Script uses the tools defined in module files, and modules use tools defined in other modules.</li>
+  <li>Module don’t do anything when run directly; they define the tools intended for use in other files.</li>
+  <li><a href="#TODO">TODO</a></li>
+</ul>
+
+<p><img src="/path/to/architecture-image.png" alt="Image: PythonProgramArchitecture" /></p>
+
+<script>
+//Run script right away
+  window.onload = function () {
+//We'll be appending the icon to this DIV later
+          var s = Snap("#iconDiv");
+//Have Snap load the SVG file
+    Snap.load("/assets/images/icon.svg", function(f) {
+//Assign the white rectangle
+                whiteRect = f.select("#whiteRect");
+//Assign the whole icon group
+                icon = f.select("#icon");
+//When the icon is hovered over, have the white rectangle move up slightly with elastic properties
+                icon.hover(function() {
+        whiteRect.animate({y:270.0}, 500, mina.elastic);
+                },
+//And return to original position when not hovered over
+                           function() {
+        whiteRect.animate({y:276.82181}, 500, mina.elastic);
+      }
+                );
+//Finally append the icon to iconDiv in the body
+    s.append(f);
+    });
+  };
+</script>
+
+<!--Here's the DIV that will hold the animated SVG icon-->
+<div id="iconDiv"></div>
+
+<hr />
+
+<h3 id="standard-library-modules">Standard Library modules</h3>
+
+<ul>
+  <li>A Python installation comes with a set of standard library modules (around 200 modules) for various programming tasks like operating system interfaces (<code class="highlighter-rouge">os</code>, <code class="highlighter-rouge">sys</code>), object persistence, text pattern matching (<code class="highlighter-rouge">re</code>), network (<code class="highlighter-rouge">requests</code>) and Internet scripting, GUI construction (<code class="highlighter-rouge">tkinter</code>)</li>
+  <li>They are not part of the Python language, but come installed with a standard Python installation.</li>
+  <li>Due to the standard nature, they are expected to wok portably on most platforms.</li>
+</ul>
+
+<hr />
+
+<h3 id="how-imports-work">How imports work</h3>
+
+<ul>
+  <li>In contrast to C/C++ <code class="highlighter-rouge">#include</code>, which are textual insertions of file into another, Python’s <code class="highlighter-rouge">import</code> are runtime operations involving
+    <ul>
+      <li>Find the module’s files.</li>
+      <li>Compile it to byte code (if needed).</li>
+      <li>Run the module code to build the objects it defines.</li>
+    </ul>
+  </li>
+  <li>Finding the module involves searching the <em>module search path</em></li>
+  <li>On first import, the code is compiled to generate a byte code <code class="highlighter-rouge">.pyc</code> file. Unless the source code is modified, subsequent imports simply reuses the byte code.
+    <ul>
+      <li><code class="highlighter-rouge">.pyc</code> speed future imports.</li>
+      <li>Compilation happens when file is imported. So the top-level script file is usually not compiled. To have the script file both executed as well as imported, <code class="highlighter-rouge">__name__</code> and <code class="highlighter-rouge">__main__</code> are used.</li>
+    </ul>
+  </li>
+  <li>Running/executing the bytecode <strong>assigns</strong> names in the importee namespace to the attributes of the imported module object.</li>
+</ul>
+
+<hr />
+
+<h3 id="module-search-path">Module search path</h3>
+
+<p>Imports mention only the filename without extension, which is searched in a path formed by concatenation of following directories and the left most search result is taken as the file path.</p>
+
+<ul>
+  <li>home directory of the importee files.</li>
+  <li><code class="highlighter-rouge">PYTHONPATH</code> directories.</li>
+  <li>Standard library Modules.</li>
+  <li>.pth path file listing custom directories.</li>
+  <li>
+    <p><code class="highlighter-rouge">site-packages</code> subdirectory in the Python installation for listing the third-party extensions.</p>
+  </li>
+  <li>The module search path is assigned to <code class="highlighter-rouge">path</code> attribute of the <code class="highlighter-rouge">sys</code> standard modules</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sys</span>
+<span class="k">print</span> <span class="n">sys</span><span class="o">.</span><span class="n">path</span>
+</code></pre></div></div>
+
+<p>Since only the filename without extension is searched, an <code class="highlighter-rouge">import mod</code> can resolve to any of the following files:</p>
+<ul>
+  <li><em>mod.py</em> source code file.</li>
+  <li><em>mod.pyc</em> byte code file.</li>
+  <li><em>mod.pyo</em> optimized byte code file (Generated when the script is executed using <code class="highlighter-rouge">-O</code> flag).</li>
+  <li><em>mod.so</em> or <em>mod.dll</em> compiled extension module which is dynamically linked when imported.</li>
+  <li><em>mod</em> directory for package imports.</li>
+</ul>
+
+<hr />
+
+<h2 id="summary">Summary</h2>
+
+<p>The idea of structuring program is the <em>rationale</em> behind modules. Modules act as namespaces so that names in one module cannot be seen by another module, unless the former is imported. This Python Program architecture helps in dividing the logic into self-contained components. In addition to the home directory and standard library modules, custom modules can be searched via the module search path setting the <code class="highlighter-rouge">PYTHONPATH</code> environment variable or .pth files in top-level. While importing a module, Pythons allows freedom to choose from a variety of file extensions like .py, .pyc, .pyo, .so or a directory also (as we will see in the <a href="chapter-on-packages">next chapter</a>).</p>
+
+<p>This is a <a href="/2019/08/30/bananas.html">link</a>  that refers to past post.</p>
+
+<p>The permalink to this page is _posts/2019-09-14-Chapter22-Modules-The-Big-Picture.md</p>
+
+<p>This is an internal link in Jekyll <a href="#Module-search-path">Module Search-Path</a></p>
+
+
+  </body>
+</html>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-10-13T22:28:18+05:30</updated><id>/feed.xml</id><entry><title type="html">Python Scripts to set static or dynamic IP address</title><link href="/2019/09/30/Scripts-to-set-IP-Address-Statically-or-Dynamically.html" rel="alternate" type="text/html" title="Python Scripts to set static or dynamic  IP address" /><published>2019-09-30T00:00:00+05:30</published><updated>2019-09-30T00:00:00+05:30</updated><id>/2019/09/30/Scripts-to-set-IP-Address-Statically-or-Dynamically</id><content type="html" xml:base="/2019/09/30/Scripts-to-set-IP-Address-Statically-or-Dynamically.html">&lt;p&gt;The reason to set up a &lt;a href=&quot;/2019/08/25/ADSL-modem+router-as-WAP.html&quot;&gt;ADSL router as a switch&lt;/a&gt; was to enhance the WiFi signal at my office desk. However sometimes I need to switch back to the &lt;code class=&quot;highlighter-rouge&quot;&gt;iiscwlan&lt;/code&gt; WiFi interface when I move my laptop.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-10-13T23:06:46+05:30</updated><id>/feed.xml</id><entry><title type="html">Python Scripts to set static or dynamic IP address</title><link href="/2019/09/30/Scripts-to-set-IP-Address-Statically-or-Dynamically.html" rel="alternate" type="text/html" title="Python Scripts to set static or dynamic  IP address" /><published>2019-09-30T00:00:00+05:30</published><updated>2019-09-30T00:00:00+05:30</updated><id>/2019/09/30/Scripts-to-set-IP-Address-Statically-or-Dynamically</id><content type="html" xml:base="/2019/09/30/Scripts-to-set-IP-Address-Statically-or-Dynamically.html">&lt;p&gt;The reason to set up a &lt;a href=&quot;/2019/08/25/ADSL-modem+router-as-WAP.html&quot;&gt;ADSL router as a switch&lt;/a&gt; was to enhance the WiFi signal at my office desk. However sometimes I need to switch back to the &lt;code class=&quot;highlighter-rouge&quot;&gt;iiscwlan&lt;/code&gt; WiFi interface when I move my laptop.&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -110,7 +110,206 @@
 &lt;span class=&quot;n&quot;&gt;dhcpCommand&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'''netsh interface ip set address &quot;WiFi&quot; dhcp'''&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;command&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dhcpCommand&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;subprocess&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;command&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>fubar</name></author><summary type="html">The reason to set up a ADSL router as a switch was to enhance the WiFi signal at my office desk. However sometimes I need to switch back to the iiscwlan WiFi interface when I move my laptop. Setting dynamic IP Firstly my laptop WiFi adaptor has connected to the wololo WAP of the ADSL modem+router Disconnect from the wololo WAP Enable the WiFi interface to have DHCP enabled Get-NetAdapter -Name WiFi | Set-NetIPInterface -Dhcp Enabled Connect to the iiscwlan WAP. The DHCP server at 10.43.240.1 and 10.43.79.1 dynamically assigns 10.43.240.122 IP Address to the WiFi interface having index 17 and alias WiFi. Notice the DNS servers set to 10.16.25.13 and 10.16.25.15. However sometimes these are not set and need to be fetched from the DHCP servers Set-DnsClientServerAddress -InterfaceIndex 17 -ResetServerAddresses In this way, the IP set dynamically. Thats it! Setting static IP Run a powershell as an Administrator and check the interface index for the WiFi interface. The Interface has index 17 with alias WiFi. It is connected to the iiscwlan WAP using the IP address 10.43.240.122. GetNetIPConfiguration Disconnect from the iiscwlan WAP. To connect to the wololo WAP we need to know its network address. We know it belongs to 10.43.79.x network address with the available IP addresss starting from 10.43.79.16-255 as the router addresss is 10.43.79.1. Let us set the IP address of the WiFi interface to belong to this range. Let us reserve 10.43.79.16 for the desktop computer’s ethernet interface. New-NetIPAddress -InterfaceIndex 17 -IPAddress 10.43.79.17 -PrefixLength 24 -DefaultGateway 10.43.79.1 This pops a Windows System Error 87 which says that the default Gateway already exists. Let us remove the Default Gateway option and try again New-NetIPAddress -InterfaceIndex 17 -IPAddress 10.43.79.17 -PrefixLength 24 Again pops up an Windows System Error 87 To resolve this first connect to the wololo WAP then execute the command without the default gateway as already the previous iiscwlan WAP had the same default gateway 10.43.79.1 We need to set the DNS servers. Set-DnsClientServerAddress -InterfaceIndex 17 -ServerAddresses 10.16.25.13, 10.16.25.15 In this way, the IP set statically. Thats it! Setting the IP address dynamically using a Python script Entering these commands is useful. However due to the correct sequence required as well as accuracy requirements, it is better to have a script individually for the static or dynamic setting of IP addresses. Thanks to Python’s scripting capability to handle system command execution, we use the subprocess module for the task Python script to set Static IP #!python '''Script to set Static IP to the WiFi adaptor of laptop. so that it belongs to the same network address range as that of the WAP of the router configured to work like a switch.''' import subprocess staticIP = '''netsh interface ip set address name=&quot;WiFi&quot; static 10.43.79.17 255.255.255.0 10.43.79.1''' command1 = staticIP.split() subprocess.run(command1) staticDNS1 = '''netsh interface ip set dns name=&quot;WiFi&quot; static 10.16.25.13''' command2 = staticDNS1.split() subprocess.run(command2) staticDNS2 = '''netsh interface ip add dns name=&quot;WiFi&quot; 10.16.25.15 index=2''' command3 = staticDNS2.split() subprocess.run(command3) Python script to set Dynamic IP #!python '''Script to set Dynamic IP to the WiFi adaptor of laptop so that it auto configure to have an IP address that belongs to the same network address as that of the iiscwlan WAP.''' import subprocess dhcpCommand = '''netsh interface ip set address &quot;WiFi&quot; dhcp''' command = dhcpCommand.split() subprocess.run(command)</summary></entry><entry><title type="html">Apples</title><link href="/2019/08/31/apples.html" rel="alternate" type="text/html" title="Apples" /><published>2019-08-31T00:00:00+05:30</published><updated>2019-08-31T00:00:00+05:30</updated><id>/2019/08/31/apples</id><content type="html" xml:base="/2019/08/31/apples.html">&lt;p&gt;An apple is a sweet, edible fruit produced by an apple tree.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>fubar</name></author><summary type="html">The reason to set up a ADSL router as a switch was to enhance the WiFi signal at my office desk. However sometimes I need to switch back to the iiscwlan WiFi interface when I move my laptop. Setting dynamic IP Firstly my laptop WiFi adaptor has connected to the wololo WAP of the ADSL modem+router Disconnect from the wololo WAP Enable the WiFi interface to have DHCP enabled Get-NetAdapter -Name WiFi | Set-NetIPInterface -Dhcp Enabled Connect to the iiscwlan WAP. The DHCP server at 10.43.240.1 and 10.43.79.1 dynamically assigns 10.43.240.122 IP Address to the WiFi interface having index 17 and alias WiFi. Notice the DNS servers set to 10.16.25.13 and 10.16.25.15. However sometimes these are not set and need to be fetched from the DHCP servers Set-DnsClientServerAddress -InterfaceIndex 17 -ResetServerAddresses In this way, the IP set dynamically. Thats it! Setting static IP Run a powershell as an Administrator and check the interface index for the WiFi interface. The Interface has index 17 with alias WiFi. It is connected to the iiscwlan WAP using the IP address 10.43.240.122. GetNetIPConfiguration Disconnect from the iiscwlan WAP. To connect to the wololo WAP we need to know its network address. We know it belongs to 10.43.79.x network address with the available IP addresss starting from 10.43.79.16-255 as the router addresss is 10.43.79.1. Let us set the IP address of the WiFi interface to belong to this range. Let us reserve 10.43.79.16 for the desktop computer’s ethernet interface. New-NetIPAddress -InterfaceIndex 17 -IPAddress 10.43.79.17 -PrefixLength 24 -DefaultGateway 10.43.79.1 This pops a Windows System Error 87 which says that the default Gateway already exists. Let us remove the Default Gateway option and try again New-NetIPAddress -InterfaceIndex 17 -IPAddress 10.43.79.17 -PrefixLength 24 Again pops up an Windows System Error 87 To resolve this first connect to the wololo WAP then execute the command without the default gateway as already the previous iiscwlan WAP had the same default gateway 10.43.79.1 We need to set the DNS servers. Set-DnsClientServerAddress -InterfaceIndex 17 -ServerAddresses 10.16.25.13, 10.16.25.15 In this way, the IP set statically. Thats it! Setting the IP address dynamically using a Python script Entering these commands is useful. However due to the correct sequence required as well as accuracy requirements, it is better to have a script individually for the static or dynamic setting of IP addresses. Thanks to Python’s scripting capability to handle system command execution, we use the subprocess module for the task Python script to set Static IP #!python '''Script to set Static IP to the WiFi adaptor of laptop. so that it belongs to the same network address range as that of the WAP of the router configured to work like a switch.''' import subprocess staticIP = '''netsh interface ip set address name=&quot;WiFi&quot; static 10.43.79.17 255.255.255.0 10.43.79.1''' command1 = staticIP.split() subprocess.run(command1) staticDNS1 = '''netsh interface ip set dns name=&quot;WiFi&quot; static 10.16.25.13''' command2 = staticDNS1.split() subprocess.run(command2) staticDNS2 = '''netsh interface ip add dns name=&quot;WiFi&quot; 10.16.25.15 index=2''' command3 = staticDNS2.split() subprocess.run(command3) Python script to set Dynamic IP #!python '''Script to set Dynamic IP to the WiFi adaptor of laptop so that it auto configure to have an IP address that belongs to the same network address as that of the iiscwlan WAP.''' import subprocess dhcpCommand = '''netsh interface ip set address &quot;WiFi&quot; dhcp''' command = dhcpCommand.split() subprocess.run(command)</summary></entry><entry><title type="html">Fonts</title><link href="/2019/09/27/fonts.html" rel="alternate" type="text/html" title="Fonts" /><published>2019-09-27T00:00:00+05:30</published><updated>2019-09-27T00:00:00+05:30</updated><id>/2019/09/27/fonts</id><content type="html" xml:base="/2019/09/27/fonts.html">&lt;h2 id=&quot;history-of-fonts&quot;&gt;History of fonts&lt;/h2&gt;
+
+&lt;p&gt;The origin of fonts dates back to the Egyptian heiroglyphs. Heiroglyph (&lt;em&gt;heiros glypho&lt;/em&gt; meaning sacred carving) forms a set of symbols to represent ideas and emotions. From the symbolic representation of ideas, language was codified using alphabet to have more efficient representation. Alphabet is also a set of symbols. However, they differ from the heiroglyphs in the sense that instead of a single glyph representing a single idea in the case of heiroglyph, an ordered group of glyphs is used to represent an idea. This ordered group of glyph is called a &lt;strong&gt;word&lt;/strong&gt;. Since alphabet need to be carved just the same as heiroglyphs, alphabet provided a freedom of expression allowing slight modifications to the standard template or design allowing designers a medium for expressing sub-emotions and sub-culture. An alphabet with a specific collection of glyphs makes a &lt;strong&gt;font&lt;/strong&gt;. There are other characteristics to glyphs and placement of glyphs. Fonts can be classified based on some characteristics like common glyph template. Such grouping of fonts is called a &lt;strong&gt;typeface&lt;/strong&gt; or &lt;strong&gt;font-family&lt;/strong&gt;. So an &lt;strong&gt;Avenir Light Standard&lt;/strong&gt; belongs to the &lt;strong&gt;Avenir&lt;/strong&gt; typeface/font family which has other fonts like &lt;strong&gt;Avenir Book&lt;/strong&gt;, &lt;strong&gt;Avenir Condensed&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;font-categories&quot;&gt;Font categories&lt;/h2&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://en.wikipedia.org/wiki/Vox-ATypI_classification&quot;&gt;Vox-ATypl classification&lt;/a&gt; was first classification of the typefaces carried out in 1954 by Maximillien Vox organizing the typefaces into 10 general categories. Later British Standards based their type classification on the former system and categorized them into 3 classes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Classicals which subclassified into Humanist, Garaldes and Transitional&lt;/li&gt;
+  &lt;li&gt;Moderns which include Modern Serif, Slab Serif, Grotesque, Neo Grotesque, Geometric Sans, Humanist Sans Serif&lt;/li&gt;
+  &lt;li&gt;Calligraphics subdivided into Glyphyic, Script, Graphic, Blackletter and Gaelic&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;However this classification is subject to interpretation. Some resources classify based on the standard characteristics into Sans Serif, Serif, Slab Serif, Script, Display and Blackletter. &lt;a href=&quot;https://www.azfonts.net/&quot;&gt;A-Zfonts&lt;/a&gt; uses such classification.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;geometric-typefaces&quot;&gt;Geometric typefaces&lt;/h2&gt;
+
+&lt;p&gt;Geometric typefaces take inspiration from elements of geometry; circle, equilateral triangle and square. They are major-sub-classified into&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Geometric Sans which include Avenir, Futura&lt;/li&gt;
+  &lt;li&gt;Geometric Slab Serif include Rockwell, Memphis, Stymie&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;poster-typefaces&quot;&gt;Poster typefaces&lt;/h2&gt;
+
+&lt;h2 id=&quot;font-foundries&quot;&gt;Font foundries&lt;/h2&gt;
+
+&lt;p&gt;Adobe, Microsoft, Apple, Monotype are the major foundries.&lt;/p&gt;
+
+&lt;p&gt;Adobe’s famous typefaces include Futura, Helvetica, Avenir,&lt;/p&gt;
+
+&lt;p&gt;Monotype’s famous typefaces include Arial,&lt;/p&gt;</content><author><name>fubar</name></author><summary type="html">History of fonts The origin of fonts dates back to the Egyptian heiroglyphs. Heiroglyph (heiros glypho meaning sacred carving) forms a set of symbols to represent ideas and emotions. From the symbolic representation of ideas, language was codified using alphabet to have more efficient representation. Alphabet is also a set of symbols. However, they differ from the heiroglyphs in the sense that instead of a single glyph representing a single idea in the case of heiroglyph, an ordered group of glyphs is used to represent an idea. This ordered group of glyph is called a word. Since alphabet need to be carved just the same as heiroglyphs, alphabet provided a freedom of expression allowing slight modifications to the standard template or design allowing designers a medium for expressing sub-emotions and sub-culture. An alphabet with a specific collection of glyphs makes a font. There are other characteristics to glyphs and placement of glyphs. Fonts can be classified based on some characteristics like common glyph template. Such grouping of fonts is called a typeface or font-family. So an Avenir Light Standard belongs to the Avenir typeface/font family which has other fonts like Avenir Book, Avenir Condensed. Font categories The Vox-ATypl classification was first classification of the typefaces carried out in 1954 by Maximillien Vox organizing the typefaces into 10 general categories. Later British Standards based their type classification on the former system and categorized them into 3 classes: Classicals which subclassified into Humanist, Garaldes and Transitional Moderns which include Modern Serif, Slab Serif, Grotesque, Neo Grotesque, Geometric Sans, Humanist Sans Serif Calligraphics subdivided into Glyphyic, Script, Graphic, Blackletter and Gaelic However this classification is subject to interpretation. Some resources classify based on the standard characteristics into Sans Serif, Serif, Slab Serif, Script, Display and Blackletter. A-Zfonts uses such classification. Geometric typefaces Geometric typefaces take inspiration from elements of geometry; circle, equilateral triangle and square. They are major-sub-classified into Geometric Sans which include Avenir, Futura Geometric Slab Serif include Rockwell, Memphis, Stymie Poster typefaces Font foundries Adobe, Microsoft, Apple, Monotype are the major foundries. Adobe’s famous typefaces include Futura, Helvetica, Avenir, Monotype’s famous typefaces include Arial,</summary></entry><entry><title type="html">Chapter22 Modules The Big Picture</title><link href="/2019/09/14/Chapter22-Modules-The-Big-Picture.html" rel="alternate" type="text/html" title="Chapter22 Modules The Big Picture" /><published>2019-09-14T00:00:00+05:30</published><updated>2019-09-14T00:00:00+05:30</updated><id>/2019/09/14/Chapter22-Modules-The-Big-Picture</id><content type="html" xml:base="/2019/09/14/Chapter22-Modules-The-Big-Picture.html">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;In this chapter, the author introduces modules. Modules form the highest organization structure in a Python program. The &lt;em&gt;rationale&lt;/em&gt; behind modules lies in code reusability, a primary feature that Python &lt;em&gt;wants&lt;/em&gt; you to do. Using module as an example for &lt;em&gt;namespace&lt;/em&gt;, the author tries to drive home the point that a program is about managing namespaces, i.e. the space of names. This concept is revisted in other topics like &lt;a href=&quot;chapter-on-functions&quot;&gt;functions&lt;/a&gt; and &lt;a href=&quot;chapter-on-classes&quot;&gt;classes&lt;/a&gt;. This is followed by explaining the internal process when modules are imported, how existing modules are searched, and the freedom of type of module imported.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;module&quot;&gt;Module&lt;/h2&gt;
+
+&lt;h3 id=&quot;what-is-a-module&quot;&gt;What is a module?&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Modules serve as the &lt;strong&gt;highest organizational structure&lt;/strong&gt; in the architecture of a Python program. Essentially, a Python program is a system of modules.&lt;/li&gt;
+  &lt;li&gt;Modules are glorified namespaces.&lt;/li&gt;
+  &lt;li&gt;In concrete terms, a module typically corresponds to a Python file.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;why-use-a-module&quot;&gt;Why use a module?&lt;/h3&gt;
+
+&lt;p&gt;Code reuse&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Modules lets you save code in files permanently. So, code is &lt;em&gt;persistent&lt;/em&gt; unlike the code run in Python interactive prompt&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Namespace partitioning&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;As a self contained system of variables/names known as &lt;strong&gt;namespace&lt;/strong&gt;, module minimizes variable name clashes across the program.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Implementing shared services or metadata&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;A shared resources usually entails a single copy across the system. A module can serve to contain such shared resources like global variables.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;how-to-access-the-module-namespace&quot;&gt;How to access the module namespace?&lt;/h3&gt;
+
+&lt;p&gt;The names of a module &lt;em&gt;namespace&lt;/em&gt; can be accessed/imported by two statements and and one important function&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;import&lt;/code&gt; statement fetches a whole module.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;from&lt;/code&gt; statement fetches particular names from a module.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;imp.reload&lt;/code&gt; function reloads a module without stopping Python.
+All names defined at the top level of module file become attributes of the imported module object. In OOP jargon,&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;the module file’s global scope &lt;em&gt;morphs&lt;/em&gt; into the module object’s attribute namespace when it is imported.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;python-program-architecture&quot;&gt;Python Program architecture&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A program is a system of modules, with one main top-level file and zero or more supplemental files called &lt;em&gt;modules&lt;/em&gt;.&lt;/li&gt;
+  &lt;li&gt;The top-level file (a.k.a script) contains the main flow of control of the program.&lt;/li&gt;
+  &lt;li&gt;Modules are collections/libraries of tools to be used by the script.&lt;/li&gt;
+  &lt;li&gt;Script uses the tools defined in module files, and modules use tools defined in other modules.&lt;/li&gt;
+  &lt;li&gt;Module don’t do anything when run directly; they define the tools intended for use in other files.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#TODO&quot;&gt;TODO&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/path/to/architecture-image.png&quot; alt=&quot;Image: PythonProgramArchitecture&quot; /&gt;&lt;/p&gt;
+
+&lt;script&gt;
+//Run script right away
+  window.onload = function () {
+//We'll be appending the icon to this DIV later
+          var s = Snap(&quot;#iconDiv&quot;);
+//Have Snap load the SVG file
+    Snap.load(&quot;/assets/images/icon.svg&quot;, function(f) {
+//Assign the white rectangle
+                whiteRect = f.select(&quot;#whiteRect&quot;);
+//Assign the whole icon group
+                icon = f.select(&quot;#icon&quot;);
+//When the icon is hovered over, have the white rectangle move up slightly with elastic properties
+                icon.hover(function() {
+        whiteRect.animate({y:270.0}, 500, mina.elastic);
+                },
+//And return to original position when not hovered over
+                           function() {
+        whiteRect.animate({y:276.82181}, 500, mina.elastic);
+      }
+                );
+//Finally append the icon to iconDiv in the body
+    s.append(f);
+    });
+  };
+&lt;/script&gt;
+
+&lt;!--Here's the DIV that will hold the animated SVG icon--&gt;
+&lt;div id=&quot;iconDiv&quot;&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;standard-library-modules&quot;&gt;Standard Library modules&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A Python installation comes with a set of standard library modules (around 200 modules) for various programming tasks like operating system interfaces (&lt;code class=&quot;highlighter-rouge&quot;&gt;os&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;sys&lt;/code&gt;), object persistence, text pattern matching (&lt;code class=&quot;highlighter-rouge&quot;&gt;re&lt;/code&gt;), network (&lt;code class=&quot;highlighter-rouge&quot;&gt;requests&lt;/code&gt;) and Internet scripting, GUI construction (&lt;code class=&quot;highlighter-rouge&quot;&gt;tkinter&lt;/code&gt;)&lt;/li&gt;
+  &lt;li&gt;They are not part of the Python language, but come installed with a standard Python installation.&lt;/li&gt;
+  &lt;li&gt;Due to the standard nature, they are expected to wok portably on most platforms.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;how-imports-work&quot;&gt;How imports work&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;In contrast to C/C++ &lt;code class=&quot;highlighter-rouge&quot;&gt;#include&lt;/code&gt;, which are textual insertions of file into another, Python’s &lt;code class=&quot;highlighter-rouge&quot;&gt;import&lt;/code&gt; are runtime operations involving
+    &lt;ul&gt;
+      &lt;li&gt;Find the module’s files.&lt;/li&gt;
+      &lt;li&gt;Compile it to byte code (if needed).&lt;/li&gt;
+      &lt;li&gt;Run the module code to build the objects it defines.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Finding the module involves searching the &lt;em&gt;module search path&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;On first import, the code is compiled to generate a byte code &lt;code class=&quot;highlighter-rouge&quot;&gt;.pyc&lt;/code&gt; file. Unless the source code is modified, subsequent imports simply reuses the byte code.
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.pyc&lt;/code&gt; speed future imports.&lt;/li&gt;
+      &lt;li&gt;Compilation happens when file is imported. So the top-level script file is usually not compiled. To have the script file both executed as well as imported, &lt;code class=&quot;highlighter-rouge&quot;&gt;__name__&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;__main__&lt;/code&gt; are used.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Running/executing the bytecode &lt;strong&gt;assigns&lt;/strong&gt; names in the importee namespace to the attributes of the imported module object.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;module-search-path&quot;&gt;Module search path&lt;/h3&gt;
+
+&lt;p&gt;Imports mention only the filename without extension, which is searched in a path formed by concatenation of following directories and the left most search result is taken as the file path.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;home directory of the importee files.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;PYTHONPATH&lt;/code&gt; directories.&lt;/li&gt;
+  &lt;li&gt;Standard library Modules.&lt;/li&gt;
+  &lt;li&gt;.pth path file listing custom directories.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;site-packages&lt;/code&gt; subdirectory in the Python installation for listing the third-party extensions.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The module search path is assigned to &lt;code class=&quot;highlighter-rouge&quot;&gt;path&lt;/code&gt; attribute of the &lt;code class=&quot;highlighter-rouge&quot;&gt;sys&lt;/code&gt; standard modules&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sys&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sys&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Since only the filename without extension is searched, an &lt;code class=&quot;highlighter-rouge&quot;&gt;import mod&lt;/code&gt; can resolve to any of the following files:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;mod.py&lt;/em&gt; source code file.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;mod.pyc&lt;/em&gt; byte code file.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;mod.pyo&lt;/em&gt; optimized byte code file (Generated when the script is executed using &lt;code class=&quot;highlighter-rouge&quot;&gt;-O&lt;/code&gt; flag).&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;mod.so&lt;/em&gt; or &lt;em&gt;mod.dll&lt;/em&gt; compiled extension module which is dynamically linked when imported.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;mod&lt;/em&gt; directory for package imports.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
+
+&lt;p&gt;The idea of structuring program is the &lt;em&gt;rationale&lt;/em&gt; behind modules. Modules act as namespaces so that names in one module cannot be seen by another module, unless the former is imported. This Python Program architecture helps in dividing the logic into self-contained components. In addition to the home directory and standard library modules, custom modules can be searched via the module search path setting the &lt;code class=&quot;highlighter-rouge&quot;&gt;PYTHONPATH&lt;/code&gt; environment variable or .pth files in top-level. While importing a module, Pythons allows freedom to choose from a variety of file extensions like .py, .pyc, .pyo, .so or a directory also (as we will see in the &lt;a href=&quot;chapter-on-packages&quot;&gt;next chapter&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;This is a &lt;a href=&quot;/2019/08/30/bananas.html&quot;&gt;link&lt;/a&gt;  that refers to past post.&lt;/p&gt;
+
+&lt;p&gt;The permalink to this page is _posts/2019-09-14-Chapter22-Modules-The-Big-Picture.md&lt;/p&gt;
+
+&lt;p&gt;This is an internal link in Jekyll &lt;a href=&quot;#Module-search-path&quot;&gt;Module Search-Path&lt;/a&gt;&lt;/p&gt;</content><author><name>fubar</name></author><summary type="html">Introduction In this chapter, the author introduces modules. Modules form the highest organization structure in a Python program. The rationale behind modules lies in code reusability, a primary feature that Python wants you to do. Using module as an example for namespace, the author tries to drive home the point that a program is about managing namespaces, i.e. the space of names. This concept is revisted in other topics like functions and classes. This is followed by explaining the internal process when modules are imported, how existing modules are searched, and the freedom of type of module imported. Module What is a module? Modules serve as the highest organizational structure in the architecture of a Python program. Essentially, a Python program is a system of modules. Modules are glorified namespaces. In concrete terms, a module typically corresponds to a Python file. Why use a module? Code reuse Modules lets you save code in files permanently. So, code is persistent unlike the code run in Python interactive prompt Namespace partitioning As a self contained system of variables/names known as namespace, module minimizes variable name clashes across the program. Implementing shared services or metadata A shared resources usually entails a single copy across the system. A module can serve to contain such shared resources like global variables. How to access the module namespace? The names of a module namespace can be accessed/imported by two statements and and one important function import statement fetches a whole module. from statement fetches particular names from a module. imp.reload function reloads a module without stopping Python. All names defined at the top level of module file become attributes of the imported module object. In OOP jargon, the module file’s global scope morphs into the module object’s attribute namespace when it is imported. Python Program architecture A program is a system of modules, with one main top-level file and zero or more supplemental files called modules. The top-level file (a.k.a script) contains the main flow of control of the program. Modules are collections/libraries of tools to be used by the script. Script uses the tools defined in module files, and modules use tools defined in other modules. Module don’t do anything when run directly; they define the tools intended for use in other files. TODO Standard Library modules A Python installation comes with a set of standard library modules (around 200 modules) for various programming tasks like operating system interfaces (os, sys), object persistence, text pattern matching (re), network (requests) and Internet scripting, GUI construction (tkinter) They are not part of the Python language, but come installed with a standard Python installation. Due to the standard nature, they are expected to wok portably on most platforms. How imports work In contrast to C/C++ #include, which are textual insertions of file into another, Python’s import are runtime operations involving Find the module’s files. Compile it to byte code (if needed). Run the module code to build the objects it defines. Finding the module involves searching the module search path On first import, the code is compiled to generate a byte code .pyc file. Unless the source code is modified, subsequent imports simply reuses the byte code. .pyc speed future imports. Compilation happens when file is imported. So the top-level script file is usually not compiled. To have the script file both executed as well as imported, __name__ and __main__ are used. Running/executing the bytecode assigns names in the importee namespace to the attributes of the imported module object. Module search path Imports mention only the filename without extension, which is searched in a path formed by concatenation of following directories and the left most search result is taken as the file path. home directory of the importee files. PYTHONPATH directories. Standard library Modules. .pth path file listing custom directories. site-packages subdirectory in the Python installation for listing the third-party extensions. The module search path is assigned to path attribute of the sys standard modules import sys print sys.path Since only the filename without extension is searched, an import mod can resolve to any of the following files: mod.py source code file. mod.pyc byte code file. mod.pyo optimized byte code file (Generated when the script is executed using -O flag). mod.so or mod.dll compiled extension module which is dynamically linked when imported. mod directory for package imports. Summary The idea of structuring program is the rationale behind modules. Modules act as namespaces so that names in one module cannot be seen by another module, unless the former is imported. This Python Program architecture helps in dividing the logic into self-contained components. In addition to the home directory and standard library modules, custom modules can be searched via the module search path setting the PYTHONPATH environment variable or .pth files in top-level. While importing a module, Pythons allows freedom to choose from a variety of file extensions like .py, .pyc, .pyo, .so or a directory also (as we will see in the next chapter). This is a link that refers to past post. The permalink to this page is _posts/2019-09-14-Chapter22-Modules-The-Big-Picture.md/#excerpt This is an internal link in Jekyll Module Search-Path</summary></entry><entry><title type="html">Apples</title><link href="/2019/08/31/apples.html" rel="alternate" type="text/html" title="Apples" /><published>2019-08-31T00:00:00+05:30</published><updated>2019-08-31T00:00:00+05:30</updated><id>/2019/08/31/apples</id><content type="html" xml:base="/2019/08/31/apples.html">&lt;p&gt;An apple is a sweet, edible fruit produced by an apple tree.&lt;/p&gt;
 
 &lt;p&gt;Apple trees are cultivated worldwide, and are the most widely grown species in
 the genus Malus. The tree originated in Central Asia, where its wild ancestor,
