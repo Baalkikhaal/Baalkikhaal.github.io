@@ -1,4 +1,51 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-10-13T23:06:46+05:30</updated><id>/feed.xml</id><entry><title type="html">Python Scripts to set static or dynamic IP address</title><link href="/2019/09/30/Scripts-to-set-IP-Address-Statically-or-Dynamically.html" rel="alternate" type="text/html" title="Python Scripts to set static or dynamic  IP address" /><published>2019-09-30T00:00:00+05:30</published><updated>2019-09-30T00:00:00+05:30</updated><id>/2019/09/30/Scripts-to-set-IP-Address-Statically-or-Dynamically</id><content type="html" xml:base="/2019/09/30/Scripts-to-set-IP-Address-Statically-or-Dynamically.html">&lt;p&gt;The reason to set up a &lt;a href=&quot;/2019/08/25/ADSL-modem+router-as-WAP.html&quot;&gt;ADSL router as a switch&lt;/a&gt; was to enhance the WiFi signal at my office desk. However sometimes I need to switch back to the &lt;code class=&quot;highlighter-rouge&quot;&gt;iiscwlan&lt;/code&gt; WiFi interface when I move my laptop.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-10-13T23:26:17+05:30</updated><id>/feed.xml</id><entry><title type="html">Building a Jekyll Website</title><link href="/2019/10/13/Building-Jekyll-website.html" rel="alternate" type="text/html" title="Building a Jekyll Website" /><published>2019-10-13T00:00:00+05:30</published><updated>2019-10-13T00:00:00+05:30</updated><id>/2019/10/13/Building-Jekyll-website</id><content type="html" xml:base="/2019/10/13/Building-Jekyll-website.html">&lt;h1 id=&quot;what-is-jekyll&quot;&gt;What is jekyll?&lt;/h1&gt;
+
+&lt;h3 id=&quot;keywords-simple-static-blog-aware&quot;&gt;keywords: simple, static, blog aware&lt;/h3&gt;
+
+&lt;p&gt;Jekyll is a static site generator. It gives programmatic access to the various tools used for creating static websites. With a prime focus on handling static content, Jekyll, a Ruby gem provides objects to handle various elements present in a web page like&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;content structuring by the use of content asset variablizing (posts, interlinking and intra-linking between and within posts, authors, layout, includes, data, support for Markdown),&lt;/li&gt;
+  &lt;li&gt;content styling by the use of style asset variablizing  (CSS, SCSS, SASS) and&lt;/li&gt;
+  &lt;li&gt;multimedia asset handling by the use of global placeholders (for images, Java Scripts)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/static-assets.svg&quot; alt=&quot;Jekyll the Content Keeper&quot; title=&quot;Image taken from ... &quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Find the source of the above image #TODO&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-a-static-website&quot;&gt;What is a static website?&lt;/h2&gt;
+&lt;p&gt;In simple terms, static websites are read only websites. The tools required for such websites include but not limited to the standard web tools like HTML, CSS, JS. Historically, static websites generation involved tools used for making complex websites like databases for content handling, preprocessors for generating the HTML content using PHP, serving the content using server all combined in a package called LAMP (Linux Apache MySQL PHP), WAMP (Windows Apache MySQL PHP). Howver, this posed high maintenance overhead in terms of security, upgradation. As a website administrator, a simple no-frills solution with source code based on simple text files was a great boon. Jekyll is one among the new generation of static site generators.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-a-dynamic-website&quot;&gt;What is a dynamic website?&lt;/h2&gt;
+&lt;p&gt;Responsive websites which have forms, have preprocessing tools liks PHP&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;what-jekyll-is-not&quot;&gt;What Jekyll is &lt;strong&gt;not&lt;/strong&gt;?&lt;/h1&gt;
+
+&lt;p&gt;Jekyll cannot generator responsive websites. Webpages that enable server side heavy duty programming tasks like cloud computation (what it is #TODO), graphic rendering. As such, it is intended to make websites which are read only, journal keeping as typical in  the case of Wordpress-based webpages.&lt;/p&gt;
+
+&lt;p&gt;Responsiveness from readers can be added in the form of widgets like Disqus widgets. which essentially is a link to the disqus server that does the processing. My feeling is that a java script handles such responses.&lt;/p&gt;
+
+&lt;p&gt;In that way, Jekyll can partially generate responsive websites with the help of JS&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;which-jekyll&quot;&gt;Which Jekyll?&lt;/h1&gt;
+
+&lt;p&gt;Jekyll v4 is production ready using HTML5, CSS3 and JS(version ?).&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;why-jekyll-why-not-others&quot;&gt;Why Jekyll? Why not others?&lt;/h1&gt;
+
+&lt;p&gt;Other static generators like Python based Zim Desktop wiki also generate static sites. However Jekyll offers a seamless integration of desktop and web interfaces in the form of support for Markdown, version control using Git and easy deployment to GitHub for web hosting, and content editing using Atom text editor.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;what-are-static-assets&quot;&gt;What are static assets?&lt;/h1&gt;
+
+&lt;p&gt;HTML, CSS, JS&lt;/p&gt;</content><author><name>fubar</name></author><summary type="html">What is jekyll? keywords: simple, static, blog aware Jekyll is a static site generator. It gives programmatic access to the various tools used for creating static websites. With a prime focus on handling static content, Jekyll, a Ruby gem provides objects to handle various elements present in a web page like content structuring by the use of content asset variablizing (posts, interlinking and intra-linking between and within posts, authors, layout, includes, data, support for Markdown), content styling by the use of style asset variablizing (CSS, SCSS, SASS) and multimedia asset handling by the use of global placeholders (for images, Java Scripts) Find the source of the above image #TODO What is a static website? In simple terms, static websites are read only websites. The tools required for such websites include but not limited to the standard web tools like HTML, CSS, JS. Historically, static websites generation involved tools used for making complex websites like databases for content handling, preprocessors for generating the HTML content using PHP, serving the content using server all combined in a package called LAMP (Linux Apache MySQL PHP), WAMP (Windows Apache MySQL PHP). Howver, this posed high maintenance overhead in terms of security, upgradation. As a website administrator, a simple no-frills solution with source code based on simple text files was a great boon. Jekyll is one among the new generation of static site generators. What is a dynamic website? Responsive websites which have forms, have preprocessing tools liks PHP What Jekyll is not? Jekyll cannot generator responsive websites. Webpages that enable server side heavy duty programming tasks like cloud computation (what it is #TODO), graphic rendering. As such, it is intended to make websites which are read only, journal keeping as typical in the case of Wordpress-based webpages. Responsiveness from readers can be added in the form of widgets like Disqus widgets. which essentially is a link to the disqus server that does the processing. My feeling is that a java script handles such responses. In that way, Jekyll can partially generate responsive websites with the help of JS Which Jekyll? Jekyll v4 is production ready using HTML5, CSS3 and JS(version ?). Why Jekyll? Why not others? Other static generators like Python based Zim Desktop wiki also generate static sites. However Jekyll offers a seamless integration of desktop and web interfaces in the form of support for Markdown, version control using Git and easy deployment to GitHub for web hosting, and content editing using Atom text editor. What are static assets? HTML, CSS, JS</summary></entry><entry><title type="html">Python Scripts to set static or dynamic IP address</title><link href="/2019/09/30/Scripts-to-set-IP-Address-Statically-or-Dynamically.html" rel="alternate" type="text/html" title="Python Scripts to set static or dynamic  IP address" /><published>2019-09-30T00:00:00+05:30</published><updated>2019-09-30T00:00:00+05:30</updated><id>/2019/09/30/Scripts-to-set-IP-Address-Statically-or-Dynamically</id><content type="html" xml:base="/2019/09/30/Scripts-to-set-IP-Address-Statically-or-Dynamically.html">&lt;p&gt;The reason to set up a &lt;a href=&quot;/2019/08/25/ADSL-modem+router-as-WAP.html&quot;&gt;ADSL router as a switch&lt;/a&gt; was to enhance the WiFi signal at my office desk. However sometimes I need to switch back to the &lt;code class=&quot;highlighter-rouge&quot;&gt;iiscwlan&lt;/code&gt; WiFi interface when I move my laptop.&lt;/p&gt;
 
 &lt;hr /&gt;
 

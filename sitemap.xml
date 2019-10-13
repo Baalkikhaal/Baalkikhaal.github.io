@@ -2,15 +2,15 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/authors/fubar.html</loc>
-<lastmod>2019-10-13T23:06:46+05:30</lastmod>
+<lastmod>2019-10-13T23:26:17+05:30</lastmod>
 </url>
 <url>
 <loc>/authors/jill.html</loc>
-<lastmod>2019-10-13T23:06:46+05:30</lastmod>
+<lastmod>2019-10-13T23:26:17+05:30</lastmod>
 </url>
 <url>
 <loc>/authors/ted.html</loc>
-<lastmod>2019-10-13T23:06:46+05:30</lastmod>
+<lastmod>2019-10-13T23:26:17+05:30</lastmod>
 </url>
 <url>
 <loc>/2019/08/25/ADSL-modem+router-as-WAP.html</loc>
@@ -35,6 +35,10 @@
 <url>
 <loc>/2019/09/30/Scripts-to-set-IP-Address-Statically-or-Dynamically.html</loc>
 <lastmod>2019-09-30T00:00:00+05:30</lastmod>
+</url>
+<url>
+<loc>/2019/10/13/Building-Jekyll-website.html</loc>
+<lastmod>2019-10-13T00:00:00+05:30</lastmod>
 </url>
 <url>
 <loc>/about.html</loc>
