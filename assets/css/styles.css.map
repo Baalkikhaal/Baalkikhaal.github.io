@@ -6,9 +6,9 @@
 		"_sass/main.scss"
 	],
 	"sourcesContent": [
-		"@import \"main\";\r\n",
+		"@import \"main\";\r\n\r\n.fit-picture {\r\n    width: 250px;\r\n    background-color: black;\r\n    padding: 5px;\r\n}\r\n\r\np {\r\n    color:blue;\r\n}\r\n\r\na:link {\r\n  color: pink;\r\n}\r\n\r\na:hover {\r\n  text-decoration: none;\r\n}\r\n\r\n.Headnote {\r\n    background: rebeccapurple;\r\n}\r\n\r\n.navigation {\r\n    font-size: 200%;\r\n    background: orange;\r\n}\r\n\r\n.navigation-tags {\r\n    font-size: 150%;\r\n    background: green;\r\n}\r\n",
 		"@import \"native.css\";   /* Pygments (deprecated and not supported in Jekyll 4; superseded by Ruby's own Rouge) module stylesheet for syntax highlighting. Refer: [Tags Filters](https://jekyllrb.com/docs/liquid/tags/#stylesheets-for-syntax-highlighting) */\r\n"
 	],
 	"names": [],
-	"mappings": "ACAA,OAAO,CAAP,eAAO;AAAiB,sOAAsO"
+	"mappings": "ACAA,OAAO,CAAP,eAAO;AAAiB,sOAAsO;ADE9P,AAAA,YAAY,CAAC,EACT,KAAK,EAAE,KAAK,EACZ,gBAAgB,EAAE,KAAK,EACvB,OAAO,EAAE,GAAG,GACf;;AAED,AAAA,CAAC,CAAC,EACE,KAAK,EAAC,IAAI,GACb;;AAED,AAAA,CAAC,AAAA,KAAK,CAAC,EACL,KAAK,EAAE,IAAI,GACZ;;AAED,AAAA,CAAC,AAAA,MAAM,CAAC,EACN,eAAe,EAAE,IAAI,GACtB;;AAED,AAAA,SAAS,CAAC,EACN,UAAU,EAAE,aAAa,GAC5B;;AAED,AAAA,WAAW,CAAC,EACR,SAAS,EAAE,IAAI,EACf,UAAU,EAAE,MAAM,GACrB;;AAED,AAAA,gBAAgB,CAAC,EACb,SAAS,EAAE,IAAI,EACf,UAAU,EAAE,KAAK,GACpB"
 }

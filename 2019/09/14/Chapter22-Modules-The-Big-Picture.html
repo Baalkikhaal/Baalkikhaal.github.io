@@ -24,7 +24,8 @@
 
   </head>
   <body>
-    <nav>
+    <nav class=navigation>
+    <p>Site Navigation</p>
   
     <a href="/" >Home</a>
   
@@ -34,16 +35,48 @@
   
     <a href="/staff.html" >Staff</a>
   
+
 </nav>
 
-    <h1>Chapter22 Modules The Big Picture</h1>
-<p>
+<nav class=navigation-tags>
+    <p>Post Tags</p>
+    
+        <a href="/physics.html"
+           
+        >
+           physics
+        </a>
+    
+        <a href="/programming.html"
+           
+        >
+           programming
+        </a>
+    
+        <a href="/nature.html"
+           
+        >
+           nature
+        </a>
+    
+ </nav>
+
+<img class="fit-picture"
+     src="assets/images/SwamiVivekananda.png"
+     alt="Swami Vivekananda">
+
+    <h1 class="Headnote">Chapter22 Modules The Big Picture</h1>
+<p >
   14 Sep 2019 - fubar
   
   
     - <a href="/authors/fubar.html">Sreekar Guddeti</a>
   
 </p>
+
+
+
+
 
 <h2 id="introduction">Introduction</h2>
 <p>In this chapter, the author introduces modules. Modules form the highest organization structure in a Python program. The <em>rationale</em> behind modules lies in code reusability, a primary feature that Python <em>wants</em> you to do. Using module as an example for <em>namespace</em>, the author tries to drive home the point that a program is about managing namespaces, i.e. the space of names. This concept is revisted in other topics like <a href="chapter-on-functions">functions</a> and <a href="chapter-on-classes">classes</a>. This is followed by explaining the internal process when modules are imported, how existing modules are searched, and the freedom of type of module imported.</p>

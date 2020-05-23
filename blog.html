@@ -19,7 +19,8 @@
 
   </head>
   <body>
-    <nav>
+    <nav class=navigation>
+    <p>Site Navigation</p>
   
     <a href="/" >Home</a>
   
@@ -29,14 +30,81 @@
   
     <a href="/staff.html" >Staff</a>
   
+
 </nav>
+
+<nav class=navigation-tags>
+    <p>Post Tags</p>
+    
+        <a href="/physics.html"
+           
+        >
+           physics
+        </a>
+    
+        <a href="/programming.html"
+           
+        >
+           programming
+        </a>
+    
+        <a href="/nature.html"
+           
+        >
+           nature
+        </a>
+    
+ </nav>
+
+<img class="fit-picture"
+     src="assets/images/SwamiVivekananda.png"
+     alt="Swami Vivekananda">
 
     <h1>Latest Posts</h1>
 
 <ul>
     
         <li>
-            <h2><a href="/2019/10/21/Interface-VISA-hardware-with-Windows-using-Python.html">Interface Visa Hardware With Windows Using Python</a></h2>
+            <h2><a href="/2020/05/24/spintronics.html">Introducing Spintronics</a></h2>
+            <p><h1 id="spintronics">Spintronics</h1>
+
+<p>We utilize the spin degree of freedom of the electron.</p>
+
+<h2 id="references">References</h2>
+
+<ul>
+  <li>Maekawa Spin Electronics</li>
+  <li>Marrows</li>
+  <li>JAC Bland</li>
+</ul>
+</p>
+        </li>
+    
+        <li>
+            <h2><a href="/2020/05/23/Git-Command-Cheat-Sheet.html">Cheat sheet for GIT</a></h2>
+            <p><h1 id="beginner-level-git-command-cheat-sheet">Beginner level GIT command cheat sheet</h1>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;local/dir/path&gt;$git clone &lt;path/to/repository&gt;
+</code></pre></div></div>
+
+<p>This accesses the remote git repository and clones it at the local directory path <code class="highlighter-rouge">&lt;local/dir/path&gt;</code></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$git restore .
+</code></pre></div></div>
+
+<p>Suppose you did some changes to existing files and now intend have a clean slate of the working directory restored upto the last commit. As long as you have not done a commit yet, you are safe simply use the <code class="highlighter-rouge">restore</code> command to erase the modifications.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$git clean [-n] [-f] [-d]
+</code></pre></div></div>
+
+<p>If you have added new files which are not yet tracked then restore will not work. You need to use <code class="highlighter-rouge">clean</code> command. The <code class="highlighter-rouge">-n</code> flag will list the files that can be possibly cleaned if the <code class="highlighter-rouge">-f</code> flag is used. So <code class="highlighter-rouge">-f</code> will clean the files whereas <code class="highlighter-rouge">-d</code> will clean the directories. This is useful when you do an error in copying files to the working directory and dont intend to keep the files.</p>
+
+<p>This is taken from this <a href="https://stackoverflow.com/questions/61212/how-to-remove-local-untracked-files-from-the-current-git-working-tree">SO post</a>.</p>
+</p>
+        </li>
+    
+        <li>
+            <h2><a href="/2019/10/21/Interface-VISA-hardware-with-Windows-using-Python.html">pyVISA on Windows</a></h2>
             <p><h1 id="howto-interface-visa-compatible-hardware-using-python">HOWTO interface VISA compatible hardware using Python</h1>
 
 <h1 id="history-of-visa">History of VISA</h1>
@@ -331,7 +399,7 @@ This check is optional and needed only if one is not sure if the drivers and VIS
 </span><span class="s">'''Script to set Dynamic IP to the WiFi adaptor of laptop
  so that it auto configure to have an IP address that
  belongs to the same network address as that of the iiscwlan WAP.'''</span>
- 
+
 <span class="kn">import</span> <span class="nn">subprocess</span>
 <span class="n">dhcpCommand</span> <span class="o">=</span> <span class="s">'''netsh interface ip set address "WiFi" dhcp'''</span>
 <span class="n">command</span> <span class="o">=</span> <span class="n">dhcpCommand</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
@@ -341,7 +409,7 @@ This check is optional and needed only if one is not sure if the drivers and VIS
         </li>
     
         <li>
-            <h2><a href="/2019/09/27/fonts.html">Fonts</a></h2>
+            <h2><a href="/2019/09/27/fonts.html">History of fonts</a></h2>
             <p><h2 id="history-of-fonts">History of fonts</h2>
 
 <p>The origin of fonts dates back to the Egyptian heiroglyphs. Heiroglyph (<em>heiros glypho</em> meaning sacred carving) forms a set of symbols to represent ideas and emotions. From the symbolic representation of ideas, language was codified using alphabet to have more efficient representation. Alphabet is also a set of symbols. However, they differ from the heiroglyphs in the sense that instead of a single glyph representing a single idea in the case of heiroglyph, an ordered group of glyphs is used to represent an idea. This ordered group of glyph is called a <strong>word</strong>. Since alphabet need to be carved just the same as heiroglyphs, alphabet provided a freedom of expression allowing slight modifications to the standard template or design allowing designers a medium for expressing sub-emotions and sub-culture. An alphabet with a specific collection of glyphs makes a <strong>font</strong>. There are other characteristics to glyphs and placement of glyphs. Fonts can be classified based on some characteristics like common glyph template. Such grouping of fonts is called a <strong>typeface</strong> or <strong>font-family</strong>. So an <strong>Avenir Light Standard</strong> belongs to the <strong>Avenir</strong> typeface/font family which has other fonts like <strong>Avenir Book</strong>, <strong>Avenir Condensed</strong>.</p>
@@ -552,7 +620,7 @@ All names defined at the top level of module file become attributes of the impor
         </li>
     
         <li>
-            <h2><a href="/2019/08/31/apples.html">Apples</a></h2>
+            <h2><a href="/2019/08/31/apples.html">On apples!</a></h2>
             <p><p>An apple is a sweet, edible fruit produced by an apple tree.</p>
 
 <p>Apple trees are cultivated worldwide, and are the most widely grown species in
@@ -564,7 +632,7 @@ colonists.</p>
         </li>
     
         <li>
-            <h2><a href="/2019/08/30/bananas.html">Bananas</a></h2>
+            <h2><a href="/2019/08/30/bananas.html">On bananas!</a></h2>
             <p><p>A banana is an edible fruit – botanically a berry – produced by several kinds
 of large herbaceous flowering plants in the genus Musa.</p>
 
@@ -738,6 +806,35 @@ DNS server</p>
 <h1 id="references"><strong>References:</strong></h1>
 
 <p><a href="https://pureinfotech.com/set-static-ip-address-windows-10/">How to set IP address manually in Windows</a></p>
+</p>
+        </li>
+    
+        <li>
+            <h2><a href="/2016/07/24/Trip-to-Shravanabelagola.html">Trip to Kudremukh and Shravanabelagola</a></h2>
+            <p><h1 id="trip-to-kudremukh-and-shravanabelagola">Trip to Kudremukh and Shravanabelagola</h1>
+
+<ul>
+  <li>Jainendra Jain :
+    <ul>
+      <li>Kudremukh Guide</li>
+      <li>08277279972</li>
+      <li>Jeep service from Balgal to Basepoint(Mullodi) and return 600 Rs per trip.</li>
+    </ul>
+  </li>
+  <li>Aruna Homestay:
+    <ul>
+      <li>9481578065, 8277279970, 08263-214235</li>
+      <li>Overnight stay with Breakfast, packed lunch, dinner and send off breakfast 600 Rs Per head , 100 extra for non-veg.</li>
+    </ul>
+  </li>
+  <li>Mullodi House HomeStay:
+    <ul>
+      <li>Rajappa Gowda</li>
+      <li>Overnight stay</li>
+      <li>800 rs per head for Veg</li>
+    </ul>
+  </li>
+</ul>
 </p>
         </li>
     

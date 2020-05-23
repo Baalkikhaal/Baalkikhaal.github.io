@@ -24,7 +24,8 @@
 
   </head>
   <body>
-    <nav>
+    <nav class=navigation>
+    <p>Site Navigation</p>
   
     <a href="/" >Home</a>
   
@@ -34,16 +35,48 @@
   
     <a href="/staff.html" >Staff</a>
   
+
 </nav>
 
-    <h1>Python Scripts to set static or dynamic  IP address</h1>
-<p>
+<nav class=navigation-tags>
+    <p>Post Tags</p>
+    
+        <a href="/physics.html"
+           
+        >
+           physics
+        </a>
+    
+        <a href="/programming.html"
+           
+        >
+           programming
+        </a>
+    
+        <a href="/nature.html"
+           
+        >
+           nature
+        </a>
+    
+ </nav>
+
+<img class="fit-picture"
+     src="assets/images/SwamiVivekananda.png"
+     alt="Swami Vivekananda">
+
+    <h1 class="Headnote">Python Scripts to set static or dynamic  IP address</h1>
+<p >
   30 Sep 2019 - fubar
   
   
     - <a href="/authors/fubar.html">Sreekar Guddeti</a>
   
 </p>
+
+
+
+
 
 <p>The reason to set up a <a href="/2019/08/25/ADSL-modem+router-as-WAP.html">ADSL router as a switch</a> was to enhance the WiFi signal at my office desk. However sometimes I need to switch back to the <code class="highlighter-rouge">iiscwlan</code> WiFi interface when I move my laptop.</p>
 
@@ -152,7 +185,7 @@
 </span><span class="s">'''Script to set Dynamic IP to the WiFi adaptor of laptop
  so that it auto configure to have an IP address that
  belongs to the same network address as that of the iiscwlan WAP.'''</span>
- 
+
 <span class="kn">import</span> <span class="nn">subprocess</span>
 <span class="n">dhcpCommand</span> <span class="o">=</span> <span class="s">'''netsh interface ip set address "WiFi" dhcp'''</span>
 <span class="n">command</span> <span class="o">=</span> <span class="n">dhcpCommand</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>

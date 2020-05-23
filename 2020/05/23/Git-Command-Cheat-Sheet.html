@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cheat sheet for GIT</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="javascript" href="/js/snap.svg-min.js">
+    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" />
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Cheat sheet for GIT</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Cheat sheet for GIT" />
+<meta name="author" content="fubar" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Beginner level GIT command cheat sheet &lt;local/dir/path&gt;$git clone &lt;path/to/repository&gt; This accesses the remote git repository and clones it at the local directory path &lt;local/dir/path&gt; $git restore . Suppose you did some changes to existing files and now intend have a clean slate of the working directory restored upto the last commit. As long as you have not done a commit yet, you are safe simply use the restore command to erase the modifications. $git clean [-n] [-f] [-d] If you have added new files which are not yet tracked then restore will not work. You need to use clean command. The -n flag will list the files that can be possibly cleaned if the -f flag is used. So -f will clean the files whereas -d will clean the directories. This is useful when you do an error in copying files to the working directory and dont intend to keep the files. This is taken from this SO post." />
+<meta property="og:description" content="Beginner level GIT command cheat sheet &lt;local/dir/path&gt;$git clone &lt;path/to/repository&gt; This accesses the remote git repository and clones it at the local directory path &lt;local/dir/path&gt; $git restore . Suppose you did some changes to existing files and now intend have a clean slate of the working directory restored upto the last commit. As long as you have not done a commit yet, you are safe simply use the restore command to erase the modifications. $git clean [-n] [-f] [-d] If you have added new files which are not yet tracked then restore will not work. You need to use clean command. The -n flag will list the files that can be possibly cleaned if the -f flag is used. So -f will clean the files whereas -d will clean the directories. This is useful when you do an error in copying files to the working directory and dont intend to keep the files. This is taken from this SO post." />
+<link rel="canonical" href="http://localhost:4000/2020/05/23/Git-Command-Cheat-Sheet.html" />
+<meta property="og:url" content="http://localhost:4000/2020/05/23/Git-Command-Cheat-Sheet.html" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-05-23T00:00:00+05:30" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","headline":"Cheat sheet for GIT","dateModified":"2020-05-23T00:00:00+05:30","url":"http://localhost:4000/2020/05/23/Git-Command-Cheat-Sheet.html","datePublished":"2020-05-23T00:00:00+05:30","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2020/05/23/Git-Command-Cheat-Sheet.html"},"author":{"@type":"Person","name":"fubar"},"description":"Beginner level GIT command cheat sheet &lt;local/dir/path&gt;$git clone &lt;path/to/repository&gt; This accesses the remote git repository and clones it at the local directory path &lt;local/dir/path&gt; $git restore . Suppose you did some changes to existing files and now intend have a clean slate of the working directory restored upto the last commit. As long as you have not done a commit yet, you are safe simply use the restore command to erase the modifications. $git clean [-n] [-f] [-d] If you have added new files which are not yet tracked then restore will not work. You need to use clean command. The -n flag will list the files that can be possibly cleaned if the -f flag is used. So -f will clean the files whereas -d will clean the directories. This is useful when you do an error in copying files to the working directory and dont intend to keep the files. This is taken from this SO post.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+  <body>
+    <nav class=navigation>
+    <p>Site Navigation</p>
+  
+    <a href="/" >Home</a>
+  
+    <a href="/about.html" >About</a>
+  
+    <a href="/blog.html" >Blog</a>
+  
+    <a href="/staff.html" >Staff</a>
+  
+
+</nav>
+
+<nav class=navigation-tags>
+    <p>Post Tags</p>
+    
+        <a href="/physics.html"
+           
+        >
+           physics
+        </a>
+    
+        <a href="/programming.html"
+           
+        >
+           programming
+        </a>
+    
+        <a href="/nature.html"
+           
+        >
+           nature
+        </a>
+    
+ </nav>
+
+<img class="fit-picture"
+     src="assets/images/SwamiVivekananda.png"
+     alt="Swami Vivekananda">
+
+    <h1 class="Headnote">Cheat sheet for GIT</h1>
+<p >
+  23 May 2020 - fubar
+  
+  
+    - <a href="/authors/fubar.html">Sreekar Guddeti</a>
+  
+</p>
+
+
+
+
+
+<h1 id="beginner-level-git-command-cheat-sheet">Beginner level GIT command cheat sheet</h1>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;local/dir/path&gt;$git clone &lt;path/to/repository&gt;
+</code></pre></div></div>
+
+<p>This accesses the remote git repository and clones it at the local directory path <code class="highlighter-rouge">&lt;local/dir/path&gt;</code></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$git restore .
+</code></pre></div></div>
+
+<p>Suppose you did some changes to existing files and now intend have a clean slate of the working directory restored upto the last commit. As long as you have not done a commit yet, you are safe simply use the <code class="highlighter-rouge">restore</code> command to erase the modifications.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$git clean [-n] [-f] [-d]
+</code></pre></div></div>
+
+<p>If you have added new files which are not yet tracked then restore will not work. You need to use <code class="highlighter-rouge">clean</code> command. The <code class="highlighter-rouge">-n</code> flag will list the files that can be possibly cleaned if the <code class="highlighter-rouge">-f</code> flag is used. So <code class="highlighter-rouge">-f</code> will clean the files whereas <code class="highlighter-rouge">-d</code> will clean the directories. This is useful when you do an error in copying files to the working directory and dont intend to keep the files.</p>
+
+<p>This is taken from this <a href="https://stackoverflow.com/questions/61212/how-to-remove-local-untracked-files-from-the-current-git-working-tree">SO post</a>.</p>
+
+
+  </body>
+</html>
