@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Trace Bitmap tool in Inkscape: A tutorial</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="javascript" href="/js/snap.svg-min.js">
+    <link type="application/atom+xml" rel="alternate" href="/feed.xml" />
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Trace Bitmap tool in Inkscape: A tutorial</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Trace Bitmap tool in Inkscape: A tutorial" />
+<meta name="author" content="fubar" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Let us use Trace Bitmap tool of Path toolset to generate vectorized versions of raster images" />
+<meta property="og:description" content="Let us use Trace Bitmap tool of Path toolset to generate vectorized versions of raster images" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-05-24T00:00:00+05:30" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","url":"/2020/05/24/trace-bitmap-in-inkscape.html","headline":"Trace Bitmap tool in Inkscape: A tutorial","dateModified":"2020-05-24T00:00:00+05:30","datePublished":"2020-05-24T00:00:00+05:30","mainEntityOfPage":{"@type":"WebPage","@id":"/2020/05/24/trace-bitmap-in-inkscape.html"},"author":{"@type":"Person","name":"fubar"},"description":"Let us use Trace Bitmap tool of Path toolset to generate vectorized versions of raster images","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+  <body>
+    <nav class=navigation>
+    <p>Site Navigation</p>
+  
+    <a href="/" >Home</a>
+  
+    <a href="/about.html" >About</a>
+  
+    <a href="/blog.html" >Blog</a>
+  
+    <a href="/staff.html" >Staff</a>
+  
+
+</nav>
+
+<nav class=navigation-tags>
+    <p>Post Tags</p>
+    
+        <a href="/physics.html"
+           
+        >
+           physics
+        </a>
+    
+        <a href="/programming.html"
+           
+        >
+           programming
+        </a>
+    
+        <a href="/nature.html"
+           
+        >
+           nature
+        </a>
+    
+ </nav>
+
+<img class="fit-picture"
+     src="assets/images/SwamiVivekananda.png"
+     alt="Swami Vivekananda">
+
+    <h1 class="Headnote">Trace Bitmap tool in Inkscape: A tutorial</h1>
+<p >
+  24 May 2020 - fubar
+  
+  
+    - <a href="/authors/fubar.html">Sreekar Guddeti</a>
+  
+</p>
+
+<div class="box">
+<img src="/assets/images/Inkscape/TraceBitMap_08.png" alt="boats-and-lake" width="150px" />
+</div>
+
+<h2 id="abstract">Abstract</h2>
+
+<p>One of the beautiful tools of Inkscape is to generate vectorized versions of raster images formats like <code class="highlighter-rouge">.png</code>, <code class="highlighter-rouge">.jpg</code>. This is a simple tutorial to demonstrate the workflow. For the demonstration, we will use any of the daily updated Windows Welcome Screen. When we log in to the Windows, the Welcome Screen shows a beautiful landscape and we can vote for the daily update. Depending on our tastes, Windows selects a particular genre for the images. My inclination is towards nature imagery, without the presence of human derived structures or humans itself. Now to access the location where the images are stored is a bit tricky. After following the tutorial on <a href="https://www.laptopmag.com/articles/find-windows-10-lock-screen-pictures">Windows 10 Spotlight LockScreen pictures</a>, I could access my laptop’s welcome screen images. I created a desktop shortcut to the location for easy access in the future. Let’s get started with generating the vectorized version of one of these beautiful curated sceneries.</p>
+
+<h2 id="trace-bitmap-tutorial">Trace BitMap Tutorial</h2>
+
+<p>Firstly import the <code class="highlighter-rouge">.png</code> or <code class="highlighter-rouge">.jpg</code> into a new Inkscape project. The productivity in using Inkscape is enhanced by using shortcuts. Slowly with experience, one gets used to the shortcuts. For importing, use <code class="highlighter-rouge">Ctrl+I</code>.</p>
+
+<p><img src="/assets/images/Inkscape/TraceBitMap_00.png" alt="import-image" /></p>
+
+<p>In the <code class="highlighter-rouge">Path</code> menu item, select <code class="highlighter-rouge">Trace BitMap</code> tool. You have the option of creating single scan or multiple scans. A single scan creates a single path object and multiple scan creates group of paths. Create a multiple scan with 8 reduced colors. The algorithm appropriately chooses the reduced colors from the color spectrum of the image.</p>
+
+<p><img src="/assets/images/Inkscape/TraceBitMap_01.png" alt="trace-bitmap-dialog-options" /></p>
+
+<p>The vector image is a group of 8 paths.</p>
+
+<p><img src="/assets/images/Inkscape/TraceBitMap_02.png" alt="vectorized-bitmap" /></p>
+
+<p>To view the paths, let us ungroup them using the <code class="highlighter-rouge">Ungroup</code> tool of the <code class="highlighter-rouge">Object</code> menu. The short cut is <code class="highlighter-rouge">Shift+Ctrl+G</code>. Note that the vector should be selected first. After ungrouping each of the paths is a background with a reduced color with a <strong>clip</strong> (What are <a href="#">clips</a>? #TODO)depicting the contour for the corresponding color. So the total vector image is a combination of cascaded contours of reduced colors.</p>
+
+<p><img src="/assets/images/Inkscape/TraceBitMap_03.png" alt="contours-of-vector" /></p>
+
+<p>This is more easily understood by taking a simpler raster image. Below depicts the angular part of the orbital of hydrogen atom. This is generated using Mayavi, a python package for 3D visualization. The code is very simple and is explained elsewhere (#TODO write post for mayavi tutorial)</p>
+
+<p><img src="/assets/images/Inkscape/TraceBitMap_04.jpg" alt="1s-orbital" /></p>
+
+<p>Let us apply the same Trace Bitmap tool and vectorize the orbital with only 4 reduced color. This is shown to the right of the first column. After ungrouping the vector paths and separating the paths, we can see it is made up a cascaded contours as shown in the middle figure. For more clarity, the paths for each reduced color are projected in perspective with subpar opacity which clearly highlights the cascaded nature of the paths as shown in last row. The projection of the paths onto perspective determined by the parallelogram drawn in the last row is done by <code class="highlighter-rouge">Perpective</code> tool in <code class="highlighter-rouge">Extensions</code> menu item. The <a href="#">tutorial for Perspective</a> #TODO is here.</p>
+
+<p><img src="/assets/images/Inkscape/TraceBitMap_05.png" alt="contours-of-1s-orbital" /></p>
+
+<p>Coming back to the nature scenery, since we have ungrouped the vector, let us select the original raster image again and generate a new vector image. Now select the vector image and let us export the vector image to png. Using  <code class="highlighter-rouge">Shift+Ctrl-E</code> shortcut. Set the export options like <code class="highlighter-rouge">Selection</code>, <code class="highlighter-rouge">dpi</code> and <code class="highlighter-rouge">Filename</code>.</p>
+
+<p><img src="/assets/images/Inkscape/TraceBitMap_06.png" alt="export-png" /></p>
+
+<p>The final vector image is below.</p>
+
+<p><img src="/assets/images/Inkscape/TraceBitMap_07.png" alt="vector-image" /></p>
+
+
+
+  
+
+
+
+  </body>
+</html>
