@@ -2,15 +2,15 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/authors/fubar.html</loc>
-<lastmod>2020-05-25T05:40:58+05:30</lastmod>
+<lastmod>2020-05-31T01:52:12+05:30</lastmod>
 </url>
 <url>
 <loc>/authors/jill.html</loc>
-<lastmod>2020-05-25T05:40:58+05:30</lastmod>
+<lastmod>2020-05-31T01:52:12+05:30</lastmod>
 </url>
 <url>
 <loc>/authors/ted.html</loc>
-<lastmod>2020-05-25T05:40:58+05:30</lastmod>
+<lastmod>2020-05-31T01:52:12+05:30</lastmod>
 </url>
 <url>
 <loc>/2016/07/24/Trip-to-Shravanabelagola.html</loc>
@@ -67,6 +67,10 @@
 <url>
 <loc>/2020/05/24/workflow-for-building-jekyll-website.html</loc>
 <lastmod>2020-05-24T00:00:00+05:30</lastmod>
+</url>
+<url>
+<loc>/2020/05/29/Semantic-versioning-rules-for-software-management.html</loc>
+<lastmod>2020-05-29T00:00:00+05:30</lastmod>
 </url>
 <url>
 <loc>/about.html</loc>

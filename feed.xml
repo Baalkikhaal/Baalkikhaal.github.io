@@ -1,7 +1,234 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-05-25T05:40:58+05:30</updated><id>/feed.xml</id><entry><title type="html">References for learning C++</title><link href="/2020/05/24/C++-definitive-references.html" rel="alternate" type="text/html" title="References for learning C++" /><published>2020-05-24T00:00:00+05:30</published><updated>2020-05-24T00:00:00+05:30</updated><id>/2020/05/24/C++-definitive-references</id><content type="html" xml:base="/2020/05/24/C++-definitive-references.html">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-05-31T01:52:12+05:30</updated><id>/feed.xml</id><entry><title type="html">Semantic versioning rules for software management</title><link href="/2020/05/29/Semantic-versioning-rules-for-software-management.html" rel="alternate" type="text/html" title="Semantic versioning rules for software management" /><published>2020-05-29T00:00:00+05:30</published><updated>2020-05-29T00:00:00+05:30</updated><id>/2020/05/29/Semantic-versioning-rules-for-software-management</id><content type="html" xml:base="/2020/05/29/Semantic-versioning-rules-for-software-management.html">&lt;div class=&quot;box&quot;&gt;
+&lt;img src=&quot;/assets/images/Git/GitLogo.png&quot; alt=&quot;Git-logo&quot; width=&quot;150px&quot; /&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;abstract&quot;&gt;Abstract&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://semver.org/&quot;&gt;Semantic versioning&lt;/a&gt; rules to update a software at a version &lt;code class=&quot;highlighter-rouge&quot;&gt;MAJOR.MINOR.PATCH&lt;/code&gt; recommend&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;incrementing &lt;code class=&quot;highlighter-rouge&quot;&gt;MAJOR&lt;/code&gt; version when you make incompatible API changes&lt;/li&gt;
+  &lt;li&gt;incrementing &lt;code class=&quot;highlighter-rouge&quot;&gt;MINOR&lt;/code&gt; version when you add functionality in a backwards compatible manner&lt;/li&gt;
+  &lt;li&gt;incrementing &lt;code class=&quot;highlighter-rouge&quot;&gt;PATCH&lt;/code&gt; version when you make backwards compatible bug fixes.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Software development is a multi user multi platform multi-organization endeavour. Each piece of program depends on other libraries.
+Just as a program goes through iterative process of development, the dependencies undergo their own cycles of development. Lets say we develop a &lt;code class=&quot;highlighter-rouge&quot;&gt;program P&lt;/code&gt; that provides a &lt;code class=&quot;highlighter-rouge&quot;&gt;plugin p1&lt;/code&gt;. Let this be the current &lt;code class=&quot;highlighter-rouge&quot;&gt;version x&lt;/code&gt; of &lt;code class=&quot;highlighter-rouge&quot;&gt;program P&lt;/code&gt; and denote it by &lt;code class=&quot;highlighter-rouge&quot;&gt;P(x)&lt;/code&gt;. &lt;code class=&quot;highlighter-rouge&quot;&gt;P(x)&lt;/code&gt; depends on the current &lt;code class=&quot;highlighter-rouge&quot;&gt;version y&lt;/code&gt; of &lt;code class=&quot;highlighter-rouge&quot;&gt;library L&lt;/code&gt;. Let us denoted this version of &lt;code class=&quot;highlighter-rouge&quot;&gt;library L&lt;/code&gt; by &lt;code class=&quot;highlighter-rouge&quot;&gt;L(y)&lt;/code&gt;. &lt;code class=&quot;highlighter-rouge&quot;&gt;L(x)&lt;/code&gt; has certain &lt;strong&gt;functionalities&lt;/strong&gt; like &lt;code class=&quot;highlighter-rouge&quot;&gt;f1&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;f2&lt;/code&gt;, of which &lt;code class=&quot;highlighter-rouge&quot;&gt;p1&lt;/code&gt; needs &lt;code class=&quot;highlighter-rouge&quot;&gt;f1&lt;/code&gt;. So we build on top of the API of the &lt;code class=&quot;highlighter-rouge&quot;&gt;L(x)&lt;/code&gt; by using only &lt;code class=&quot;highlighter-rouge&quot;&gt;f1&lt;/code&gt; in our program &lt;code class=&quot;highlighter-rouge&quot;&gt;P&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;So far so good. However in the course of time, we progress with our development and add an extra &lt;code class=&quot;highlighter-rouge&quot;&gt;plugin p2&lt;/code&gt; to our &lt;code class=&quot;highlighter-rouge&quot;&gt;program P&lt;/code&gt;. &lt;code class=&quot;highlighter-rouge&quot;&gt;p2&lt;/code&gt; depends on both &lt;code class=&quot;highlighter-rouge&quot;&gt;f1&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;f2&lt;/code&gt;. Parallelly, the developers of &lt;code class=&quot;highlighter-rouge&quot;&gt;library L&lt;/code&gt; have iterated through their own cycle of development. In the latest iteration, they improved implementation of &lt;code class=&quot;highlighter-rouge&quot;&gt;f1&lt;/code&gt; keeping the interface to &lt;code class=&quot;highlighter-rouge&quot;&gt;f1&lt;/code&gt; unaltered. However, they realized that &lt;code class=&quot;highlighter-rouge&quot;&gt;f2&lt;/code&gt; needs a reformation of the interface also. Additionally they developed a new &lt;code class=&quot;highlighter-rouge&quot;&gt;functionality f3&lt;/code&gt; and released these improvements in their latest &lt;code class=&quot;highlighter-rouge&quot;&gt;version ( y + 1 )&lt;/code&gt;. Let us denote this version by &lt;code class=&quot;highlighter-rouge&quot;&gt;L( y + 1 )&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now there are two impending questions here. The first question is how does the &lt;code class=&quot;highlighter-rouge&quot;&gt;library L&lt;/code&gt; developer community communicates to their users of their new changes. The second question is how does the &lt;code class=&quot;highlighter-rouge&quot;&gt;program P&lt;/code&gt; community go about adopting the latest version &lt;code class=&quot;highlighter-rouge&quot;&gt;L( y + 1 )&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;One way to address the first question is  through extensive documentation of the new version so that that application developers can go through the documentation and take note of the changes and accordingly take the decision of migrating to the newer version of the &lt;code class=&quot;highlighter-rouge&quot;&gt;dependency L&lt;/code&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;However developers are poor documenters.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Instead, a set of rules evolved with the community to convey quickly what might have possibly changed in the new version. This collection of rules for versioning software is called &lt;strong&gt;semantic versioning&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;The second question is what leads to the possibility of &lt;strong&gt;software dependency hell&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;semantic-versioning&quot;&gt;Semantic Versioning&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://semver.org/&quot;&gt;Semantic versioning&lt;/a&gt; is a way to avoid what is commonly called the &lt;strong&gt;software dependency hell&lt;/strong&gt;. Software dependency hell swings the choice of upgrading software between two limiting scenarios.&lt;/p&gt;
+
+&lt;h3 id=&quot;dependency-hell-spectrum--version-locking-vs-version-promiscuity&quot;&gt;Dependency hell spectrum : Version locking vs version promiscuity&lt;/h3&gt;
+&lt;p&gt;At the one end of what is called as &lt;strong&gt;version locking&lt;/strong&gt;, the developer community of program P makes a choice to upgrade P without depending on the latest version of &lt;code class=&quot;highlighter-rouge&quot;&gt;L&lt;/code&gt; as the interface of &lt;code class=&quot;highlighter-rouge&quot;&gt;functionality f2&lt;/code&gt; has changed and would break the implementation of &lt;code class=&quot;highlighter-rouge&quot;&gt;plugin p2&lt;/code&gt;. By version locking of the &lt;code class=&quot;highlighter-rouge&quot;&gt;dependency L&lt;/code&gt;, we loose out on the performance improvements of &lt;code class=&quot;highlighter-rouge&quot;&gt;plugin p1&lt;/code&gt; as the latest version of L has improved version of &lt;code class=&quot;highlighter-rouge&quot;&gt;functionality f1&lt;/code&gt; on which &lt;code class=&quot;highlighter-rouge&quot;&gt;plugin p1&lt;/code&gt; depends. It does not mean the &lt;code class=&quot;highlighter-rouge&quot;&gt;program P&lt;/code&gt; cannot be upgraded. The latest version &lt;code class=&quot;highlighter-rouge&quot;&gt;p( x + 1)&lt;/code&gt; can contain &lt;code class=&quot;highlighter-rouge&quot;&gt;plugin p2&lt;/code&gt; with dependency &lt;code class=&quot;highlighter-rouge&quot;&gt;L(y)&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;At the other end of the spectrum of dependency hell, the developer community decides to upgrade P by depending on the latest version &lt;code class=&quot;highlighter-rouge&quot;&gt;L( y + 1 )&lt;/code&gt; to gain the performance improvement of &lt;code class=&quot;highlighter-rouge&quot;&gt;plugin p1&lt;/code&gt; (as there is improvement of &lt;code class=&quot;highlighter-rouge&quot;&gt;functionality f1&lt;/code&gt; on which &lt;code class=&quot;highlighter-rouge&quot;&gt;p1&lt;/code&gt; depends) even at the cost of &lt;strong&gt;breaking&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;plugin p2&lt;/code&gt;. Additionally there is a possiblity of developing a new &lt;code class=&quot;highlighter-rouge&quot;&gt;plugin p3&lt;/code&gt; that might use &lt;code class=&quot;highlighter-rouge&quot;&gt;functionality f3&lt;/code&gt;. The possibility of breaking code might seriously affect the end user of the program and this sort of upgradation of software comes under what is called as &lt;strong&gt;version promiscuity&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Either ends of the spectrum are harmful to software development. To choose a middle path, semantic versioning helps one take an informed judgement on if and when to upgrade software.&lt;/p&gt;
+
+&lt;h3 id=&quot;semantic-versioning-specification&quot;&gt;Semantic versioning specification&lt;/h3&gt;
+
+&lt;p&gt;The developer community over the course of years have come up with a set of rules on how to version their individual softwares so that software interdependency can be resolved in a sane way. A typical iteration of software development involves three steps&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;feature enhancement&lt;/li&gt;
+  &lt;li&gt;feature testing&lt;/li&gt;
+  &lt;li&gt;feature release or shipping&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;feature-enhancement&quot;&gt;Feature enhancement&lt;/h4&gt;
+
+&lt;p&gt;The semantic versioning rules are closely associated with these steps. A feature enhancement can be of type &lt;strong&gt;MAJOR&lt;/strong&gt; like a rework on the Application Programmer’s Interface(API). This needs to send alarm bells to the users of this API as their programs will not be compatible with this new API. As a result this enhancement is called being &lt;strong&gt;backwards incompatible&lt;/strong&gt;. A feature enhancement can be of type &lt;strong&gt;MINOR&lt;/strong&gt; like adding new functionality without breaking existing API. This enhancement is called being &lt;strong&gt;backwards compatible&lt;/strong&gt;. This feature may improve implementation of existing functionality or be a complete new functionality in which case it &lt;strong&gt;adds to the API&lt;/strong&gt; and at the same is being backwards compatible. A third type of feature enhancement is fixing bugs. A bug is a wrong implementation of a feature leading to erroneous behaviour of the program using the API. An enhancement  that fixes bugs is called a &lt;strong&gt;PATCH&lt;/strong&gt;. A patch neither improves existing functionality nor adds new functionality. It only corrects/fixes existing functionality.&lt;/p&gt;
+
+&lt;p&gt;The above is for a particular iteration of the development of the program. To capture the entire timeline of the development, the type of feature enhancements ever done are coded in the &lt;strong&gt;version&lt;/strong&gt; of software with a format &lt;code class=&quot;highlighter-rouge&quot;&gt;MAJOR.MINOR.PATCH&lt;/code&gt; of dot separated numerical identifiers for &lt;code class=&quot;highlighter-rouge&quot;&gt;MAJOR&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;MINOR&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;PATCH&lt;/code&gt;. Each of these numerical identifiers are whole numbers.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;With every iteration of the development, depending on the type of feature enhancement carried out, the corresponding identifier is incremented by 1 and is called a &lt;strong&gt;release&lt;/strong&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;For example, let the current version of &lt;code class=&quot;highlighter-rouge&quot;&gt;program P&lt;/code&gt; is &lt;code class=&quot;highlighter-rouge&quot;&gt;v1.0.0&lt;/code&gt; and current version of &lt;code class=&quot;highlighter-rouge&quot;&gt;library L&lt;/code&gt; is &lt;code class=&quot;highlighter-rouge&quot;&gt;v1.1.2&lt;/code&gt;. This means till now there has been one API release for L and followed by 1 minor release of backwards compatible enhancements in the functionalities followed by 2 releases of bug fixes. Similarly program P has only a major release after which there is no further development. However nothing is known of previous major releases and its sub releases of minors and patches.&lt;/p&gt;
+
+&lt;p&gt;It should be noted that once a version is released, there is no going back. At the most, one can do a bug fix for the release in future.&lt;/p&gt;
+
+&lt;h4 id=&quot;feature-testing&quot;&gt;Feature testing&lt;/h4&gt;
+
+&lt;p&gt;The above releases are called &lt;strong&gt;normal releases&lt;/strong&gt; or &lt;strong&gt;stable releases&lt;/strong&gt;. Since version releases are only forward directional, developers of large projects &lt;strong&gt;pre-release&lt;/strong&gt; a software prior to the actual release. The reason is two fold;to let the common user know that they are &lt;strong&gt;unstable&lt;/strong&gt; and therefore stay away from it as they can potentially break the global system like the Operating system and what not. These release are intended for power users in the hope that they fish out remaining bugs. Pre-release is distinguished from a normal release by suffixing terms like &lt;strong&gt;alpha&lt;/strong&gt;, &lt;strong&gt;beta&lt;/strong&gt;, &lt;strong&gt;rc&lt;/strong&gt; with a hyphen.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Alpha pre-release may not contain all the features planned for the final release, but at the end of the alpha phase, the software is feature complete. Proprietary software do not release their alpha-pre releases to the general public unlike open source software.&lt;/li&gt;
+  &lt;li&gt;Beta pre-relase phase starts with feature complete software but has bugs. This is pre-released in the open source community for bug testing.&lt;/li&gt;
+  &lt;li&gt;Release candidate (rc) pre-release has the potential to be &lt;strong&gt;stable&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For more info, check this &lt;a href=&quot;https://en.wikipedia.org/wiki/Software_release_life_cycle#Pre-alpha&quot;&gt;Wikipedia article on Software release life cycle&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;feature-release&quot;&gt;Feature release&lt;/h3&gt;
+
+&lt;p&gt;Once there is reasonable certainty that the pre-releases are stable, they are released with versioning following the rules of semantic versioning.&lt;/p&gt;
+
+&lt;h3 id=&quot;precedence-of-versions&quot;&gt;Precedence of versions&lt;/h3&gt;
+
+&lt;p&gt;When comparing releases with respect to the time ordering of the releases, the precedence is calculated by comparing separately the major, minor, and path and pre-release identifiers.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;1.x.y &amp;lt; 2.p.q for any x, y, p, q&lt;/li&gt;
+  &lt;li&gt;1.0.y &amp;lt; 1.1.q for any y, q&lt;/li&gt;
+  &lt;li&gt;1.0.0-&lt;pre-release&gt; &amp;lt; 1.0.0&lt;/pre-release&gt;&lt;/li&gt;
+  &lt;li&gt;1.0.0-alpha &amp;lt; 1.0.0-beta &amp;lt; 1.0.0-rc&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;a-concrete-example-of-inkscape-development&quot;&gt;A concrete example of Inkscape development&lt;/h2&gt;
+
+&lt;p&gt;Inkscape is a mature project with a history of more than 16 years. The current release as of 29th of May, 2020 is 1.0.0. Prior versions were of the type 0.x.y&lt;/p&gt;
+
+&lt;p&gt;The major version increment means there is some backwards incompatible. From the &lt;a href=&quot;https://wiki.inkscape.org/wiki/index.php?title=Release_notes/1.0#python3&quot;&gt;Inkscape v1.0.0 release documentation&lt;/a&gt;, it is clear that Inkscape has migrated to using GTK+3. Earlier v0.x.y versions were using GTK+2. GTK (Gimp Tool Kit) is a widget based took kit for creating graphical user interfaces. However the major version increment is not due to shifting to GTK+3, but it is due to backwards incompatible SVG?? (I dont know what that means) I think it means that SVG standard has upgraded itself. To incorporate the newer SVG standard, Inkscapes API has been modified (remember that Inkscape provides a command line mode.. so in effect inkscape can be used as an API as in for Inkscape extensions!!!)&lt;/p&gt;
+
+&lt;hr /&gt;</content><author><name>fubar</name></author><category term="programming" /><summary type="html">We will describe the rules for versioning software to avoid dependency hell</summary></entry><entry><title type="html">References for learning C++</title><link href="/2020/05/24/C++-definitive-references.html" rel="alternate" type="text/html" title="References for learning C++" /><published>2020-05-24T00:00:00+05:30</published><updated>2020-05-24T00:00:00+05:30</updated><id>/2020/05/24/C++-definitive-references</id><content type="html" xml:base="/2020/05/24/C++-definitive-references.html">&lt;div class=&quot;box&quot;&gt;
+&lt;img src=&quot;/assets/images/C++/C++Logo.png&quot; alt=&quot;C++-logo&quot; width=&quot;150px&quot; /&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;p&gt;Programming is a science as well as an art. Developing the required skills takes time and effort and an enthusiasm to learn. The learning draws parallels with that of learning a natural language such as English.
+Just as the required skills to learn a natural language are reading, listening, writing and speaking, so the skills for learning a programming language are reading code, writing code. Also just as we need to know the proper language constructs like grammar (syntax), contextual use of language (semantics), we need to learn the syntax as well as&lt;/p&gt;
+
+&lt;h3 id=&quot;sites&quot;&gt;Sites&lt;/h3&gt;
+&lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.learncpp.com/&quot;&gt;Learncpp&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.cs-fundamentals.com/&quot;&gt;CS fundamentals&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;books&quot;&gt;Books&lt;/h3&gt;
+
+&lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/388242/the-definitive-c-book-guide-and-list&quot;&gt;SO Book Guide&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>fubar</name></author><category term="programming" /><summary type="html">This is a container for the various C++ references and the reviews for learning C++.</summary></entry><entry><title type="html">Introducing Spintronics</title><link href="/2020/05/24/spintronics.html" rel="alternate" type="text/html" title="Introducing Spintronics" /><published>2020-05-24T00:00:00+05:30</published><updated>2020-05-24T00:00:00+05:30</updated><id>/2020/05/24/spintronics</id><content type="html" xml:base="/2020/05/24/spintronics.html">&lt;h1 id=&quot;references&quot;&gt;References&lt;/h1&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.mhhe.com/engcs/proglang/cohoon/&quot;&gt;C++ Program Design by Cohoon and Davidson&lt;/a&gt; I refered to this book for my CS101 course in 2005&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://goalkicker.com/CPlusPlusBook/&quot;&gt;C++ Notes for Professionals&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.pearson.com/us/higher-education/program/Deitel-C-How-to-Program-Plus-My-Lab-Programming-with-Pearson-e-Text-Access-Card-Package-10th-Edition/PGM1100513.html&quot;&gt;C++ How to Program by Deitel and Deitel&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;code&quot;&gt;Code&lt;/h3&gt;
+
+&lt;p&gt;Like learning natural language involves listening as a major component, programming language skills are developed by reading lots of good code. It exposes the learner to good programming practices.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.codewithc.com/c-projects-with-source-code/&quot;&gt;Code with C/C++&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Baalkikhaal/project-based-learning#cc&quot;&gt;Curated list of programming projects&lt;/a&gt; Language agnostic projects to improve the programming skills using project based learning&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://projecteuler.net/about&quot;&gt;Project Euler&lt;/a&gt; Weekly addition of a new problem that demands skills in mathematics and programming. A fun way to start learning programming and mathematics in a hand-in-glove manner.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;libraries&quot;&gt;Libraries&lt;/h3&gt;
+
+&lt;p&gt;Some famous libraries that help in learning how APIs are written. By reading their source code, one can learn how good programmers structure their code and also how to abstract functionality so that code has increased reusability quotient.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://glm.g-truc.net/0.9.9/index.html&quot;&gt;OpenGLM&lt;/a&gt; OpenGL Mathematics (GLM) is a header only C++ mathematics library for graphics software.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.libsdl.org/index.php&quot;&gt;SDL2&lt;/a&gt; Simple DirectMedia Layer is a cross-platform development library designed to provide low level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL and Direct3D.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.netlib.org/blas/&quot;&gt;BLAS&lt;/a&gt; Basic Linear Algebra Subroutines are &lt;strong&gt;Fortran&lt;/strong&gt; routines that provide basic building blocks for basic vector and matrix operations. There is a C/C++ interface.
+    &lt;ul&gt;
+      &lt;li&gt;Level-1 BLAS performs scalar, vector and vector-vector operations,&lt;/li&gt;
+      &lt;li&gt;Level-2 BLAS performs matrix-vector operations,&lt;/li&gt;
+      &lt;li&gt;Level-3 BLAS performs matrix-matrix operations.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.netlib.org/lapack/&quot;&gt;LAPACK&lt;/a&gt; Linear Algebra PACKage utilizes BLAS subroutines to provide routines for solving systems of simultaneous linear equations, least-squares solutions of linear systems of equations, eigenvalue problems, and singular value problems. The associated matrix factorizations (LU, Cholesky, QR, SVD, Schur, generalized Schur) are also provided. There is a C/C++ interface.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.opengl.org/&quot;&gt;OpenGL&lt;/a&gt; The Industry’s Foundation for High Performance Graphics&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://opencv.org/&quot;&gt;OpenCV&lt;/a&gt; (Open Source Computer Vision library)
+is an open source computer vision and machine learning software library. OpenCV was built to provide a common infrastructure for computer vision applications and to accelerate the use of machine perception in the commercial products.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;hands-on-tutorials&quot;&gt;Hands on Tutorials&lt;/h2&gt;
+&lt;p&gt;Following are hands on tutorials for various aspects of program development. As a typical cycle of program development involves&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;writing source code&lt;/li&gt;
+  &lt;li&gt;compiling the code&lt;/li&gt;
+  &lt;li&gt;debugging the code&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;writing-cc-program-todo&quot;&gt;Writing C/C++ program (#TODO)&lt;/h3&gt;
+
+&lt;p&gt;Tutorials explaining good programming practices while writing code are given here. Some esoteric aspects of writing good code, which I cannot at the current moment categorize them due to my own lack of understanding, are&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;avoiding hard coding&lt;/li&gt;
+  &lt;li&gt;practing a convention for writing code. Though there is no C++ standard for writing the code, in order for the code to be readable, we need to adopt one convention and stick. There is no universal convention. Some adopt the Hungarian convention for the brackets, what is the other one I dont have idea. A &lt;a href=&quot;https://lazyfoo.net/articles/article02/index.php&quot;&gt;LazyFoo article on writing readable code&lt;/a&gt; and an &lt;a href=&quot;https://inkscape.org/develop/coding-style/&quot;&gt;article on coding style for Inkscape project&lt;/a&gt; are starters.
+    &lt;ul&gt;
+      &lt;li&gt;properly indent code&lt;/li&gt;
+      &lt;li&gt;give descriptive names to the variables&lt;/li&gt;
+      &lt;li&gt;Develop a naming standard&lt;/li&gt;
+      &lt;li&gt;Properly comment your code&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;refactoring (not sure what that means… however most of the Inkscape legacy code is undergoing refactoring)&lt;/li&gt;
+  &lt;li&gt;any good references for writing code?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;compiling-a-cc-program&quot;&gt;Compiling a C/C++ program&lt;/h3&gt;
+&lt;p&gt;Compiling can be as simple as executing the command&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;g++ helloWorld.cpp -o helloWorld
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;or as difficult as compiling  various source files, linking various static and dynamic libraries. It is one of the important component of program development. These tutorials provide hands on experience with compiling C++ programs.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Learn the basics of compilation from a &lt;a href=&quot;https://medium.com/better-programming/learn-how-to-compile-a-c-program-382c4c690bdc&quot;&gt;Medium post titled Learn How to Compile a C++ program&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Individual steps of compilation of a C program are beautifully explained
+in a &lt;a href=&quot;https://www.cs-fundamentals.com/c-programming/how-to-compile-c-program-using-gcc&quot;&gt;CS fundamentals blog post&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;static-vs-dynamic-linking&quot;&gt;Static vs Dynamic Linking&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;A simple explanation of static and dynamic libraries in a &lt;a href=&quot;https://www.learncpp.com/cpp-tutorial/a1-static-and-dynamic-libraries/&quot;&gt;Learncpp tutorial&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;A further discussion is done in a &lt;a href=&quot;https://cs-fundamentals.com/tech-interview/c/difference-between-static-and-dynamic-linking&quot;&gt;CS fundamentals post&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;(Optional) A nuanced comparison of performance issues with static and dynamic linking in a &lt;a href=&quot;https://stackoverflow.com/questions/1993390/static-linking-vs-dynamic-linking&quot;&gt;SO post&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;how-to-use-library-for-application-development&quot;&gt;How to use library for Application development&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;We need to configure the compiler of our IDE and a [LearnCPP post] explains it using the case of VisualStudio and Codeblocks&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;As a simple concrete example a &lt;a href=&quot;https://medium.com/better-programming/navigating-the-world-of-distributed-c-code-e439406f3e42&quot;&gt;Medium post titled Navigating the world of distributed code&lt;/a&gt; explains how to work with uncompiled library/ header only libary and use &lt;code class=&quot;highlighter-rouge&quot;&gt;make&lt;/code&gt; tool to configure the compiler&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;As a concrete example, I was successful in configuring the MingW compiler of Codeblocks IDE to use &lt;a href=&quot;https://www.libsdl.org/index.php&quot;&gt;SDL2 library&lt;/a&gt; by following the [GRHMedia blog post] listed in the &lt;a href=&quot;https://wiki.libsdl.org/Tutorials&quot;&gt;SDL’s Tutorial Wiki&lt;/a&gt; as a video tutorial.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;advancedhow-to-create-a-library&quot;&gt;(Advanced)How to create a library?&lt;/h3&gt;
+
+&lt;p&gt;This is an advanced topic. I have not explored it but can refer to &lt;a href=&quot;https://www.cs-fundamentals.com/c-programming/static-and-dynamic-linking-in-c#static-libraries&quot;&gt;Create Static and Dynamic Link Libraries in C on Linux&lt;/a&gt; from CS-fundamentals blog.&lt;/p&gt;
+
+&lt;h2 id=&quot;debugging-code&quot;&gt;Debugging code&lt;/h2&gt;
+
+&lt;p&gt;Tutorials explaining good programming practices while debugging code are given here.(#TODO)&lt;/p&gt;</content><author><name>fubar</name></author><category term="programming" /><summary type="html">C++ references of websites, books, code and APIs for learning C/C++.</summary></entry><entry><title type="html">Introducing Spintronics</title><link href="/2020/05/24/spintronics.html" rel="alternate" type="text/html" title="Introducing Spintronics" /><published>2020-05-24T00:00:00+05:30</published><updated>2020-05-24T00:00:00+05:30</updated><id>/2020/05/24/spintronics</id><content type="html" xml:base="/2020/05/24/spintronics.html">&lt;h1 id=&quot;references&quot;&gt;References&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Maekawa Spin Electronics&lt;/li&gt;
@@ -237,7 +464,9 @@
 
 &lt;p&gt;Refer &lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub pages&lt;/a&gt; for setting up this workflow. It involves tedious configuration steps, but once the site is configured, it is simple click to deploy the site for production unlike the &lt;em&gt;Simple Workflow&lt;/em&gt;.&lt;/p&gt;
 
-&lt;hr /&gt;</content><author><name>fubar</name></author><category term="programming" /><summary type="html">Let us use web development tools hosted on the Windows Subsystem for Linux to build static websites eventually to be hosted on GitHub.</summary></entry><entry><title type="html">Cheat sheet for GIT</title><link href="/2020/05/23/Git-Command-Cheat-Sheet.html" rel="alternate" type="text/html" title="Cheat sheet for GIT" /><published>2020-05-23T00:00:00+05:30</published><updated>2020-05-23T00:00:00+05:30</updated><id>/2020/05/23/Git-Command-Cheat-Sheet</id><content type="html" xml:base="/2020/05/23/Git-Command-Cheat-Sheet.html">&lt;h1 id=&quot;beginner-level-git-command-cheat-sheet&quot;&gt;Beginner level GIT command cheat sheet&lt;/h1&gt;
+&lt;hr /&gt;</content><author><name>fubar</name></author><category term="programming" /><summary type="html">Let us use web development tools hosted on the Windows Subsystem for Linux to build static websites eventually to be hosted on GitHub.</summary></entry><entry><title type="html">Cheat sheet for GIT</title><link href="/2020/05/23/Git-Command-Cheat-Sheet.html" rel="alternate" type="text/html" title="Cheat sheet for GIT" /><published>2020-05-23T00:00:00+05:30</published><updated>2020-05-23T00:00:00+05:30</updated><id>/2020/05/23/Git-Command-Cheat-Sheet</id><content type="html" xml:base="/2020/05/23/Git-Command-Cheat-Sheet.html">&lt;p&gt;Version control is an essential element of software management.&lt;/p&gt;
+
+&lt;h1 id=&quot;beginner-level-git-command-cheat-sheet&quot;&gt;Beginner level GIT command cheat sheet&lt;/h1&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;local/dir/path&amp;gt;$git clone &amp;lt;path/to/repository&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -578,166 +807,4 @@ This check is optional and needed only if one is not sure if the drivers and VIS
 
 &lt;p&gt;Adobe’s famous typefaces include Futura, Helvetica, Avenir,&lt;/p&gt;
 
-&lt;p&gt;Monotype’s famous typefaces include Arial,&lt;/p&gt;</content><author><name>fubar</name></author><category term="programming" /><summary type="html">A brief history of fonts and in particular the geometric typefaces.</summary></entry><entry><title type="html">What are python modules?</title><link href="/2019/09/14/Chapter22-Modules-The-Big-Picture.html" rel="alternate" type="text/html" title="What are python modules?" /><published>2019-09-14T00:00:00+05:30</published><updated>2019-09-14T00:00:00+05:30</updated><id>/2019/09/14/Chapter22-Modules-The-Big-Picture</id><content type="html" xml:base="/2019/09/14/Chapter22-Modules-The-Big-Picture.html">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;In this chapter, the author introduces modules. Modules form the highest organization structure in a Python program. The &lt;em&gt;rationale&lt;/em&gt; behind modules lies in code reusability, a primary feature that Python &lt;em&gt;wants&lt;/em&gt; you to do. Using module as an example for &lt;em&gt;namespace&lt;/em&gt;, the author tries to drive home the point that a program is about managing namespaces, i.e. the space of names. This concept is revisted in other topics like &lt;a href=&quot;chapter-on-functions&quot;&gt;functions&lt;/a&gt; and &lt;a href=&quot;chapter-on-classes&quot;&gt;classes&lt;/a&gt;. This is followed by explaining the internal process when modules are imported, how existing modules are searched, and the freedom of type of module imported.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;module&quot;&gt;Module&lt;/h2&gt;
-
-&lt;h3 id=&quot;what-is-a-module&quot;&gt;What is a module?&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Modules serve as the &lt;strong&gt;highest organizational structure&lt;/strong&gt; in the architecture of a Python program. Essentially, a Python program is a system of modules.&lt;/li&gt;
-  &lt;li&gt;Modules are glorified namespaces.&lt;/li&gt;
-  &lt;li&gt;In concrete terms, a module typically corresponds to a Python file.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;why-use-a-module&quot;&gt;Why use a module?&lt;/h3&gt;
-
-&lt;p&gt;Code reuse&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Modules lets you save code in files permanently. So, code is &lt;em&gt;persistent&lt;/em&gt; unlike the code run in Python interactive prompt&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Namespace partitioning&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;As a self contained system of variables/names known as &lt;strong&gt;namespace&lt;/strong&gt;, module minimizes variable name clashes across the program.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Implementing shared services or metadata&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;A shared resources usually entails a single copy across the system. A module can serve to contain such shared resources like global variables.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;how-to-access-the-module-namespace&quot;&gt;How to access the module namespace?&lt;/h3&gt;
-
-&lt;p&gt;The names of a module &lt;em&gt;namespace&lt;/em&gt; can be accessed/imported by two statements and and one important function&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;import&lt;/code&gt; statement fetches a whole module.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;from&lt;/code&gt; statement fetches particular names from a module.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;imp.reload&lt;/code&gt; function reloads a module without stopping Python.
-All names defined at the top level of module file become attributes of the imported module object. In OOP jargon,&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;the module file’s global scope &lt;em&gt;morphs&lt;/em&gt; into the module object’s attribute namespace when it is imported.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;python-program-architecture&quot;&gt;Python Program architecture&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;A program is a system of modules, with one main top-level file and zero or more supplemental files called &lt;em&gt;modules&lt;/em&gt;.&lt;/li&gt;
-  &lt;li&gt;The top-level file (a.k.a script) contains the main flow of control of the program.&lt;/li&gt;
-  &lt;li&gt;Modules are collections/libraries of tools to be used by the script.&lt;/li&gt;
-  &lt;li&gt;Script uses the tools defined in module files, and modules use tools defined in other modules.&lt;/li&gt;
-  &lt;li&gt;Module don’t do anything when run directly; they define the tools intended for use in other files.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#TODO&quot;&gt;TODO&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/path/to/architecture-image.png&quot; alt=&quot;Image: PythonProgramArchitecture&quot; /&gt;&lt;/p&gt;
-
-&lt;script&gt;
-//Run script right away
-  window.onload = function () {
-//We'll be appending the icon to this DIV later
-          var s = Snap(&quot;#iconDiv&quot;);
-//Have Snap load the SVG file
-    Snap.load(&quot;/assets/images/icon.svg&quot;, function(f) {
-//Assign the white rectangle
-                whiteRect = f.select(&quot;#whiteRect&quot;);
-//Assign the whole icon group
-                icon = f.select(&quot;#icon&quot;);
-//When the icon is hovered over, have the white rectangle move up slightly with elastic properties
-                icon.hover(function() {
-        whiteRect.animate({y:270.0}, 500, mina.elastic);
-                },
-//And return to original position when not hovered over
-                           function() {
-        whiteRect.animate({y:276.82181}, 500, mina.elastic);
-      }
-                );
-//Finally append the icon to iconDiv in the body
-    s.append(f);
-    });
-  };
-&lt;/script&gt;
-
-&lt;!--Here's the DIV that will hold the animated SVG icon--&gt;
-&lt;div id=&quot;iconDiv&quot;&gt;&lt;/div&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;standard-library-modules&quot;&gt;Standard Library modules&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;A Python installation comes with a set of standard library modules (around 200 modules) for various programming tasks like operating system interfaces (&lt;code class=&quot;highlighter-rouge&quot;&gt;os&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;sys&lt;/code&gt;), object persistence, text pattern matching (&lt;code class=&quot;highlighter-rouge&quot;&gt;re&lt;/code&gt;), network (&lt;code class=&quot;highlighter-rouge&quot;&gt;requests&lt;/code&gt;) and Internet scripting, GUI construction (&lt;code class=&quot;highlighter-rouge&quot;&gt;tkinter&lt;/code&gt;)&lt;/li&gt;
-  &lt;li&gt;They are not part of the Python language, but come installed with a standard Python installation.&lt;/li&gt;
-  &lt;li&gt;Due to the standard nature, they are expected to wok portably on most platforms.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;how-imports-work&quot;&gt;How imports work&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;In contrast to C/C++ &lt;code class=&quot;highlighter-rouge&quot;&gt;#include&lt;/code&gt;, which are textual insertions of file into another, Python’s &lt;code class=&quot;highlighter-rouge&quot;&gt;import&lt;/code&gt; are runtime operations involving
-    &lt;ul&gt;
-      &lt;li&gt;Find the module’s files.&lt;/li&gt;
-      &lt;li&gt;Compile it to byte code (if needed).&lt;/li&gt;
-      &lt;li&gt;Run the module code to build the objects it defines.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Finding the module involves searching the &lt;em&gt;module search path&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;On first import, the code is compiled to generate a byte code &lt;code class=&quot;highlighter-rouge&quot;&gt;.pyc&lt;/code&gt; file. Unless the source code is modified, subsequent imports simply reuses the byte code.
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.pyc&lt;/code&gt; speed future imports.&lt;/li&gt;
-      &lt;li&gt;Compilation happens when file is imported. So the top-level script file is usually not compiled. To have the script file both executed as well as imported, &lt;code class=&quot;highlighter-rouge&quot;&gt;__name__&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;__main__&lt;/code&gt; are used.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Running/executing the bytecode &lt;strong&gt;assigns&lt;/strong&gt; names in the importee namespace to the attributes of the imported module object.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;module-search-path&quot;&gt;Module search path&lt;/h3&gt;
-
-&lt;p&gt;Imports mention only the filename without extension, which is searched in a path formed by concatenation of following directories and the left most search result is taken as the file path.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;home directory of the importee files.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;PYTHONPATH&lt;/code&gt; directories.&lt;/li&gt;
-  &lt;li&gt;Standard library Modules.&lt;/li&gt;
-  &lt;li&gt;.pth path file listing custom directories.&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;site-packages&lt;/code&gt; subdirectory in the Python installation for listing the third-party extensions.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;The module search path is assigned to &lt;code class=&quot;highlighter-rouge&quot;&gt;path&lt;/code&gt; attribute of the &lt;code class=&quot;highlighter-rouge&quot;&gt;sys&lt;/code&gt; standard modules&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sys&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sys&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Since only the filename without extension is searched, an &lt;code class=&quot;highlighter-rouge&quot;&gt;import mod&lt;/code&gt; can resolve to any of the following files:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;em&gt;mod.py&lt;/em&gt; source code file.&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;mod.pyc&lt;/em&gt; byte code file.&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;mod.pyo&lt;/em&gt; optimized byte code file (Generated when the script is executed using &lt;code class=&quot;highlighter-rouge&quot;&gt;-O&lt;/code&gt; flag).&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;mod.so&lt;/em&gt; or &lt;em&gt;mod.dll&lt;/em&gt; compiled extension module which is dynamically linked when imported.&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;mod&lt;/em&gt; directory for package imports.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
-
-&lt;p&gt;The idea of structuring program is the &lt;em&gt;rationale&lt;/em&gt; behind modules. Modules act as namespaces so that names in one module cannot be seen by another module, unless the former is imported. This Python Program architecture helps in dividing the logic into self-contained components. In addition to the home directory and standard library modules, custom modules can be searched via the module search path setting the &lt;code class=&quot;highlighter-rouge&quot;&gt;PYTHONPATH&lt;/code&gt; environment variable or .pth files in top-level. While importing a module, Pythons allows freedom to choose from a variety of file extensions like .py, .pyc, .pyo, .so or a directory also (as we will see in the &lt;a href=&quot;chapter-on-packages&quot;&gt;next chapter&lt;/a&gt;).&lt;/p&gt;
-
-&lt;p&gt;This is a &lt;a href=&quot;/2019/08/30/bananas.html&quot;&gt;link&lt;/a&gt;  that refers to past post.&lt;/p&gt;
-
-&lt;p&gt;The permalink to this page is _posts/2019-09-14-Chapter22-Modules-The-Big-Picture.md&lt;/p&gt;
-
-&lt;p&gt;This is an internal link in Jekyll &lt;a href=&quot;#Module-search-path&quot;&gt;Module Search-Path&lt;/a&gt;&lt;/p&gt;</content><author><name>fubar</name></author><category term="programming" /><summary type="html">The organization of python program is discussed with module as an entity.</summary></entry></feed>
+&lt;p&gt;Monotype’s famous typefaces include Arial,&lt;/p&gt;</content><author><name>fubar</name></author><category term="programming" /><summary type="html">A brief history of fonts and in particular the geometric typefaces.</summary></entry></feed>
