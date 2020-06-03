@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg2164"
+   version="1.1"
+   viewBox="0 0 38.100002 38.100056"
+   height="38.100056mm"
+   width="38.100002mm">
+  <defs
+     id="defs2158">
+    <filter
+       id="filter3063"
+       style="color-interpolation-filters:sRGB">
+      <feFlood
+         id="feFlood3053"
+         result="flood"
+         flood-color="rgb(255,244,0)"
+         flood-opacity="1" />
+      <feComposite
+         id="feComposite3055"
+         result="composite1"
+         operator="in"
+         in2="SourceGraphic"
+         in="flood" />
+      <feGaussianBlur
+         id="feGaussianBlur3057"
+         result="blur"
+         stdDeviation="2"
+         in="composite1" />
+      <feOffset
+         id="feOffset3059"
+         result="offset"
+         dy="8.32667e-17"
+         dx="2.77556e-17" />
+      <feComposite
+         id="feComposite3061"
+         result="composite2"
+         operator="over"
+         in2="offset"
+         in="SourceGraphic" />
+    </filter>
+    <clipPath
+       id="clipPath2992"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path2994"
+         d="M 19.424654,3.1796508 A 15.874999,15.874999 0 0 0 11.1125,5.3020018 15.874999,15.874999 0 0 0 3.175,19.05 a 7.9375,7.9375 0 0 0 3.96875,6.873999 7.9375,7.9375 0 0 0 7.9375,0 A 7.9375,7.9375 0 0 0 19.05,19.05 a 7.9375,7.9375 0 0 1 3.96875,-6.873999 7.9375,7.9375 0 0 1 7.9375,0 A 7.9375,7.9375 0 0 1 34.885209,18.2578 15.874999,15.874999 0 0 0 26.9875,5.3020018 15.874999,15.874999 0 0 0 19.424654,3.1796508 Z"
+         style="opacity:1;vector-effect:none;fill:#0057ff;fill-opacity:1;stroke:none;stroke-width:0.79374999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+    </clipPath>
+  </defs>
+  <metadata
+     id="metadata2161">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-57.301189,-149.43807)"
+     id="layer1">
+    <rect
+       y="149.43813"
+       x="57.301189"
+       height="38.099998"
+       width="38.099998"
+       id="rect815"
+       style="display:inline;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.06614582;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+    <g
+       transform="translate(57.30119,149.43807)"
+       style="display:inline;filter:url(#filter3063)"
+       id="g3051">
+      <circle
+         style="opacity:1;vector-effect:none;fill:#70ff00;fill-opacity:1;stroke:none;stroke-width:0.79374999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         id="path2928"
+         cx="19.049999"
+         cy="19.049999"
+         r="15.875" />
+      <circle
+         style="display:inline;opacity:1;vector-effect:none;fill:#00e3ff;fill-opacity:1;stroke:none;stroke-width:0.79374999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         id="path2928-3"
+         cx="19.049999"
+         cy="19.049999"
+         r="15.875"
+         clip-path="url(#clipPath2992)" />
+      <circle
+         style="opacity:1;vector-effect:none;fill:#00e3ff;fill-opacity:1;stroke:none;stroke-width:0.79374999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         id="path2996"
+         cx="26.987499"
+         cy="19.049999"
+         r="3.175" />
+      <circle
+         style="display:inline;opacity:1;vector-effect:none;fill:#70ff00;fill-opacity:1;stroke:none;stroke-width:0.79374999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         id="path2996-0"
+         cx="11.1125"
+         cy="19.049999"
+         r="3.175" />
+    </g>
+  </g>
+</svg>

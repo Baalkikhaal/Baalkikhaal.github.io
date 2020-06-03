@@ -6,7 +6,7 @@
 		"_sass/main.scss"
 	],
 	"sourcesContent": [
-		"@import \"main\";\r\n\r\n.fit-picture {\r\n    width: 250px;\r\n    background-color: black;\r\n    padding: 5px;\r\n}\r\n\r\np {\r\n    color:blue;\r\n}\r\n\r\na:link {\r\n  color: pink;\r\n}\r\n\r\na:hover {\r\n  text-decoration: none;\r\n}\r\n\r\n.Headnote {\r\n    background: rebeccapurple;\r\n}\r\n\r\n.navigation {\r\n    font-size: 200%;\r\n    background: orange;\r\n}\r\n\r\n.navigation-tags {\r\n    font-size: 150%;\r\n    background: green;\r\n}\r\n\r\n.box {\r\n    float: left;\r\n    width: 150px;\r\n    height: 150px;\r\n    margin-right: 30px;\r\n}\r\n",
+		"@import \"main\";\n\n.fit-picture {\n    width: 500px;\n    background-color: white;\n    padding: 5px;\n}\n\np {\n    color:blue;\n}\n\na:link {\n  color: pink;\n}\n\na:hover {\n  text-decoration: none;\n}\n\n.Headnote {\n    background: rebeccapurple;\n}\n\n.navigation {\n    font-size: 150%;\n    background: orange;\n}\n\n.navigation-tags {\n    font-size: 100%;\n    background: green;\n}\n\n.box {\n    float: left;\n    width: 150px;\n    height: 150px;\n    margin-right: 30px;\n}\n",
 		"@import \"native.css\";   /* Pygments (deprecated and not supported in Jekyll 4; superseded by Ruby's own Rouge) module stylesheet for syntax highlighting. Refer: [Tags Filters](https://jekyllrb.com/docs/liquid/tags/#stylesheets-for-syntax-highlighting) */\r\n"
 	],
 	"names": [],

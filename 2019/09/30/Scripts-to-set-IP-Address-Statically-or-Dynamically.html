@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Python Scripts to set static or dynamic  IP address</title>
+    <meta name="author" content="fubar">
+    <meta name="description" content="A collection of HOWTOs in programming and commonly used tools by graduate students with focus on physicists. Additionally, an attempt is made to understand the intricate connection between Adwaitha / అద్వైతా / अद्वैता philosophy, physics and Mother Nature.">
+    <link rel="icon" href="/assets/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="/assets/css/styles.css">
-    <link rel="javascript" href="/js/snap.svg-min.js">
+    <script src="/js/snap.svg-min.js" defer></script>
     <link type="application/atom+xml" rel="alternate" href="/feed.xml" />
     <!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Python Scripts to set static or dynamic IP address</title>
@@ -22,16 +25,47 @@
 
   </head>
   <body>
-    <nav class=navigation>
-    <p>Site Navigation</p>
+    <img class="fit-picture"
+     src="/assets/images/swamiVivekananda.svg"
+     alt="Swami Vivekananda">
+
+<nav class=navigation>
   
+  <!-- uncomment below line to render the names of the navigation items -->
+<!--
     <a href="/" >Home</a>
+-->
+    <a
+        href="/" >
+            <img src="/assets/images/homePageHomeLogo.svg" alt="homepage logo">
+    </a>
   
+  <!-- uncomment below line to render the names of the navigation items -->
+<!--
     <a href="/about.html" >About</a>
+-->
+    <a
+        href="/about.html" >
+            <img src="/assets/images/homePageAboutLogo.svg" alt="about logo">
+    </a>
   
+  <!-- uncomment below line to render the names of the navigation items -->
+<!--
     <a href="/blog.html" >Blog</a>
+-->
+    <a
+        href="/blog.html" >
+            <img src="/assets/images/homePagePostsLogo.svg" alt="blog logo">
+    </a>
   
+  <!-- uncomment below line to render the names of the navigation items -->
+<!--
     <a href="/staff.html" >Staff</a>
+-->
+    <a
+        href="/staff.html" >
+            <img src="/assets/images/homePageStaffLogo.svg" alt="staff logo">
+    </a>
   
 
 </nav>
@@ -59,10 +93,6 @@
     
  </nav>
 
-<img class="fit-picture"
-     src="assets/images/SwamiVivekananda.png"
-     alt="Swami Vivekananda">
-
     <h1 class="Headnote">Python Scripts to set static or dynamic  IP address</h1>
 <p >
   30 Sep 2019 - fubar
@@ -72,11 +102,17 @@
   
 </p>
 
+<div class="box">
+<img src="/assets/images/Python/pythonLogo.svg" alt="python-logo" width="150px" />
+</div>
+
+<h2 id="abstract">Abstract</h2>
+
 <p>The reason to set up a <a href="/2019/08/25/ADSL-modem+router-as-WAP.html">ADSL router as a switch</a> was to enhance the WiFi signal at my office desk. However sometimes I need to switch back to the <code class="highlighter-rouge">iiscwlan</code> WiFi interface when I move my laptop.</p>
 
 <hr />
 
-<h1 id="setting-dynamic-ip">Setting dynamic IP</h1>
+<h2 id="setting-dynamic-ip">Setting dynamic IP</h2>
 
 <p>Firstly my laptop WiFi adaptor has connected to the <code class="highlighter-rouge">wololo</code> WAP of the ADSL modem+router</p>
 
@@ -106,7 +142,7 @@
 
 <hr />
 
-<h1 id="setting-static-ip">Setting static IP</h1>
+<h2 id="setting-static-ip">Setting static IP</h2>
 
 <p>Run a powershell as an Administrator and check the interface index for the WiFi interface. The Interface has index <code class="highlighter-rouge">17</code> with alias <code class="highlighter-rouge">WiFi</code>. It is connected to the <code class="highlighter-rouge">iiscwlan</code> WAP using the IP address <code class="highlighter-rouge">10.43.240.122</code>.</p>
 
@@ -146,13 +182,13 @@
 
 <hr />
 
-<h1 id="setting-the-ip-address-dynamically-using-a-python-script">Setting the IP address dynamically using a Python script</h1>
+<h2 id="setting-the-ip-address-dynamically-using-a-python-script">Setting the IP address dynamically using a Python script</h2>
 
 <p>Entering these commands is useful. However due to the correct sequence required as well as accuracy requirements, it is better to have a script individually for the static or dynamic setting of IP addresses.</p>
 
 <p>Thanks to Python’s scripting capability to handle system command execution, we use the <code class="highlighter-rouge">subprocess</code> module for the task</p>
 
-<h2 id="python-script-to-set-static-ip">Python script to set Static IP</h2>
+<h3 id="python-script-to-set-static-ip">Python script to set Static IP</h3>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#!python
 </span><span class="s">'''Script to set Static IP to the WiFi adaptor of laptop.
@@ -173,7 +209,7 @@
 <span class="n">subprocess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">command3</span><span class="p">)</span>
 </code></pre></div></div>
 
-<h2 id="python-script-to-set-dynamic-ip">Python script to set Dynamic IP</h2>
+<h3 id="python-script-to-set-dynamic-ip">Python script to set Dynamic IP</h3>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#!python
 </span><span class="s">'''Script to set Dynamic IP to the WiFi adaptor of laptop

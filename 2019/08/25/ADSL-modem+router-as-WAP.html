@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Connecting ADSL (modem + router) as a WiFi Access Point</title>
+    <meta name="author" content="fubar">
+    <meta name="description" content="A collection of HOWTOs in programming and commonly used tools by graduate students with focus on physicists. Additionally, an attempt is made to understand the intricate connection between Adwaitha / అద్వైతా / अद्वैता philosophy, physics and Mother Nature.">
+    <link rel="icon" href="/assets/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="/assets/css/styles.css">
-    <link rel="javascript" href="/js/snap.svg-min.js">
+    <script src="/js/snap.svg-min.js" defer></script>
     <link type="application/atom+xml" rel="alternate" href="/feed.xml" />
     <!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Connecting ADSL (modem + router) as a WiFi Access Point</title>
@@ -22,16 +25,47 @@
 
   </head>
   <body>
-    <nav class=navigation>
-    <p>Site Navigation</p>
+    <img class="fit-picture"
+     src="/assets/images/swamiVivekananda.svg"
+     alt="Swami Vivekananda">
+
+<nav class=navigation>
   
+  <!-- uncomment below line to render the names of the navigation items -->
+<!--
     <a href="/" >Home</a>
+-->
+    <a
+        href="/" >
+            <img src="/assets/images/homePageHomeLogo.svg" alt="homepage logo">
+    </a>
   
+  <!-- uncomment below line to render the names of the navigation items -->
+<!--
     <a href="/about.html" >About</a>
+-->
+    <a
+        href="/about.html" >
+            <img src="/assets/images/homePageAboutLogo.svg" alt="about logo">
+    </a>
   
+  <!-- uncomment below line to render the names of the navigation items -->
+<!--
     <a href="/blog.html" >Blog</a>
+-->
+    <a
+        href="/blog.html" >
+            <img src="/assets/images/homePagePostsLogo.svg" alt="blog logo">
+    </a>
   
+  <!-- uncomment below line to render the names of the navigation items -->
+<!--
     <a href="/staff.html" >Staff</a>
+-->
+    <a
+        href="/staff.html" >
+            <img src="/assets/images/homePageStaffLogo.svg" alt="staff logo">
+    </a>
   
 
 </nav>
@@ -59,10 +93,6 @@
     
  </nav>
 
-<img class="fit-picture"
-     src="assets/images/SwamiVivekananda.png"
-     alt="Swami Vivekananda">
-
     <h1 class="Headnote">Connecting ADSL (modem + router) as a WiFi Access Point</h1>
 <p >
   25 Aug 2019 - fubar
@@ -71,6 +101,8 @@
     - <a href="/authors/fubar.html">Sreekar Guddeti</a>
   
 </p>
+
+<h2 id="abstract">Abstract</h2>
 
 <p>I have a TP-Link ADSL modem + router (M+R) with me. It can be used in the following modes:</p>
 <ul class="task-list">
@@ -94,7 +126,7 @@
 
 <hr />
 
-<h1 id="laptop---router-interface">Laptop - Router interface</h1>
+<h2 id="laptop---router-interface">Laptop - Router interface</h2>
 
 <p>Currently I am connected to the <code class="highlighter-rouge">iiscwlan</code> WiFi on my laptop. This is confirmed by <code class="highlighter-rouge">arp</code> command; Address Resolution Protocol. The current IP address is <code class="highlighter-rouge">10.43.241.108</code> which is dynamically allocated by the router at <code class="highlighter-rouge">10.43.240.1</code>.</p>
 
@@ -114,7 +146,7 @@
 
 <hr />
 
-<h1 id="configure-the-routers-network-address-to-that-of-the-ethernets">Configure the router’s network address to that of the ethernet’s</h1>
+<h2 id="configure-the-routers-network-address-to-that-of-the-ethernets">Configure the router’s network address to that of the ethernet’s</h2>
 
 <p>Now access the (M+R) settings page using Firefox by fetching the page at <code class="highlighter-rouge">192.168.1.1</code> IP address or <code class="highlighter-rouge">http://tplinkmodem.net</code>.</p>
 
@@ -162,7 +194,7 @@
 
 <hr />
 
-<h1 id="reconfigure-the-laptops-network-address-to-match-that-of-the-routers">Reconfigure the laptop’s network address to match that of the router’s</h1>
+<h2 id="reconfigure-the-laptops-network-address-to-match-that-of-the-routers">Reconfigure the laptop’s network address to match that of the router’s</h2>
 
 <p>This is when manual assignment of the IP address to the laptop’s WiFi adaptor needs to be done to match the network address of the router. This is accomplished using <code class="highlighter-rouge">netsh</code></p>
 
@@ -182,7 +214,7 @@
 
 <hr />
 
-<h1 id="physically-connect-the-router-to-the-ethernet-sub-network">Physically connect the router to the ethernet sub network</h1>
+<h2 id="physically-connect-the-router-to-the-ethernet-sub-network">Physically connect the router to the ethernet sub network</h2>
 
 <blockquote>
   <p>Now is the time to connect to the connnect the switch to the rest of the sub network using an ethernet cable running from the wall mounted ethernet port to one of the 4 ethernet ports of the (M+R). For this configuration, we do not have business with the modem port.</p>
@@ -217,19 +249,19 @@ DNS server</p>
 
 <hr />
 
-<h1 id="optional-configure-the-wap">Optional: Configure the WAP</h1>
+<h2 id="optional-configure-the-wap">Optional: Configure the WAP</h2>
 
 <p>The router comes with default SSID (Service Set Identifier) name and password for its WAP interface. However if needed, these can be reconfigured by accessing the router’s settings page and changing these parameters in the <code class="highlighter-rouge">Wireless</code> tab of the <code class="highlighter-rouge">Interface Setup</code> tab. I have set SSID as <code class="highlighter-rouge">wololo</code> with password as <code class="highlighter-rouge">*********</code>.</p>
 
 <hr />
 
-<h1 id="optional-scripts-to-automate-the-configuration">Optional: Scripts to automate the configuration</h1>
+<h2 id="optional-scripts-to-automate-the-configuration">Optional: Scripts to automate the configuration</h2>
 
 <p>It is convenient to automate certain aspects of the network configuration like setting the static IP address of the laptop’s WiFi adaptor. This is discussed in the post on <a href="/2019/09/30/Scripts-to-set-IP-Address-Statically-or-Dynamically.html">Python scripts to set IP address</a></p>
 
 <hr />
 
-<h1 id="references"><strong>References:</strong></h1>
+<h2 id="references"><strong>References:</strong></h2>
 
 <p><a href="https://pureinfotech.com/set-static-ip-address-windows-10/">How to set IP address manually in Windows</a></p>
 

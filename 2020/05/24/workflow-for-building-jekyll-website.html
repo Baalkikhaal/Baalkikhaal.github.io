@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>How to build Jekyll website on WINDOWS</title>
+    <meta name="author" content="fubar">
+    <meta name="description" content="A collection of HOWTOs in programming and commonly used tools by graduate students with focus on physicists. Additionally, an attempt is made to understand the intricate connection between Adwaitha / అద్వైతా / अद्वैता philosophy, physics and Mother Nature.">
+    <link rel="icon" href="/assets/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="/assets/css/styles.css">
-    <link rel="javascript" href="/js/snap.svg-min.js">
+    <script src="/js/snap.svg-min.js" defer></script>
     <link type="application/atom+xml" rel="alternate" href="/feed.xml" />
     <!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>How to build Jekyll website on WINDOWS</title>
@@ -22,16 +25,47 @@
 
   </head>
   <body>
-    <nav class=navigation>
-    <p>Site Navigation</p>
+    <img class="fit-picture"
+     src="/assets/images/swamiVivekananda.svg"
+     alt="Swami Vivekananda">
+
+<nav class=navigation>
   
+  <!-- uncomment below line to render the names of the navigation items -->
+<!--
     <a href="/" >Home</a>
+-->
+    <a
+        href="/" >
+            <img src="/assets/images/homePageHomeLogo.svg" alt="homepage logo">
+    </a>
   
+  <!-- uncomment below line to render the names of the navigation items -->
+<!--
     <a href="/about.html" >About</a>
+-->
+    <a
+        href="/about.html" >
+            <img src="/assets/images/homePageAboutLogo.svg" alt="about logo">
+    </a>
   
+  <!-- uncomment below line to render the names of the navigation items -->
+<!--
     <a href="/blog.html" >Blog</a>
+-->
+    <a
+        href="/blog.html" >
+            <img src="/assets/images/homePagePostsLogo.svg" alt="blog logo">
+    </a>
   
+  <!-- uncomment below line to render the names of the navigation items -->
+<!--
     <a href="/staff.html" >Staff</a>
+-->
+    <a
+        href="/staff.html" >
+            <img src="/assets/images/homePageStaffLogo.svg" alt="staff logo">
+    </a>
   
 
 </nav>
@@ -59,10 +93,6 @@
     
  </nav>
 
-<img class="fit-picture"
-     src="assets/images/SwamiVivekananda.png"
-     alt="Swami Vivekananda">
-
     <h1 class="Headnote">How to build Jekyll website on WINDOWS</h1>
 <p >
   24 May 2020 - fubar
@@ -73,7 +103,7 @@
 </p>
 
 <div class="box">
-<img src="/assets/images/Jekyll/JekyllLogo.png" alt="Jekyll-logo" width="150px" />
+<img src="/assets/images/Jekyll/JekyllLogo.svg" alt="jekyll-logo" width="150px" />
 </div>
 
 <h2 id="unexpected-motivation-windows-subsystem-for-linux">Unexpected motivation: Windows Subsystem for Linux</h2>
@@ -261,6 +291,36 @@
 <h2 id="github-pages-workflow">GitHub pages workflow</h2>
 
 <p>Refer <a href="https://pages.github.com/">GitHub pages</a> for setting up this workflow. It involves tedious configuration steps, but once the site is configured, it is simple click to deploy the site for production unlike the <em>Simple Workflow</em>.</p>
+
+<p>In the Simple Workflow, we use Github as a website hosting service only. A website hosting service provides</p>
+<ul>
+  <li>storage space for our content</li>
+  <li>a URL(Universal Resource Locator) for our website, so any one on the internet can access our content. The internals of serving a site like setting up a web server, alloting an IP address for the machine which is running the server, is undertaken by the hosting service reducing the overhead for the client. The job of the client is to only store the html content at the appropriate location on the server machine. This is usually done by an FTP transfer of files as in the case of LAN network which consist of a peripheral node machine that talks to the outside world</li>
+  <li>
+    <p>web security service. This is one of the most important aspects of internet communication. Disruption to the serving of content is attempted with malicious intent by many elements either human or bots. Disruption can be in the form of</p>
+  </li>
+  <li>corrupting the content.</li>
+  <li>making the content inaccessible to potential users.</li>
+  <li>tracking the usage of content violating the privacy of users.</li>
+</ul>
+
+<p>It is the duty of the hosting service to secure the content. When we use Jekyll to create our static content, we programmatically create the linked site structure in the form of posts and pages. As Jekyll supports mardown, creating posts in markdown is more easier than writing in raw html by utilizing the markdown’s easily readable markup format. The posts and pages are written in markdown. In addition, the assets of the site like multimedia (images, audio, video files), javascript (for animations and event driven responses) and css (for styling the content) are handled as separate containers are easily linked to sites using Markdown’s hyper reference syntax. Further in combination with Jekyll’s <strong>Liquid template language</strong>,  we can load load dynamic content on your site.. Once we are ready with our content, we need to build the site. This means we turn the crank of Jekyll and it generates inter linked html content ready to be hosted.</p>
+
+<p>In the simple workflow, the step of building content is done offline by the user and once h/she is satisfied with how the content is served by testing on a local server, the built content is pushed onto the machine providing the web hosting service. In general the machine can be provided by any service provider. It is not required that the site built from jekyll needs to served on Github repository. However we choose to serve it on a Github repository as it provides free hosting service. As shown earlier, by pushing the content on the <code class="highlighter-rouge">baalkikhaal.github.io</code> repository, the html is served at <code class="highlighter-rouge">https://baalkikhaal.github.io</code>. In the backend, it is the <code class="highlighter-rouge">Github Pages</code> webhosting service that is responsible for serving the site.</p>
+
+<h3 id="github-pages">Github Pages</h3>
+<p>Github Pages is a website hosting service that has two roles</p>
+
+<ul>
+  <li>serve the html content hosted on the repository</li>
+  <li>build the html content jekyll source</li>
+</ul>
+
+<p>The first role is utilized in the Simple Workflow. The second role can be utilized to outsource the job of building the jekyll site to the Github Pages so that there is no need to build the site offline. Further convenience is gained by maintaining a local git of the site repository. After editing the site, a simple push to the origin ensures the changes are live. If the git jargon is confusing, please check out <a href="/2020/05/23/Git-Command-Cheat-Sheet.html">git jargon</a>. This makes the building sites easy and is reflected in the motto of <a href="https://pages.github.com/">Github Pages</a></p>
+
+<blockquote>
+  <p>Just edit, push, and your changes are live.</p>
+</blockquote>
 
 <hr />
 

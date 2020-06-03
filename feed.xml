@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-05-31T01:52:12+05:30</updated><id>/feed.xml</id><entry><title type="html">Semantic versioning rules for software management</title><link href="/2020/05/29/Semantic-versioning-rules-for-software-management.html" rel="alternate" type="text/html" title="Semantic versioning rules for software management" /><published>2020-05-29T00:00:00+05:30</published><updated>2020-05-29T00:00:00+05:30</updated><id>/2020/05/29/Semantic-versioning-rules-for-software-management</id><content type="html" xml:base="/2020/05/29/Semantic-versioning-rules-for-software-management.html">&lt;div class=&quot;box&quot;&gt;
-&lt;img src=&quot;/assets/images/Git/GitLogo.png&quot; alt=&quot;Git-logo&quot; width=&quot;150px&quot; /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-06-04T02:46:16+05:30</updated><id>/feed.xml</id><entry><title type="html">Semantic versioning rules for software management</title><link href="/2020/05/29/Semantic-versioning-rules-for-software-management.html" rel="alternate" type="text/html" title="Semantic versioning rules for software management" /><published>2020-05-29T00:00:00+05:30</published><updated>2020-05-29T00:00:00+05:30</updated><id>/2020/05/29/Semantic-versioning-rules-for-software-management</id><content type="html" xml:base="/2020/05/29/Semantic-versioning-rules-for-software-management.html">&lt;div class=&quot;box&quot;&gt;
+&lt;img src=&quot;/assets/images/Git/gitLogo.svg&quot; alt=&quot;Git-logo&quot; width=&quot;150px&quot; /&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&quot;abstract&quot;&gt;Abstract&lt;/h2&gt;
@@ -101,7 +101,7 @@ Just as a program goes through iterative process of development, the dependencie
 &lt;img src=&quot;/assets/images/C++/C++Logo.png&quot; alt=&quot;C++-logo&quot; width=&quot;150px&quot; /&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+&lt;h2 id=&quot;abstract&quot;&gt;Abstract&lt;/h2&gt;
 
 &lt;p&gt;Programming is a science as well as an art. Developing the required skills takes time and effort and an enthusiasm to learn. The learning draws parallels with that of learning a natural language such as English.
 Just as the required skills to learn a natural language are reading, listening, writing and speaking, so the skills for learning a programming language are reading code, writing code. Also just as we need to know the proper language constructs like grammar (syntax), contextual use of language (semantics), we need to learn the syntax as well as&lt;/p&gt;
@@ -228,54 +228,8 @@ in a &lt;a href=&quot;https://www.cs-fundamentals.com/c-programming/how-to-compi
 
 &lt;h2 id=&quot;debugging-code&quot;&gt;Debugging code&lt;/h2&gt;
 
-&lt;p&gt;Tutorials explaining good programming practices while debugging code are given here.(#TODO)&lt;/p&gt;</content><author><name>fubar</name></author><category term="programming" /><summary type="html">C++ references of websites, books, code and APIs for learning C/C++.</summary></entry><entry><title type="html">Introducing Spintronics</title><link href="/2020/05/24/spintronics.html" rel="alternate" type="text/html" title="Introducing Spintronics" /><published>2020-05-24T00:00:00+05:30</published><updated>2020-05-24T00:00:00+05:30</updated><id>/2020/05/24/spintronics</id><content type="html" xml:base="/2020/05/24/spintronics.html">&lt;h1 id=&quot;references&quot;&gt;References&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Maekawa Spin Electronics&lt;/li&gt;
-  &lt;li&gt;Marrows&lt;/li&gt;
-  &lt;li&gt;JAC Bland&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>fubar</name></author><category term="physics" /><summary type="html">We probe, control and thereby manipulate the spin degree of freedom of the electron to affect various processes ranging from information storage, transfer and processing.</summary></entry><entry><title type="html">Trace Bitmap tool in Inkscape: A tutorial</title><link href="/2020/05/24/trace-bitmap-in-inkscape.html" rel="alternate" type="text/html" title="Trace Bitmap tool in Inkscape: A tutorial" /><published>2020-05-24T00:00:00+05:30</published><updated>2020-05-24T00:00:00+05:30</updated><id>/2020/05/24/trace-bitmap-in-inkscape</id><content type="html" xml:base="/2020/05/24/trace-bitmap-in-inkscape.html">&lt;div class=&quot;box&quot;&gt;
-&lt;img src=&quot;/assets/images/Inkscape/TraceBitMap_08.png&quot; alt=&quot;boats-and-lake&quot; width=&quot;150px&quot; /&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;abstract&quot;&gt;Abstract&lt;/h2&gt;
-
-&lt;p&gt;One of the beautiful tools of Inkscape is to generate vectorized versions of raster images formats like &lt;code class=&quot;highlighter-rouge&quot;&gt;.png&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;.jpg&lt;/code&gt;. This is a simple tutorial to demonstrate the workflow. For the demonstration, we will use any of the daily updated Windows Welcome Screen. When we log in to the Windows, the Welcome Screen shows a beautiful landscape and we can vote for the daily update. Depending on our tastes, Windows selects a particular genre for the images. My inclination is towards nature imagery, without the presence of human derived structures or humans itself. Now to access the location where the images are stored is a bit tricky. After following the tutorial on &lt;a href=&quot;https://www.laptopmag.com/articles/find-windows-10-lock-screen-pictures&quot;&gt;Windows 10 Spotlight LockScreen pictures&lt;/a&gt;, I could access my laptop’s welcome screen images. I created a desktop shortcut to the location for easy access in the future. Let’s get started with generating the vectorized version of one of these beautiful curated sceneries.&lt;/p&gt;
-
-&lt;h2 id=&quot;trace-bitmap-tutorial&quot;&gt;Trace BitMap Tutorial&lt;/h2&gt;
-
-&lt;p&gt;Firstly import the &lt;code class=&quot;highlighter-rouge&quot;&gt;.png&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;.jpg&lt;/code&gt; into a new Inkscape project. The productivity in using Inkscape is enhanced by using shortcuts. Slowly with experience, one gets used to the shortcuts. For importing, use &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl+I&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/Inkscape/TraceBitMap_00.png&quot; alt=&quot;import-image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;In the &lt;code class=&quot;highlighter-rouge&quot;&gt;Path&lt;/code&gt; menu item, select &lt;code class=&quot;highlighter-rouge&quot;&gt;Trace BitMap&lt;/code&gt; tool. You have the option of creating single scan or multiple scans. A single scan creates a single path object and multiple scan creates group of paths. Create a multiple scan with 8 reduced colors. The algorithm appropriately chooses the reduced colors from the color spectrum of the image.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/Inkscape/TraceBitMap_01.png&quot; alt=&quot;trace-bitmap-dialog-options&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The vector image is a group of 8 paths.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/Inkscape/TraceBitMap_02.png&quot; alt=&quot;vectorized-bitmap&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;To view the paths, let us ungroup them using the &lt;code class=&quot;highlighter-rouge&quot;&gt;Ungroup&lt;/code&gt; tool of the &lt;code class=&quot;highlighter-rouge&quot;&gt;Object&lt;/code&gt; menu. The short cut is &lt;code class=&quot;highlighter-rouge&quot;&gt;Shift+Ctrl+G&lt;/code&gt;. Note that the vector should be selected first. After ungrouping each of the paths is a background with a reduced color with a &lt;strong&gt;clip&lt;/strong&gt; (What are &lt;a href=&quot;#&quot;&gt;clips&lt;/a&gt;? #TODO)depicting the contour for the corresponding color. So the total vector image is a combination of cascaded contours of reduced colors.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/Inkscape/TraceBitMap_03.png&quot; alt=&quot;contours-of-vector&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This is more easily understood by taking a simpler raster image. Below depicts the angular part of the orbital of hydrogen atom. This is generated using Mayavi, a python package for 3D visualization. The code is very simple and is explained elsewhere (#TODO write post for mayavi tutorial)&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/Inkscape/TraceBitMap_04.jpg&quot; alt=&quot;1s-orbital&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Let us apply the same Trace Bitmap tool and vectorize the orbital with only 4 reduced color. This is shown to the right of the first column. After ungrouping the vector paths and separating the paths, we can see it is made up a cascaded contours as shown in the middle figure. For more clarity, the paths for each reduced color are projected in perspective with subpar opacity which clearly highlights the cascaded nature of the paths as shown in last row. The projection of the paths onto perspective determined by the parallelogram drawn in the last row is done by &lt;code class=&quot;highlighter-rouge&quot;&gt;Perpective&lt;/code&gt; tool in &lt;code class=&quot;highlighter-rouge&quot;&gt;Extensions&lt;/code&gt; menu item. The &lt;a href=&quot;#&quot;&gt;tutorial for Perspective&lt;/a&gt; #TODO is here.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/Inkscape/TraceBitMap_05.png&quot; alt=&quot;contours-of-1s-orbital&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Coming back to the nature scenery, since we have ungrouped the vector, let us select the original raster image again and generate a new vector image. Now select the vector image and let us export the vector image to png. Using  &lt;code class=&quot;highlighter-rouge&quot;&gt;Shift+Ctrl-E&lt;/code&gt; shortcut. Set the export options like &lt;code class=&quot;highlighter-rouge&quot;&gt;Selection&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;dpi&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;Filename&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/Inkscape/TraceBitMap_06.png&quot; alt=&quot;export-png&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The final vector image is below.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/Inkscape/TraceBitMap_07.png&quot; alt=&quot;vector-image&quot; /&gt;&lt;/p&gt;</content><author><name>fubar</name></author><category term="programming" /><summary type="html">Let us use `Trace Bitmap` tool of Path toolset to generate vectorized versions of raster images</summary></entry><entry><title type="html">How to build Jekyll website on WINDOWS</title><link href="/2020/05/24/workflow-for-building-jekyll-website.html" rel="alternate" type="text/html" title="How to build Jekyll website on WINDOWS" /><published>2020-05-24T00:00:00+05:30</published><updated>2020-05-24T00:00:00+05:30</updated><id>/2020/05/24/workflow-for-building-jekyll-website</id><content type="html" xml:base="/2020/05/24/workflow-for-building-jekyll-website.html">&lt;div class=&quot;box&quot;&gt;
-&lt;img src=&quot;/assets/images/Jekyll/JekyllLogo.png&quot; alt=&quot;Jekyll-logo&quot; width=&quot;150px&quot; /&gt;
+&lt;p&gt;Tutorials explaining good programming practices while debugging code are given here.(#TODO)&lt;/p&gt;</content><author><name>fubar</name></author><category term="programming" /><summary type="html">C++ references of websites, books, code and APIs for learning C/C++.</summary></entry><entry><title type="html">How to build Jekyll website on WINDOWS</title><link href="/2020/05/24/workflow-for-building-jekyll-website.html" rel="alternate" type="text/html" title="How to build Jekyll website on WINDOWS" /><published>2020-05-24T00:00:00+05:30</published><updated>2020-05-24T00:00:00+05:30</updated><id>/2020/05/24/workflow-for-building-jekyll-website</id><content type="html" xml:base="/2020/05/24/workflow-for-building-jekyll-website.html">&lt;div class=&quot;box&quot;&gt;
+&lt;img src=&quot;/assets/images/Jekyll/JekyllLogo.svg&quot; alt=&quot;jekyll-logo&quot; width=&quot;150px&quot; /&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&quot;unexpected-motivation-windows-subsystem-for-linux&quot;&gt;Unexpected motivation: Windows Subsystem for Linux&lt;/h2&gt;
@@ -464,9 +418,234 @@ in a &lt;a href=&quot;https://www.cs-fundamentals.com/c-programming/how-to-compi
 
 &lt;p&gt;Refer &lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub pages&lt;/a&gt; for setting up this workflow. It involves tedious configuration steps, but once the site is configured, it is simple click to deploy the site for production unlike the &lt;em&gt;Simple Workflow&lt;/em&gt;.&lt;/p&gt;
 
-&lt;hr /&gt;</content><author><name>fubar</name></author><category term="programming" /><summary type="html">Let us use web development tools hosted on the Windows Subsystem for Linux to build static websites eventually to be hosted on GitHub.</summary></entry><entry><title type="html">Cheat sheet for GIT</title><link href="/2020/05/23/Git-Command-Cheat-Sheet.html" rel="alternate" type="text/html" title="Cheat sheet for GIT" /><published>2020-05-23T00:00:00+05:30</published><updated>2020-05-23T00:00:00+05:30</updated><id>/2020/05/23/Git-Command-Cheat-Sheet</id><content type="html" xml:base="/2020/05/23/Git-Command-Cheat-Sheet.html">&lt;p&gt;Version control is an essential element of software management.&lt;/p&gt;
+&lt;p&gt;In the Simple Workflow, we use Github as a website hosting service only. A website hosting service provides&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;storage space for our content&lt;/li&gt;
+  &lt;li&gt;a URL(Universal Resource Locator) for our website, so any one on the internet can access our content. The internals of serving a site like setting up a web server, alloting an IP address for the machine which is running the server, is undertaken by the hosting service reducing the overhead for the client. The job of the client is to only store the html content at the appropriate location on the server machine. This is usually done by an FTP transfer of files as in the case of LAN network which consist of a peripheral node machine that talks to the outside world&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;web security service. This is one of the most important aspects of internet communication. Disruption to the serving of content is attempted with malicious intent by many elements either human or bots. Disruption can be in the form of&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;corrupting the content.&lt;/li&gt;
+  &lt;li&gt;making the content inaccessible to potential users.&lt;/li&gt;
+  &lt;li&gt;tracking the usage of content violating the privacy of users.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h1 id=&quot;beginner-level-git-command-cheat-sheet&quot;&gt;Beginner level GIT command cheat sheet&lt;/h1&gt;
+&lt;p&gt;It is the duty of the hosting service to secure the content. When we use Jekyll to create our static content, we programmatically create the linked site structure in the form of posts and pages. As Jekyll supports mardown, creating posts in markdown is more easier than writing in raw html by utilizing the markdown’s easily readable markup format. The posts and pages are written in markdown. In addition, the assets of the site like multimedia (images, audio, video files), javascript (for animations and event driven responses) and css (for styling the content) are handled as separate containers are easily linked to sites using Markdown’s hyper reference syntax. Further in combination with Jekyll’s &lt;strong&gt;Liquid template language&lt;/strong&gt;,  we can load load dynamic content on your site.. Once we are ready with our content, we need to build the site. This means we turn the crank of Jekyll and it generates inter linked html content ready to be hosted.&lt;/p&gt;
+
+&lt;p&gt;In the simple workflow, the step of building content is done offline by the user and once h/she is satisfied with how the content is served by testing on a local server, the built content is pushed onto the machine providing the web hosting service. In general the machine can be provided by any service provider. It is not required that the site built from jekyll needs to served on Github repository. However we choose to serve it on a Github repository as it provides free hosting service. As shown earlier, by pushing the content on the &lt;code class=&quot;highlighter-rouge&quot;&gt;baalkikhaal.github.io&lt;/code&gt; repository, the html is served at &lt;code class=&quot;highlighter-rouge&quot;&gt;https://baalkikhaal.github.io&lt;/code&gt;. In the backend, it is the &lt;code class=&quot;highlighter-rouge&quot;&gt;Github Pages&lt;/code&gt; webhosting service that is responsible for serving the site.&lt;/p&gt;
+
+&lt;h3 id=&quot;github-pages&quot;&gt;Github Pages&lt;/h3&gt;
+&lt;p&gt;Github Pages is a website hosting service that has two roles&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;serve the html content hosted on the repository&lt;/li&gt;
+  &lt;li&gt;build the html content jekyll source&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The first role is utilized in the Simple Workflow. The second role can be utilized to outsource the job of building the jekyll site to the Github Pages so that there is no need to build the site offline. Further convenience is gained by maintaining a local git of the site repository. After editing the site, a simple push to the origin ensures the changes are live. If the git jargon is confusing, please check out &lt;a href=&quot;/2020/05/23/Git-Command-Cheat-Sheet.html&quot;&gt;git jargon&lt;/a&gt;. This makes the building sites easy and is reflected in the motto of &lt;a href=&quot;https://pages.github.com/&quot;&gt;Github Pages&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Just edit, push, and your changes are live.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;</content><author><name>fubar</name></author><category term="programming" /><summary type="html">Let us use web development tools hosted on the Windows Subsystem for Linux to build static websites eventually to be hosted on GitHub.</summary></entry><entry><title type="html">Trace Bitmap tool in Inkscape: A tutorial</title><link href="/2020/05/24/trace-bitmap-in-inkscape.html" rel="alternate" type="text/html" title="Trace Bitmap tool in Inkscape: A tutorial" /><published>2020-05-24T00:00:00+05:30</published><updated>2020-05-24T00:00:00+05:30</updated><id>/2020/05/24/trace-bitmap-in-inkscape</id><content type="html" xml:base="/2020/05/24/trace-bitmap-in-inkscape.html">&lt;div class=&quot;box&quot;&gt;
+&lt;img src=&quot;/assets/images/Inkscape/inkscapeLogo.svg&quot; alt=&quot;inkscape-logo&quot; width=&quot;150px&quot; /&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;abstract&quot;&gt;Abstract&lt;/h2&gt;
+
+&lt;p&gt;One of the beautiful tools of Inkscape is to generate vectorized versions of raster images formats like &lt;code class=&quot;highlighter-rouge&quot;&gt;.png&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;.jpg&lt;/code&gt;. This is a simple tutorial to demonstrate the workflow. For the demonstration, we will use any of the daily updated Windows Welcome Screen. When we log in to the Windows, the Welcome Screen shows a beautiful landscape and we can vote for the daily update. Depending on our tastes, Windows selects a particular genre for the images. My inclination is towards nature imagery, without the presence of human derived structures or humans itself. Now to access the location where the images are stored is a bit tricky. After following the tutorial on &lt;a href=&quot;https://www.laptopmag.com/articles/find-windows-10-lock-screen-pictures&quot;&gt;Windows 10 Spotlight LockScreen pictures&lt;/a&gt;, I could access my laptop’s welcome screen images. I created a desktop shortcut to the location for easy access in the future. Let’s get started with generating the vectorized version of one of these beautiful curated sceneries.&lt;/p&gt;
+
+&lt;h2 id=&quot;trace-bitmap-tutorial&quot;&gt;Trace BitMap Tutorial&lt;/h2&gt;
+
+&lt;p&gt;Firstly import the &lt;code class=&quot;highlighter-rouge&quot;&gt;.png&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;.jpg&lt;/code&gt; into a new Inkscape project. The productivity in using Inkscape is enhanced by using shortcuts. Slowly with experience, one gets used to the shortcuts. For importing, use &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl+I&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/Inkscape/TraceBitMap_00.png&quot; alt=&quot;import-image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In the &lt;code class=&quot;highlighter-rouge&quot;&gt;Path&lt;/code&gt; menu item, select &lt;code class=&quot;highlighter-rouge&quot;&gt;Trace BitMap&lt;/code&gt; tool. You have the option of creating single scan or multiple scans. A single scan creates a single path object and multiple scan creates group of paths. Create a multiple scan with 8 reduced colors. The algorithm appropriately chooses the reduced colors from the color spectrum of the image.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/Inkscape/TraceBitMap_01.png&quot; alt=&quot;trace-bitmap-dialog-options&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The vector image is a group of 8 paths.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/Inkscape/TraceBitMap_02.png&quot; alt=&quot;vectorized-bitmap&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To view the paths, let us ungroup them using the &lt;code class=&quot;highlighter-rouge&quot;&gt;Ungroup&lt;/code&gt; tool of the &lt;code class=&quot;highlighter-rouge&quot;&gt;Object&lt;/code&gt; menu. The short cut is &lt;code class=&quot;highlighter-rouge&quot;&gt;Shift+Ctrl+G&lt;/code&gt;. Note that the vector should be selected first. After ungrouping each of the paths is a background with a reduced color with a &lt;strong&gt;clip&lt;/strong&gt; (What are &lt;a href=&quot;#&quot;&gt;clips&lt;/a&gt;? #TODO)depicting the contour for the corresponding color. So the total vector image is a combination of cascaded contours of reduced colors.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/Inkscape/TraceBitMap_03.png&quot; alt=&quot;contours-of-vector&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is more easily understood by taking a simpler raster image. Below depicts the angular part of the orbital of hydrogen atom. This is generated using Mayavi, a python package for 3D visualization. The code is very simple and is explained elsewhere (#TODO write post for mayavi tutorial)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/Inkscape/TraceBitMap_04.jpg&quot; alt=&quot;1s-orbital&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Let us apply the same Trace Bitmap tool and vectorize the orbital with only 4 reduced color. This is shown to the right of the first column. After ungrouping the vector paths and separating the paths, we can see it is made up a cascaded contours as shown in the middle figure. For more clarity, the paths for each reduced color are projected in perspective with subpar opacity which clearly highlights the cascaded nature of the paths as shown in last row. The projection of the paths onto perspective determined by the parallelogram drawn in the last row is done by &lt;code class=&quot;highlighter-rouge&quot;&gt;Perpective&lt;/code&gt; tool in &lt;code class=&quot;highlighter-rouge&quot;&gt;Extensions&lt;/code&gt; menu item. The &lt;a href=&quot;#&quot;&gt;tutorial for Perspective&lt;/a&gt; #TODO is here.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/Inkscape/TraceBitMap_05.png&quot; alt=&quot;contours-of-1s-orbital&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Coming back to the nature scenery, since we have ungrouped the vector, let us select the original raster image again and generate a new vector image. Now select the vector image and let us export the vector image to png. Using  &lt;code class=&quot;highlighter-rouge&quot;&gt;Shift+Ctrl-E&lt;/code&gt; shortcut. Set the export options like &lt;code class=&quot;highlighter-rouge&quot;&gt;Selection&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;dpi&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;Filename&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/Inkscape/TraceBitMap_06.png&quot; alt=&quot;export-png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The final vector image is below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/Inkscape/TraceBitMap_07.png&quot; alt=&quot;vector-image&quot; /&gt;&lt;/p&gt;</content><author><name>fubar</name></author><category term="programming" /><summary type="html">Let us use `Trace Bitmap` tool of Path toolset to generate vectorized versions of raster images</summary></entry><entry><title type="html">Introducing Spintronics</title><link href="/2020/05/24/spintronics.html" rel="alternate" type="text/html" title="Introducing Spintronics" /><published>2020-05-24T00:00:00+05:30</published><updated>2020-05-24T00:00:00+05:30</updated><id>/2020/05/24/spintronics</id><content type="html" xml:base="/2020/05/24/spintronics.html">&lt;h2 id=&quot;abstract&quot;&gt;Abstract&lt;/h2&gt;
+
+&lt;p&gt;Write a paragraph on spintronics. what skills are required to understand spintronics. What are the areas your lab is working on. What are you working on.
+What is the specific problem you are working on&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Maekawa Spin Electronics&lt;/li&gt;
+  &lt;li&gt;Marrows&lt;/li&gt;
+  &lt;li&gt;JAC Bland&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>fubar</name></author><category term="physics" /><summary type="html">We probe, control and thereby manipulate the spin degree of freedom of the electron to affect various processes ranging from information storage, transfer and processing.</summary></entry><entry><title type="html">Cheat sheet for GIT</title><link href="/2020/05/23/Git-Command-Cheat-Sheet.html" rel="alternate" type="text/html" title="Cheat sheet for GIT" /><published>2020-05-23T00:00:00+05:30</published><updated>2020-05-23T00:00:00+05:30</updated><id>/2020/05/23/Git-Command-Cheat-Sheet</id><content type="html" xml:base="/2020/05/23/Git-Command-Cheat-Sheet.html">&lt;div class=&quot;box&quot;&gt;
+&lt;img src=&quot;/assets/images/Git/gitLogo.svg&quot; alt=&quot;Git-logo&quot; width=&quot;150px&quot; /&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;abstract&quot;&gt;Abstract&lt;/h2&gt;
+
+&lt;p&gt;The concepts around Git can be summarized by the taglines&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Distributed is the new centralized&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;Version control is an essential element of software management. Git is a Swiss Army knife equivalent among the version control systems.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Git is a version control system that provides tools to probe, build versioned software with key emphasis distributed development&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Let us learn the fundamentals of Git with the guidance of &lt;a href=&quot;https://tom.preston-werner.com/2009/05/19/the-git-parable.html&quot;&gt;the Git Parable&lt;/a&gt; and apply Git to each step of software sharing that involve&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;code reuse&lt;/li&gt;
+  &lt;li&gt;code build up&lt;/li&gt;
+  &lt;li&gt;code sharing/shipping&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;code-reuse&quot;&gt;Code reuse&lt;/h2&gt;
+
+&lt;p&gt;Reusability of code is essential feature of software development. It sincerely captures of philosophy of &lt;strong&gt;standing on top of the shoulder of giants&lt;/strong&gt;, a phrase that was famously used by Stephen Hawking in his book on Celestial mechanics and also used as tagline of Google scholar. To be able to reuse code, firstly it needs to be available for installation. Prior to the internet, code was shared in the form of physical shipping of physical media like floppy disks and CDs. With the advent of internet, physical media sharing was bypassed and code was &lt;code class=&quot;highlighter-rouge&quot;&gt;downloaded&lt;/code&gt; either directly from others computers or from common repositories. With the evolution of code sharing, came standards for how to share code. Then came the formats like &lt;code class=&quot;highlighter-rouge&quot;&gt;.tar.gz&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;.zip&lt;/code&gt; files which are bundles for code files, binary or otherwise. With the advent of version control systems, code was accessible from a central repository on the internet. In a centralized version control system, there is a &lt;strong&gt;single host&lt;/strong&gt;. A download involved accessing the contents of the repository. In contrast, distributed version control systems like &lt;code class=&quot;highlighter-rouge&quot;&gt;Git&lt;/code&gt; allowed &lt;strong&gt;multilple hosts&lt;/strong&gt;. To host a code all one had to do was download the entire code and provide the link to download. in this anyone can be a potential host and anyone with access to the link can download the code.&lt;/p&gt;
+
+&lt;p&gt;For our purpose of learning code reuse we will use &lt;a href=&quot;https://inkscape.org/develop/extensions/&quot;&gt;GitHub’ code hosting service&lt;/a&gt;. Code on GitHub is categorized into &lt;strong&gt;Git repositories&lt;/strong&gt;. It is to be noted that Git repository cannot be hosted anywhere. Only that GitHub is one of the hosting services. Others include but not limited to &lt;a href=&quot;https://about.gitlab.com/&quot;&gt;GitLab&lt;/a&gt;, older &lt;a href=&quot;https://sourceforge.net/&quot;&gt;Sourceforge&lt;/a&gt;, &lt;a href=&quot;https://bitbucket.org/&quot;&gt;Bitbucket&lt;/a&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A Git repository is simply a versioned code that tracks the history of its development.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;There are two kinds of Git repositories; private and public type. A public repository is accessible to anyone with an Internet connection in two ways&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;download the repository as a &lt;strong&gt;zipped&lt;/strong&gt; file to your local machine.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;cloning the repository&lt;/strong&gt; via local Git system.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We will focus on the later.&lt;/p&gt;
+
+&lt;h3 id=&quot;git-cloning&quot;&gt;Git cloning&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Git clone is basically getting a copy of the Git repository on the local machine.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Before we begin git cloning the repository, we need to &lt;a href=&quot;https://git-scm.com/book/en/v2/Getting-Started-Installing-Git&quot;&gt;setup Git system on our local machine&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now that we a working Git on your system, let us take a simple repository as a concrete example to work with. Currently fubar is interested in developing an &lt;a href=&quot;https://inkscape.org/develop/extensions/&quot;&gt;Inkscape extension&lt;/a&gt; to draw the orbitals of a hydrogen atom by providing the quantum numbers as input parameters to the extension. After reading the documentation, fubar proceeds to work on an extension template hosted as a Git repository at&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://github.com/Neon22/inkscape_extension_template
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;From the URL to the Git repository it is understood that the name of the repository is &lt;code class=&quot;highlighter-rouge&quot;&gt;inkscape_extension_template&lt;/code&gt;, the name of the developer is &lt;code class=&quot;highlighter-rouge&quot;&gt;Neon22&lt;/code&gt;. To clone the Git repository, we need the URL of the Git repository which is&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://github.com/Neon22/inkscape_extension_template.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;with a suffix &lt;code class=&quot;highlighter-rouge&quot;&gt;.git&lt;/code&gt;. Now fubar fires up a &lt;code class=&quot;highlighter-rouge&quot;&gt;Git Bash on Windows&lt;/code&gt; shell and moves to the directory that hosts Git repositories and executes&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$git clone https://github.com/Neon22/inkscape_extension_template.git
+
+Cloning into 'inkscape_extension_template'...
+remote: Enumerating objects: 2, done.
+remote: Counting objects: 100% (2/2), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 60 (delta 0), reused 0 (delta 0), pack-reused 58
+Unpacking objects: 100% (60/60), done.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This command has &lt;strong&gt;cloned the Git repository&lt;/strong&gt; from the GitHub repository. One of our first Git commands. To check the contents of the clone change into the git repository.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd inkscape_extension_template/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Check the contents of the repository including the hidden files and folders&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ls -al
+
+total 38
+drwxr-xr-x 1 fubar 197121     0 Jun  1 19:41 ./
+drwxr-xr-x 1 fubar 197121     0 Jun  1 19:40 ../
+drwxr-xr-x 1 fubar 197121     0 Jun  1 19:41 .git/
+-rw-r--r-- 1 fubar 197121   702 Jun  1 19:41 .gitignore
+-rw-r--r-- 1 fubar 197121  1098 Jun  1 19:41 LICENSE.md
+-rw-r--r-- 1 fubar 197121   541 Jun  1 19:41 README.md
+-rw-r--r-- 1 fubar 197121  4215 Jun  1 19:41 template.inx
+-rwxr-xr-x 1 fubar 197121 13222 Jun  1 19:41 template.py*
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;In addition to the usual source files, there is the most important hidden directory &lt;strong&gt;.git&lt;/strong&gt; which tracks the entire history of the code development. We will now extract various kinds of information about the project from this hidden directory using appropriate Git commands.&lt;/p&gt;
+
+&lt;h3 id=&quot;remote-repository-information&quot;&gt;Remote repository information&lt;/h3&gt;
+
+&lt;p&gt;Our local Git repository and the host Git repository maintain a parent-child relationship. Just as the local repository is called the &lt;strong&gt;clone&lt;/strong&gt; of the host repository, the host is called the &lt;strong&gt;remote&lt;/strong&gt; of the local repository. To probe the remote of the local clone, fubar executes&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$git remote -v
+
+origin	https://github.com/Neon22/inkscape_extension_template.git (fetch)
+origin	https://github.com/Neon22/inkscape_extension_template.git (push)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;There are two &lt;strong&gt;remote&lt;/strong&gt; listings each. Both are named &lt;strong&gt;origin&lt;/strong&gt;. Origin refers to the &lt;strong&gt;original remote&lt;/strong&gt; from which the current local Git repository has been cloned from. The location of the origin is given by the URL in the second columns The first is of type &lt;strong&gt;fetch&lt;/strong&gt; and the second is of type &lt;strong&gt;push&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;To understand &lt;strong&gt;fetch&lt;/strong&gt; and &lt;strong&gt;push&lt;/strong&gt; types we have to bear in mind that neither the version of the remote Git repository is frozen nor the version is the local Git repository is frozen. Both undergo &lt;strong&gt;revision&lt;/strong&gt; with the course of time. If fubar wants to request the latest revision, fubar does a &lt;strong&gt;fetch&lt;/strong&gt; and instead he wants to share his own revision, he does a &lt;strong&gt;push&lt;/strong&gt;. We will revisit these Git concepts later we deal with &lt;a href=&quot;#code-sharing&quot;&gt;Code Sharing&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;viewing-the-commit-history&quot;&gt;Viewing the commit History&lt;/h3&gt;
+
+&lt;p&gt;Now fubar is curious about how the repository went about getting developed i.e. he wants to get quick snapshot of the history of the repository. This is stored in the &lt;strong&gt;log&lt;/strong&gt; of the git repository. To probe the log with a minimal output fubar executes&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$git log --oneline
+
+d97836c Delete extension information.txt
+4889dc9 Add notepad page docs
+8a3c5c3 Update color
+8049ee6 Update for color example
+c49d5cd Merge pull request #2 from Moini/patch-1
+3d19313 Fix error
+406cfba Merge pull request #1 from Moini/patch-1
+e204ad8 Add hint about meaning of underscores
+fe82878 Update for 0.91
+ac1d702 more info
+c083b0b added enums without minmal appearance
+bac9453 first pass
+1da7b47 MIT license
+4862033 ignore
+1fdb2c9 readme
+15e9eb1 Create README.md
+4d9117c Revert &quot;initial commit&quot;
+3cc5ac8 Create .gitignore
+8d98e82 Create LICENSE.md
+b65b4a1 Create README.md
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The output lists a series of what are called &lt;strong&gt;snapshots&lt;/strong&gt; of the Git repository. A &lt;strong&gt;snapshot&lt;/strong&gt; is an iteration of code development that adds a particular functionality to the existing repository. The functionality can be a adding a new feature, an update to the documentation. Every iteration is labelled by a  &lt;strong&gt;commit message&lt;/strong&gt; and a 40 character SHA1 hash over the additional code. The process of adding these iterations to the repository is discussed in &lt;a href=&quot;#code-sharing&quot;&gt;Code Sharing section&lt;/a&gt;. The output summa
+With a &lt;code class=&quot;highlighter-rouge&quot;&gt;--oneline&lt;/code&gt; flag, the output is restricted to the list of commits along with only first 7 hexadecimal digits of the SHA1 encrypted snapshot for brevity. The latest snapshot is listed first. This is one of the first Git commands as part of &lt;a href=&quot;https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History&quot;&gt;Viewing the Commit History&lt;/a&gt; as described in the original Git tutorial.&lt;/p&gt;
+
+&lt;h2 id=&quot;code-sharing&quot;&gt;Code Sharing&lt;/h2&gt;
+
+&lt;h2 id=&quot;beginner-level-git-command-index&quot;&gt;Beginner level GIT command index&lt;/h2&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;local/dir/path&amp;gt;$git clone &amp;lt;path/to/repository&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -483,13 +662,27 @@ in a &lt;a href=&quot;https://www.cs-fundamentals.com/c-programming/how-to-compi
 
 &lt;p&gt;If you have added new files which are not yet tracked then restore will not work. You need to use &lt;code class=&quot;highlighter-rouge&quot;&gt;clean&lt;/code&gt; command. The &lt;code class=&quot;highlighter-rouge&quot;&gt;-n&lt;/code&gt; flag will list the files that can be possibly cleaned if the &lt;code class=&quot;highlighter-rouge&quot;&gt;-f&lt;/code&gt; flag is used. So &lt;code class=&quot;highlighter-rouge&quot;&gt;-f&lt;/code&gt; will clean the files whereas &lt;code class=&quot;highlighter-rouge&quot;&gt;-d&lt;/code&gt; will clean the directories. This is useful when you do an error in copying files to the working directory and dont intend to keep the files.&lt;/p&gt;
 
-&lt;p&gt;This is taken from this &lt;a href=&quot;https://stackoverflow.com/questions/61212/how-to-remove-local-untracked-files-from-the-current-git-working-tree&quot;&gt;SO post&lt;/a&gt;.&lt;/p&gt;</content><author><name>fubar</name></author><category term="programming" /><summary type="html">A reference for the commonly used GIT commands and explanations of the context when they are used</summary></entry><entry><title type="html">pyVISA on Windows</title><link href="/2019/10/21/Interface-VISA-hardware-with-Windows-using-Python.html" rel="alternate" type="text/html" title="pyVISA on Windows" /><published>2019-10-21T00:00:00+05:30</published><updated>2019-10-21T00:00:00+05:30</updated><id>/2019/10/21/Interface-VISA-hardware-with-Windows-using-Python</id><content type="html" xml:base="/2019/10/21/Interface-VISA-hardware-with-Windows-using-Python.html">&lt;h1 id=&quot;howto-interface-visa-compatible-hardware-using-python&quot;&gt;HOWTO interface VISA compatible hardware using Python&lt;/h1&gt;
+&lt;p&gt;This is taken from this &lt;a href=&quot;https://stackoverflow.com/questions/61212/how-to-remove-local-untracked-files-from-the-current-git-working-tree&quot;&gt;SO post&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h1 id=&quot;history-of-visa&quot;&gt;History of VISA&lt;/h1&gt;
+&lt;h2 id=&quot;intermediate-level-git-command-index&quot;&gt;Intermediate level GIT command index&lt;/h2&gt;
+
+&lt;p&gt;???&lt;/p&gt;
+
+&lt;h2 id=&quot;advanced-level-git-command-index&quot;&gt;Advanced level GIT command index&lt;/h2&gt;
+
+&lt;p&gt;???&lt;/p&gt;</content><author><name>fubar</name></author><category term="programming" /><summary type="html">A reference for the commonly used GIT commands and explanations of the context when they are used</summary></entry><entry><title type="html">pyVISA on Windows</title><link href="/2019/10/21/Interface-VISA-hardware-with-Windows-using-Python.html" rel="alternate" type="text/html" title="pyVISA on Windows" /><published>2019-10-21T00:00:00+05:30</published><updated>2019-10-21T00:00:00+05:30</updated><id>/2019/10/21/Interface-VISA-hardware-with-Windows-using-Python</id><content type="html" xml:base="/2019/10/21/Interface-VISA-hardware-with-Windows-using-Python.html">&lt;div class=&quot;box&quot;&gt;
+&lt;img src=&quot;/assets/images/Python/pythonLogo.svg&quot; alt=&quot;python-logo&quot; width=&quot;150px&quot; /&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;abstract&quot;&gt;Abstract&lt;/h2&gt;
+
+&lt;p&gt;Interfacing test and measurement s&lt;/p&gt;
+
+&lt;h2 id=&quot;history-of-visa&quot;&gt;History of VISA&lt;/h2&gt;
 
 &lt;hr /&gt;
 
-&lt;h1 id=&quot;requirements&quot;&gt;Requirements&lt;/h1&gt;
+&lt;h2 id=&quot;requirements&quot;&gt;Requirements&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;VISA implementation from National Instruments: NI- VISA&lt;/li&gt;
@@ -497,7 +690,7 @@ in a &lt;a href=&quot;https://www.cs-fundamentals.com/c-programming/how-to-compi
   &lt;li&gt;PyVISA: Python package that is a frontend to the VISA library&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;ni--visa&quot;&gt;NI- VISA&lt;/h1&gt;
+&lt;h3 id=&quot;ni--visa&quot;&gt;NI- VISA&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://www.ni.com/en-in/support/downloads/drivers/download.ni-visa.html#305862&quot;&gt;Download: Permanent&lt;/a&gt;&lt;/p&gt;
 
@@ -505,7 +698,7 @@ in a &lt;a href=&quot;https://www.cs-fundamentals.com/c-programming/how-to-compi
 
 &lt;p&gt;&lt;a href=&quot;/assets/documents/PyVISA/National-Instruments-2001-NI-VISA-User-Manual.pdf&quot;&gt;Documentation: Mirror&lt;/a&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;keithley-gpib-to-usb-drivers&quot;&gt;Keithley GPIB to USB drivers&lt;/h1&gt;
+&lt;h3 id=&quot;keithley-gpib-to-usb-drivers&quot;&gt;Keithley GPIB to USB drivers&lt;/h3&gt;
 
 &lt;p&gt;488A is older version of the GPIB to USB adaptor. The driver development is supported only till Windows 7. So if trying to install the driver on later Windows versions, it might get tricky&lt;/p&gt;
 
@@ -517,7 +710,23 @@ in a &lt;a href=&quot;https://www.cs-fundamentals.com/c-programming/how-to-compi
 
 &lt;hr /&gt;
 
-&lt;h1 id=&quot;installation&quot;&gt;Installation&lt;/h1&gt;
+&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Remove the previous installation&lt;/li&gt;
+  &lt;li&gt;Check the system is clean&lt;/li&gt;
+  &lt;li&gt;Install the Keithley GPIB2USB drivers&lt;/li&gt;
+  &lt;li&gt;Install the NI-VISA library
+    &lt;ul&gt;
+      &lt;li&gt;[Digression] Alternative Installation of VISA library&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Install PyVISA
+    &lt;ul&gt;
+      &lt;li&gt;Install python virtual environment&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;It is essential to have no traces of previous installations of either the GPIB2USB drivers or the VISA libraries. This is ensured from checking the device manager  and installed programs.&lt;/p&gt;
@@ -529,7 +738,7 @@ in a &lt;a href=&quot;https://www.cs-fundamentals.com/c-programming/how-to-compi
 This check is optional and needed only if one is not sure if the drivers and VISA libraries are completely uninstalled&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&quot;remove-the-previous-installation&quot;&gt;Remove the previous installation&lt;/h2&gt;
+&lt;h3 id=&quot;remove-the-previous-installation&quot;&gt;Remove the previous installation&lt;/h3&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/PyVISA/InstallationPyVISA-00.png&quot; alt=&quot;Before Installation - Remove the VISA libraries&quot; /&gt;&lt;/p&gt;
 
@@ -541,7 +750,7 @@ This check is optional and needed only if one is not sure if the drivers and VIS
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/PyVISA/InstallationPyVISA-02.png&quot; alt=&quot;Before Installation - Remove the Installed Keithley Driver&quot; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;check-the-system-is-clean&quot;&gt;Check the system is clean&lt;/h2&gt;
+&lt;h3 id=&quot;check-the-system-is-clean&quot;&gt;Check the system is clean&lt;/h3&gt;
 
 &lt;p&gt;Run  ` python -m visa info` and see if the sytem is clean and ready for proper installation&lt;/p&gt;
 
@@ -551,7 +760,7 @@ This check is optional and needed only if one is not sure if the drivers and VIS
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/PyVISA/InstallationPyVISA-04.png&quot; alt=&quot;Before Installation -Check the system is clean 01&quot; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;install-the-keithley-gpib2usb-drivers&quot;&gt;Install the Keithley GPIB2USB drivers&lt;/h2&gt;
+&lt;h3 id=&quot;install-the-keithley-gpib2usb-drivers&quot;&gt;Install the Keithley GPIB2USB drivers&lt;/h3&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Ensure the hardware is unplugged&lt;/p&gt;
@@ -575,7 +784,7 @@ This check is optional and needed only if one is not sure if the drivers and VIS
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/PyVISA/InstallationPyVISA-07.png&quot; alt=&quot;Install the GPIB2USB driver 02&quot; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;install-the-ni-visa-library&quot;&gt;Install the NI-VISA library&lt;/h2&gt;
+&lt;h3 id=&quot;install-the-ni-visa-library&quot;&gt;Install the NI-VISA library&lt;/h3&gt;
 
 &lt;p&gt;Install the NI’s implementation of the VISA specification; version 19.0&lt;/p&gt;
 
@@ -593,7 +802,7 @@ This check is optional and needed only if one is not sure if the drivers and VIS
 
 &lt;p&gt;After the installation, look out for the install location; usually the &lt;code class=&quot;highlighter-rouge&quot;&gt;C:\\Windows\system32&lt;/code&gt; and search for &lt;code class=&quot;highlighter-rouge&quot;&gt;visa32.dll&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;visa64.dll&lt;/code&gt;. If they are present there, then PyVISA-py can detect them without fuss. If they are not present there (for some reason), then proceed to the &lt;a href=&quot;##[Digression]-Alternative-Installation-of-VISA-library&quot;&gt;alternative installation&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;digression-alternative-installation-of-visa-library&quot;&gt;[Digression] Alternative Installation of VISA library&lt;/h2&gt;
+&lt;h3 id=&quot;digression-alternative-installation-of-visa-library&quot;&gt;[Digression] Alternative Installation of VISA library&lt;/h3&gt;
 
 &lt;p&gt;For some reason, my VISA installation has not generated the DLLs at the location. I searched for visa* (* is called a wild card evaluating to any character set like 32.dll or 64.dll) across the WINDOWS directory and found a &lt;code class=&quot;highlighter-rouge&quot;&gt;visa32.dll&lt;/code&gt; at &lt;code class=&quot;highlighter-rouge&quot;&gt;C:\Windows\SysWOW64\visa32.dll&lt;/code&gt;.&lt;/p&gt;
 
@@ -611,9 +820,11 @@ This check is optional and needed only if one is not sure if the drivers and VIS
 
 &lt;p&gt;Tools available with us:&lt;/p&gt;
 
-&lt;p&gt;32 bit VISAcd&lt;/p&gt;</content><author><name>fubar</name></author><category term="programming" /><summary type="html">A tutorial on interfacing VISA compatible hardware using python's wrapper module `pyVISA`.</summary></entry><entry><title type="html">What is Jekyll?</title><link href="/2019/10/13/Building-Jekyll-website.html" rel="alternate" type="text/html" title="What is Jekyll?" /><published>2019-10-13T00:00:00+05:30</published><updated>2019-10-13T00:00:00+05:30</updated><id>/2019/10/13/Building-Jekyll-website</id><content type="html" xml:base="/2019/10/13/Building-Jekyll-website.html">&lt;h1 id=&quot;what-is-jekyll&quot;&gt;What is jekyll?&lt;/h1&gt;
+&lt;p&gt;32 bit VISAcd&lt;/p&gt;</content><author><name>fubar</name></author><category term="programming" /><summary type="html">A tutorial on interfacing VISA compatible hardware using python's wrapper module `pyVISA`.</summary></entry><entry><title type="html">What is Jekyll?</title><link href="/2019/10/13/Building-Jekyll-website.html" rel="alternate" type="text/html" title="What is Jekyll?" /><published>2019-10-13T00:00:00+05:30</published><updated>2019-10-13T00:00:00+05:30</updated><id>/2019/10/13/Building-Jekyll-website</id><content type="html" xml:base="/2019/10/13/Building-Jekyll-website.html">&lt;div class=&quot;box&quot;&gt;
+&lt;img src=&quot;/assets/images/Jekyll/jekyllLogo.svg&quot; alt=&quot;jekyll-logo&quot; width=&quot;150px&quot; /&gt;
+&lt;/div&gt;
 
-&lt;h3 id=&quot;keywords-simple-static-blog-aware&quot;&gt;keywords: simple, static, blog aware&lt;/h3&gt;
+&lt;h1 id=&quot;abstract&quot;&gt;Abstract&lt;/h1&gt;
 
 &lt;p&gt;Jekyll is a static site generator. It gives programmatic access to the various tools used for creating static websites. With a prime focus on handling static content, Jekyll, a Ruby gem provides objects to handle various elements present in a web page like&lt;/p&gt;
 &lt;ul&gt;
@@ -634,7 +845,7 @@ This check is optional and needed only if one is not sure if the drivers and VIS
 
 &lt;hr /&gt;
 
-&lt;h1 id=&quot;what-jekyll-is-not&quot;&gt;What Jekyll is &lt;strong&gt;not&lt;/strong&gt;?&lt;/h1&gt;
+&lt;h2 id=&quot;what-jekyll-is-not&quot;&gt;What Jekyll is &lt;strong&gt;not&lt;/strong&gt;?&lt;/h2&gt;
 
 &lt;p&gt;Jekyll cannot generator responsive websites. Webpages that enable server side heavy duty programming tasks like cloud computation (what it is #TODO), graphic rendering. As such, it is intended to make websites which are read only, journal keeping as typical in  the case of Wordpress-based webpages.&lt;/p&gt;
 
@@ -644,25 +855,31 @@ This check is optional and needed only if one is not sure if the drivers and VIS
 
 &lt;hr /&gt;
 
-&lt;h1 id=&quot;which-jekyll&quot;&gt;Which Jekyll?&lt;/h1&gt;
+&lt;h2 id=&quot;which-jekyll&quot;&gt;Which Jekyll?&lt;/h2&gt;
 
 &lt;p&gt;Jekyll v4 is production ready using HTML5, CSS3 and JS(version ?).&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;h1 id=&quot;why-jekyll-why-not-others&quot;&gt;Why Jekyll? Why not others?&lt;/h1&gt;
+&lt;h2 id=&quot;why-jekyll-why-not-others&quot;&gt;Why Jekyll? Why not others?&lt;/h2&gt;
 
 &lt;p&gt;Other static generators like Python based Zim Desktop wiki also generate static sites. However Jekyll offers a seamless integration of desktop and web interfaces in the form of support for Markdown, version control using Git and easy deployment to GitHub for web hosting, and content editing using Atom text editor.&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;h1 id=&quot;what-are-static-assets&quot;&gt;What are static assets?&lt;/h1&gt;
+&lt;h2 id=&quot;what-are-static-assets&quot;&gt;What are static assets?&lt;/h2&gt;
 
-&lt;p&gt;HTML, CSS, JS&lt;/p&gt;</content><author><name>fubar</name></author><category term="programming" /><summary type="html">An introduction to Jekyll, an awesome static website generator.</summary></entry><entry><title type="html">Python Scripts to set static or dynamic IP address</title><link href="/2019/09/30/Scripts-to-set-IP-Address-Statically-or-Dynamically.html" rel="alternate" type="text/html" title="Python Scripts to set static or dynamic  IP address" /><published>2019-09-30T00:00:00+05:30</published><updated>2019-09-30T00:00:00+05:30</updated><id>/2019/09/30/Scripts-to-set-IP-Address-Statically-or-Dynamically</id><content type="html" xml:base="/2019/09/30/Scripts-to-set-IP-Address-Statically-or-Dynamically.html">&lt;p&gt;The reason to set up a &lt;a href=&quot;/2019/08/25/ADSL-modem+router-as-WAP.html&quot;&gt;ADSL router as a switch&lt;/a&gt; was to enhance the WiFi signal at my office desk. However sometimes I need to switch back to the &lt;code class=&quot;highlighter-rouge&quot;&gt;iiscwlan&lt;/code&gt; WiFi interface when I move my laptop.&lt;/p&gt;
+&lt;p&gt;HTML, CSS, JS&lt;/p&gt;</content><author><name>fubar</name></author><category term="programming" /><summary type="html">An introduction to Jekyll, an awesome static website generator.</summary></entry><entry><title type="html">Python Scripts to set static or dynamic IP address</title><link href="/2019/09/30/Scripts-to-set-IP-Address-Statically-or-Dynamically.html" rel="alternate" type="text/html" title="Python Scripts to set static or dynamic  IP address" /><published>2019-09-30T00:00:00+05:30</published><updated>2019-09-30T00:00:00+05:30</updated><id>/2019/09/30/Scripts-to-set-IP-Address-Statically-or-Dynamically</id><content type="html" xml:base="/2019/09/30/Scripts-to-set-IP-Address-Statically-or-Dynamically.html">&lt;div class=&quot;box&quot;&gt;
+&lt;img src=&quot;/assets/images/Python/pythonLogo.svg&quot; alt=&quot;python-logo&quot; width=&quot;150px&quot; /&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;abstract&quot;&gt;Abstract&lt;/h2&gt;
+
+&lt;p&gt;The reason to set up a &lt;a href=&quot;/2019/08/25/ADSL-modem+router-as-WAP.html&quot;&gt;ADSL router as a switch&lt;/a&gt; was to enhance the WiFi signal at my office desk. However sometimes I need to switch back to the &lt;code class=&quot;highlighter-rouge&quot;&gt;iiscwlan&lt;/code&gt; WiFi interface when I move my laptop.&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;h1 id=&quot;setting-dynamic-ip&quot;&gt;Setting dynamic IP&lt;/h1&gt;
+&lt;h2 id=&quot;setting-dynamic-ip&quot;&gt;Setting dynamic IP&lt;/h2&gt;
 
 &lt;p&gt;Firstly my laptop WiFi adaptor has connected to the &lt;code class=&quot;highlighter-rouge&quot;&gt;wololo&lt;/code&gt; WAP of the ADSL modem+router&lt;/p&gt;
 
@@ -692,7 +909,7 @@ This check is optional and needed only if one is not sure if the drivers and VIS
 
 &lt;hr /&gt;
 
-&lt;h1 id=&quot;setting-static-ip&quot;&gt;Setting static IP&lt;/h1&gt;
+&lt;h2 id=&quot;setting-static-ip&quot;&gt;Setting static IP&lt;/h2&gt;
 
 &lt;p&gt;Run a powershell as an Administrator and check the interface index for the WiFi interface. The Interface has index &lt;code class=&quot;highlighter-rouge&quot;&gt;17&lt;/code&gt; with alias &lt;code class=&quot;highlighter-rouge&quot;&gt;WiFi&lt;/code&gt;. It is connected to the &lt;code class=&quot;highlighter-rouge&quot;&gt;iiscwlan&lt;/code&gt; WAP using the IP address &lt;code class=&quot;highlighter-rouge&quot;&gt;10.43.240.122&lt;/code&gt;.&lt;/p&gt;
 
@@ -732,13 +949,13 @@ This check is optional and needed only if one is not sure if the drivers and VIS
 
 &lt;hr /&gt;
 
-&lt;h1 id=&quot;setting-the-ip-address-dynamically-using-a-python-script&quot;&gt;Setting the IP address dynamically using a Python script&lt;/h1&gt;
+&lt;h2 id=&quot;setting-the-ip-address-dynamically-using-a-python-script&quot;&gt;Setting the IP address dynamically using a Python script&lt;/h2&gt;
 
 &lt;p&gt;Entering these commands is useful. However due to the correct sequence required as well as accuracy requirements, it is better to have a script individually for the static or dynamic setting of IP addresses.&lt;/p&gt;
 
 &lt;p&gt;Thanks to Python’s scripting capability to handle system command execution, we use the &lt;code class=&quot;highlighter-rouge&quot;&gt;subprocess&lt;/code&gt; module for the task&lt;/p&gt;
 
-&lt;h2 id=&quot;python-script-to-set-static-ip&quot;&gt;Python script to set Static IP&lt;/h2&gt;
+&lt;h3 id=&quot;python-script-to-set-static-ip&quot;&gt;Python script to set Static IP&lt;/h3&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;#!python
 &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'''Script to set Static IP to the WiFi adaptor of laptop.
@@ -759,7 +976,7 @@ This check is optional and needed only if one is not sure if the drivers and VIS
 &lt;span class=&quot;n&quot;&gt;subprocess&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;command3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;python-script-to-set-dynamic-ip&quot;&gt;Python script to set Dynamic IP&lt;/h2&gt;
+&lt;h3 id=&quot;python-script-to-set-dynamic-ip&quot;&gt;Python script to set Dynamic IP&lt;/h3&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;#!python
 &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'''Script to set Dynamic IP to the WiFi adaptor of laptop
@@ -770,7 +987,11 @@ This check is optional and needed only if one is not sure if the drivers and VIS
 &lt;span class=&quot;n&quot;&gt;dhcpCommand&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'''netsh interface ip set address &quot;WiFi&quot; dhcp'''&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;command&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dhcpCommand&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;subprocess&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;command&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>fubar</name></author><category term="programming" /><summary type="html">A tutorial on setting static and dynamic IP address when routing via ADSL router</summary></entry><entry><title type="html">History of fonts</title><link href="/2019/09/27/fonts.html" rel="alternate" type="text/html" title="History of fonts" /><published>2019-09-27T00:00:00+05:30</published><updated>2019-09-27T00:00:00+05:30</updated><id>/2019/09/27/fonts</id><content type="html" xml:base="/2019/09/27/fonts.html">&lt;h2 id=&quot;history-of-fonts&quot;&gt;History of fonts&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>fubar</name></author><category term="programming" /><summary type="html">A tutorial on setting static and dynamic IP address when routing via ADSL router</summary></entry><entry><title type="html">History of fonts</title><link href="/2019/09/27/fonts.html" rel="alternate" type="text/html" title="History of fonts" /><published>2019-09-27T00:00:00+05:30</published><updated>2019-09-27T00:00:00+05:30</updated><id>/2019/09/27/fonts</id><content type="html" xml:base="/2019/09/27/fonts.html">&lt;div class=&quot;box&quot;&gt;
+&lt;img src=&quot;/assets/images/Fonts/fontsLogo.svg&quot; alt=&quot;fonts-logo&quot; width=&quot;150px&quot; /&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;abstract&quot;&gt;Abstract&lt;/h2&gt;
 
 &lt;p&gt;The origin of fonts dates back to the Egyptian heiroglyphs. Heiroglyph (&lt;em&gt;heiros glypho&lt;/em&gt; meaning sacred carving) forms a set of symbols to represent ideas and emotions. From the symbolic representation of ideas, language was codified using alphabet to have more efficient representation. Alphabet is also a set of symbols. However, they differ from the heiroglyphs in the sense that instead of a single glyph representing a single idea in the case of heiroglyph, an ordered group of glyphs is used to represent an idea. This ordered group of glyph is called a &lt;strong&gt;word&lt;/strong&gt;. Since alphabet need to be carved just the same as heiroglyphs, alphabet provided a freedom of expression allowing slight modifications to the standard template or design allowing designers a medium for expressing sub-emotions and sub-culture. An alphabet with a specific collection of glyphs makes a &lt;strong&gt;font&lt;/strong&gt;. There are other characteristics to glyphs and placement of glyphs. Fonts can be classified based on some characteristics like common glyph template. Such grouping of fonts is called a &lt;strong&gt;typeface&lt;/strong&gt; or &lt;strong&gt;font-family&lt;/strong&gt;. So an &lt;strong&gt;Avenir Light Standard&lt;/strong&gt; belongs to the &lt;strong&gt;Avenir&lt;/strong&gt; typeface/font family which has other fonts like &lt;strong&gt;Avenir Book&lt;/strong&gt;, &lt;strong&gt;Avenir Condensed&lt;/strong&gt;.&lt;/p&gt;
 

@@ -1,6 +1,6 @@
 @import url(native.css);
 /* Pygments (deprecated and not supported in Jekyll 4; superseded by Ruby's own Rouge) module stylesheet for syntax highlighting. Refer: [Tags Filters](https://jekyllrb.com/docs/liquid/tags/#stylesheets-for-syntax-highlighting) */
-.fit-picture { width: 250px; background-color: black; padding: 5px; }
+.fit-picture { width: 500px; background-color: white; padding: 5px; }
 
 p { color: blue; }
 
@@ -10,9 +10,9 @@ a:hover { text-decoration: none; }
 
 .Headnote { background: rebeccapurple; }
 
-.navigation { font-size: 200%; background: orange; }
+.navigation { font-size: 150%; background: orange; }
 
-.navigation-tags { font-size: 150%; background: green; }
+.navigation-tags { font-size: 100%; background: green; }
 
 .box { float: left; width: 150px; height: 150px; margin-right: 30px; }
 
