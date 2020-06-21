@@ -1,4 +1,295 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-06-04T02:46:16+05:30</updated><id>/feed.xml</id><entry><title type="html">Semantic versioning rules for software management</title><link href="/2020/05/29/Semantic-versioning-rules-for-software-management.html" rel="alternate" type="text/html" title="Semantic versioning rules for software management" /><published>2020-05-29T00:00:00+05:30</published><updated>2020-05-29T00:00:00+05:30</updated><id>/2020/05/29/Semantic-versioning-rules-for-software-management</id><content type="html" xml:base="/2020/05/29/Semantic-versioning-rules-for-software-management.html">&lt;div class=&quot;box&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-06-21T13:02:06+05:30</updated><id>/feed.xml</id><entry><title type="html">How to style HTML using CSS?</title><link href="/2020/06/21/How-to-style-your-web-pages.html" rel="alternate" type="text/html" title="How to style HTML using CSS?" /><published>2020-06-21T00:00:00+05:30</published><updated>2020-06-21T00:00:00+05:30</updated><id>/2020/06/21/How-to-style-your-web-pages</id><content type="html" xml:base="/2020/06/21/How-to-style-your-web-pages.html">&lt;p&gt;We can style our HTML using the &lt;a href=&quot;https://github.com/sindresorhus/github-markdown-css&quot;&gt;GitHub markdown style&lt;/a&gt; by importing the CSS file or linking the CSS file stored at a Content Delivery Network&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.css&quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>fubar</name></author><category term="programming" /><summary type="html">A rudimentary know how and place for references for CSS styling</summary></entry><entry><title type="html">What is the point of PhD?</title><link href="/2020/06/21/The-journey-of-PhD.html" rel="alternate" type="text/html" title="What is the point of PhD?" /><published>2020-06-21T00:00:00+05:30</published><updated>2020-06-21T00:00:00+05:30</updated><id>/2020/06/21/The-journey-of-PhD</id><content type="html" xml:base="/2020/06/21/The-journey-of-PhD.html">&lt;p&gt;A preliminary search on &lt;a href=&quot;https://github.com/topics&quot;&gt;GitHub Topics&lt;/a&gt; listed more than a 100 repositories having &lt;code class=&quot;highlighter-rouge&quot;&gt;phd-thesis&lt;/code&gt; tag. The ones that I found interesting are&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;List of resources on &lt;a href=&quot;https://github.com/macoj/phd&quot;&gt;how/why to do a PhD&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/katrinleinweber/PhD-thesis&quot;&gt;PhD thesis workflow with Git + Scientific Markdown&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Interaction with Vishwanath. he suggested Nature News feature article on &lt;a href=&quot;https://www.nature.com/news/what-s-the-point-of-the-phd-thesis-1.20203&quot;&gt;What is the point of the PhD thesis?&lt;/a&gt;. This is not about PhD per se, but about the PhD thesis.&lt;/p&gt;
+
+&lt;p&gt;Interaction with Mihir. He suggested few articles how &lt;strong&gt;NOT&lt;/strong&gt; to procrastinate and start writing the thesis.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jameshaytonphd.com/quick-tips/how-i-wrote-a-phd-thesis-in-3-months&quot;&gt;How I wrote a PhD thesis in 3 months&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.sciencemag.org/careers/2018/04/how-write-your-phd-thesis&quot;&gt;How to write your Ph.D. thesis&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://cheekyscientist.com/insiders-guide-to-write-a-thesis-when-short-on-time/&quot;&gt;How to write thesis when short on time&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Interaction with Banibrato. He suggested &lt;a href=&quot;https://mathpix.com/&quot;&gt;Mathpix tool&lt;/a&gt; for quickly extracting latex source from snapshots of LaTex typeset equations&lt;/p&gt;
+
+&lt;p&gt;Interaction with Ajesh. He suggested &lt;a href=&quot;https://www.connectedpapers.com/&quot;&gt;Connected Papers&lt;/a&gt;, a unique, visual tool to help researchers and applied scientists find and explore papers relevant to their field of work.&lt;/p&gt;
+
+&lt;p&gt;Interaction with Venkatreddy. He suggested &lt;a href=&quot;https://github.com/alexandervdm/gummi&quot;&gt;Gummi&lt;/a&gt;, a LaTeX editor that generates compiled LaTeX code on the fly!&lt;/p&gt;
+
+&lt;h1 id=&quot;miscellaneous&quot;&gt;Miscellaneous&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://paperscape.org/&quot;&gt;Paperscape&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Paperscape is an interactive map that visualises the arXiv, an open, online repository for scientific research papers.&lt;/p&gt;
+
+&lt;p&gt;Each paper is represented by a circle, with the size of a circle related to how often that paper has been cited (referred to) - a measure of its impact.&lt;/p&gt;
+
+&lt;p&gt;The papers are clustered together according to how they reference each other i.e. share information. This is done by modeling the papers as particles in a physical system, with references acting as attractive forces between papers - read more.&lt;/p&gt;</content><author><name>fubar</name></author><category term="physics" /><summary type="html">A garbage bin of the references related to the process of PhD, tools required, dos and donts, sagely advices, best practices</summary></entry><entry><title type="html">How to Git your PhD thesis on GitHub</title><link href="/2020/06/20/How-to-git-your-PhD-thesis-on-GitHub.html" rel="alternate" type="text/html" title="How to Git your PhD thesis on GitHub" /><published>2020-06-20T00:00:00+05:30</published><updated>2020-06-20T00:00:00+05:30</updated><id>/2020/06/20/How-to-git-your-PhD-thesis-on-GitHub</id><content type="html" xml:base="/2020/06/20/How-to-git-your-PhD-thesis-on-GitHub.html">&lt;div class=&quot;box&quot;&gt;
+&lt;img src=&quot;/assets/images/Git/gitLogo.svg&quot; alt=&quot;Git-logo&quot; width=&quot;150px&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Git is a version control system usually used for software. However it can also be used for versioning any document set. We will see how git can be used to version a PhD thesis. Versioning a PhD thesis is not only useful as a backup option but also can give an overview of how the thesis gets shaped over the course of time. Also since thesis writing is a highly non linear phenomenon, git provides tools to track the non linear development. We will work with GitHub’s repository hosting service to have a remote repository for our PhD thesis. It is a good idea to git your thesis as a &lt;strong&gt;private repository&lt;/strong&gt;. GitHub private repository provides &lt;a href=&quot;https://github.blog/2019-01-07-new-year-new-github/&quot;&gt;unlimited storage&lt;/a&gt; as long as the file sizes do not exceed &lt;a href=&quot;https://help.github.com/en/github/managing-large-files/what-is-my-disk-quota&quot;&gt;100MB size limit&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The following are the steps to have a Git repository for the PhD thesis&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup&quot;&gt;Setup Git on linux&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-new-repository&quot;&gt;Setup a private repository on GitHub&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository&quot;&gt;Clone the remote repository&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://git-scm.com/book/en/v2/Appendix-C%3A-Git-Commands-Basic-Snapshotting&quot;&gt;Basic snapshotting workflow&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#basic-snapshotting-detailed-description&quot;&gt;Quick walkthrough&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#basic-snapshotting-detailed-description&quot;&gt;Detailed description&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;General references on &lt;a href=&quot;https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control&quot;&gt;Git&lt;/a&gt;, &lt;a href=&quot;https://tom.preston-werner.com/2009/05/19/the-git-parable.html&quot;&gt;The Git Parable&lt;/a&gt;, &lt;a href=&quot;https://help.github.com/en/github/importing-your-projects-to-github/adding-an-existing-project-to-github-using-the-command-line&quot;&gt;Add an existing repository to GitHub&lt;/a&gt;, &lt;a href=&quot;https://drive.google.com/drive/folders/1dvkAsN0UHYe0sEJuwbrN9M7MunnZhYjM?usp=sharing&quot;&gt;LaTeX template&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h1 id=&quot;setup-a-private-repository-on-github&quot;&gt;Setup a private repository on GitHub&lt;/h1&gt;
+
+&lt;p&gt;Add a &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitignore&lt;/code&gt; file that tells git to exclude a set of files from version control. Set the &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitignore&lt;/code&gt; file type to &lt;code class=&quot;highlighter-rouge&quot;&gt;TeX&lt;/code&gt;. Create a private repository.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/Git/GitHubPrivateRepository.png&quot; alt=&quot;private-repository-on-GitHub&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;clone-the-remote-repository&quot;&gt;Clone the remote repository&lt;/h1&gt;
+
+&lt;p&gt;Now that a remote repository is created on GitHub, we need to &lt;a href=&quot;https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github&quot;&gt;clone it on a local computer&lt;/a&gt; to work with it. Get the URL of the remote repository and use &lt;code class=&quot;highlighter-rouge&quot;&gt;git clone &amp;lt;url to remote repo&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git clone https://github.com/Baalkikhaal/myTestThesis.git
+Cloning into 'myTestThesis'...
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), done.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;basic-snapshotting-quick-walkthrough&quot;&gt;Basic Snapshotting Quick walkthrough&lt;/h1&gt;
+
+&lt;p&gt;Now that we have a local copy of the remote repository &lt;code class=&quot;highlighter-rouge&quot;&gt;myTestThesis&lt;/code&gt; to work with, we will describe a typical &lt;a href=&quot;https://git-scm.com/book/en/v2/Appendix-C%3A-Git-Commands-Basic-Snapshotting&quot;&gt;workflow for basic snapshotting&lt;/a&gt; involving&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Creating/modifying files of the repository - &lt;code class=&quot;highlighter-rouge&quot;&gt;nano newfile.tex&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;staging files to git tracking system - &lt;code class=&quot;highlighter-rouge&quot;&gt;git add *&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;committing files to commit history - &lt;code class=&quot;highlighter-rouge&quot;&gt;git commit -m &quot;&amp;lt;my message&amp;gt;&quot;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;pushing the commits to the remote repo - &lt;code class=&quot;highlighter-rouge&quot;&gt;git push origin master&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;go to step 1&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;basic-snapshotting-detailed-description&quot;&gt;Basic Snapshotting Detailed description&lt;/h1&gt;
+
+&lt;h2 id=&quot;creatingmodifying-files-of-the-repository&quot;&gt;Creating/modifying files of the repository&lt;/h2&gt;
+
+&lt;p&gt;The local copy of the repository is created in &lt;code class=&quot;highlighter-rouge&quot;&gt;myTestThesis&lt;/code&gt;. Now change into the directory and list the files including the hidden files&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd myTestThesis/
+
+$ ls -al
+total 21
+drwxr-xr-x 1 fubar 197121    0 Jun 20 18:32 ./
+drwxr-xr-x 1 fubar 197121    0 Jun 20 18:32 ../
+drwxr-xr-x 1 fubar 197121    0 Jun 20 18:32 .git/
+-rw-r--r-- 1 fubar 197121 2960 Jun 20 18:32 .gitignore
+-rw-r--r-- 1 fubar 197121   45 Jun 20 18:32 README.md
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The hidden folder &lt;code class=&quot;highlighter-rouge&quot;&gt;.git&lt;/code&gt; holds all the information about the commit history of the repository. The hidden file &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitignore&lt;/code&gt; contains instructions to exclude files from getting versioned. A preliminary scan of the contents of &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitignore&lt;/code&gt; shows what kind of files are omitted, usually the &lt;code class=&quot;highlighter-rouge&quot;&gt;.aux&lt;/code&gt; (auxiliary), &lt;code class=&quot;highlighter-rouge&quot;&gt;.log&lt;/code&gt;, etc files generated during a typical LaTeX compilation. We do not want to version them as they are not part of the source code, they are output of compilation.&lt;/p&gt;
+
+&lt;p&gt;Copy the contents of the &lt;a href=&quot;https://drive.google.com/drive/folders/1dvkAsN0UHYe0sEJuwbrN9M7MunnZhYjM?usp=sharing&quot;&gt;LaTeX template&lt;/a&gt; to the local repository &lt;code class=&quot;highlighter-rouge&quot;&gt;myTestThesis&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cp -r /e/thesis/thesisTemplates/Latex_Thesis/. .
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;As new files are added to the local repository &lt;code class=&quot;highlighter-rouge&quot;&gt;myTestThesis&lt;/code&gt;, they hold the status of &lt;strong&gt;untracked files&lt;/strong&gt;. The status of every file is given the &lt;code class=&quot;highlighter-rouge&quot;&gt;git status&lt;/code&gt; command&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+(use &quot;git add &amp;lt;file&amp;gt;...&quot; to include in what will be committed)
+       Abhishek_Thesis.pdf
+       Abhishek_Thesis.tex
+       Bibliography_Clean.bat
+       IISc_Logo.pdf
+       figures/
+       ociamthesis.cls
+       oxthesis.cls
+       refs.bib
+       text/
+       ~$apter4_Notes.docx
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The  generated pdf files after LaTeX compilation also need to be excluded from tracking as pdf files are binary files. Binary files are &lt;a href=&quot;https://stackoverflow.com/questions/17772048/when-should-pdf-files-be-tracked-in-a-git-repository-and-when-not&quot;&gt;not suitable for gitting&lt;/a&gt;. Included generated pdf files can &lt;em&gt;bloat&lt;/em&gt; the repo.&lt;/p&gt;
+
+&lt;p&gt;To avoid this modify the &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitignore&lt;/code&gt; file to exclude specifically the pdf file
+Change the line&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# Generated if empty string is given at &quot;Please type another file name for out&amp;gt;
+.pdf
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;to the following line&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;## Generated if empty string is given at &quot;Please type another file name for out&amp;gt;
+Abhishek_Thesis.pdf
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;After this modification, if you check the status of the repository again using &lt;code class=&quot;highlighter-rouge&quot;&gt;git status&lt;/code&gt;, you will observe that the main pdf file is ignored from tracking, however the &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitignore&lt;/code&gt; file shows up as &lt;strong&gt;modified&lt;/strong&gt;. This is because the &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitignore&lt;/code&gt; file was already being tracked by &lt;code class=&quot;highlighter-rouge&quot;&gt;git&lt;/code&gt; as we cloned it from the remote repository. Now that we modified it, the status of the &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitignore&lt;/code&gt; file has changed to modified.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Note that git is aware of other pdf files like &lt;code class=&quot;highlighter-rouge&quot;&gt;IISc_Logo.pdf &lt;/code&gt;. This is intended as some of our figures are .pdf files and they are not likely to change. If you want to completely all pdf files, add &lt;code class=&quot;highlighter-rouge&quot;&gt;*.pdf&lt;/code&gt; line in the &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitignore&lt;/code&gt; file.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use &quot;git add &amp;lt;file&amp;gt;...&quot; to update what will be committed)
+  (use &quot;git restore &amp;lt;file&amp;gt;...&quot; to discard changes in working directory)
+        modified:   .gitignore
+
+Untracked files:
+  (use &quot;git add &amp;lt;file&amp;gt;...&quot; to include in what will be committed)
+        Abhishek_Thesis.tex
+        Bibliography_Clean.bat
+        IISc_Logo.pdf
+        figures/
+        ociamthesis.cls
+        oxthesis.cls
+        refs.bib
+        text/
+        ~$apter4_Notes.docx
+
+no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;staging-the-files-to-git-tracking-system&quot;&gt;Staging the files to git tracking system&lt;/h2&gt;
+
+&lt;p&gt;The &lt;strong&gt;untracked&lt;/strong&gt; and &lt;strong&gt;modified&lt;/strong&gt; files need to be staged. To stage the files use &lt;code class=&quot;highlighter-rouge&quot;&gt;git add &amp;lt;filename&amp;gt;&lt;/code&gt; for each file or &lt;code class=&quot;highlighter-rouge&quot;&gt;git add *&lt;/code&gt; for staging all the files at one go.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git add *
+The following paths are ignored by one of your .gitignore files:
+Abhishek_Thesis.aux
+Abhishek_Thesis.bbl
+Abhishek_Thesis.blg
+Abhishek_Thesis.brf
+Abhishek_Thesis.log
+Abhishek_Thesis.pdf
+Abhishek_Thesis.synctex.gz
+Abhishek_Thesis.toc
+abstract.aux
+refs.bib.bak
+Use -f if you really want to add them.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Check the status of the repository and see if the files are staged&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use &quot;git restore --staged &amp;lt;file&amp;gt;...&quot; to unstage)
+        new file:   Abhishek_Thesis.tex
+        new file:   Bibliography_Clean.bat
+        new file:   IISc_Logo.pdf
+        ...
+        ...
+        new file:   text/originality.tex
+        new file:   ~$apter4_Notes.docx
+Changes not staged for commit:
+  (use &quot;git add &amp;lt;file&amp;gt;...&quot; to update what will be committed)
+  (use &quot;git restore &amp;lt;file&amp;gt;...&quot; to discard changes in working directory)
+        modified:   .gitignore
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You will see that &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitignore&lt;/code&gt; is not staged for commit. This is because &lt;code class=&quot;highlighter-rouge&quot;&gt;git add&lt;/code&gt; command does not add hidden files. You need to manually add the file&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$git add .gitignore
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;committing-the-files-to-commit-history&quot;&gt;Committing the files to commit history&lt;/h2&gt;
+
+&lt;p&gt;Now that all the files are &lt;strong&gt;staged&lt;/strong&gt;, they can be &lt;strong&gt;committed&lt;/strong&gt; to the commit history using &lt;code class=&quot;highlighter-rouge&quot;&gt;git commit -m &quot;&amp;lt;A message&amp;gt;&quot;&lt;/code&gt;. A message is needed to summarize what the commit is all about&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git commit -m &quot;my first thesis commit&quot;
+[master e42db57] my first thesis commit
+21 files changed, 1171 insertions(+), 1 deletion(-)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;check-the-log-of-the-commit-history&quot;&gt;Check the log of the commit history&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git log&lt;/code&gt; gives the summary of the commit history. To check if the commit has been logged into the commit history. The log is a list of 7 character hexadecimal SHA strings (the actual length is 40 character but with &lt;code class=&quot;highlighter-rouge&quot;&gt;--oneline&lt;/code&gt; a shortened version is printed) and the commit message&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git log --oneline
+e42db57 (HEAD -&amp;gt; master) my first thesis commit
+fbcbcde (origin/master, origin/HEAD) Initial commit
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;push-the-commit-to-the-remote-repository&quot;&gt;Push the commit to the remote repository&lt;/h2&gt;
+
+&lt;p&gt;The above commit has updated the commit history of the local repository. However we need to update the commit history of the remote repository as well. This is called &lt;strong&gt;pushing&lt;/strong&gt; the commit to the remote repository. The remote repository is called the &lt;strong&gt;origin&lt;/strong&gt; and the branch on which the commits are adding up is the &lt;strong&gt;master&lt;/strong&gt; branch. To push a commit, the branches on the local and remote need to be same. To push the commit, we use &lt;code class=&quot;highlighter-rouge&quot;&gt;git push&lt;/code&gt; command&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git push origin master
+Enumerating objects: 29, done.
+Counting objects: 100% (29/29), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (26/26), done.
+Writing objects: 100% (27/27), 1.11 MiB | 888.00 KiB/s, done.
+Total 27 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/Baalkikhaal/myTestThesis.git
+   fbcbcde..e42db57  master -&amp;gt; master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You can check  if the commit has been pushed to the remote repository either by running &lt;code class=&quot;highlighter-rouge&quot;&gt;git status&lt;/code&gt; at the local repository or checking at GitHub if the files have been committed&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;iterate-over-the-workflow&quot;&gt;Iterate over the workflow&lt;/h2&gt;
+&lt;p&gt;Repeat the workflow when you want to add content to the remote repository&lt;/p&gt;
+
+&lt;h1 id=&quot;summary&quot;&gt;Summary&lt;/h1&gt;
+
+&lt;p&gt;In summary we have used many git commands in the process of git workflow to write the PhD thesis. Let us list the commands&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git clone&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git add&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git commit&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git push&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git status&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git log&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;references&quot;&gt;References&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;In addition to the above mentioned git commands, some other commands are also useful like &lt;code class=&quot;highlighter-rouge&quot;&gt;git diff&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;git rm&lt;/code&gt;. More on these at &lt;a href=&quot;https://git-scm.com/book/en/v2/Appendix-C%3A-Git-Commands-Basic-Snapshotting&quot;&gt;Git’s basic snapshotting commands&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;In the current article, we assumed &lt;code class=&quot;highlighter-rouge&quot;&gt;.Tex&lt;/code&gt; source files for our thesis. However there are other workflows like using Scientific Markdown and Git to write the PhD thesis. &lt;a href=&quot;https://github.com/katrinleinweber/PhD-thesis&quot;&gt;Git + Scientific Markdown workflow for PhD thesis&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>fubar</name></author><category term="physics" /><summary type="html">We will work with GitHub’s repository hosting service to have a remote repository for our PhD thesis</summary></entry><entry><title type="html">Semantic versioning rules for software management</title><link href="/2020/05/29/Semantic-versioning-rules-for-software-management.html" rel="alternate" type="text/html" title="Semantic versioning rules for software management" /><published>2020-05-29T00:00:00+05:30</published><updated>2020-05-29T00:00:00+05:30</updated><id>/2020/05/29/Semantic-versioning-rules-for-software-management</id><content type="html" xml:base="/2020/05/29/Semantic-versioning-rules-for-software-management.html">&lt;div class=&quot;box&quot;&gt;
 &lt;img src=&quot;/assets/images/Git/gitLogo.svg&quot; alt=&quot;Git-logo&quot; width=&quot;150px&quot; /&gt;
 &lt;/div&gt;
 
@@ -97,138 +388,7 @@ Just as a program goes through iterative process of development, the dependencie
 
 &lt;p&gt;The major version increment means there is some backwards incompatible. From the &lt;a href=&quot;https://wiki.inkscape.org/wiki/index.php?title=Release_notes/1.0#python3&quot;&gt;Inkscape v1.0.0 release documentation&lt;/a&gt;, it is clear that Inkscape has migrated to using GTK+3. Earlier v0.x.y versions were using GTK+2. GTK (Gimp Tool Kit) is a widget based took kit for creating graphical user interfaces. However the major version increment is not due to shifting to GTK+3, but it is due to backwards incompatible SVG?? (I dont know what that means) I think it means that SVG standard has upgraded itself. To incorporate the newer SVG standard, Inkscapes API has been modified (remember that Inkscape provides a command line mode.. so in effect inkscape can be used as an API as in for Inkscape extensions!!!)&lt;/p&gt;
 
-&lt;hr /&gt;</content><author><name>fubar</name></author><category term="programming" /><summary type="html">We will describe the rules for versioning software to avoid dependency hell</summary></entry><entry><title type="html">References for learning C++</title><link href="/2020/05/24/C++-definitive-references.html" rel="alternate" type="text/html" title="References for learning C++" /><published>2020-05-24T00:00:00+05:30</published><updated>2020-05-24T00:00:00+05:30</updated><id>/2020/05/24/C++-definitive-references</id><content type="html" xml:base="/2020/05/24/C++-definitive-references.html">&lt;div class=&quot;box&quot;&gt;
-&lt;img src=&quot;/assets/images/C++/C++Logo.png&quot; alt=&quot;C++-logo&quot; width=&quot;150px&quot; /&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;abstract&quot;&gt;Abstract&lt;/h2&gt;
-
-&lt;p&gt;Programming is a science as well as an art. Developing the required skills takes time and effort and an enthusiasm to learn. The learning draws parallels with that of learning a natural language such as English.
-Just as the required skills to learn a natural language are reading, listening, writing and speaking, so the skills for learning a programming language are reading code, writing code. Also just as we need to know the proper language constructs like grammar (syntax), contextual use of language (semantics), we need to learn the syntax as well as&lt;/p&gt;
-
-&lt;h3 id=&quot;sites&quot;&gt;Sites&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.learncpp.com/&quot;&gt;Learncpp&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.cs-fundamentals.com/&quot;&gt;CS fundamentals&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;books&quot;&gt;Books&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/388242/the-definitive-c-book-guide-and-list&quot;&gt;SO Book Guide&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.mhhe.com/engcs/proglang/cohoon/&quot;&gt;C++ Program Design by Cohoon and Davidson&lt;/a&gt; I refered to this book for my CS101 course in 2005&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://goalkicker.com/CPlusPlusBook/&quot;&gt;C++ Notes for Professionals&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.pearson.com/us/higher-education/program/Deitel-C-How-to-Program-Plus-My-Lab-Programming-with-Pearson-e-Text-Access-Card-Package-10th-Edition/PGM1100513.html&quot;&gt;C++ How to Program by Deitel and Deitel&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;code&quot;&gt;Code&lt;/h3&gt;
-
-&lt;p&gt;Like learning natural language involves listening as a major component, programming language skills are developed by reading lots of good code. It exposes the learner to good programming practices.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.codewithc.com/c-projects-with-source-code/&quot;&gt;Code with C/C++&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/Baalkikhaal/project-based-learning#cc&quot;&gt;Curated list of programming projects&lt;/a&gt; Language agnostic projects to improve the programming skills using project based learning&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://projecteuler.net/about&quot;&gt;Project Euler&lt;/a&gt; Weekly addition of a new problem that demands skills in mathematics and programming. A fun way to start learning programming and mathematics in a hand-in-glove manner.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;libraries&quot;&gt;Libraries&lt;/h3&gt;
-
-&lt;p&gt;Some famous libraries that help in learning how APIs are written. By reading their source code, one can learn how good programmers structure their code and also how to abstract functionality so that code has increased reusability quotient.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://glm.g-truc.net/0.9.9/index.html&quot;&gt;OpenGLM&lt;/a&gt; OpenGL Mathematics (GLM) is a header only C++ mathematics library for graphics software.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.libsdl.org/index.php&quot;&gt;SDL2&lt;/a&gt; Simple DirectMedia Layer is a cross-platform development library designed to provide low level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL and Direct3D.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.netlib.org/blas/&quot;&gt;BLAS&lt;/a&gt; Basic Linear Algebra Subroutines are &lt;strong&gt;Fortran&lt;/strong&gt; routines that provide basic building blocks for basic vector and matrix operations. There is a C/C++ interface.
-    &lt;ul&gt;
-      &lt;li&gt;Level-1 BLAS performs scalar, vector and vector-vector operations,&lt;/li&gt;
-      &lt;li&gt;Level-2 BLAS performs matrix-vector operations,&lt;/li&gt;
-      &lt;li&gt;Level-3 BLAS performs matrix-matrix operations.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.netlib.org/lapack/&quot;&gt;LAPACK&lt;/a&gt; Linear Algebra PACKage utilizes BLAS subroutines to provide routines for solving systems of simultaneous linear equations, least-squares solutions of linear systems of equations, eigenvalue problems, and singular value problems. The associated matrix factorizations (LU, Cholesky, QR, SVD, Schur, generalized Schur) are also provided. There is a C/C++ interface.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.opengl.org/&quot;&gt;OpenGL&lt;/a&gt; The Industry’s Foundation for High Performance Graphics&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://opencv.org/&quot;&gt;OpenCV&lt;/a&gt; (Open Source Computer Vision library)
-is an open source computer vision and machine learning software library. OpenCV was built to provide a common infrastructure for computer vision applications and to accelerate the use of machine perception in the commercial products.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;hands-on-tutorials&quot;&gt;Hands on Tutorials&lt;/h2&gt;
-&lt;p&gt;Following are hands on tutorials for various aspects of program development. As a typical cycle of program development involves&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;writing source code&lt;/li&gt;
-  &lt;li&gt;compiling the code&lt;/li&gt;
-  &lt;li&gt;debugging the code&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;writing-cc-program-todo&quot;&gt;Writing C/C++ program (#TODO)&lt;/h3&gt;
-
-&lt;p&gt;Tutorials explaining good programming practices while writing code are given here. Some esoteric aspects of writing good code, which I cannot at the current moment categorize them due to my own lack of understanding, are&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;avoiding hard coding&lt;/li&gt;
-  &lt;li&gt;practing a convention for writing code. Though there is no C++ standard for writing the code, in order for the code to be readable, we need to adopt one convention and stick. There is no universal convention. Some adopt the Hungarian convention for the brackets, what is the other one I dont have idea. A &lt;a href=&quot;https://lazyfoo.net/articles/article02/index.php&quot;&gt;LazyFoo article on writing readable code&lt;/a&gt; and an &lt;a href=&quot;https://inkscape.org/develop/coding-style/&quot;&gt;article on coding style for Inkscape project&lt;/a&gt; are starters.
-    &lt;ul&gt;
-      &lt;li&gt;properly indent code&lt;/li&gt;
-      &lt;li&gt;give descriptive names to the variables&lt;/li&gt;
-      &lt;li&gt;Develop a naming standard&lt;/li&gt;
-      &lt;li&gt;Properly comment your code&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;refactoring (not sure what that means… however most of the Inkscape legacy code is undergoing refactoring)&lt;/li&gt;
-  &lt;li&gt;any good references for writing code?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;compiling-a-cc-program&quot;&gt;Compiling a C/C++ program&lt;/h3&gt;
-&lt;p&gt;Compiling can be as simple as executing the command&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;g++ helloWorld.cpp -o helloWorld
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;or as difficult as compiling  various source files, linking various static and dynamic libraries. It is one of the important component of program development. These tutorials provide hands on experience with compiling C++ programs.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Learn the basics of compilation from a &lt;a href=&quot;https://medium.com/better-programming/learn-how-to-compile-a-c-program-382c4c690bdc&quot;&gt;Medium post titled Learn How to Compile a C++ program&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Individual steps of compilation of a C program are beautifully explained
-in a &lt;a href=&quot;https://www.cs-fundamentals.com/c-programming/how-to-compile-c-program-using-gcc&quot;&gt;CS fundamentals blog post&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;static-vs-dynamic-linking&quot;&gt;Static vs Dynamic Linking&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;A simple explanation of static and dynamic libraries in a &lt;a href=&quot;https://www.learncpp.com/cpp-tutorial/a1-static-and-dynamic-libraries/&quot;&gt;Learncpp tutorial&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;A further discussion is done in a &lt;a href=&quot;https://cs-fundamentals.com/tech-interview/c/difference-between-static-and-dynamic-linking&quot;&gt;CS fundamentals post&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;(Optional) A nuanced comparison of performance issues with static and dynamic linking in a &lt;a href=&quot;https://stackoverflow.com/questions/1993390/static-linking-vs-dynamic-linking&quot;&gt;SO post&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;how-to-use-library-for-application-development&quot;&gt;How to use library for Application development&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;We need to configure the compiler of our IDE and a [LearnCPP post] explains it using the case of VisualStudio and Codeblocks&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;As a simple concrete example a &lt;a href=&quot;https://medium.com/better-programming/navigating-the-world-of-distributed-c-code-e439406f3e42&quot;&gt;Medium post titled Navigating the world of distributed code&lt;/a&gt; explains how to work with uncompiled library/ header only libary and use &lt;code class=&quot;highlighter-rouge&quot;&gt;make&lt;/code&gt; tool to configure the compiler&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;As a concrete example, I was successful in configuring the MingW compiler of Codeblocks IDE to use &lt;a href=&quot;https://www.libsdl.org/index.php&quot;&gt;SDL2 library&lt;/a&gt; by following the [GRHMedia blog post] listed in the &lt;a href=&quot;https://wiki.libsdl.org/Tutorials&quot;&gt;SDL’s Tutorial Wiki&lt;/a&gt; as a video tutorial.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;advancedhow-to-create-a-library&quot;&gt;(Advanced)How to create a library?&lt;/h3&gt;
-
-&lt;p&gt;This is an advanced topic. I have not explored it but can refer to &lt;a href=&quot;https://www.cs-fundamentals.com/c-programming/static-and-dynamic-linking-in-c#static-libraries&quot;&gt;Create Static and Dynamic Link Libraries in C on Linux&lt;/a&gt; from CS-fundamentals blog.&lt;/p&gt;
-
-&lt;h2 id=&quot;debugging-code&quot;&gt;Debugging code&lt;/h2&gt;
-
-&lt;p&gt;Tutorials explaining good programming practices while debugging code are given here.(#TODO)&lt;/p&gt;</content><author><name>fubar</name></author><category term="programming" /><summary type="html">C++ references of websites, books, code and APIs for learning C/C++.</summary></entry><entry><title type="html">How to build Jekyll website on WINDOWS</title><link href="/2020/05/24/workflow-for-building-jekyll-website.html" rel="alternate" type="text/html" title="How to build Jekyll website on WINDOWS" /><published>2020-05-24T00:00:00+05:30</published><updated>2020-05-24T00:00:00+05:30</updated><id>/2020/05/24/workflow-for-building-jekyll-website</id><content type="html" xml:base="/2020/05/24/workflow-for-building-jekyll-website.html">&lt;div class=&quot;box&quot;&gt;
+&lt;hr /&gt;</content><author><name>fubar</name></author><category term="programming" /><summary type="html">We will describe the rules for versioning software to avoid dependency hell</summary></entry><entry><title type="html">How to build Jekyll website on WINDOWS</title><link href="/2020/05/24/workflow-for-building-jekyll-website.html" rel="alternate" type="text/html" title="How to build Jekyll website on WINDOWS" /><published>2020-05-24T00:00:00+05:30</published><updated>2020-05-24T00:00:00+05:30</updated><id>/2020/05/24/workflow-for-building-jekyll-website</id><content type="html" xml:base="/2020/05/24/workflow-for-building-jekyll-website.html">&lt;div class=&quot;box&quot;&gt;
 &lt;img src=&quot;/assets/images/Jekyll/JekyllLogo.svg&quot; alt=&quot;jekyll-logo&quot; width=&quot;150px&quot; /&gt;
 &lt;/div&gt;
 
@@ -499,7 +659,138 @@ What is the specific problem you are working on&lt;/p&gt;
   &lt;li&gt;Maekawa Spin Electronics&lt;/li&gt;
   &lt;li&gt;Marrows&lt;/li&gt;
   &lt;li&gt;JAC Bland&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>fubar</name></author><category term="physics" /><summary type="html">We probe, control and thereby manipulate the spin degree of freedom of the electron to affect various processes ranging from information storage, transfer and processing.</summary></entry><entry><title type="html">Cheat sheet for GIT</title><link href="/2020/05/23/Git-Command-Cheat-Sheet.html" rel="alternate" type="text/html" title="Cheat sheet for GIT" /><published>2020-05-23T00:00:00+05:30</published><updated>2020-05-23T00:00:00+05:30</updated><id>/2020/05/23/Git-Command-Cheat-Sheet</id><content type="html" xml:base="/2020/05/23/Git-Command-Cheat-Sheet.html">&lt;div class=&quot;box&quot;&gt;
+&lt;/ul&gt;</content><author><name>fubar</name></author><category term="physics" /><summary type="html">We probe, control and thereby manipulate the spin degree of freedom of the electron to affect various processes ranging from information storage, transfer and processing.</summary></entry><entry><title type="html">References for learning C++</title><link href="/2020/05/24/C++-definitive-references.html" rel="alternate" type="text/html" title="References for learning C++" /><published>2020-05-24T00:00:00+05:30</published><updated>2020-05-24T00:00:00+05:30</updated><id>/2020/05/24/C++-definitive-references</id><content type="html" xml:base="/2020/05/24/C++-definitive-references.html">&lt;div class=&quot;box&quot;&gt;
+&lt;img src=&quot;/assets/images/C++/C++Logo.png&quot; alt=&quot;C++-logo&quot; width=&quot;150px&quot; /&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;abstract&quot;&gt;Abstract&lt;/h2&gt;
+
+&lt;p&gt;Programming is a science as well as an art. Developing the required skills takes time and effort and an enthusiasm to learn. The learning draws parallels with that of learning a natural language such as English.
+Just as the required skills to learn a natural language are reading, listening, writing and speaking, so the skills for learning a programming language are reading code, writing code. Also just as we need to know the proper language constructs like grammar (syntax), contextual use of language (semantics), we need to learn the syntax as well as&lt;/p&gt;
+
+&lt;h3 id=&quot;sites&quot;&gt;Sites&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.learncpp.com/&quot;&gt;Learncpp&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.cs-fundamentals.com/&quot;&gt;CS fundamentals&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;books&quot;&gt;Books&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/388242/the-definitive-c-book-guide-and-list&quot;&gt;SO Book Guide&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.mhhe.com/engcs/proglang/cohoon/&quot;&gt;C++ Program Design by Cohoon and Davidson&lt;/a&gt; I refered to this book for my CS101 course in 2005&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://goalkicker.com/CPlusPlusBook/&quot;&gt;C++ Notes for Professionals&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.pearson.com/us/higher-education/program/Deitel-C-How-to-Program-Plus-My-Lab-Programming-with-Pearson-e-Text-Access-Card-Package-10th-Edition/PGM1100513.html&quot;&gt;C++ How to Program by Deitel and Deitel&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;code&quot;&gt;Code&lt;/h3&gt;
+
+&lt;p&gt;Like learning natural language involves listening as a major component, programming language skills are developed by reading lots of good code. It exposes the learner to good programming practices.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.codewithc.com/c-projects-with-source-code/&quot;&gt;Code with C/C++&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Baalkikhaal/project-based-learning#cc&quot;&gt;Curated list of programming projects&lt;/a&gt; Language agnostic projects to improve the programming skills using project based learning&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://projecteuler.net/about&quot;&gt;Project Euler&lt;/a&gt; Weekly addition of a new problem that demands skills in mathematics and programming. A fun way to start learning programming and mathematics in a hand-in-glove manner.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;libraries&quot;&gt;Libraries&lt;/h3&gt;
+
+&lt;p&gt;Some famous libraries that help in learning how APIs are written. By reading their source code, one can learn how good programmers structure their code and also how to abstract functionality so that code has increased reusability quotient.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://glm.g-truc.net/0.9.9/index.html&quot;&gt;OpenGLM&lt;/a&gt; OpenGL Mathematics (GLM) is a header only C++ mathematics library for graphics software.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.libsdl.org/index.php&quot;&gt;SDL2&lt;/a&gt; Simple DirectMedia Layer is a cross-platform development library designed to provide low level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL and Direct3D.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.netlib.org/blas/&quot;&gt;BLAS&lt;/a&gt; Basic Linear Algebra Subroutines are &lt;strong&gt;Fortran&lt;/strong&gt; routines that provide basic building blocks for basic vector and matrix operations. There is a C/C++ interface.
+    &lt;ul&gt;
+      &lt;li&gt;Level-1 BLAS performs scalar, vector and vector-vector operations,&lt;/li&gt;
+      &lt;li&gt;Level-2 BLAS performs matrix-vector operations,&lt;/li&gt;
+      &lt;li&gt;Level-3 BLAS performs matrix-matrix operations.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.netlib.org/lapack/&quot;&gt;LAPACK&lt;/a&gt; Linear Algebra PACKage utilizes BLAS subroutines to provide routines for solving systems of simultaneous linear equations, least-squares solutions of linear systems of equations, eigenvalue problems, and singular value problems. The associated matrix factorizations (LU, Cholesky, QR, SVD, Schur, generalized Schur) are also provided. There is a C/C++ interface.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.opengl.org/&quot;&gt;OpenGL&lt;/a&gt; The Industry’s Foundation for High Performance Graphics&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://opencv.org/&quot;&gt;OpenCV&lt;/a&gt; (Open Source Computer Vision library)
+is an open source computer vision and machine learning software library. OpenCV was built to provide a common infrastructure for computer vision applications and to accelerate the use of machine perception in the commercial products.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;hands-on-tutorials&quot;&gt;Hands on Tutorials&lt;/h2&gt;
+&lt;p&gt;Following are hands on tutorials for various aspects of program development. As a typical cycle of program development involves&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;writing source code&lt;/li&gt;
+  &lt;li&gt;compiling the code&lt;/li&gt;
+  &lt;li&gt;debugging the code&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;writing-cc-program-todo&quot;&gt;Writing C/C++ program (#TODO)&lt;/h3&gt;
+
+&lt;p&gt;Tutorials explaining good programming practices while writing code are given here. Some esoteric aspects of writing good code, which I cannot at the current moment categorize them due to my own lack of understanding, are&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;avoiding hard coding&lt;/li&gt;
+  &lt;li&gt;practing a convention for writing code. Though there is no C++ standard for writing the code, in order for the code to be readable, we need to adopt one convention and stick. There is no universal convention. Some adopt the Hungarian convention for the brackets, what is the other one I dont have idea. A &lt;a href=&quot;https://lazyfoo.net/articles/article02/index.php&quot;&gt;LazyFoo article on writing readable code&lt;/a&gt; and an &lt;a href=&quot;https://inkscape.org/develop/coding-style/&quot;&gt;article on coding style for Inkscape project&lt;/a&gt; are starters.
+    &lt;ul&gt;
+      &lt;li&gt;properly indent code&lt;/li&gt;
+      &lt;li&gt;give descriptive names to the variables&lt;/li&gt;
+      &lt;li&gt;Develop a naming standard&lt;/li&gt;
+      &lt;li&gt;Properly comment your code&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;refactoring (not sure what that means… however most of the Inkscape legacy code is undergoing refactoring)&lt;/li&gt;
+  &lt;li&gt;any good references for writing code?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;compiling-a-cc-program&quot;&gt;Compiling a C/C++ program&lt;/h3&gt;
+&lt;p&gt;Compiling can be as simple as executing the command&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;g++ helloWorld.cpp -o helloWorld
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;or as difficult as compiling  various source files, linking various static and dynamic libraries. It is one of the important component of program development. These tutorials provide hands on experience with compiling C++ programs.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Learn the basics of compilation from a &lt;a href=&quot;https://medium.com/better-programming/learn-how-to-compile-a-c-program-382c4c690bdc&quot;&gt;Medium post titled Learn How to Compile a C++ program&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Individual steps of compilation of a C program are beautifully explained
+in a &lt;a href=&quot;https://www.cs-fundamentals.com/c-programming/how-to-compile-c-program-using-gcc&quot;&gt;CS fundamentals blog post&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;static-vs-dynamic-linking&quot;&gt;Static vs Dynamic Linking&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;A simple explanation of static and dynamic libraries in a &lt;a href=&quot;https://www.learncpp.com/cpp-tutorial/a1-static-and-dynamic-libraries/&quot;&gt;Learncpp tutorial&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;A further discussion is done in a &lt;a href=&quot;https://cs-fundamentals.com/tech-interview/c/difference-between-static-and-dynamic-linking&quot;&gt;CS fundamentals post&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;(Optional) A nuanced comparison of performance issues with static and dynamic linking in a &lt;a href=&quot;https://stackoverflow.com/questions/1993390/static-linking-vs-dynamic-linking&quot;&gt;SO post&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;how-to-use-library-for-application-development&quot;&gt;How to use library for Application development&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;We need to configure the compiler of our IDE and a [LearnCPP post] explains it using the case of VisualStudio and Codeblocks&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;As a simple concrete example a &lt;a href=&quot;https://medium.com/better-programming/navigating-the-world-of-distributed-c-code-e439406f3e42&quot;&gt;Medium post titled Navigating the world of distributed code&lt;/a&gt; explains how to work with uncompiled library/ header only libary and use &lt;code class=&quot;highlighter-rouge&quot;&gt;make&lt;/code&gt; tool to configure the compiler&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;As a concrete example, I was successful in configuring the MingW compiler of Codeblocks IDE to use &lt;a href=&quot;https://www.libsdl.org/index.php&quot;&gt;SDL2 library&lt;/a&gt; by following the [GRHMedia blog post] listed in the &lt;a href=&quot;https://wiki.libsdl.org/Tutorials&quot;&gt;SDL’s Tutorial Wiki&lt;/a&gt; as a video tutorial.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;advancedhow-to-create-a-library&quot;&gt;(Advanced)How to create a library?&lt;/h3&gt;
+
+&lt;p&gt;This is an advanced topic. I have not explored it but can refer to &lt;a href=&quot;https://www.cs-fundamentals.com/c-programming/static-and-dynamic-linking-in-c#static-libraries&quot;&gt;Create Static and Dynamic Link Libraries in C on Linux&lt;/a&gt; from CS-fundamentals blog.&lt;/p&gt;
+
+&lt;h2 id=&quot;debugging-code&quot;&gt;Debugging code&lt;/h2&gt;
+
+&lt;p&gt;Tutorials explaining good programming practices while debugging code are given here.(#TODO)&lt;/p&gt;</content><author><name>fubar</name></author><category term="programming" /><summary type="html">C++ references of websites, books, code and APIs for learning C/C++.</summary></entry><entry><title type="html">Cheat sheet for GIT</title><link href="/2020/05/23/Git-Command-Cheat-Sheet.html" rel="alternate" type="text/html" title="Cheat sheet for GIT" /><published>2020-05-23T00:00:00+05:30</published><updated>2020-05-23T00:00:00+05:30</updated><id>/2020/05/23/Git-Command-Cheat-Sheet</id><content type="html" xml:base="/2020/05/23/Git-Command-Cheat-Sheet.html">&lt;div class=&quot;box&quot;&gt;
 &lt;img src=&quot;/assets/images/Git/gitLogo.svg&quot; alt=&quot;Git-logo&quot; width=&quot;150px&quot; /&gt;
 &lt;/div&gt;
 
@@ -820,212 +1111,4 @@ This check is optional and needed only if one is not sure if the drivers and VIS
 
 &lt;p&gt;Tools available with us:&lt;/p&gt;
 
-&lt;p&gt;32 bit VISAcd&lt;/p&gt;</content><author><name>fubar</name></author><category term="programming" /><summary type="html">A tutorial on interfacing VISA compatible hardware using python's wrapper module `pyVISA`.</summary></entry><entry><title type="html">What is Jekyll?</title><link href="/2019/10/13/Building-Jekyll-website.html" rel="alternate" type="text/html" title="What is Jekyll?" /><published>2019-10-13T00:00:00+05:30</published><updated>2019-10-13T00:00:00+05:30</updated><id>/2019/10/13/Building-Jekyll-website</id><content type="html" xml:base="/2019/10/13/Building-Jekyll-website.html">&lt;div class=&quot;box&quot;&gt;
-&lt;img src=&quot;/assets/images/Jekyll/jekyllLogo.svg&quot; alt=&quot;jekyll-logo&quot; width=&quot;150px&quot; /&gt;
-&lt;/div&gt;
-
-&lt;h1 id=&quot;abstract&quot;&gt;Abstract&lt;/h1&gt;
-
-&lt;p&gt;Jekyll is a static site generator. It gives programmatic access to the various tools used for creating static websites. With a prime focus on handling static content, Jekyll, a Ruby gem provides objects to handle various elements present in a web page like&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;content structuring by the use of content asset variablizing (posts, interlinking and intra-linking between and within posts, authors, layout, includes, data, support for Markdown),&lt;/li&gt;
-  &lt;li&gt;content styling by the use of style asset variablizing  (CSS, SCSS, SASS) and&lt;/li&gt;
-  &lt;li&gt;multimedia asset handling by the use of global placeholders (for images, Java Scripts)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/static-assets.svg&quot; alt=&quot;Jekyll the Content Keeper&quot; title=&quot;Image taken from ... &quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Find the source of the above image #TODO&lt;/p&gt;
-
-&lt;h2 id=&quot;what-is-a-static-website&quot;&gt;What is a static website?&lt;/h2&gt;
-&lt;p&gt;In simple terms, static websites are read only websites. The tools required for such websites include but not limited to the standard web tools like HTML, CSS, JS. Historically, static websites generation involved tools used for making complex websites like databases for content handling, preprocessors for generating the HTML content using PHP, serving the content using server all combined in a package called LAMP (Linux Apache MySQL PHP), WAMP (Windows Apache MySQL PHP). Howver, this posed high maintenance overhead in terms of security, upgradation. As a website administrator, a simple no-frills solution with source code based on simple text files was a great boon. Jekyll is one among the new generation of static site generators.&lt;/p&gt;
-
-&lt;h2 id=&quot;what-is-a-dynamic-website&quot;&gt;What is a dynamic website?&lt;/h2&gt;
-&lt;p&gt;Responsive websites which have forms, have preprocessing tools liks PHP&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;what-jekyll-is-not&quot;&gt;What Jekyll is &lt;strong&gt;not&lt;/strong&gt;?&lt;/h2&gt;
-
-&lt;p&gt;Jekyll cannot generator responsive websites. Webpages that enable server side heavy duty programming tasks like cloud computation (what it is #TODO), graphic rendering. As such, it is intended to make websites which are read only, journal keeping as typical in  the case of Wordpress-based webpages.&lt;/p&gt;
-
-&lt;p&gt;Responsiveness from readers can be added in the form of widgets like Disqus widgets. which essentially is a link to the disqus server that does the processing. My feeling is that a java script handles such responses.&lt;/p&gt;
-
-&lt;p&gt;In that way, Jekyll can partially generate responsive websites with the help of JS&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;which-jekyll&quot;&gt;Which Jekyll?&lt;/h2&gt;
-
-&lt;p&gt;Jekyll v4 is production ready using HTML5, CSS3 and JS(version ?).&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;why-jekyll-why-not-others&quot;&gt;Why Jekyll? Why not others?&lt;/h2&gt;
-
-&lt;p&gt;Other static generators like Python based Zim Desktop wiki also generate static sites. However Jekyll offers a seamless integration of desktop and web interfaces in the form of support for Markdown, version control using Git and easy deployment to GitHub for web hosting, and content editing using Atom text editor.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;what-are-static-assets&quot;&gt;What are static assets?&lt;/h2&gt;
-
-&lt;p&gt;HTML, CSS, JS&lt;/p&gt;</content><author><name>fubar</name></author><category term="programming" /><summary type="html">An introduction to Jekyll, an awesome static website generator.</summary></entry><entry><title type="html">Python Scripts to set static or dynamic IP address</title><link href="/2019/09/30/Scripts-to-set-IP-Address-Statically-or-Dynamically.html" rel="alternate" type="text/html" title="Python Scripts to set static or dynamic  IP address" /><published>2019-09-30T00:00:00+05:30</published><updated>2019-09-30T00:00:00+05:30</updated><id>/2019/09/30/Scripts-to-set-IP-Address-Statically-or-Dynamically</id><content type="html" xml:base="/2019/09/30/Scripts-to-set-IP-Address-Statically-or-Dynamically.html">&lt;div class=&quot;box&quot;&gt;
-&lt;img src=&quot;/assets/images/Python/pythonLogo.svg&quot; alt=&quot;python-logo&quot; width=&quot;150px&quot; /&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;abstract&quot;&gt;Abstract&lt;/h2&gt;
-
-&lt;p&gt;The reason to set up a &lt;a href=&quot;/2019/08/25/ADSL-modem+router-as-WAP.html&quot;&gt;ADSL router as a switch&lt;/a&gt; was to enhance the WiFi signal at my office desk. However sometimes I need to switch back to the &lt;code class=&quot;highlighter-rouge&quot;&gt;iiscwlan&lt;/code&gt; WiFi interface when I move my laptop.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;setting-dynamic-ip&quot;&gt;Setting dynamic IP&lt;/h2&gt;
-
-&lt;p&gt;Firstly my laptop WiFi adaptor has connected to the &lt;code class=&quot;highlighter-rouge&quot;&gt;wololo&lt;/code&gt; WAP of the ADSL modem+router&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/Networking/SetDynamicIPusingPowershell0.png&quot; alt=&quot;Connected to wololo interface&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Disconnect from the &lt;code class=&quot;highlighter-rouge&quot;&gt;wololo&lt;/code&gt; WAP&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/Networking/SetDynamicIPusingPowershell1.png&quot; alt=&quot;WiFi interface is floating&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Enable the &lt;code class=&quot;highlighter-rouge&quot;&gt;WiFi&lt;/code&gt; interface to have DHCP enabled&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Get-NetAdapter -Name WiFi | Set-NetIPInterface -Dhcp Enabled&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/Networking/SetDynamicIPusingPowershell2.png&quot; alt=&quot;DHCP is enabled&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Connect to the &lt;code class=&quot;highlighter-rouge&quot;&gt;iiscwlan&lt;/code&gt; WAP. The DHCP server at &lt;code class=&quot;highlighter-rouge&quot;&gt;10.43.240.1&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;10.43.79.1&lt;/code&gt; dynamically assigns &lt;code class=&quot;highlighter-rouge&quot;&gt;10.43.240.122&lt;/code&gt; IP Address to the WiFi interface having index &lt;code class=&quot;highlighter-rouge&quot;&gt;17&lt;/code&gt; and alias  &lt;code class=&quot;highlighter-rouge&quot;&gt;WiFi&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/Networking/SetDynamicIPusingPowershell3.png&quot; alt=&quot;Set IP dynamically&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Notice the DNS servers set to &lt;code class=&quot;highlighter-rouge&quot;&gt;10.16.25.13&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;10.16.25.15&lt;/code&gt;. However sometimes these are not set and need to be fetched from the DHCP servers&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Set-DnsClientServerAddress -InterfaceIndex 17 -ResetServerAddresses&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/Networking/SetDynamicIPusingPowershell4.png&quot; alt=&quot;Set DHCP servers dynamically&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;In this way, the IP set dynamically. Thats it!&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;setting-static-ip&quot;&gt;Setting static IP&lt;/h2&gt;
-
-&lt;p&gt;Run a powershell as an Administrator and check the interface index for the WiFi interface. The Interface has index &lt;code class=&quot;highlighter-rouge&quot;&gt;17&lt;/code&gt; with alias &lt;code class=&quot;highlighter-rouge&quot;&gt;WiFi&lt;/code&gt;. It is connected to the &lt;code class=&quot;highlighter-rouge&quot;&gt;iiscwlan&lt;/code&gt; WAP using the IP address &lt;code class=&quot;highlighter-rouge&quot;&gt;10.43.240.122&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GetNetIPConfiguration&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/Networking/SetStaticIPusingPowershell0.png&quot; alt=&quot;Check the interface parameters&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Disconnect from the &lt;code class=&quot;highlighter-rouge&quot;&gt;iiscwlan&lt;/code&gt; WAP.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/Networking/SetStaticIPusingPowershell1.png&quot; alt=&quot;Interface is disconnected&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;To connect to the &lt;code class=&quot;highlighter-rouge&quot;&gt;wololo&lt;/code&gt; WAP we need to know its network address. We know it belongs to &lt;code class=&quot;highlighter-rouge&quot;&gt;10.43.79.x&lt;/code&gt; network address with the available IP addresss starting from &lt;code class=&quot;highlighter-rouge&quot;&gt;10.43.79.16-255&lt;/code&gt; as the router addresss is &lt;code class=&quot;highlighter-rouge&quot;&gt;10.43.79.1&lt;/code&gt;. Let us set the IP address of the &lt;code class=&quot;highlighter-rouge&quot;&gt;WiFi&lt;/code&gt; interface to belong to this range. Let us reserve &lt;code class=&quot;highlighter-rouge&quot;&gt;10.43.79.16&lt;/code&gt; for the desktop computer’s ethernet interface.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;New-NetIPAddress -InterfaceIndex 17 -IPAddress 10.43.79.17 -PrefixLength 24 -DefaultGateway 10.43.79.1&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;This pops a &lt;code class=&quot;highlighter-rouge&quot;&gt;Windows System Error 87&lt;/code&gt; which says that the default Gateway already exists. Let us remove the Default Gateway option and try again&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;New-NetIPAddress -InterfaceIndex 17 -IPAddress 10.43.79.17 -PrefixLength 24&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Again pops up an &lt;code class=&quot;highlighter-rouge&quot;&gt;Windows System Error 87&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/Networking/SetStaticIPusingPowershell2.png&quot; alt=&quot;Set the static IP fails&quot; /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;To resolve this first connect to the &lt;code class=&quot;highlighter-rouge&quot;&gt;wololo&lt;/code&gt; WAP then execute the command without the default gateway as already the previous &lt;code class=&quot;highlighter-rouge&quot;&gt;iiscwlan&lt;/code&gt; WAP had the same default gateway &lt;code class=&quot;highlighter-rouge&quot;&gt;10.43.79.1&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/Networking/SetStaticIPusingPowershell3.png&quot; alt=&quot;Set the static IP passes&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;We need to set the DNS servers.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Set-DnsClientServerAddress -InterfaceIndex 17 -ServerAddresses 10.16.25.13, 10.16.25.15&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/Networking/SetStaticIPusingPowershell4.png&quot; alt=&quot;Set the DNS server&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;In this way, the IP set statically. Thats it!&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;setting-the-ip-address-dynamically-using-a-python-script&quot;&gt;Setting the IP address dynamically using a Python script&lt;/h2&gt;
-
-&lt;p&gt;Entering these commands is useful. However due to the correct sequence required as well as accuracy requirements, it is better to have a script individually for the static or dynamic setting of IP addresses.&lt;/p&gt;
-
-&lt;p&gt;Thanks to Python’s scripting capability to handle system command execution, we use the &lt;code class=&quot;highlighter-rouge&quot;&gt;subprocess&lt;/code&gt; module for the task&lt;/p&gt;
-
-&lt;h3 id=&quot;python-script-to-set-static-ip&quot;&gt;Python script to set Static IP&lt;/h3&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;#!python
-&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'''Script to set Static IP to the WiFi adaptor of laptop.
- so that it belongs to the same network address range
-  as that of the WAP of the router configured to work like a switch.'''&lt;/span&gt;
-
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;subprocess&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;staticIP&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'''netsh interface ip set address name=&quot;WiFi&quot; static 10.43.79.17 255.255.255.0 10.43.79.1'''&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;command1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;staticIP&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;subprocess&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;command1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;staticDNS1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'''netsh interface ip set dns name=&quot;WiFi&quot; static 10.16.25.13'''&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;command2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;staticDNS1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;subprocess&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;command2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;staticDNS2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'''netsh interface ip add dns name=&quot;WiFi&quot; 10.16.25.15 index=2'''&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;command3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;staticDNS2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;subprocess&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;command3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;python-script-to-set-dynamic-ip&quot;&gt;Python script to set Dynamic IP&lt;/h3&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;#!python
-&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'''Script to set Dynamic IP to the WiFi adaptor of laptop
- so that it auto configure to have an IP address that
- belongs to the same network address as that of the iiscwlan WAP.'''&lt;/span&gt;
-
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;subprocess&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;dhcpCommand&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'''netsh interface ip set address &quot;WiFi&quot; dhcp'''&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;command&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dhcpCommand&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;subprocess&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;command&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>fubar</name></author><category term="programming" /><summary type="html">A tutorial on setting static and dynamic IP address when routing via ADSL router</summary></entry><entry><title type="html">History of fonts</title><link href="/2019/09/27/fonts.html" rel="alternate" type="text/html" title="History of fonts" /><published>2019-09-27T00:00:00+05:30</published><updated>2019-09-27T00:00:00+05:30</updated><id>/2019/09/27/fonts</id><content type="html" xml:base="/2019/09/27/fonts.html">&lt;div class=&quot;box&quot;&gt;
-&lt;img src=&quot;/assets/images/Fonts/fontsLogo.svg&quot; alt=&quot;fonts-logo&quot; width=&quot;150px&quot; /&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;abstract&quot;&gt;Abstract&lt;/h2&gt;
-
-&lt;p&gt;The origin of fonts dates back to the Egyptian heiroglyphs. Heiroglyph (&lt;em&gt;heiros glypho&lt;/em&gt; meaning sacred carving) forms a set of symbols to represent ideas and emotions. From the symbolic representation of ideas, language was codified using alphabet to have more efficient representation. Alphabet is also a set of symbols. However, they differ from the heiroglyphs in the sense that instead of a single glyph representing a single idea in the case of heiroglyph, an ordered group of glyphs is used to represent an idea. This ordered group of glyph is called a &lt;strong&gt;word&lt;/strong&gt;. Since alphabet need to be carved just the same as heiroglyphs, alphabet provided a freedom of expression allowing slight modifications to the standard template or design allowing designers a medium for expressing sub-emotions and sub-culture. An alphabet with a specific collection of glyphs makes a &lt;strong&gt;font&lt;/strong&gt;. There are other characteristics to glyphs and placement of glyphs. Fonts can be classified based on some characteristics like common glyph template. Such grouping of fonts is called a &lt;strong&gt;typeface&lt;/strong&gt; or &lt;strong&gt;font-family&lt;/strong&gt;. So an &lt;strong&gt;Avenir Light Standard&lt;/strong&gt; belongs to the &lt;strong&gt;Avenir&lt;/strong&gt; typeface/font family which has other fonts like &lt;strong&gt;Avenir Book&lt;/strong&gt;, &lt;strong&gt;Avenir Condensed&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;font-categories&quot;&gt;Font categories&lt;/h2&gt;
-
-&lt;p&gt;The &lt;a href=&quot;https://en.wikipedia.org/wiki/Vox-ATypI_classification&quot;&gt;Vox-ATypl classification&lt;/a&gt; was first classification of the typefaces carried out in 1954 by Maximillien Vox organizing the typefaces into 10 general categories. Later British Standards based their type classification on the former system and categorized them into 3 classes:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Classicals which subclassified into Humanist, Garaldes and Transitional&lt;/li&gt;
-  &lt;li&gt;Moderns which include Modern Serif, Slab Serif, Grotesque, Neo Grotesque, Geometric Sans, Humanist Sans Serif&lt;/li&gt;
-  &lt;li&gt;Calligraphics subdivided into Glyphyic, Script, Graphic, Blackletter and Gaelic&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;However this classification is subject to interpretation. Some resources classify based on the standard characteristics into Sans Serif, Serif, Slab Serif, Script, Display and Blackletter. &lt;a href=&quot;https://www.azfonts.net/&quot;&gt;A-Zfonts&lt;/a&gt; uses such classification.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;geometric-typefaces&quot;&gt;Geometric typefaces&lt;/h2&gt;
-
-&lt;p&gt;Geometric typefaces take inspiration from elements of geometry; circle, equilateral triangle and square. They are major-sub-classified into&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Geometric Sans which include Avenir, Futura&lt;/li&gt;
-  &lt;li&gt;Geometric Slab Serif include Rockwell, Memphis, Stymie&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;poster-typefaces&quot;&gt;Poster typefaces&lt;/h2&gt;
-
-&lt;h2 id=&quot;font-foundries&quot;&gt;Font foundries&lt;/h2&gt;
-
-&lt;p&gt;Adobe, Microsoft, Apple, Monotype are the major foundries.&lt;/p&gt;
-
-&lt;p&gt;Adobe’s famous typefaces include Futura, Helvetica, Avenir,&lt;/p&gt;
-
-&lt;p&gt;Monotype’s famous typefaces include Arial,&lt;/p&gt;</content><author><name>fubar</name></author><category term="programming" /><summary type="html">A brief history of fonts and in particular the geometric typefaces.</summary></entry></feed>
+&lt;p&gt;32 bit VISAcd&lt;/p&gt;</content><author><name>fubar</name></author><category term="programming" /><summary type="html">A tutorial on interfacing VISA compatible hardware using python's wrapper module `pyVISA`.</summary></entry></feed>

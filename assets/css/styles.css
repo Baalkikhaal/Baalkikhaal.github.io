@@ -1,5 +1,7 @@
 @import url(native.css);
 /* Pygments (deprecated and not supported in Jekyll 4; superseded by Ruby's own Rouge) module stylesheet for syntax highlighting. Refer: [Tags Filters](https://jekyllrb.com/docs/liquid/tags/#stylesheets-for-syntax-highlighting) */
+body { font-size: 18pt; background-color: #cbdfa1; padding: 5px; margin: 5px; width: 800px; margin-left: auto; margin-right: auto; }
+
 .fit-picture { width: 500px; background-color: white; padding: 5px; }
 
 p { color: blue; }

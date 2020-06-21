@@ -2,15 +2,15 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/authors/fubar.html</loc>
-<lastmod>2020-06-04T02:46:16+05:30</lastmod>
+<lastmod>2020-06-21T13:02:06+05:30</lastmod>
 </url>
 <url>
 <loc>/authors/jill.html</loc>
-<lastmod>2020-06-04T02:46:16+05:30</lastmod>
+<lastmod>2020-06-21T13:02:06+05:30</lastmod>
 </url>
 <url>
 <loc>/authors/ted.html</loc>
-<lastmod>2020-06-04T02:46:16+05:30</lastmod>
+<lastmod>2020-06-21T13:02:06+05:30</lastmod>
 </url>
 <url>
 <loc>/2016/07/24/Trip-to-Shravanabelagola.html</loc>
@@ -71,6 +71,18 @@
 <url>
 <loc>/2020/05/29/Semantic-versioning-rules-for-software-management.html</loc>
 <lastmod>2020-05-29T00:00:00+05:30</lastmod>
+</url>
+<url>
+<loc>/2020/06/20/How-to-git-your-PhD-thesis-on-GitHub.html</loc>
+<lastmod>2020-06-20T00:00:00+05:30</lastmod>
+</url>
+<url>
+<loc>/2020/06/21/How-to-style-your-web-pages.html</loc>
+<lastmod>2020-06-21T00:00:00+05:30</lastmod>
+</url>
+<url>
+<loc>/2020/06/21/The-journey-of-PhD.html</loc>
+<lastmod>2020-06-21T00:00:00+05:30</lastmod>
 </url>
 <url>
 <loc>/about.html</loc>
