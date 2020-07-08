@@ -2,15 +2,15 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/authors/fubar.html</loc>
-<lastmod>2020-07-04T20:39:07+05:30</lastmod>
+<lastmod>2020-07-08T10:51:25+05:30</lastmod>
 </url>
 <url>
 <loc>/authors/jill.html</loc>
-<lastmod>2020-07-04T20:39:07+05:30</lastmod>
+<lastmod>2020-07-08T10:51:25+05:30</lastmod>
 </url>
 <url>
 <loc>/authors/ted.html</loc>
-<lastmod>2020-07-04T20:39:07+05:30</lastmod>
+<lastmod>2020-07-08T10:51:25+05:30</lastmod>
 </url>
 <url>
 <loc>/2016/07/24/Trip-to-Shravanabelagola.html</loc>
@@ -109,6 +109,14 @@
 <lastmod>2020-07-02T00:00:00+05:30</lastmod>
 </url>
 <url>
+<loc>/2020/07/06/YogaKshema-the-state-of-mind.html</loc>
+<lastmod>2020-07-06T00:00:00+05:30</lastmod>
+</url>
+<url>
+<loc>/2020/07/07/YogaKshema-you-are-not-mind.html</loc>
+<lastmod>2020-07-07T00:00:00+05:30</lastmod>
+</url>
+<url>
 <loc>/about.html</loc>
 </url>
 <url>
@@ -128,6 +136,9 @@
 </url>
 <url>
 <loc>/staff.html</loc>
+</url>
+<url>
+<loc>/yoga.html</loc>
 </url>
 <url>
 <loc>/assets/documents/PyVISA/National-Instruments-2001-NI-VISA-User-Manual.pdf</loc>
