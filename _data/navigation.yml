@@ -1,0 +1,16 @@
+- name: Home
+  link: /
+  image: /assets/images/homePageHomeLogo.svg
+  alt: homepage logo
+- name: About
+  link: /about.html
+  image: /assets/images/homePageAboutLogo.svg
+  alt: about logo
+- name: Blog
+  link: /blog.html
+  image: /assets/images/homePagePostsLogo.svg
+  alt: blog logo
+- name: Staff
+  link: /staff.html
+  image: /assets/images/homePageStaffLogo.svg
+  alt: staff logo

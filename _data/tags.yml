@@ -1,0 +1,10 @@
+- name: physics
+  link: /physics.html
+- name: programming
+  link: /programming.html
+- name: yoga
+  link: /yoga.html
+- name: education
+  link: /education.html
+- name: nature
+  link: /nature.html

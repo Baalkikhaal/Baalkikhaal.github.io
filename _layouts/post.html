@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<h1 class="Headnote">{{ page.title }}</h1>
+<p >
+  {{ page.date | date_to_string }} - {{ page.author }}
+  {% assign author = site.authors | where: 'short_name', page.author | first %}
+  {% if author %}
+    - <a href="{{ author.url }}">{{ author.name }}</a>
+  {% endif %}
+</p>
+
+{{ content }}
+
+{% if site.disqus.shortname %}
+  {% include disqus_comments.html %}
+{% endif %}
