@@ -30,7 +30,7 @@ Year | Title | Author(s) | Journal
 2007 | The emergence of spin electronics in data storage | Chappert, Claude; Fert, Albert; Dau, Frédéric Nguyen Van | Nature Materials(Review Articles Insight)
 2007 | Spin-diffusion lengths in metals and alloys, and spin-flipping at metal/metal interfaces: An experimentalist's critical review | Bass, Jack; Pratt, William P. | Journal of Physics Condensed Matter (Topical Review)
 2007 | Invited article: Vector and Bragg Magneto-optical Kerr effect for the analysis of nanostructured magnetic arrays | Westphalen, A.; Lee, M. S.; Remhof, A.; Zabel, H. | Review of Scientific Instruments (Invited Article)
-2006 | Spin–orbit Driven Physics at Surfaces | Heide, M; Bihlmayer, G | [Newsletter of the Psi-K](http://psi-k.net/)
+2006 | Spin–orbit Driven Physics at Surfaces | Heide, M; Bihlmayer, G | [Newsletter of the Psi-K](http://www.psi-k.org/newsletters/News_78/Highlight_78.pdf)
 2005 | Spin-polarised currents and magnetic domain walls | Marrows, C. H. | Advances in Physics
 2004 | Current-driven excitations in magnetic multilayers: A brief review | Bass, J; Urazhdin, S; Birge, Norman O; Pratt, W P | Physica Status Solidi (A) Applied Research
 2004 | Spintronics: Fundamentals and applications | Žutić, Igor; Fabian, Jaroslav; Sarma, S. Das | Reviews of Modern Physics
