@@ -115,11 +115,21 @@ date: 28th June, 2020
     - [Homepage](https://www.klaeui-lab.physik.uni-mainz.de/homepage-prof-dr-mathias-klaeui/)
     - Skyrmions
 
-- [P Gambardella]()
+- [P Gambardella](https://scholar.google.com/citations?user=dO2FjV8AAAAJ&hl=en&oi=ao)
     - ETH Zurich, Switzerland
     - [Homepage](https://intermag.mat.ethz.ch/)
+- [Christopher Marrows](https://scholar.google.com/citations?hl=en&user=UwFdtuQAAAAJ&view_op=list_works&citft=1&email_for_op=colonel.sreekar%40gmail.com&gmla=AJsN-F732SICPNZFZKBsC8ZxRmYt9sibK9MiYnQBBDCLbbHIW0bnrKVfbzLYyhkqbd2lFcmjecDaEeqisv-uV0kZi0qoI2OwIfQzU6DgoYHyhP-StqedQ-LAJ2U0HX34E_cDcGHpL4OCwapJcNqzCiQf6fbB7sLwn1Yy0un0d0WsX2TWtHup8PRkjfP7Cta6SxDDa25HguJgZzQcGci2040AHoSj1330EkM6vua5mtPK_znN9dEInhX0lxumTko4LI9NO6KUUQXM)
+    - University of Leeds, UK
+    - [Homepage](https://condensed-matter.leeds.ac.uk/people/chm/)
 
+- [Luqio Liu](https://scholar.google.com/citations?hl=en&user=BIChV30AAAAJ&sortby=pubdate&view_op=list_works&citft=1&email_for_op=colonel.sreekar%40gmail.com&gmla=AJsN-F6DUUkuQNWHXHJnry7oCz-ogp3jo0M_b1pyf2MOMHtiM2wl0zimaBDU6Mf2CuNWEEois4tmcp7JexsEnDTft0OlPQk5j5vm-KTCOQhsaF2bJHPCSg3YgHtdZ7eeEAyxAH14lBjgPeSLBocOQWDEDM8MbAHmjVwSdiib1l-EcfPc4wyz1nlkkhEfCaSSgH4PGjpwYbHRMNhm2_OSFtlqvpytYdgTSsb17MDhjM9ZMVA1OH_GKECGD7-bRr2qcthrLH_7iycs)
+    - [Homepage](https://www.rle.mit.edu/spintronics/)
+    - Seminal work on SHE induced spin orbit torque switching in Ta/CoFeB/MgO perpendicular and inplane anisotropy films
+    - Proposal of a novel 3 terminal SOT MRAM memory for separation of writing line and reading line to increase the endurance of the element. Liu[2012] Science
 
+- [Anjan Soumyanarayanan](https://scholar.google.com/citations?hl=en&user=eeyUih4AAAAJ&view_op=list_works&citft=1&email_for_op=colonel.sreekar%40gmail.com&gmla=AJsN-F6BrcDw62TRlwYxZLjcw-qdeI6Diw2AP-MkJ8MtObCohXKoC4JoZaKcoQOgs5_BV5CvMkQJKnsvupXlmYg0Akztj35MUxCaziu3CPFjGnXzsJDR7Y4kRcg4VkFJ1DWiqgSHfOKAcpfpJ8rYGWX1M6xuOuVVNV6MyfO8J2TelKTD3z2dw9-Ny2ejOH0VqV3X4nO98jW1Gqs_u6zWyorhUmGBMQXjMksLadc_2qfeyBM1VFbZRu5CUfN9YjhuEnB0RRBH4D3P)
+    - [Homepage](https://www.physics.nus.edu.sg/staff/anjan.html)
+    
 # Theory
 
 - [Arne Brataas](https://www.ntnu.edu/employees/arne.brataas)
@@ -151,3 +161,15 @@ date: 28th June, 2020
     - NUS, Singapore
     - [Homepage](https://online.ece.nus.edu.sg/staff/web.asp?id=elembaj)
     - Topological insulators
+- [Aurelien Manchon](https://scholar.google.com/citations?hl=en&user=vRADnIkAAAAJ&view_op=list_works&citft=1&email_for_op=colonel.sreekar%40gmail.com&sortby=pubdate)
+    - KAUST, Saudi Arabia
+    - [Homepage](https://spintronics.kaust.edu.sa/Pages/Home.aspx)
+
+- [Shufeng Zhang](https://scholar.google.com/citations?hl=en&user=uwGBWlUAAAAJ&view_op=list_works&citft=1&email_for_op=colonel.sreekar%40gmail.com&gmla=AJsN-F7sUNtIWM_9dWDG_ChMOYoFJvwl4PbS5FFj5zveOFqQOUMXFGsRfmSAvAoKc0TZ24d8Vwms60heKaiEiLWvhJ6y5RGO-Syoa9w8FOunTrwSQ8zmWuyTE-BKSTLi78MbH6T7JQsGQECqdJRXxF03s3teD_gAQfz0Edim3dKY8mI0rEMH5AdtCrDq7nbzxjlAy9pyOR_s6LloGXF74Yjn3RiBuQfouKUPkgv6Y1Mv8FZki69zbEtQ1og2Pgz1DSswCgU1Slqg)
+    - University of Arizona, USA
+    - [Homepage](https://w3.physics.arizona.edu/people/shufeng-zhang)
+    - Theory of spin transfer torques
+
+- [Shoucheng Zhang](https://scholar.google.com/citations?user=BFtWlhEAAAAJ&hl=en&oi=ao)
+    - Stanford University, USA
+    - [Homepage]()
