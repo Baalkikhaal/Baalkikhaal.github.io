@@ -30,6 +30,13 @@ a:hover { text-decoration: none; }
     font-size: 50%;
     background: Azure; }
 */
+
+.Headnote h1 {
+  font-size: 1em;
+  margin: .67em 0;
+  font-weight: 600;
+  color: LightCoral;
+}
 .navigation img{
     max-width: 10%;
     padding-right: 5%;
