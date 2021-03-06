@@ -7,14 +7,13 @@ excerpt: "A tutorial on interfacing VISA compatible hardware using python's wrap
 date: 21st October, 2019
 ---
 
-<div class="box">
-<img src="/assets/images/Python/pythonLogo.svg"
-alt="python-logo"
-width = 150px >
-</div>
+# Abstract
 
-## Abstract
-
+<img
+    src="/assets/images/Python/pythonLogo.svg"
+    alt="python-logo"
+    align = left
+/>
 Interfacing test and measurement s
 
 ## History of VISA

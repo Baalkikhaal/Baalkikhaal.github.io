@@ -106,8 +106,7 @@ ax.text(0.3, 0.0, params_s, transform = ax.transAxes, fontsize = 6, family = 'mo
 fig.savefig('linearRegression.png')
 
 ```
-
-<img src="/assets/images/Matplotlib/linearRegression.png" alt="linear-regression-parameters" width="300"/>
+![test-image](/assets/images/Matplotlib/linearRegression.png)
 
 # Conclusion
 

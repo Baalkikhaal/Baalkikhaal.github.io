@@ -2,22 +2,51 @@
 @import url(github-markdown.css);
 
 /* Pygments (deprecated and not supported in Jekyll 4; superseded by Ruby's own Rouge) module stylesheet for syntax highlighting. Refer: [Tags Filters](https://jekyllrb.com/docs/liquid/tags/#stylesheets-for-syntax-highlighting) */
+
+/*
 body { font-size: 18pt; background-color: DarkSlateGray; padding: 5px; margin: 5px; width: 800px; margin-left: auto; margin-right: auto; }
 
-.fit-picture { width: 500px; background-color: #7e96fb; padding: 5px; }
-
+.fit-picture { float: center; width: 400px; background-color: #7e96fb; padding: 5px; }
+*/
+/*
 p { color: Ivory; }
 
 a:link { color: Khaki; }
 
 a:hover { text-decoration: none; }
 
-.Headnote { background: LightSeaGreen; }
 
-.navigation { font-size: 150%; background: Ivory; }
 
-.navigation-tags { font-size: 100%; background: LightGreen; }
+.navigation {
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 150%;
+    background: Ivory;
+}
 
-.box { float: left; width: 150px; height: 150px; margin-right: 30px; }
+*/
+
+/*.Headnote {
+    font-size: 50%;
+    background: Azure; }
+*/
+.navigation img{
+    max-width: 10%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+
+.navigation-tags {
+     font-size: 150%;
+     background: MintCream;
+ }
+
+.box {
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin-right: 30px;
+}
 
 /*# sourceMappingURL=styles.css.map */

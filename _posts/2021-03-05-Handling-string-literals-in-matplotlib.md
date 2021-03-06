@@ -128,7 +128,11 @@ The `mathtext` way is easier. It requires, however, to use raw strings with math
 plt.figure()
 plt.ylabel(r'$\omega$ (in THz)')
 ```
+<!--
 <img src="/assets/images/Matplotlib/stringLiteralsInMatplotlib.png" alt="string-literals-in-matplotlib" width="300"/>
+-->
+
+![string-literals-in-matplotlib](/assets/images/Matplotlib/stringLiteralsInMatplotlib.png)
 
 The LaTeX way adds for flexibility and aesthetics at the expense of additional set up of a working LaTex installation.
 
@@ -143,8 +147,11 @@ plt.figure()
 plt.xlabel(r'$\lambda$ (in nm)')
 plt.ylabel(r'$\omega$ (in THz)')
 ```
-
+<!--
 <img src="/assets/images/Matplotlib/stringLiteralsInMatplotlibLaTeX.png" alt="string-literals-in-matplotlib-LaTeX" width="300"/>
+-->
+
+![string-literals-in-matplotlib-LaTeX](/assets/images/Matplotlib/stringLiteralsInMatplotlibLaTeX.png)
 
 From [text rendering with LaTeX]()
 > Certain characters require special escaping in TeX, such as

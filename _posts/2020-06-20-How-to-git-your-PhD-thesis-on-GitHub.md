@@ -7,11 +7,13 @@ excerpt: "We will work with GitHub’s repository hosting service to have a remo
 date: 20th June, 2020
 ---
 
-<div class="box">
-<img src="/assets/images/Git/gitLogo.svg"
-alt="Git-logo"
-width = 150px >
-</div>
+<img
+    src="/assets/images/Git/gitLogo.svg"
+    alt="Git-logo"
+    align = left
+/>
+
+# Context
 
 Git is a version control system usually used for software. However it can also be used for versioning any document set. We will see how git can be used to version a PhD thesis. Versioning a PhD thesis is not only useful as a backup option but also can give an overview of how the thesis gets shaped over the course of time. Also since thesis writing is a highly non linear phenomenon, git provides tools to track the non linear development. We will work with GitHub's repository hosting service to have a remote repository for our PhD thesis. It is a good idea to git your thesis as a **private repository**. GitHub private repository provides [unlimited storage](https://github.blog/2019-01-07-new-year-new-github/) as long as the file sizes do not exceed [100MB size limit](https://help.github.com/en/github/managing-large-files/what-is-my-disk-quota).
 

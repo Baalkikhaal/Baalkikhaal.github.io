@@ -8,19 +8,15 @@ excerpt: "An introduction to Jekyll, an awesome static website generator."
 date: 13th October, 2019
 ---
 
-<div>
-<img src="{% link /assets/images/Jekyll/jekyllLogo.svg %}"
-alt="jekyll-logo"
-width = 150px >
-</div>
-
-![jekyll-logo]({% link /assets/images/Jekyll/jekyllLogo.svg %})
-
 {% if page.tool %}
     {% for tool in site.data.tools %}
         {% if tool.name == page.tool %}
             <!--- ![{{ tool.alt }}]({{ tool.link }}) --->
-![jekyll-logo]({% link /assets/images/Jekyll/jekyllLogo.svg %})
+            <img
+                src="{{ tool.link }}"
+                alt="{{ tool.alt }}"
+                align = left
+            />
         {% endif %}
     {% endfor %}
 {% endif %}

@@ -7,13 +7,13 @@ excerpt: "A reference for the commonly used GIT commands and explanations of the
 date: 23rd May, 2020
 ---
 
-<div class="box">
-<img src="/assets/images/Git/gitLogo.svg"
-alt="Git-logo"
-width = 150px >
-</div>
-
 ## Abstract
+
+<img
+    src="/assets/images/Git/gitLogo.svg"
+    alt="Git-logo"
+    align=left
+/>
 
 The concepts around Git can be summarized by the taglines
 

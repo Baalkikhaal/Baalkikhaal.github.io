@@ -7,13 +7,13 @@ excerpt: "A tutorial on setting static and dynamic IP address when routing via A
 date: 30th September, 2019
 ---
 
-<div class="box">
-<img src="/assets/images/Python/pythonLogo.svg"
-alt="python-logo"
-width = 150px >
-</div>
-
 ## Abstract
+
+<img
+    src="/assets/images/Python/pythonLogo.svg"
+    alt="python-logo"
+    align = left
+/>
 
 The reason to set up a [ADSL router as a switch]({% post_url 2019-08-25-ADSL-modem+router-as-WAP %}) was to enhance the WiFi signal at my office desk. However sometimes I need to switch back to the `iiscwlan` WiFi interface when I move my laptop.
 

@@ -9,6 +9,11 @@ date: 24th May, 2020
 
 ## Abstract
 
+<img
+    src="/assets/images/Spintronics/Lab Logo.png"
+    alt="spintronics-logo"
+    align=left
+/>
 Write a paragraph on spintronics. what skills are required to understand spintronics. What are the areas your lab is working on. What are you working on.
 What is the specific problem you are working on
 

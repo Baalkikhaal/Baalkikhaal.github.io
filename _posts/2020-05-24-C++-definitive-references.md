@@ -7,13 +7,13 @@ excerpt: "C++ references of websites, books, code and APIs for learning C/C++."
 date: 24th May, 2020
 ---
 
-<div class="box">
-<img src="/assets/images/C++/C++Logo.png"
-alt="C++-logo"
-width = 150px >
-</div>
-
 ## Abstract
+
+<img
+    src="/assets/images/C++/C++Logo.png"
+    alt="C++-logo"
+    align=left
+/>
 
 Programming is a science as well as an art. Developing the required skills takes time and effort and an enthusiasm to learn. The learning draws parallels with that of learning a natural language such as English.
 Just as the required skills to learn a natural language are reading, listening, writing and speaking, so the skills for learning a programming language are reading code, writing code. Also just as we need to know the proper language constructs like grammar (syntax), contextual use of language (semantics), we need to learn the syntax as well as

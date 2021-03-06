@@ -7,13 +7,13 @@ excerpt: "Let us use web development tools hosted on the Windows Subsystem for L
 date: 24th May, 2020
 ---
 
-<div class="box">
-<img src="/assets/images/Jekyll/JekyllLogo.svg"
-alt="jekyll-logo"
-width = 150px >
-</div>
-
 ## Unexpected motivation: Windows Subsystem for Linux
+
+<img
+    src="/assets/images/Jekyll/JekyllLogo.svg"
+    alt="jekyll-logo"
+    align=left
+/>
 
 My motivation to try out Jekyll is twofold. The first revolves around a possibility to revive my lost touch with GNU/Linux OS. The other is the promise of Jekyll to have programmatic control over building websites. These are interlinked. But I would like to present a perspective.
 
