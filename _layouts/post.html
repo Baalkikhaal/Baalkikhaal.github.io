@@ -10,6 +10,25 @@ layout: default
   {% endif %}
 </p>
 
+<p>
+{% if page.tool %}
+    {% for tool in site.data.tools %}
+        {% if tool.name == page.tool %}
+<!--- ![{{ tool.alt }}]({{ tool.link }}) --->
+<img
+    src="{{ tool.link }}"
+    alt="{{ tool.alt }}"
+    align = left
+/>
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
+{{ page.excerpt }}
+</p>
+
+<p></p> <!-- empty paragraph to force new line-->
+
 {{ content }}
 
 {% if site.disqus.shortname %}
