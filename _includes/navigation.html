@@ -10,14 +10,13 @@
 -->
     <a
         href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
-            <img src="{{ item.image }}" alt="{{ item.alt }}">
+            <img src="{{ item.image }}" alt="{{ item.alt }}"/>
     </a>
   {% endfor %}
 
 </nav>
 
 <nav class=navigation-tags>
-    <p>Post Tags</p>
     {% for tag in site.data.tags %}
         <a href="{{tag.link}}"
            {% if page.url == tag.link %}
