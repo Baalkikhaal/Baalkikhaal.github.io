@@ -1,8 +1,9 @@
 ---
 layout: post
 author: fubar
-tag: physics
 title: "Properties of conventional materials encountered in spintronics"
+tag: physics
+tool: spintronics
 excerpt: "We have listed the properties of the usually encountered materials in spintronics ranging from the transition metals and their alloys to the novel materials like YIG opening new vistas in spintronics like magnonics"
 date: 29th June, 2020
 ---

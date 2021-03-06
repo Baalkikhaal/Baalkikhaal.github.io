@@ -3,6 +3,7 @@ layout: post
 author: fubar
 title: Connecting ADSL (modem + router) as a WiFi Access Point
 tag: programming
+tool: networking
 excerpt: "A tutorial on how to set up a TP-LINK ADSL router as a WiFi Access Point (WAP). It also gives description on how the IP addresses are assigned across networks."
 date: 25th August, 2019
 ---

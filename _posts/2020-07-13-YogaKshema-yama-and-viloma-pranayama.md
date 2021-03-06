@@ -1,8 +1,9 @@
 ---
 layout: post
 author: fubar
-tag: yoga
 title: "yama(यम) and viloma pranaayama(विलोम प्राणायम)"
+tag: yoga
+tool: yoga
 excerpt: "Yama is the first tenet of Ashtanga Yoga Sutra (अष्टांग योग सूत्र).The five subtenets of yama tenet are dileneated. Followed by the viloma pranayama"
 date: 13th July, 2020
 ---

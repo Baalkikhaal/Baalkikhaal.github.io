@@ -1,19 +1,15 @@
 ---
 layout: post
 author: fubar
-excerpt: "Let us use `Trace Bitmap` tool of Path toolset to generate vectorized versions of raster images"
 title: "Trace Bitmap tool in Inkscape: A tutorial"
+excerpt: "Let us use `Trace Bitmap` tool of Path toolset to generate vectorized versions of raster images"
+tag: programming
+tool: inkscape
 date : 24th May, 2020
 tag: programming
 ---
 
 ## Abstract
-
-<img
-    src="/assets/images/Inkscape/inkscapeLogo.svg"
-    alt="inkscape-logo"
-    align = left
-/>
 
 One of the beautiful tools of Inkscape is to generate vectorized versions of raster images formats like `.png`, `.jpg`. This is a simple tutorial to demonstrate the workflow. For the demonstration, we will use any of the daily updated Windows Welcome Screen. When we log in to the Windows, the Welcome Screen shows a beautiful landscape and we can vote for the daily update. Depending on our tastes, Windows selects a particular genre for the images. My inclination is towards nature imagery, without the presence of human derived structures or humans itself. Now to access the location where the images are stored is a bit tricky. After following the tutorial on [Windows 10 Spotlight LockScreen pictures](https://www.laptopmag.com/articles/find-windows-10-lock-screen-pictures), I could access my laptop's welcome screen images. I created a desktop shortcut to the location for easy access in the future. Let's get started with generating the vectorized version of one of these beautiful curated sceneries.
 

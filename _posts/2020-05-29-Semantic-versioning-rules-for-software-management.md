@@ -1,19 +1,15 @@
 ---
 layout: post
 author: fubar
-tag: programming
 title: "Semantic versioning rules for software management"
+tag: programming
+tool: git
 excerpt: "We will describe the rules for versioning software to avoid dependency hell"
 date: 29th May, 2020
 ---
 
 ## Abstract
 
-<img
-    src="/assets/images/Git/gitLogo.svg"
-    alt="Git-logo"
-    align = left
-/>
 [Semantic versioning](https://semver.org/) rules to update a software at a version `MAJOR.MINOR.PATCH` recommend
 - incrementing `MAJOR` version when you make incompatible API changes
 - incrementing `MINOR` version when you add functionality in a backwards compatible manner

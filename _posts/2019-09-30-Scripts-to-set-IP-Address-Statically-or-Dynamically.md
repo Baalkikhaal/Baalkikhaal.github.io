@@ -1,20 +1,14 @@
 ---
 layout: post
 author: fubar
-tag: programming
 title: "Python Scripts to set static or dynamic  IP address"
+tag: programming
+tool: powershell
 excerpt: "A tutorial on setting static and dynamic IP address when routing via ADSL router"
 date: 30th September, 2019
 ---
 
-## Abstract
-
-<img
-    src="/assets/images/Python/pythonLogo.svg"
-    alt="python-logo"
-    align = left
-/>
-
+# Context
 The reason to set up a [ADSL router as a switch]({% post_url 2019-08-25-ADSL-modem+router-as-WAP %}) was to enhance the WiFi signal at my office desk. However sometimes I need to switch back to the `iiscwlan` WiFi interface when I move my laptop.
 
 ---

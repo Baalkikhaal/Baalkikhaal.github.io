@@ -1,8 +1,9 @@
 ---
 layout: post
 author: fubar
-tag: yoga
 title: "sitting Setubandhaasana (सेतुबंधासन) and posture correction Asanas"
+tag: yoga
+tool: yoga
 excerpt: ""
 date: 10th July, 2020
 ---

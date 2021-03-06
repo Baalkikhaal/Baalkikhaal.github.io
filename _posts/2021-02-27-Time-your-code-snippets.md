@@ -1,12 +1,14 @@
 ---
 layout: post
 author: fubar
-tag: programming
 title: "Testing performance of Python code"
+tag: programming
+tool: python
 excerpt: "Python standard library consists timeit module that gives execution time for Python code."
 date: 27th February, 2021
 ---
 
+# Context
 Code that computes what it is intended to compute is a first requirement of writing code. After that is accomplished, we are interested in optimizing the code in terms of readability, faster execution time.
 
 Python focuses a lot more on [readability]({% post_url 2020-09-22-Python-Style-Guide %}) than other languages. However, it also provides datastructures to improve performance. This is roughly measured in the execution time. To measure this time, Python standard library has the [timeit](https://docs.python.org/3/library/timeit.html) module.

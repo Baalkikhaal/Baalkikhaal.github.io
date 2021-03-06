@@ -1,8 +1,9 @@
 ---
 layout: post
 author: fubar
-tag: yoga
 title: "standing asanas and kapAlabhAti(कपालभाती) prAnAyama(प्राणायम)"
+tag: yoga
+tool: yoga
 excerpt: ""
 date: 10th July, 2020
 ---

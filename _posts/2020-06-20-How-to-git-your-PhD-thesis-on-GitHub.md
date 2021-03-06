@@ -1,17 +1,12 @@
 ---
 layout: post
 author: fubar
-tag: physics
 title: "How to Git your PhD thesis on GitHub"
+tag: physics
+tool: git
 excerpt: "We will work with GitHub’s repository hosting service to have a remote repository for our PhD thesis"
 date: 20th June, 2020
 ---
-
-<img
-    src="/assets/images/Git/gitLogo.svg"
-    alt="Git-logo"
-    align = left
-/>
 
 # Context
 

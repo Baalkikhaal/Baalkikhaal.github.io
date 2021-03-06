@@ -1,8 +1,9 @@
 ---
 layout: post
 author: fubar
-tag: yoga
 title: "Abdominal breathing and the state of the mind"
+tag: yoga
+tool: yoga
 excerpt: "The meditator is introduced to the simplest breathing technique, followed by exposition of four different states of mind during meditation"
 date: 06th July, 2020
 ---

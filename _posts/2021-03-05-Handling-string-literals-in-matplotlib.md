@@ -1,8 +1,9 @@
 ---
 layout: post
 author: fubar
-tag: programming
 title: "Handling string literals in matplotlib"
+tag: programming
+tool: matplotlib
 excerpt: "String literals appear at various places in a plot like the labels for the axes, legend description, text annotations. They may also contain non standard unicode characters. Sometimes we need to typset mathematical formulae. Matplotlib in conjunction with Python's string literal handling lets us do these task seamlessly."
 date: 05th March, 2021
 ---

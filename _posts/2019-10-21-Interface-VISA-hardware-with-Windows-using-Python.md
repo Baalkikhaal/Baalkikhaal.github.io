@@ -3,17 +3,13 @@ layout: post
 author: fubar
 title: "pyVISA on Windows"
 tag: programming
+tool: python
 excerpt: "A tutorial on interfacing VISA compatible hardware using python's wrapper module `pyVISA`."
 date: 21st October, 2019
 ---
 
 # Abstract
 
-<img
-    src="/assets/images/Python/pythonLogo.svg"
-    alt="python-logo"
-    align = left
-/>
 Interfacing test and measurement s
 
 ## History of VISA

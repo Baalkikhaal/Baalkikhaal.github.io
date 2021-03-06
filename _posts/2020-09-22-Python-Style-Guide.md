@@ -1,8 +1,9 @@
 ---
 layout: post
 author: fubar
-tag: programming
 title: "How to design Python code?"
+tag: programming
+tool: python
 excerpt: "Style guidelines for commonly encountered style decisions to be made while coding in python. We rely on the PEP guidelines to resolve them."
 date: 22nd September, 2020
 ---

@@ -1,8 +1,9 @@
 ---
 layout: post
 author: fubar
-tag: physics
 title: "List of groups working in spintronics"
+tag: physics
+tool: spintronics
 excerpt: "We have listed the workers in spintronics and their important contributions"
 date: 28th June, 2020
 ---
@@ -129,7 +130,7 @@ date: 28th June, 2020
 
 - [Anjan Soumyanarayanan](https://scholar.google.com/citations?hl=en&user=eeyUih4AAAAJ&view_op=list_works&citft=1&email_for_op=colonel.sreekar%40gmail.com&gmla=AJsN-F6BrcDw62TRlwYxZLjcw-qdeI6Diw2AP-MkJ8MtObCohXKoC4JoZaKcoQOgs5_BV5CvMkQJKnsvupXlmYg0Akztj35MUxCaziu3CPFjGnXzsJDR7Y4kRcg4VkFJ1DWiqgSHfOKAcpfpJ8rYGWX1M6xuOuVVNV6MyfO8J2TelKTD3z2dw9-Ny2ejOH0VqV3X4nO98jW1Gqs_u6zWyorhUmGBMQXjMksLadc_2qfeyBM1VFbZRu5CUfN9YjhuEnB0RRBH4D3P)
     - [Homepage](https://www.physics.nus.edu.sg/staff/anjan.html)
-    
+
 # Theory
 
 - [Arne Brataas](https://www.ntnu.edu/employees/arne.brataas)

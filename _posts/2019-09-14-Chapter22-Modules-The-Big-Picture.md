@@ -1,19 +1,14 @@
 ---
 layout: post
 author: fubar
-tag: programming
 title: "What are python modules?"
+tag: programming
+tool: python
 excerpt: "The organization of python program is discussed with module as an entity."
 date: 14th September, 2019
 ---
 
 ## Abstract
-
-<img
-    src="/assets/images/Python/pythonLogo.svg"
-    alt="python-logo"
-    align = left
-/>
 
 In this chapter, the author introduces modules. Modules form the highest organization structure in a Python program. The *rationale* behind modules lies in code reusability, a primary feature that Python *wants* you to do. Using module as an example for *namespace*, the author tries to drive home the point that a program is about managing namespaces, i.e. the space of names. This concept is revisted in other topics like [functions](chapter-on-functions) and [classes](chapter-on-classes). This is followed by explaining the internal process when modules are imported, how existing modules are searched, and the freedom of type of module imported.
 

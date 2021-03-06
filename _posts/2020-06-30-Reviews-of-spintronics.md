@@ -1,8 +1,9 @@
 ---
 layout: post
 author: fubar
-tag: physics
 title: "Reviews of spintronics"
+tag: physics
+tool: spintronics
 excerpt: "A chronological list of spintronics review articles with an attempt to create a mind map between the articles"
 date: 29th June, 2020
 ---

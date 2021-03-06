@@ -1,8 +1,9 @@
 ---
 layout: post
 author: fubar
-tag: physics
 title: "Encounter of Onsager reciprocity relations in spintronics"
+tag: physics
+tool: spintronics
 excerpt: "We have listed the frequently occuring Onsager reciprocity relations that emphasize that action reaction nature of interaled effects."
 date: 29th June, 2020
 ---

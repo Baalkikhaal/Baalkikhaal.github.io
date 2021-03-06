@@ -1,8 +1,9 @@
 ---
 layout: post
 author: fubar
-tag: yoga
 title: "Thoracic breathing and tools for becoming awareful"
+tag: yoga
+tool: yoga
 excerpt: "The next level of breathing is introduced. Followed by method to become aware of the body"
 date: 08th July, 2020
 ---

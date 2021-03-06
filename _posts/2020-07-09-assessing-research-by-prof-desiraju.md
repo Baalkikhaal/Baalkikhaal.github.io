@@ -1,8 +1,9 @@
 ---
 layout: post
 author: fubar
-tag: education
 title: "Assessing Research -- An article by Prof. Desiraju"
+tag: education
+tool: education
 excerpt: "Nice thoughts on the current situation of research evaluation worldwide as well as in the country"
 date: 09th July, 2020
 ---

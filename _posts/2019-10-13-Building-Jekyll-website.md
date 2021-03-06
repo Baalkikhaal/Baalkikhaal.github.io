@@ -8,19 +8,6 @@ excerpt: "An introduction to Jekyll, an awesome static website generator."
 date: 13th October, 2019
 ---
 
-{% if page.tool %}
-    {% for tool in site.data.tools %}
-        {% if tool.name == page.tool %}
-            <!--- ![{{ tool.alt }}]({{ tool.link }}) --->
-            <img
-                src="{{ tool.link }}"
-                alt="{{ tool.alt }}"
-                align = left
-            />
-        {% endif %}
-    {% endfor %}
-{% endif %}
-
 # Abstract
 
 Jekyll is a static site generator. It gives programmatic access to the various tools used for creating static websites. With a prime focus on handling static content, Jekyll, a Ruby gem provides objects to handle various elements present in a web page like

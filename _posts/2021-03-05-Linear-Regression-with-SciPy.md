@@ -1,16 +1,14 @@
 ---
 layout: post
 author: fubar
-tag: programming
 title: "Linear regression with SciPy"
+tag: programming
+tool: scipy
 excerpt: "More often than not, data analysis involves linear regression. Scipy offers routines to calculate the regression parameters."
 date: 05th March, 2021
 ---
 
-# Context
-
 # Content
-
 Import the required packages. Also we shall use a [custom matplotlib stylesheet](#resources)
 
 ```python

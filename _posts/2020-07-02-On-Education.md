@@ -1,8 +1,9 @@
 ---
 layout: post
 author: fubar
-tag: education
 title: "Thoughts on education by thinkers"
+tag: education
+tool: education
 excerpt: "We have listed some thoughts by eminent leaders on the concept of education"
 date: 02nd July, 2020
 ---

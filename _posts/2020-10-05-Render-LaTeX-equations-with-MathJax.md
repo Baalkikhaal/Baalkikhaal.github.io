@@ -1,8 +1,9 @@
 ---
 layout: post
 author: fubar
-tag: programming
 title: "How to render LaTeX equations using MathJax?"
+tag: programming
+tool: javascript
 excerpt: "A quick hack to render LaTeX equations in HTML pages using MathJaX"
 date: 05th October, 2020
 ---

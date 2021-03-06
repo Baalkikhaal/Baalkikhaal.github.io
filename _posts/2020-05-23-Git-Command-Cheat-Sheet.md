@@ -1,19 +1,14 @@
 ---
 layout: post
 author: fubar
-tag: programming
 title: Cheat sheet for GIT
+tag: programming
+tool: git
 excerpt: "A reference for the commonly used GIT commands and explanations of the context when they are used"
 date: 23rd May, 2020
 ---
 
 ## Abstract
-
-<img
-    src="/assets/images/Git/gitLogo.svg"
-    alt="Git-logo"
-    align=left
-/>
 
 The concepts around Git can be summarized by the taglines
 

@@ -1,8 +1,9 @@
 ---
 layout: post
 author: fubar
-tag: physics
 title: "Why 13.56 MHz frequency is used in RF sputtering?"
+tag: physics
+tool: spintronics
 excerpt: "Some basics about RF sputtering"
 date: 26th June, 2020
 ---

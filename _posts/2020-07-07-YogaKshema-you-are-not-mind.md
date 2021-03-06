@@ -1,8 +1,9 @@
 ---
 layout: post
 author: fubar
-tag: yoga
 title: "You are not mind"
+tag: yoga
+tool: yoga
 excerpt: "The meditator needs to make a clear distinction between the mind and himself in order to progress in the practice of meditation"
 date: 07th July, 2020
 ---

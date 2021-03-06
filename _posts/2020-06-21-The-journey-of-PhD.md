@@ -1,8 +1,9 @@
 ---
 layout: post
 author: fubar
-tag: physics
 title: "What is the point of PhD?"
+tag: physics
+tool: phd
 excerpt: "A garbage bin of the references related to the process of PhD, tools required, dos and donts, sagely advices, best practices"
 date: 21st June, 2020
 ---

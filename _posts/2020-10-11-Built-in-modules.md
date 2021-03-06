@@ -1,13 +1,14 @@
 ---
 layout: post
 author: fubar
-tag: programming
 title: "Useful built-in Python modules"
+tag: programming
+tool: python
 excerpt: "A list of commonly used Python built-in modules."
 date: 11th October, 2020
 ---
 
-## The Python Standard Library
+# The Python Standard Library
 
 From the [documentation](https://docs.python.org/3/library/index.html) of the Python Standard library,
 
@@ -21,4 +22,4 @@ File and Directory Access | -
 Runtime services | -
 [inspect](https://docs.python.org/3/library/inspect.html?highlight=inspect#module-inspect) | The inspect module provides several useful functions to help get information about live objects such as modules, classes, methods, functions, tracebacks, frame objects, and code objects.
 Cryptographic services | -
-[hashlib](https://docs.python.org/3/library/hashlib.html) | This module implements a common interface to many different secure hash and message digest algorithms. 
+[hashlib](https://docs.python.org/3/library/hashlib.html) | This module implements a common interface to many different secure hash and message digest algorithms.

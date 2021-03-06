@@ -7,6 +7,12 @@ excerpt: "Python module can be imported within a script as well as in another mo
 date: 11th October, 2020
 ---
 
+<img
+    src="/assets/images/Python/pythonLogo.svg"
+    alt="Python-logo"
+    align = left
+/>
+
 While working on the [KerrPy](https://github.com/Baalkikhaal/KerrPy) project, there is a global configuration file `globalVariables.py` from which the **relative** folder paths of postprocessed folder is extracted. This folder path is relative to the parent directory.
 As a result, we need to form the absolute filepath using the parent directory absolute filepath and post processing folder relative path.
 
