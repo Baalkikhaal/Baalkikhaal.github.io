@@ -46,3 +46,6 @@
 - name: networking
   alt: networking-Logo
   link: /assets/images/tools/networkingLogo.svg
+- name: microsoft
+  alt: microsoft-Logo
+  link: /assets/images/tools/microsoftLogo.svg
