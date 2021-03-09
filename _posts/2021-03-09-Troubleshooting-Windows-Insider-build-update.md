@@ -26,7 +26,9 @@ As for the **Quality updates**, the update failed at installing Cumulative Updat
 Also there are two herrings with this current update.
 
 - The status message of the update shows that error has occured with the message "There were problems downloading some updates, but we’ll try again later. If you keep seeing this, try searching the web or contacting support for help. This error code might help: (0x80071160)"
-- And the `About` tab is missing from the `System` pane.
+- And the `About` tab is missing from the `System` pane. Even the OS build and System info is unresponsive as suggested in the Feeback hub by other Insiders.
+
+![error-hex-code-0x80071160](/assets/images/Microsoft/InsiderBuildTroubleshooting/06_error(0x80071160).png)
 
 
 To resolve this error, I tried two approaches
@@ -62,11 +64,11 @@ Close the command prompt, and then run Windows Update again.
 
 ```
 
-Following the instruction, I executed the first command that leads to
+Following the instruction, I executed the first command Deployment Image Servicing and Management Too (DSIM) that leads to
 
 ![DSIM-output](/assets/images/Microsoft/InsiderBuildTroubleshooting/04_DISMcompleted.png)
 
-Later the second command gives
+Later the second command system scan gives
 
 ![system-scan-output](/assets/images/Microsoft/InsiderBuildTroubleshooting/05_systemScanCompleted.png)
 
