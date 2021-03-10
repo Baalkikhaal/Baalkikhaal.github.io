@@ -46,7 +46,9 @@ a:hover { text-decoration: none; }
 
 .navigation-tags {
      font-size: 150%;
-     background: MintCream;
+     /*background: MintCream;*/
+     /* from CodePen intro tutorial */
+     background: linear-gradient(to bottom, darkseagreen, MintCream);
  }
 
 .box {
