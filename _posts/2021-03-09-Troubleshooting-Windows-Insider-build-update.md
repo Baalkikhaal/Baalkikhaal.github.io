@@ -5,7 +5,7 @@ title: "Troubleshooting Windows Insider build update"
 tag: programming
 tool: microsoft
 excerpt: "I ran into an issue with the v21327 March update of Windows 10 insider build update. This is a log of the steps I have carried out to address the issue."
-date: 05th March, 2021
+date: 09th March, 2021
 ---
 
 After updating to build 21327, I observed two issues
