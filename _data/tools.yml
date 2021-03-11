@@ -52,3 +52,6 @@
 - name: originlab
   alt: originlab-Logo
   link: /assets/images/tools/originLabLogo.png
+- name: spyder
+  alt: spyder-Logo
+  link: /assets/images/tools/spyderLogo.svg  
