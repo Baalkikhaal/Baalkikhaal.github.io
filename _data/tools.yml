@@ -49,3 +49,6 @@
 - name: microsoft
   alt: microsoft-Logo
   link: /assets/images/tools/microsoftLogo.svg
+- name: originlab
+  alt: originlab-Logo
+  link: /assets/images/tools/originLabLogo.png
