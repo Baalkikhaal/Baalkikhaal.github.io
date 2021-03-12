@@ -2,6 +2,14 @@
 <html>
   <head>
     <meta charset="utf-8">
+	
+	<!-- style sheet for dark light theme Adapted from https://codepen.io/joyshaheb/pen/gOwOGQE -->
+
+	<link rel="stylesheet" href="/assets/css/darklight.css">
+	
+    <script src="/assets/js/switcher.js" defer></script>
+
+    <!-- dark vs light theme configuration ends here -->
 
     <!-- Render GitHub Markdown style https://github.com/sindresorhus/github-markdown-css -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -44,6 +52,8 @@
     {% seo %}
   </head>
   <body class="markdown-body">
+	{% include darkVsLightTheme.html %}
+	{% include swamiVivekananda.html %}
     {% include navigation.html %}
     {{ content }}
   </body>

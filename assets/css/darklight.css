@@ -1,0 +1,78 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"); */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+* body {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /*justify-content: center; */
+  /* align-items: center; */
+  /* width: 100%; */
+  transition: all 1s ease;
+  /* min-height: 100vh; */
+  /* font-family: "Poppins"; */
+}
+
+.container {
+  /* display: flex; */
+  /* flex-direction: column; */
+  display: left;
+  justify-content: left;
+  align-items: left;
+  width: 10%;
+}
+@media (min-width: 500px) {
+  .container {
+    width: 50%;
+  }
+}
+.container .title {
+  text-align: left;
+}
+.container .content {
+  text-align: justify;
+}
+.container input[type=checkbox] {
+  display: none;
+}
+
+.btn {
+  align-self: center;
+  margin: 15px 0;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  /* display: right; */
+  justify-content: center;
+  width: 120px;
+  height: 30px;
+  background-color: black;
+  transition: all 1s ease;
+  position: relative;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.box .ball {
+  width: 60px;
+  height: 60px;
+  background-color: grey;
+  transition: all 1s ease;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid black;
+}
+.box .scenary {
+  display: flex;
+  flex-direction: row;
+  /* display: right; */
+  justify-content: space-between;
+  transition: all 1s ease;
+  padding: 5px 10px 0px 10px;
+}
+.box .scenary svg {
+  width: 40px;
+}
