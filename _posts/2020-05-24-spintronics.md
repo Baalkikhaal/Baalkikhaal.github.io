@@ -18,3 +18,10 @@ What is the specific problem you are working on
 - Maekawa Spin Electronics
 - Marrows
 - JAC Bland
+
+Year | Title | Author(s) | Journal
+-----|-------|-----------|--------
+2010 | Magnetism and Magnetic materials | Coey J. M. D. | Cambridge University Press
+2010 | Magnetic Materials: Fundamentals and Applications | Spaldin, Nicola | Cambridge: Cambridge University Press
+2001 | Magnetism in Condensed Matter | Blundell, Stephen | Oxford University Press
+---- | Introduction to Magnetic Materials | Cullity B. D. |

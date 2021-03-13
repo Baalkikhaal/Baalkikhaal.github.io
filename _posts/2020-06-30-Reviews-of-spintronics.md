@@ -15,6 +15,7 @@ Year | Title | Author(s) | Journal
 2017 |Interface Induced Phenonmena in Magnetism | Hellman, Frances; Hoffmann, Axel; Beach, Geoffrey S D; Fullerton, Eric E; Macdonald, Allan H; Ralph, Daniel C | Reviews of Modern Physics
 2017 | Perpendicular magnetic anisotropy at transition metal/oxide interfaces and applications | Dieny, B.; Chshiev, M. | Reviews of Modern Physics
 2017 | Surprises from the spin Hall effect | Sinova, Jairo; Jungwirth, Tomas | Physics Today
+2017 | Topological effects in nanomagnetism : from superparamagnetism to chiral quantum solitons | Braun, Hans-benjamin | Advances in Physics
 2016 | Antiferromagnetic spintronics | Jungwirth, T.; Marti, X.; Wadley, P.; Wunderlich, J. | Nature Nanotechnology
 2016 | **Emergent phenomena induced by spin-orbit coupling at surfaces and interfaces** | Soumyanarayanan, Anjan; Reyren, Nicolas
 Fert, Albert; Panagopoulos, Christos | 2016 | Nature
@@ -22,6 +23,7 @@ Fert, Albert; Panagopoulos, Christos | 2016 | Nature
 2015 | **New perspectives for Rashba spin-orbit coupling** | Manchon, A.; Koo, H. C.; Nitta, J.; Frolov, S. M.; Duine, R. A. | Nature Materials
 2015 | Spin Hall effects | Sinova, Jairo; Valenzuela, Sergio O.; Wunderlich, J.; Back, C. H.; Jungwirth, T. | Reviews of Modern Physics
 2015 | Magnon spintronics | Chumak, A. V.; Vasyuchka, V. I.; Serga, A. A.; Hillebrands, B. | Nature Physics
+2015 | Progress in magnetic domain observation by advanced magneto-optical microscopy | Mccord, Jeffrey | Journal of Physics D: Applied Physics
 2014 | Recent advances in nanocontact spin-torque oscillators | Dumas, Randy K.; Sani, Sohrab R.; Mohseni, S. Majid; Iacocca, Ezio; Pogoryelov, Yevgen; Muduli, Pranaba K.; Chung, Sunjae; Durrenfeld, Philipp; A Akerman, Johan | IEEE Transactions on Magnetics
 2014 | **Spintronics of antiferromagnetic systems ( Review Article )** | Gomonay, E. V.; Loktev, V. M. | Low Temperature Physics
 2013 | Spin Hall Effects in Metals | Hoffmann, Axel | IEEE Transactions on Magnetics
