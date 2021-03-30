@@ -366,7 +366,3 @@ It is to be noted from above example, that the RE does not account correctly for
 # Summary
 
 So we have applied some of the basic rules of REs and used some of the special characters and special delimiters. Let us review some of the intermediate rules, characters and delimiters in a later post.
-
-# File Downloads
-
-[re_examples.py](/assets/documents/Python/re_examples.py)
