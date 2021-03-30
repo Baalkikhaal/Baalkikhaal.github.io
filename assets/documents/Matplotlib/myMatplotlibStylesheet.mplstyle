@@ -15,8 +15,8 @@ figure.dpi : 300
 figure.autolayout : False
 figure.subplot.bottom : 0.20
 figure.subplot.left : 0.20
-figure.subplot.right : 0.98
-figure.subplot.top : 0.98
+figure.subplot.right : 0.95
+figure.subplot.top : 0.95
 
 #axes parameters
 axes.facecolor : white
