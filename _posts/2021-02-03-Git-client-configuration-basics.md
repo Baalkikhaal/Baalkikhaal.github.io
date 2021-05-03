@@ -198,7 +198,10 @@ git help config
 [consistent  line endings during cross-platform development][post-2]
 [Git help][post-3]
 
-post-0: 
+post-0: {% post_url 2021-02-03-Git-client-actions-basics.md %}
+post-1: {% post_url 2021-03-29-Commonly-used-Regular-expressions %}
+post-2: {% post_url 2021-05-02-Consistent-line-endings-in-ASCII-files %}
+post-3: {% post_url 2021-02-03-Git-client-help-basics.md %}
 
 ## References
 
