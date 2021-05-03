@@ -4,5 +4,5 @@ _site
 .jekyll-metadata
 vendor
 
-# Ignore pylint output files.
+# Ignore pylint.d
 .pylint.d
