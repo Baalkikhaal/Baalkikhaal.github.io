@@ -18,7 +18,7 @@ Git has numerous commands running into hundreds. Most of these commands have var
 git config option value
 ```
 
-The basic syntax has two arguments. The first argument name is the option that has a `section`.`key` syntax while the second argument is the `value` of the option. For example, the most conspicuous among the configuration parameters is the username of the Gitter who carries out the various [actions in the Git universe]( {% post_url post_on_git_actions % }). This parameter is categorized into the `user` section with `name` key
+The basic syntax has two arguments. The first argument name is the option that has a `section`.`key` syntax while the second argument is the `value` of the option. For example, the most conspicuous among the configuration parameters is the username of the Gitter who carries out the various [actions in the Git universe](post-0). This parameter is categorized into the `user` section with `name` key
 
 ### Set the keys
 
@@ -39,7 +39,7 @@ $ git config --get user.name
 Gandalf the Grey
 ```
 
-In addition to the `name`, there are other keys in the section `user`. To fetch the keys that have already been set, we use [regular expressions]( {% post_on_regular_expressions %}). We prepend a `--get-regex` flag to the regex `user.*` to get
+In addition to the `name`, there are other keys in the section `user`. To fetch the keys that have already been set, we use [regular expressions](post-1). We prepend a `--get-regex` flag to the regex `user.*` to get
 
 ```bash
 $ git config --get-regexp user.*
@@ -90,7 +90,7 @@ global  user.name Gandalf the Grey
 local   user.name Frodo Baggins
 ```
 
-## Configuration origins (files)
+## Configuration files (origins)
 
 In the [Syntax](#syntax) section, the various get and set commands interact with a **configuration file**. A `set-type` command writes to, while a `get-type` command reads from a configuration file. This file is the **origin** of the configuration. To get the configuration-origin, we prepend the parameter name with `--show-origin`
 
@@ -152,7 +152,33 @@ The global scope configuration is handled by the `C:/Users/fubar/.gitconfig` con
 
 The configuration is sectioned into various sections. Some of them are
 
+Section | Description
+---|---
+User | Committer information on name, email id
+Core | Hosts the core variables (lots of them)
+
+As an example, let us set the `core.autocrlf` to input. This will disable conversion of `LF` endings in the repository (`.git/`) to `CRLF` in the working directory(`wsl-gui`). Refer to [consistent  line endings during cross-platform development][post-2] and [Formatting and Whitespace](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_formatting_and_whitespace) subheading of Chapter "Customizing Git" of Pro Git Book.
+
+```bash
+git config --global core.autocrlf input
+```
+
+## Quick hacks
+
+To list all the keys in the configuration files (system, global, local)
+
+```bash
+git config --list
+```
+
+To list all the keys in a specific scope, prepend the corresponding flag
+
+```bash
+$ git config --system --list
+```
 
 ## References
 
-[Canonical source for Git configuration ञान](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_git_config)
+[Git config man page](https://man7.org/linux/man-pages/man1/git-config.1.html)
+
+[Pro Git Book on Git configuration](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_git_config)
