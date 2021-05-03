@@ -18,7 +18,7 @@ Git has numerous commands running into hundreds. Most of these commands have var
 git config option value
 ```
 
-The basic syntax has two arguments. The first argument name is the option that has a `section`.`key` syntax while the second argument is the `value` of the option. For example, the most conspicuous among the configuration parameters is the username of the Gitter who carries out the various [actions in the Git universe](post-0). This parameter is categorized into the `user` section with `name` key
+The basic syntax has two arguments. The first argument name is the option that has a `section`.`key` syntax while the second argument is the `value` of the option. For example, the most conspicuous among the configuration parameters is the username of the Gitter who carries out the various [actions in the Git universe][post-0]. This parameter is categorized into the `user` section with `name` key
 
 ### Set the keys
 
@@ -39,7 +39,7 @@ $ git config --get user.name
 Gandalf the Grey
 ```
 
-In addition to the `name`, there are other keys in the section `user`. To fetch the keys that have already been set, we use [regular expressions](post-1). We prepend a `--get-regex` flag to the regex `user.*` to get
+In addition to the `name`, there are other keys in the section `user`. To fetch the keys that have already been set, we use [regular expressions][post-1]. We prepend a `--get-regex` flag to the regex `user.*` to get
 
 ```bash
 $ git config --get-regexp user.*
@@ -177,8 +177,35 @@ To list all the keys in a specific scope, prepend the corresponding flag
 $ git config --system --list
 ```
 
+To get help on a particular Git command, prepend with `--help` flag
+
+```bash
+git config --help
+```
+
+## Summary
+
+`git config` is a powerful command and is extensively used along with `git help` command (See more on [Git help][post-3]) for commaon [everyday tweaking and referencing][ref-3]. Infact, most of the information above can be attained by
+
+```bash
+git help config
+```
+
+## See Also
+
+[Git Actions](post-0)
+[Regular expressions](post-1)
+[consistent  line endings during cross-platform development][post-2]
+[Git help][post-3]
+
+post-0: 
+
 ## References
 
 [Git config man page](https://man7.org/linux/man-pages/man1/git-config.1.html)
 
 [Pro Git Book on Git configuration](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_git_config)
+
+[Pro Git on Git configuration Appendix][ref-3]
+
+[ref-3]: https://git-scm.com/book/en/v2/Appendix-C%3A-Git-Commands-Setup-and-Config#_setup_and_config
