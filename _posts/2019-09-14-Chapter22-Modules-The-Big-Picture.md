@@ -139,9 +139,3 @@ Since only the filename without extension is searched, an `import mod` can resol
 ## Summary
 
 The idea of structuring program is the *rationale* behind modules. Modules act as namespaces so that names in one module cannot be seen by another module, unless the former is imported. This Python Program architecture helps in dividing the logic into self-contained components. In addition to the home directory and standard library modules, custom modules can be searched via the module search path setting the `PYTHONPATH` environment variable or .pth files in top-level. While importing a module, Pythons allows freedom to choose from a variety of file extensions like .py, .pyc, .pyo, .so or a directory also (as we will see in the [next chapter](chapter-on-packages)).
-
-This is a [link]({% link _posts/2019-08-30-bananas.md %})  that refers to past post.
-
-The permalink to this page is {{ page.path }}
-
-This is an internal link in Jekyll [Module Search-Path](#Module-search-path)
