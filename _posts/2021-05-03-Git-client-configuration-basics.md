@@ -5,7 +5,7 @@ title: "Git client configuration (basics)"
 tag: programming
 tool: git
 excerpt: "Git is a cross-platform utility and it is essential to understand the way it is configured. In certain circumstances, it is required to modify the configuration to suit the needs. We will discuss one such circumstance when we need to carry cross platform development on both native Windows and virtual Windows Subsystem for Linux (WSL) GNU/Linux distribution."
-date: 03nd May, 2021
+date: 03rd May, 2021
 ---
 
 ## Introduction
@@ -28,7 +28,7 @@ The various configuration commands can be classified into `set-type` and `get-ty
 $ git config --global user.name "Gandalf the Grey"
 ```
 
-We will discuss more on `--global` in [configuration scopes](#configuration-scopes). 
+We will discuss more on `--global` in [configuration scopes](#configuration-scopes).
 
 ### Get the keyvalues
 
@@ -39,7 +39,7 @@ $ git config --get user.name
 Gandalf the Grey
 ```
 
-In addition to the `name`, there are other keys in the section `user`. To fetch the keys that have already been set, we use [regular expressions][post-1]. We prepend a `--get-regex` flag to the regex `user.*` to get
+In addition to the `name`, there are other keys in the section `user`. To fetch the keys that have already been set, we use [regular expressions]({% post_url 2021-03-29-Commonly-used-Regular-expressions %}). We prepend a `--get-regex` flag to the regex `user.*` to get
 
 ```bash
 $ git config --get-regexp user.*
@@ -77,7 +77,7 @@ $ git config --show-scope --get user.name
 local   Frodo Baggins
 ```
 
-So it might appear that the earlier value of `user.name` key has been replaced from `Gandalf the Grey` (see [Set the key values](#set-the-keyvalues)) to that in the local scope `Frodo Baggins`. The appropriate description here is not replacement, but rather a supercedence of the global scope by the local scope. `Gandalf the Grey` was set in the global scope, while `Frodo Baggins` was set in the local scope. If the parameter has been configured at more than one scope, the final configuration is resolved by the following precedence rule
+So it might appear that the earlier value of `user.name` key has been replaced from `Gandalf the Grey` (see [Set the key values](#set-the-keys)) to that in the local scope `Frodo Baggins`. The appropriate description here is not replacement, but rather a supercedence of the global scope by the local scope. `Gandalf the Grey` was set in the global scope, while `Frodo Baggins` was set in the local scope. If the parameter has been configured at more than one scope, the final configuration is resolved by the following precedence rule
 
 ```bash
 system < global < local
@@ -157,7 +157,7 @@ Section | Description
 User | Committer information on name, email id
 Core | Hosts the core variables (lots of them)
 
-As an example, let us set the `core.autocrlf` to input. This will disable conversion of `LF` endings in the repository (`.git/`) to `CRLF` in the working directory(`wsl-gui`). Refer to [consistent  line endings during cross-platform development][post-2] and [Formatting and Whitespace](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_formatting_and_whitespace) subheading of Chapter "Customizing Git" of Pro Git Book.
+As an example, let us set the `core.autocrlf` to input. This will disable conversion of `LF` endings in the repository (`.git/`) to `CRLF` in the working directory(`wsl-gui`). Refer to [consistent  line endings during cross-platform development]({% post_url 2021-05-02-Consistent-line-endings-in-ASCII-files %}) and [Formatting and Whitespace](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_formatting_and_whitespace) subheading of Chapter "Customizing Git" of Pro Git Book.
 
 ```bash
 git config --global core.autocrlf input
@@ -185,7 +185,7 @@ git config --help
 
 ## Summary
 
-`git config` is a powerful command and is extensively used along with `git help` command (See more on [Git help][post-3]) for commaon [everyday tweaking and referencing][ref-3]. Infact, most of the information above can be attained by
+`git config` is a powerful command and is extensively used along with `git help` command (See more on [Git help][post-3]) for common [everyday tweaking and referencing][ref-3]. In fact, most of the information above can be attained by
 
 ```bash
 git help config
@@ -194,14 +194,16 @@ git help config
 ## See Also
 
 [Git Actions](post-0)
-[Regular expressions](post-1)
-[consistent  line endings during cross-platform development][post-2]
-[Git help][post-3]
 
-post-0: {% post_url 2021-02-03-Git-client-actions-basics.md %}
-post-1: {% post_url 2021-03-29-Commonly-used-Regular-expressions %}
-post-2: {% post_url 2021-05-02-Consistent-line-endings-in-ASCII-files %}
-post-3: {% post_url 2021-02-03-Git-client-help-basics.md %}
+[Regular expressions]({% post_url 2021-03-29-Commonly-used-Regular-expressions %})
+
+[consistent  line endings during cross-platform development]({% post_url 2021-05-02-Consistent-line-endings-in-ASCII-files %})
+
+[Git help](post-3)
+
+<!-- post-0: post_url 2021-05-03-Git-client-actions-basics  -->
+
+<!-- post-3: post_url 2021-05-03-Git-client-help-basics -->
 
 ## References
 
