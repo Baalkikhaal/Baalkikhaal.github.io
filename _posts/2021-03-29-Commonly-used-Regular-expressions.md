@@ -7,7 +7,7 @@ tool: python
 excerpt: "Let us learn the syntax and rules of evaluating regular expressions by solving commonly needed tasks."
 date: 29th March, 2021
 ---
-# Regular expression
+## Regular expression
 
 Regular expressions (RE) are pattern identifiers used for matching patterns in strings. They have a special syntax and follow simple rules to perform simple to complex pattern matching tasks. REs are commonly used for search operations, parsing and lexical analysis. The [concept of regular expression][1] was developed by mathematician Stephen Cole Kleene as part of the theory of regular languages.
 
@@ -19,11 +19,11 @@ RE is itself a string that is used as a pattern identifier for match pattern in 
 
 In this post, we represent normal strings with `'normal string'` and raw string with `r'raw string'`.
 
-# Rules
+## Rules
 
 The pattern identifiers are formed using a simple set of rules. These rules when combined in various permutations and combinations can lead to increasingly complex interpretation of the RE. Some of the generic rules of generation are
 
-## Concatenation
+### Concatenation
 
 > If A is a RE and B is a RE, then AB is a RE.
 
@@ -31,7 +31,7 @@ If REs constitute a group (which it actually does), then concatenation is the gr
 
 This rule of concatenation can be used to generate complex REs from simple REs.
 
-## Simple REs
+### Simple REs
 
 The simplest REs are single character strings like `r'a'`, `r'0'`, `r' '`. These match themselves i.e. `'a'`, `'0'`, `' '`.
 
@@ -39,7 +39,7 @@ Using concatenation property, we can create compound REs. So `r'ab'` matches str
 
 Now to spice up the REs, we introduce special characters that have special interpretation.
 
-## Special characters
+### Special characters
 
 There are many special characters whose meaning depends on where they occur in a RE string and which RE they neighbour. Some of these characters are `r'.'`, `r'+'`, etc. However, there is even a more special characters among the special characters -- `r'\'`.
 
@@ -50,7 +50,7 @@ There are many special characters whose meaning depends on where they occur in a
 | `r'+'` | Matches one or more repetitions of the preceding RE. | `r' +'` matches whitespace of any non zero length. but `\. +` matches only whitespace of any non zero length at the start of sentence.
 
 
-## Special delimiters
+### Special delimiters
 
 | special delimiter | interpretation | examples |
 |--------|-------|----------|
@@ -59,7 +59,7 @@ There are many special characters whose meaning depends on where they occur in a
 | `r'[0-9]'` | Match a range of characters |
 
 
-# Methods
+## Methods
 
 | methods | docstring |
 |--------|-------|
@@ -68,7 +68,7 @@ There are many special characters whose meaning depends on where they occur in a
 | `re.findall(pattern, string)` | Returns list of all the **non-overlapping** matches of `pattern` in `string`. |
 | `re.finditer(pattern, string)` | Returns an iterator over all **non-overlapping** matches in the `string`. |
 
-## Usage
+### Usage
 
 ```python
 re.match(r'Hello', 'Hello, world!')
@@ -90,11 +90,11 @@ In [133]: for match in re.finditer(r'l', 'Hello, world!'):
 (3, 4)
 (10, 11)
 ```
-# Examples
+## Examples
 
 Let us apply some of the rules above to create REs for common tasks.
 
-## Match the spaces in a sentence
+### Match the spaces in a sentence
 
 ```python
 def print_match(match):
@@ -149,7 +149,7 @@ match at start=41 and end=42
 
 The occurence of invalid space with two whitespace characters at index 23 is matched twice at 23 and 24 using RE `r' '`.
 
-## Find occurrences of invalid spaces in a sentence
+### Find occurrences of invalid spaces in a sentence
 
 To match such invalid spaces only once, we can use RE `r' +'` that matches one or more of continuous whitespaces. This includes both the valid and invalid spaces.
 
@@ -213,9 +213,7 @@ match at span=(23, 25) ... with  more ...
 match at span=(77, 80) ...three   white...
 ```
 
-
-
-## Match the complete string
+### Match the complete string
 
 Any non empty string is made up any of the ASCII characters. `r'.'` is RE special character that matches any character except `NEWLINE`. To match one or more of any character we use `r'+'` RE. Concatenating these REs, we have `r'.+'` that matches any character one or more times resulting in matching the complete string.
 
@@ -229,7 +227,8 @@ print(result)
 
 <re.Match object; span=(0, 11), match='any string.'>
 ```
-## Find all invalid spaces at the start of the sentence
+
+### Find all invalid spaces at the start of the sentence
 
 To find the invalid spaces only at the start of the sentence, the first character of the match should be `'.'`. Since `r'.'` is a special character, we shall use the RE `r'\.'`. And the RE for double or more whitespaces is `r'  +'` as discussed in [invalid spaces example](#find-occurrences-of-invalid-spaces-in-a-sentence). So the complete RE is `r'\.  +'`. Since special characters loose their meaning inside sets, we can use the equivalent RE `r'[.]  +'`.
 
@@ -249,7 +248,7 @@ match_invalid_spaces_at_start(string)
 match at span=(52, 55) ...space.  The s...
 ```
 
-## Find all the decimal numbers
+### Find all the decimal numbers
 
 A number is made up of one or more digits. A digit is a charcter from 0 to 9. To match a digit, we can use a set `r'[...]'` containing the digits 0 to 9. There are two ways of listing the digits
 
@@ -281,7 +280,7 @@ result=['29', '2021']
 result1=['29', '2021']
 ```
 
-## Finding vowels and consonants
+### Finding vowels and consonants
 
 ```python
 pattern_vowels = r'[aeiou]'
@@ -298,7 +297,7 @@ print(f'{result_consonants=}')
 result_consonants=['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z']
 ```
 
-## Find `'the'`s in a string.
+### Find `'the'`s in a string.
 
 The article `'the'` is a common occurence in English language. It can occur at the start of sentence, or in the middle of a sentence. So there are two possibilities.
 
@@ -324,7 +323,7 @@ match_article_the()
 result=['the', 'the', 'the', 'The', 'the']
 ```
 
-## Find all expressions within delimiters
+### Find all expressions within delimiters
 
 Commonly used delimiters are brackets `'(...)'`, `'{...}'`, `'[...]'`, `'<...>'`.
 
@@ -363,6 +362,11 @@ match_within_delimiters(string)
 
 It is to be noted from above example, that the RE does not account correctly for nested delimiters as well as *empty* delimiters.
 
-# Summary
+## Summary
 
 So we have applied some of the basic rules of REs and used some of the special characters and special delimiters. Let us review some of the intermediate rules, characters and delimiters in a later post.
+
+
+## Assets
+
+[re_examples.py](/assets/documents/Python/re_examples.py)
