@@ -1,0 +1,16 @@
+## Check for installation status
+
+To check if a package is installation on the system
+
+```bash
+ apt policy libreoffice
+libreoffice:
+  Installed: (none)
+  Candidate: 1:6.0.7-0ubuntu0.18.04.10
+  Version table:
+     1:6.0.7-0ubuntu0.18.04.10 500
+        500 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 Packages
+        500 http://security.ubuntu.com/ubuntu bionic-security/universe amd64 Packages
+     1:6.0.3-0ubuntu1 500
+        500 http://archive.ubuntu.com/ubuntu bionic/universe amd64 Packages
+```
