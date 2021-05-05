@@ -14,3 +14,76 @@ libreoffice:
      1:6.0.3-0ubuntu1 500
         500 http://archive.ubuntu.com/ubuntu bionic/universe amd64 Packages
 ```
+
+ `apt-cache showpkg` returns more detailed information
+ 
+ ```bash
+  apt-cache showpkg libreoffice
+Package: libreoffice
+Versions:
+1:6.0.7-0ubuntu0.18.04.10 (/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_bionic-updates_universe_binary-amd64_Packages) (/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_bionic-security_universe_binary-amd64_Packages)
+ Description Language:
+                 File: /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_bionic_universe_binary-amd64_Packages
+                  MD5: c49664663e903aabb8a5125b910d1fc5
+ Description Language: en
+                 File: /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_bionic_universe_i18n_Translation-en
+                  MD5: c49664663e903aabb8a5125b910d1fc5
+ Description Language:
+                 File: /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_bionic-updates_universe_binary-amd64_Packages
+                  MD5: c49664663e903aabb8a5125b910d1fc5
+
+1:6.0.3-0ubuntu1 (/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_bionic_universe_binary-amd64_Packages)
+ Description Language:
+                 File: /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_bionic_universe_binary-amd64_Packages
+                  MD5: c49664663e903aabb8a5125b910d1fc5
+ Description Language: en
+                 File: /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_bionic_universe_i18n_Translation-en
+                  MD5: c49664663e903aabb8a5125b910d1fc5
+ Description Language:
+                 File: /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_bionic-updates_universe_binary-amd64_Packages
+                  MD5: c49664663e903aabb8a5125b910d1fc5
+
+
+Reverse Depends:
+  ooohg,libreoffice 3.3
+  libreoffice-kde4,libreoffice
+  libreoffice-gtk2,libreoffice
+  python3-uno,libreoffice
+  libreoffice-gtk3,libreoffice
+  libreoffice-gnome,libreoffice
+  libreoffice-dev-doc,libreoffice 1:5.2.5-2~
+  libreoffice-dev-common,libreoffice 1:5.2.5-2~
+  libreoffice-dev,libreoffice 1:5.2.5-2~
+  libreoffice-dev,libreoffice 1:5.2.5-2~
+  openclipart-libreoffice,libreoffice
+  myspell-uk,libreoffice
+  myspell-sq,libreoffice
+  myspell-pl,libreoffice
+  myspell-hu,libreoffice
+  mediawiki2latex,libreoffice
+  lxde,libreoffice
+  loook,libreoffice
+  libreoffice-zemberek,libreoffice
+  libreoffice-zemberek,libreoffice
+  libreoffice-kde4,libreoffice
+  libreoffice-gtk2,libreoffice
+  libjodconverter-java,libreoffice
+  grcompiler,libreoffice
+  python3-uno,libreoffice
+  myspell-ga,libreoffice
+  libreoffice-voikko,libreoffice
+  libreoffice-voikko,libreoffice
+  libreoffice-gtk3,libreoffice
+  libreoffice-gnome,libreoffice
+  libreoffice-dev-doc,libreoffice 1:5.2.5-2~
+  libreoffice-dev-common,libreoffice 1:5.2.5-2~
+  hunspell-be,libreoffice
+  hunspell-br,libreoffice
+Dependencies:
+1:6.0.7-0ubuntu0.18.04.10 - libreoffice-base (0 (null)) libreoffice-calc (0 (null)) libreoffice-core (5 1:6.0.7-0ubuntu0.18.04.10) libreoffice-draw (0 (null)) libreoffice-impress (0 (null)) libreoffice-math (0 (null)) libreoffice-report-builder-bin (0 (null)) libreoffice-writer (0 (null)) libreoffice-avmedia-backend-gstreamer (0 (null)) python3-uno (2 4.4.0~beta2) libreoffice-dev (1 1:5.0.3~rc1-2) libreoffice-dev-doc (1 1:5.0.3~rc1-2) fonts-crosextra-caladea (0 (null)) fonts-crosextra-carlito (0 (null)) fonts-dejavu (0 (null)) fonts-liberation (0 (null)) fonts-liberation2 (0 (null)) fonts-linuxlibertine (0 (null)) fonts-sil-gentium-basic (0 (null)) libreoffice-gnome (16 (null)) libreoffice-kde4 (0 (null)) libreoffice-librelogo (0 (null)) libreoffice-nlpsolver (0 (null)) libreoffice-ogltrans (0 (null)) libreoffice-report-builder (0 (null)) libreoffice-script-provider-bsh (0 (null)) libreoffice-script-provider-js (0 (null)) libreoffice-script-provider-python (0 (null)) libreoffice-sdbc-postgresql (0 (null)) libreoffice-wiki-publisher (0 (null)) libreoffice-java-common (2 1:6.0.7~) cups-bsd (0 (null)) firefox-esr (16 (null)) thunderbird (16 (null)) firefox (0 (null)) fonts-noto-hinted (0 (null)) fonts-noto-mono (0 (null)) ghostscript (0 (null)) gnupg (0 (null)) gpa (0 (null)) hunspell-dictionary (0 (null)) hyphen-hyphenation-patterns (0 (null)) imagemagick (16 (null)) graphicsmagick-imagemagick-compat (0 (null)) libgl1 (0 (null)) libreoffice-grammarcheck (0 (null)) libreoffice-help (5 6.0) libreoffice-l10n (5 6.0) libxrender1 (0 (null)) myspell-dictionary (0 (null)) mythes-thesaurus (0 (null)) openclipart2-libreoffice (16 (null)) openclipart-libreoffice (0 (null)) pstoedit (0 (null)) unixodbc (0 (null)) gstreamer1.0-plugins-base (0 (null)) gstreamer1.0-plugins-good (0 (null)) gstreamer1.0-plugins-ugly (0 (null)) gstreamer1.0-plugins-bad (0 (null)) gstreamer1.0-libav (0 (null)) default-jre (16 (null)) sun-java6-jre (16 (null)) java6-runtime (16 (null)) jre (0 (null)) libsane1 (0 (null)) libreoffice-officebean (0 (null))
+1:6.0.3-0ubuntu1 - libreoffice-base (0 (null)) libreoffice-calc (0 (null)) libreoffice-core (5 1:6.0.3-0ubuntu1) libreoffice-draw (0 (null)) libreoffice-impress (0 (null)) libreoffice-math (0 (null)) libreoffice-report-builder-bin (0 (null)) libreoffice-writer (0 (null)) libreoffice-avmedia-backend-gstreamer (0 (null)) python3-uno (2 4.4.0~beta2) libreoffice-dev (1 1:5.0.3~rc1-2) libreoffice-dev-doc (1 1:5.0.3~rc1-2) fonts-crosextra-caladea (0 (null)) fonts-crosextra-carlito (0 (null)) fonts-dejavu (0 (null)) fonts-liberation (0 (null)) fonts-liberation2 (0 (null)) fonts-linuxlibertine (0 (null)) fonts-sil-gentium-basic (0 (null)) libreoffice-gnome (16 (null)) libreoffice-kde4 (0 (null)) libreoffice-librelogo (0 (null)) libreoffice-nlpsolver (0 (null)) libreoffice-ogltrans (0 (null)) libreoffice-report-builder (0 (null)) libreoffice-script-provider-bsh (0 (null)) libreoffice-script-provider-js (0 (null)) libreoffice-script-provider-python (0 (null)) libreoffice-sdbc-postgresql (0 (null)) libreoffice-wiki-publisher (0 (null)) libreoffice-java-common (2 1:6.0.3~) cups-bsd (0 (null)) firefox-esr (16 (null)) thunderbird (16 (null)) firefox (0 (null)) fonts-noto-hinted (0 (null)) fonts-noto-mono (0 (null)) ghostscript (0 (null)) gnupg (0 (null)) gpa (0 (null)) hunspell-dictionary (0 (null)) hyphen-hyphenation-patterns (0 (null)) imagemagick (16 (null)) graphicsmagick-imagemagick-compat (0 (null)) libgl1 (0 (null)) libreoffice-grammarcheck (0 (null)) libreoffice-help (5 6.0) libreoffice-l10n (5 6.0) libxrender1 (0 (null)) myspell-dictionary (0 (null)) mythes-thesaurus (0 (null)) openclipart2-libreoffice (16 (null)) openclipart-libreoffice (0 (null)) pstoedit (0 (null)) unixodbc (0 (null)) gstreamer1.0-plugins-base (0 (null)) gstreamer1.0-plugins-good (0 (null)) gstreamer1.0-plugins-ugly (0 (null)) gstreamer1.0-plugins-bad (0 (null)) gstreamer1.0-libav (0 (null)) default-jre (16 (null)) sun-java6-jre (16 (null)) java6-runtime (16 (null)) jre (0 (null)) libsane1 (0 (null)) libreoffice-officebean (0 (null))
+Provides:
+1:6.0.7-0ubuntu0.18.04.10 -
+1:6.0.3-0ubuntu1 -
+Reverse Provides:
+ ```
