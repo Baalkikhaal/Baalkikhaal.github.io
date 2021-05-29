@@ -1,0 +1,24 @@
+/*
+    Fonts stylesheet.
+    Note:
+        The location of the font file is relative to the current file.
+    We use two files.
+        - "Avenir" geometric font for normal text.
+            Reference: https://www.azfonts.net/families/avenir-lt-std-35-light.html
+        - "Cascadia" for monospace font for code.
+            Reference: https://www.hanselman.com/blog/how-to-make-a-pretty-prompt-in-windows-terminal-with-powerline-nerd-fonts-cascadia-code-wsl-and-ohmyposh
+*/
+@font-face {
+     font-family: Avenir;
+     src: url('../fonts/avenirltstd-light.otf');
+}
+
+@font-face {
+  font-family: Avenir-Medium;
+  src: url('../fonts/AvenirLTStd-Medium.otf');
+}
+
+@font-face {
+  font-family: Cascadia;
+  src: url('../fonts/CascadiaMono-Regular.otf');
+}

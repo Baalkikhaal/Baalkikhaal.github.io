@@ -81,12 +81,12 @@
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   line-height: 1.5;
-  color: #24292e;
+  color: #dbd6d1;
   font-family: Avenir;
   font-size: 16px;
   line-height: 1.5;
   word-wrap: break-word;
-  background-color: Silver;
+  background-color: #222222;
 }
 
 .markdown-body details {
@@ -172,7 +172,7 @@
 }
 
 .markdown-body a {
-  color: #0366d6;
+  color: Coral;
   text-decoration: none;
 }
 
@@ -800,22 +800,22 @@
 .markdown-body table td,
 .markdown-body table th {
   padding: 6px 13px;
-  border: 1px solid #dfe2e5;
+  border: 1px solid #201d1a;
 }
 
 .markdown-body table tr {
-  background-color: #fff;
-  border-top: 1px solid #c6cbd1;
+  background-color: #000;
+  border-top: 1px solid #39342e;
 }
 
 .markdown-body table tr:nth-child(2n) {
-  background-color: #f6f8fa;
+  background-color: #090705;
 }
 
 .markdown-body img {
   max-width: 50%;
   box-sizing: initial;
-  background-color: Linen;
+  background-color: DimGrey;
   padding-left: 25%;
   padding-right: 25%;
 }
@@ -836,7 +836,7 @@
   padding: .2em .4em;
   margin: 0;
   font-size: 85%;
-  background-color: PowderBlue;
+  background-color: CornFlowerBlue;
   border-radius: 3px;
 }
 
@@ -869,7 +869,7 @@
   overflow: auto;
   font-size: 85%;
   line-height: 1.45;
-  background-color: #f6f8fa;
+  /* background-color: #f6f8fa; */
   border-radius: 3px;
 }
 

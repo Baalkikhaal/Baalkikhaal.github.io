@@ -1,0 +1,40 @@
+/* Style the navigation bar elements. */
+
+.navigation img{
+    max-width: 10%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.navigation a {
+    font-family: Avenir-Medium;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    border: 2px solid #ff7f5080; /* Coral at various alphas. */
+    background: #ff7f5040;
+    color: #ff7f5090;
+    box-shadow: 1px 1px 2px #ff7f5060;
+    border-radius: 5px;
+    padding: 2px 10px;
+    margin : 0.2em 0;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.navigation-tags a{
+     font-family: Cascadia;
+     letter-spacing: 1px;
+     text-transform: lowercase;
+     text-align: center;
+     border: 2px solid #6495ED80; /* CornFlowerBlue at various alphas. */
+     background: #6495ED40;
+     color: #6495ED90;
+     box-shadow: 1px 1px 2px #6495ED60;
+     border-radius: 5px;
+     padding: 2px 10px;
+     margin : 0.2em 0;
+     display: inline-block;
+     cursor: pointer;
+ }
