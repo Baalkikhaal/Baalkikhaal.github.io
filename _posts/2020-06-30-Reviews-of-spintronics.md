@@ -36,6 +36,7 @@ Fert, Albert; Panagopoulos, Christos | 2016 | Nature
 2008 | Device implications of spin-transfer torques | Katine, J. a.; Fullerton, Eric E. | Journal of Magnetism and Magnetic Materials
 2008 | Micro-brillouin light scattering spectroscopy of magnetic nanostructures | Demokritov, Sergej O.; Demidov, Vladislav E. | IEEE Transactions on Magnetics (Advances in Magnetics)
 2008 | Spin transfer torques | Ralph, D. C.; Stiles, M. D. | Journal of Magnetism and Magnetic Materials
+2008 | Magnetism in ultrathin film structures | Vaz, C. A.F. F; Bland, J. A. C.; Lauhoff, G. | Reports on Progress in Physics
 2007 | The transition from longitudinal to perpendicular recording | Richter, H J | Journal of Physics D: Applied Physics(Topical Review)
 2007 | The emergence of spin electronics in data storage | Chappert, Claude; Fert, Albert; Dau, Frédéric Nguyen Van | Nature Materials(Review Articles Insight)
 2007 | Spin-diffusion lengths in metals and alloys, and spin-flipping at metal/metal interfaces: An experimentalist's critical review | Bass, Jack; Pratt, William P. | Journal of Physics Condensed Matter (Topical Review)
