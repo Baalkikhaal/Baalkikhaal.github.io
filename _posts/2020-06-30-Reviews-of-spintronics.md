@@ -37,6 +37,7 @@ Fert, Albert; Panagopoulos, Christos | 2016 | Nature
 2008 | Micro-brillouin light scattering spectroscopy of magnetic nanostructures | Demokritov, Sergej O.; Demidov, Vladislav E. | IEEE Transactions on Magnetics (Advances in Magnetics)
 2008 | Spin transfer torques | Ralph, D. C.; Stiles, M. D. | Journal of Magnetism and Magnetic Materials
 2008 | Magnetism in ultrathin film structures | Vaz, C. A.F. F; Bland, J. A. C.; Lauhoff, G. | Reports on Progress in Physics
+2007 | Magnetic Tunnel Junctions for Spintronic Memories and Beyond | Ikeda, Shoji; Hayakawa, Jun; Lee, Young Min; Matsukura, Fumihiro; Ohno, Yuzo; Hanyu, Takahiro; Ohno, Hideo | IEEE Transactions on Electron Devices
 2007 | The transition from longitudinal to perpendicular recording | Richter, H J | Journal of Physics D: Applied Physics(Topical Review)
 2007 | The emergence of spin electronics in data storage | Chappert, Claude; Fert, Albert; Dau, Frédéric Nguyen Van | Nature Materials(Review Articles Insight)
 2007 | Spin-diffusion lengths in metals and alloys, and spin-flipping at metal/metal interfaces: An experimentalist's critical review | Bass, Jack; Pratt, William P. | Journal of Physics Condensed Matter (Topical Review)
@@ -67,10 +68,11 @@ Year | Title | Author(s)| Lectures given at
 2015 | Introduction to spin torques and spin-orbit torques in metal layers | Gambardella, Pietro | [at ETH Zurich](https://intermag.mat.ethz.ch/publications/talks.html)
 2013 | Spintronics research at Cornell | Liu, Luqiao; Pai, Chi-Feng; Mellnik, Alex; Heron, J.; Grab, J. L.; Lee, O. J.; Li, Y.; Minton, P. J.; Stiehl, G.; Tseng, H. W.; Buhrman, Bob; Ralph, Dan; Richardella, Anthony ; Lee, Joon Sue; Samarth, Nitin | [at Cornell](http://online.kitp.ucsb.edu/online/spintronics13/ralph/pdf/Ralph_Spintronics13_KITP.pdf)
 
-# Roadmap
+# Roadmaps
 
 Year | Title | Author(s)| Journal
 -----|-------|----------|--------
+2021 | Roadmap of Spin–Orbit Torques | Shao, Qiming; Li, Peng; Liu, Luqiao; Yang, Hyunsoo; Fukami, Shunsuke; Razavi, Armin; Wu, Hao; Wang, Kang; Freimuth, Frank Mokrousov, Yuriy; Stiles, Mark D; Emori, Satoru; Hoffmann, Axel; Åkerman, Johan; Roy, Kaushik | IEEE Transactions on Magnetics
 2017 | Digital Storage and Memory Technology ( Part 1 ) | Coughlin, Tom; Hoyt, Roger; Handy, Jim | IEEE
 2017 | The 2017 Magnetism Roadmap | Sander, D.; Valenzuela, S. O.; Makarov, D.; Marrows, C. H.; Fullerton, E. E.; Fischer, P.; McCord, J.; Vavassori, P.; Mangin, S.; Pirro, P.; Hillebrands, B.; Kent, A. D.; Jungwirth, T.; Gutfleisch, O.; Kim, C. G.; Berger, A. | Journal of Physics D: Applied Physics
 
