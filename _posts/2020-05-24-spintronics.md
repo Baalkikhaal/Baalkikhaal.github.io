@@ -15,8 +15,6 @@ What is the specific problem you are working on
 
 ## References
 
-- Marrows
-
 Year | Title | Author(s) | Publishing house
 -----|-------|-----------|--------
 2011 | Introduction to magnetic materials | Cullity, Bernard; Dennis Graham; Chad D | John Wiley & Sons
@@ -34,12 +32,16 @@ Year | Title | Author(s) | Publishing house
 1998 | Hysteresis in Magnetism | Bertotti, Giorgio | Academic Press
 1996 | Introduction to the Theory of Ferromagnetism | Aharoni, Amikam | Oxford University Press
 1996 | Theory of magnetism | Yosida, Kei | Springer-Verlag
+1965 | The Physical Principles of Magnetism | Morrish, A. H. | John Wiley and Sons
+1964 | Physics of Magnetism | Chikazumi, Soshin | John Wiley and Sons
+1951 | Ferromagnetism | Bozorth, R. M. | Van Nostrand
 
 
 ### Ancillary references
 
 Year | Title | Author(s) | Publishing house
 -----|-------|-----------|--------
+2003 | A User's Guide to Vacuum Technology | O'Hanlon, John | John Wiley & Sons
 2002 | Materials Science of Thin Films (Deposition and Structure) | Ohring Milton | Academic Press
 2000 | Introduction to Surface and Thin Film Processes | Venables, John A. | Cambridge University Press
 1980 | Glow discharge processes (Sputtering and Plasma Etching) | Chapman, Brian | John Wiley and Sons
