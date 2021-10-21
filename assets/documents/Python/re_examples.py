@@ -7,7 +7,11 @@ Created on Mon Mar 29 20:01:27 2021
 Regular expression module examples
 """
 
+# %% Import statements.
+
 import re
+
+# %% Define functions.
 
 def match_full_string():
     """
@@ -65,6 +69,7 @@ def match_spaces(string):
     for match in re.finditer(pattern, string):
         print_match(match)
 
+#%% Test function.
 
 def test_match_spaces():
     """
@@ -75,6 +80,7 @@ def test_match_spaces():
     string1 = 'This is a sentence with  more than single whitespace.'
     match_spaces(string1)
 
+# %% Print function.
 
 def print_match_with_segments(match):
     """
@@ -91,6 +97,7 @@ def print_match_with_segments(match):
     after = string[end : end+length]
     print(f'match at {span=} ...{before}{segment}{after}...')
 
+#%% Define function.
 
 def match_valid_and_invalid_spaces(string):
     """
@@ -100,6 +107,7 @@ def match_valid_and_invalid_spaces(string):
     for match in re.finditer(pattern, string):
         print_match_with_segments(match)
 
+#%% Test function.
 
 def test_match_valid_and_invalid_spaces():
     """
@@ -108,6 +116,7 @@ def test_match_valid_and_invalid_spaces():
     string = 'This is a sentence with  more than single whitespace.'
     match_valid_and_invalid_spaces(string)
 
+#%% Define function.
 
 def match_only_invalid_spaces(string):
     """
@@ -117,6 +126,7 @@ def match_only_invalid_spaces(string):
     for match in re.finditer(pattern, string):
         print_match_with_segments(match)
 
+#%% Test function.
 
 def test_match_only_invalid_spaces():
     """
@@ -125,6 +135,7 @@ def test_match_only_invalid_spaces():
     string = 'This is a sentence with  more than single whitespace. This sentence has three   whitespaces.'
     match_only_invalid_spaces(string)
 
+#%% Define function.
 
 def match_vowels_and_consonants():
     """
@@ -147,6 +158,7 @@ def match_invalid_spaces_at_start(string):
     for match in re.finditer(pattern, string):
         print_match_with_segments(match)
 
+#%% Test function.
 
 def test_match_invalid_spaces_at_start():
     """
@@ -156,6 +168,7 @@ def test_match_invalid_spaces_at_start():
     string = 'This is a sentence with  more than single whitespace.  The start of this sentence has invaid spaces.'
     match_invalid_spaces_at_start(string)
 
+# %% Define function.
 
 def match_within_delimiters(string):
     """
@@ -168,6 +181,7 @@ def match_within_delimiters(string):
     result = re.findall(pattern, string)
     print(result)
 
+#%% Test function.
 
 def test_match_within_delimiters():
     """
@@ -175,3 +189,34 @@ def test_match_within_delimiters():
     """
     string = r'Pick up the ball (red one). Here is another (delimited expression). Here is a (nested (delimiter) ). Does it match empty delimited expression ()?'
     match_within_delimiters(string)
+
+# %% Use flags 
+
+def match_newline_as_character(string):
+    """
+    Match newline as any other character.
+
+    Returns
+    -------
+    None.
+
+    """
+    pattern = 'START.+END'
+    result = re.findall(pattern, string, flags=re.DOTALL)
+    print(result)
+
+
+# %% Test function.
+
+def test_match_newline_as_character():
+    """
+    Test function that matches newline as character.
+    
+
+    Returns
+    -------
+    None.
+
+    """
+    proverb='STARTShips are safe at the harbour.\nBut thats not what they are built for.END'
+    match_newline_as_character(proverb)

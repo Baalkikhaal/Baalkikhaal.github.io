@@ -9,13 +9,13 @@ date: 29th March, 2021
 ---
 ## Regular expression
 
-Regular expressions (RE) are pattern identifiers used for matching patterns in strings. They have a special syntax and follow simple rules to perform simple to complex pattern matching tasks. REs are commonly used for search operations, parsing and lexical analysis. The [concept of regular expression][1] was developed by mathematician Stephen Cole Kleene as part of the theory of regular languages.
+Regular expressions (RE) are pattern identifiers used for matching patterns in strings. They have a special syntax and follow simple rules to perform simple to complex pattern matching tasks. REs are commonly used for search operations, parsing and lexical analysis. The [concept of regular expression][1] was developed by mathematician Stephen Cole Kleene as part of the theory of regular languages. The Python Standard Library provides the [`re` module](https://docs.python.org/3/library/re.html) to perform RE pattern matching. Let us look at the features of this module
 
 [1]: https://en.wikipedia.org/wiki/Regular_expression
 
-# DOs
+## RE syntax
 
-RE is itself a string that is used as a pattern identifier for match pattern in another string. As we will see soon, REs reserve special meaning to the character `\`. Since Python strings also reserves special meaning for  `\`, it is necessary to always use **raw RE strings** to avoid complicated RE strings. For the difference between simple string literal and raw string literal, refer to [my post on strings in matplotlib]({% post_url 2021-03-05-Handling-string-literals-in-matplotlib  %}).
+RE is itself a string that is used as a pattern identifier to match a pattern in another string. As we will see below, REs reserve special meaning to the character `\`. Since Python string also reserves special meaning for  `\`, it is necessary to always use **raw RE strings** to avoid complicated RE strings. For the difference between simple string literal and raw string literal, refer to [my post on strings in matplotlib]({% post_url 2021-03-05-Handling-string-literals-in-matplotlib  %}).
 
 In this post, we represent normal strings with `'normal string'` and raw string with `r'raw string'`.
 
@@ -41,16 +41,22 @@ Now to spice up the REs, we introduce special characters that have special inter
 
 ### Special characters
 
-There are many special characters whose meaning depends on where they occur in a RE string and which RE they neighbour. Some of these characters are `r'.'`, `r'+'`, etc. However, there is even a more special characters among the special characters -- `r'\'`.
+There are many special characters whose meaning depends on where they occur in a RE string and which RE they neighbour. Some of these characters are `r'.'`, `r'*'`, `r'+'`, `r'|'`, `r'?'`, etc. However, there is even a more special character among the special characters -- `r'\'`. The summary of their usage is given below.
+Additionally, to match a RE `r'A'` OR RE `r'B'`, we use the special character `r'|'` so that the corresponding RE is `r'A|B'`.
 
 | special character | interpretation | examples |
 |--------|-------|----------|
 | `r'\'`  | Escapes special characters. | `r'\.'` matches `'.'`. |
 | `r'.'` |  Matches any character except `NEWLINE` | `r'.'` matches `'a'` or `'0'`, etc. |
-| `r'+'` | Matches one or more repetitions of the preceding RE. | `r' +'` matches whitespace of any non zero length. but `\. +` matches only whitespace of any non zero length at the start of sentence.
+| `r'*'` | Matches 0 or more repetitions of the preceeding RE. | `r'1*0*'` matches the first occurence of a binary numbers.|
+| `r'+'` | Matches one or more repetitions of the preceding RE. | `r' +'` matches whitespace of any non zero length. but `\. +` matches only whitespace of any non zero length at the start of sentence.|
+| `r'A|B'` | Match either RE `A` or RE `B`. It can be compared to the `OR` boolean operator. | `r'a|an' matches occurences of either `'a'` or `'an'`.|
+| `r'?'` | Matches 0 or 1 of the preceeding RE. | |
 
 
 ### Special delimiters
+
+In addition to the special characters, we have special delimiters that have special meaning within the REs. For example, `[]` is used to match a set of characters.
 
 | special delimiter | interpretation | examples |
 |--------|-------|----------|
@@ -58,6 +64,9 @@ There are many special characters whose meaning depends on where they occur in a
 | `r'[^...]'` | Match from the complement of set of characters.  **Note:** `r'^'` has no special meaning if it’s not the first character in the set.  | `r[^aeiou]` matches any consonant (assuming string has only alphabets). |
 | `r'[0-9]'` | Match a range of characters |
 
+## Flags
+
+REs can be interpreted in different ways. Flags prescribe which of these ways to use for the interpretation. For example the `NEWLINE` escape sequence `'\n'` is ignored when RE `r'.+'` is used in the usual interpretation. To also include the newline, we can enable `DOTALL` flag in the `search()` method as described below.
 
 ## Methods
 
@@ -92,7 +101,17 @@ In [133]: for match in re.finditer(r'l', 'Hello, world!'):
 ```
 ## Examples
 
-Let us apply some of the rules above to create REs for common tasks.
+Let us apply some of the rules above to create REs for common tasks. Some of these tasks are
+
+- [Match the spaces in a sentence](#match-the-spaces-in-a-sentence)
+- [Find invalid spaces in a sentence](#find-occurrences-of-invalid-spaces-in-a-sentence)
+- [Match the complete string](#match-the-complete-string)
+- [Find invalid spaces at start of the sentence](#find-all-invalid-spaces-at-the-start-of-the-sentence)
+- [Find the decimal numbers](#find-all-the-decimal-numbers)
+- [Find vowels and consonants](#find-vowels-and-consonants)
+- [Find `'the'`s in a string](#Find-`'the'`s-in-a-string)
+- [Find all expressions within delimiters](#find-all-expressions-within-delimiters)
+- [Match newlines also within a block](#match-newlines-also-within-a-block)
 
 ### Match the spaces in a sentence
 
@@ -280,7 +299,7 @@ result=['29', '2021']
 result1=['29', '2021']
 ```
 
-### Finding vowels and consonants
+### Find vowels and consonants
 
 ```python
 pattern_vowels = r'[aeiou]'
@@ -297,7 +316,7 @@ print(f'{result_consonants=}')
 result_consonants=['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z']
 ```
 
-### Find `'the'`s in a string.
+### Find `'the'`s in a string
 
 The article `'the'` is a common occurence in English language. It can occur at the start of sentence, or in the middle of a sentence. So there are two possibilities.
 
@@ -361,6 +380,31 @@ match_within_delimiters(string)
 ```
 
 It is to be noted from above example, that the RE does not account correctly for nested delimiters as well as *empty* delimiters.
+
+### Match newlines also within a block
+
+To match a block of text delineated by the substring `'START'`
+and `'STOP'`, that may contain `NEWLINE` escape sequences, using simply the RE `r'START.+END'` will not work as we need to treat the `NEWLINE` also as any other character. To ensure, we enable the `re.DOTALL` flag.
+
+```python
+def match_newline_as_character(string):
+    """
+    Match newline as any other character.
+
+    Returns
+    -------
+    None.
+
+    """
+    pattern = 'START.+END'
+    result = re.findall(pattern, string, flags=re.DOTALL)
+    print(result)
+
+    proverb='STARTShips are safe at the harbour.\nBut thats not what they are built for.END'
+    match_newline_as_character(proverb)
+
+    ['STARTI have a newline\nThis is the second line.END']
+```
 
 ## Summary
 
