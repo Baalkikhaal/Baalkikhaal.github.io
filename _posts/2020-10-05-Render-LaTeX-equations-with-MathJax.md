@@ -53,3 +53,31 @@ The function \\( f(x) \\) returns the value 0 if even.
 use
 
     The function \\( f(x) \\) returns the value 0 if even.
+
+## Activate MathJaX in Jekyll powered site
+
+The MathJaX Javascript can be added to a Jekyll powered site by [using Jekyll's Liquid tags](https://xkdog.github.io/2017-02-06-mathjax/.
+
+- Define a `mathjax.html` file containing the line
+
+```html
+ <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+```
+and include it in the `_html` folder at the root of the Jekyll site source.
+
+- Now in the markdown file for the post add the following Jekyll preprocessor statement
+
+```jekyll
+{% include mathjax.html %}
+```
+In this way, mathjax can be enabled on a per post basis
+
+- Alternatively, if you use a jupyter notebook, the above line can be added as a cell with the cell type as `RawNBConvert` with a new line above and below.
+
+```jekyll
+
+{% include mathjax.html %}
+
+```
+
+The second option has been implemented in the [my notebooks on Spintronics review](https://baalkikhaal.github.io/Spintronics/).
