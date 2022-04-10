@@ -1,0 +1,15 @@
+/*
+    Night stylesheet
+
+    Stylesheets used:
+        1. GitHub flavoured markdown
+            Reference:  https://github.com/sindresorhus/github-markdown-css
+        2. Fonts stylesheet
+        3. Fruity stylesheet from Rouge.
+            Reference: https://jwarby.github.io/jekyll-pygments-themes/languages/ruby.html
+        4. Navigation bar elements stylesheet.
+*/
+@import url(github-markdown-night.css);
+@import url(fonts.css);
+@import url(fruity.css);
+@import url(navigation.css);

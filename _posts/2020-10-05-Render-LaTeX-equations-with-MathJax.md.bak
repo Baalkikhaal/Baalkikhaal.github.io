@@ -1,0 +1,81 @@
+---
+layout: post
+author: fubar
+title: "How to render LaTeX equations using MathJax?"
+tag: programming
+tool: javascript
+excerpt: "A quick hack to render LaTeX equations in HTML pages using MathJaX"
+date: 05th October, 2020
+---
+
+## What is MathJaX?
+
+[MathJax](https://www.mathjax.org/) is a Javascript display engine for mathematics that works in all browsers. To enable
+Add the MathJax script to the head of the html for the current site.
+
+```html
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Test Site</title>
+
+        <!-- Add MathJax rendering for LaTeX style rendering -->
+
+        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
+        <!-- MathJax rendering configuration ends here  -->
+    </head>
+    <body>
+        test body        
+    </body>
+</html>
+```
+
+## Block line equation
+
+To typset a block line equation, like
+
+$$ \exp^{i \pi} = -1, $$
+
+use
+
+    $$ \exp^{i \pi} = -1, $$
+
+Even delimiters `\\[ \\]` can also be used instead of `$$ $$`.
+
+## Inline equation
+
+To typeset inline equation,
+
+The function \\( f(x) \\) returns the value 0 if even.
+
+use
+
+    The function \\( f(x) \\) returns the value 0 if even.
+
+## Activate MathJaX in Jekyll powered site
+
+The MathJaX Javascript can be added to a Jekyll powered site by [using Jekyll's Liquid tags](https://xkdog.github.io/2017-02-06-mathjax/.
+
+- Define a `mathjax.html` file containing the line
+
+```html
+ <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+```
+and include it in the `_html` folder at the root of the Jekyll site source.
+
+- Now in the markdown file for the post add the following Jekyll preprocessor statement
+
+```jekyll
+{% include mathjax.html %}
+```
+In this way, mathjax can be enabled on a per post basis
+
+- Alternatively, if you use a jupyter notebook, the above line can be added as a cell with the cell type as `RawNBConvert` with a new line above and below.
+
+```jekyll
+
+{% include mathjax.html %}
+
+```

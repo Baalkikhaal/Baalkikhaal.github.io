@@ -1,0 +1,16 @@
+/*
+    Day stylesheet
+
+    Stylesheets used:
+        1. GitHub flavoured markdown
+            Reference:  https://github.com/sindresorhus/github-markdown-css
+        2. Fonts stylesheet
+        3. Native stylesheet from Rouge.
+            Reference: https://jekyllrb.com/docs/liquid/tags/#stylesheets-for-syntax-highlighting
+        4. Navigation bar elements stylesheet.
+*/
+
+@import url(github-markdown.css);
+@import url(fonts.css);
+@import url(native.css);
+@import url(navigation.css);
