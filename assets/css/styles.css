@@ -1,5 +1,5 @@
-@import url(native.css);
 @import url(github-markdown.css);
+@import url(native.css);
 
 /* Pygments (deprecated and not supported in Jekyll 4; superseded by Ruby's own Rouge) module stylesheet for syntax highlighting. Refer: [Tags Filters](https://jekyllrb.com/docs/liquid/tags/#stylesheets-for-syntax-highlighting) */
 
@@ -43,12 +43,43 @@ a:hover { text-decoration: none; }
     padding-left: 5%;
 }
 
+.navigation a {
+    font-family: Avenir-Medium;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    /* border: 2px solid rgba(0,0,200,0.6);	 matplotlib cycle colors #1f77b4, #ff7f0e, #2ca02c */
+    border: 2px solid #ff7f0e80;
+    background: #ff7f0e40;
+    color: #ff7f0e90;
+    box-shadow: 1px 1px 2px #ff7f0e60;
+    border-radius: 5px;
+    padding: 2px 10px;
+    margin : 0.2em 0;
+    display: inline-block;
+    cursor: pointer;
+}
 
-.navigation-tags {
-     font-size: 150%;
+.navigation-tags a{
+     /*font-size: 150%; */
      /*background: MintCream;*/
      /* from CodePen intro tutorial */
-     background: linear-gradient(to bottom, darkseagreen, MintCream);
+     /*background: linear-gradient(to bottom, darkseagreen, MintCream); */
+     font-family: Cascadia;
+     letter-spacing: 1px;
+     text-transform: lowercase;
+     text-align: center;
+     /* border: 2px solid rgba(0,0,200,0.6);	 matplotlib cycle colors #1f77b4, #ff7f0e, #2ca02c */
+     border: 2px solid #1F77b480;
+     background: #1F77b440;
+     color: #1F77b490;
+     box-shadow: 1px 1px 2px #1F77b460;
+     border-radius: 5px;
+     padding: 2px 10px;
+     margin : 0.2em 0;
+     display: inline-block;
+     cursor: pointer;
  }
 
 .box {

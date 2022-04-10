@@ -69,6 +69,19 @@ In [159]: r'\n'
 Out[159]: '\\n'
 ```
 
+It is to be born in mind that `NEWLINE` is a single character and string literal representation of `NEWLINE` is the one character string`'\n'` whereas for the raw string literal `r'\n'`, the backslash is not *escaped* and it is a two character string as shown below clearly.
+
+```python
+In [98]: newline = '\n'
+
+In [99]: len(newline)
+Out[99]: 1
+
+In [100]: raw_newline = r'\n'
+
+In [101]: len(raw_newline)
+Out[101]: 2
+```
 ## Formatted string literals alias f-strings
 
 [Formatted string literals](https://docs.python.org/3/reference/lexical_analysis.html#formatted-string-literals) are a relatively new addition (version 3.6 onwards) to format strings. It was proposed in [PEP498](https://www.python.org/dev/peps/pep-0498/#id2) titled **Literal String Interpolation** to improve upon previous string formatting methods like

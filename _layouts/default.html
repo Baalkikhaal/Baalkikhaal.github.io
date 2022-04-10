@@ -2,57 +2,38 @@
 <html>
   <head>
     <meta charset="utf-8">
-	
+
 	<!-- style sheet for dark light theme Adapted from https://codepen.io/joyshaheb/pen/gOwOGQE -->
 
-	<link rel="stylesheet" href="/assets/css/darklight.css">
-	
+<!--  	<link rel="stylesheet" href="/assets/css/darklight.css">
+
     <script src="/assets/js/switcher.js" defer></script>
-
+-->
     <!-- dark vs light theme configuration ends here -->
-
+    <script src="/assets/js/day_night_toggler.js" defer></script>
     <!-- Render GitHub Markdown style https://github.com/sindresorhus/github-markdown-css -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.css"> -->
-        <style>
-    	.markdown-body {
-    		box-sizing: border-box;
-    		min-width: 200px;
-    		max-width: 800px;
-    		margin: 0 auto;
-    		padding: 45px;
-    	}
-
-    	@media (max-width: 400px) {
-    		.markdown-body {
-    			padding: 15px;
-    		}
-    	}
-    </style>
-
-    <!-- GitHub markdown style configuration ends here -->
+    <link rel="stylesheet" href="/assets/css/day.css">
 
     <!-- Add MathJax rendering for LaTeX style rendering -->
 
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default" defer></script>
 
     <!-- MathJax rendering configuration ends here  -->
 
     <title>{{ page.title }}</title>
     <meta name="author" content="fubar">
     <meta name="description" content="A collection of HOWTOs in programming and commonly used tools by graduate students with focus on physicists. Additionally, an attempt is made to understand the intricate connection between Adwaitha / అద్వైతా / अद्वैता philosophy, physics and Mother Nature.">
+
     <link rel="icon" href="/assets/images/favicon.png" type="image/x-icon">
 
-    <!-- custom style sheet -->
-    <!-- uncomment to import the css file
-        <link rel="stylesheet" href="/assets/css/styles.css">
-     -->
     {% feed_meta %}
     {% seo %}
   </head>
   <body class="markdown-body">
-	{% include darkVsLightTheme.html %}
+	<!--  include darkVsLightTheme.html  -->
+
+    {% include day_night_toggler.html %}
 	{% include swamiVivekananda.html %}
     {% include navigation.html %}
     {{ content }}

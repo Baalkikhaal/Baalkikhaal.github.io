@@ -22,6 +22,7 @@ From [Prof. Mona Berciu UBC Canada](https://phas.ubc.ca/~berciu/TEACHING/PHYS502
 - "Condensed matter in a nutshell" by G. D. Mahan
 - "Introduction to solid-state theory" by O. Madelung
 - "Quantum theory of solids" by C. Kittel
+
 # Second quantization
 
 - Orland and Negele

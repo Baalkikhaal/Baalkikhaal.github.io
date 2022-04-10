@@ -179,7 +179,9 @@ Instead of writing down all the keys, the file contains key-value pairs of only 
 
 >It is necessary that file has extension `.mplstyle`.
 
-A portion of the file `mystyle.mplstyle` reads
+A portion of the file `myMatplotlibStylesheet.mplstyle` reads
+
+
 ```python
 
 #text-font parameters
@@ -209,3 +211,7 @@ mpl.style.use('myMatplotlibStylesheet.mplstyle')
 # References
 
 [Customize matplotlib style sheet](https://matplotlib.org/stable/tutorials/introductory/customizing.html)
+
+# File Downloads
+
+[myMatplotlibStylesheet.mplstyle](/assets/documents/Matplotlib/myMatplotlibStylesheet.mplstyle)

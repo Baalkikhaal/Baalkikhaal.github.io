@@ -6,7 +6,10 @@
 -->
     <a
         href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
+            <!-- comment out the image hrefs
             <img src="{{ item.image }}" alt="{{ item.alt }}"/>
+        -->
+            {{ item.name }}
     </a>
   {% endfor %}
 
@@ -19,7 +22,7 @@
                 class="current"
             {% endif %}
         >
-           {{tag.name}}
+           {{ tag.name }}
         </a>
     {% endfor %}
  </nav>
