@@ -4,7 +4,8 @@ source 'https://rubygems.org'
 #`bundle update github-pages`
 
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
-gem "github-pages", "~> 214"
+# update regularly the version of github-pages gem
+gem "github-pages", "~> 225"
 
 # add plugins here
 group :jekyll_plugins do
