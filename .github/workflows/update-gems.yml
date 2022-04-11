@@ -18,15 +18,33 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-      - name: Setup Ruby environment with ruby-build
+      - name: Setup Ruby, JRuby and TruffleRuby
         # You may pin to the exact commit or the version.
-        # uses: clupprich/ruby-build-action@d2971553edbe27a9cb7e277f22b549114bfd3ccf
-        uses: clupprich/ruby-build-action@v1.3.0
+        # uses: ruby/setup-ruby@1a68550f2e3309e13c8ccb91ac6b8786f59ee147
+        uses: ruby/setup-ruby@v1.100.1
         with:
-          # Ruby version
-          ruby-version: 2.7.3
-        # Flag if the Ruby installation is cached
-          cache-available: True
+          # Engine and version to use, see the syntax in the README. Reads from .ruby-version or .tool-versions if unset.
+          ruby-version: default # optional, default is default
+          # The version of RubyGems to use. Either 'default', 'latest', or a version number (e.g., 3.3.5).
+          #For 'default', no action is taken and the version of RubyGems that comes with Ruby by default is used.
+          #For 'latest', `gem update --system` is run to update to the latest RubyGems version.
+          #Similarly, if a version number is given, `gem update --system <version>` is run to update to that version of RubyGems, as long as that version is newer than the one provided by default.
+          #Defaults to 'default'.
+
+          rubygems: latest # optional
+          # The version of Bundler to install. Either 'none', 'latest', 'Gemfile.lock', or a version number (e.g., 1, 2, 2.1, 2.1.4).
+          #For 'Gemfile.lock', the version is determined based on the BUNDLED WITH section from the file Gemfile.lock, $BUNDLE_GEMFILE.lock or gems.locked.
+          #Defaults to 'Gemfile.lock' if the file exists and 'latest' otherwise.
+
+          bundler: default # optional, default is default
+          # Run "bundle install", and cache the result automatically. Either true or false.
+          bundler-cache: default # optional, default is false
+          # The working directory to use for resolving paths for .ruby-version, .tool-versions and Gemfile.lock.
+          working-directory: default # optional, default is .
+          # Arbitrary string that will be added to the cache key of the bundler cache. Set or change it if you need
+          #to invalidate the cache.
+
+          cache-version: default # optional, default is 0
       # Install bundler gem and update it
       - name: Install bundler
         run: gem install bundler
