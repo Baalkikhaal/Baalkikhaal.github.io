@@ -10,8 +10,18 @@ date: 05th October, 2020
 
 ## What is MathJaX?
 
-[MathJax](https://www.mathjax.org/) is a Javascript display engine for mathematics that works in all browsers. To enable
-Add the MathJax script to the head of the html for the current site.
+- [MathJax](https://www.mathjax.org/) is a Javascript display engine to display mathematics notation on web browsers.
+- It processes mathematics given in LaTeX and MathML notation and renders them in web-based fonts that scale at high resolution without distortion.
+- MathML is the WWW consortium's standard for displaying mathematics on web browsers. MathJaX is a pre-processor that converts TeX and LaTeX notation into MathML.
+- MathJaX 2.0 has new features like equation numbering.
+
+## Enable MathJaX
+
+- There are two ways to enable MathJaX processing of mathematics notation.
+  - Link our webpages to an installation of MathJaX hosted on a Content Delivery Network (CDN).
+  - Link our webpages to a local installation of MathJaX
+
+- The former is a convenient option for beginners. Add the MathJax script to the head of the html for the current site.
 
 ```html
 <!DOCTYPE html>
@@ -22,7 +32,9 @@ Add the MathJax script to the head of the html for the current site.
 
         <!-- Add MathJax rendering for LaTeX style rendering -->
 
-        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+        <script type="text/javascript" async
+			src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.5.3/MathJax.js?config=TeX-MML-AM_CHTML">
+		</script>
 
         <!-- MathJax rendering configuration ends here  -->
     </head>
@@ -81,3 +93,8 @@ In this way, mathjax can be enabled on a per post basis
 ```
 
 The second option has been implemented in the [my notebooks on Spintronics review](https://baalkikhaal.github.io/Spintronics/).
+
+
+## References
+
+For more information on how to use MathJax, and its latest features, refer to the [canonical documentation on MathJax](https://docs.mathjax.org/en/v2.5-latest/index.html)
