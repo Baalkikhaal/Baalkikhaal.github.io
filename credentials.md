@@ -7,7 +7,7 @@ title: Credentials
 
 <div class=project>
   {% for item in site.data.projects %}
-    <h3
+    <h3>
 		{{ item.name }}
     </h3>
 	<p>
