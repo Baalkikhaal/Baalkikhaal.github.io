@@ -23,3 +23,10 @@
     background: #6495ED40;
     color: black;
 }
+
+.project-reference p {
+    font-family: Avenir-Medium;
+    background: #95ED6440;
+    color: black;
+	font-weight: normal;
+}

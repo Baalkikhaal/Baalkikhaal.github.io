@@ -1,15 +1,15 @@
-- name: Project 0
-  description: A brief description of project0
-  link: /project0.html
+- name: KerrPy
+  description: An openCV based Python project for processing Kerr microscopy image. KerrPy is used to extract ellipse fits of bubble domains created under the application of out-of-plane and in-plane fields. These fits are used to estimate the underlying Dzyaloshinskii Moriya interaction (DMI) 
+  link: https://github.com/Baalkikhaal/KerrPy
   image: /assets/projects/project0.svg
   alt: project0 logo
-- name: Project 1
-  description: A brief description of project1
-  link: /project1.html
+- name: Canny Edge Detection
+  description: A PyQt5 App based tutorial to understand Canny Edge Detection. I use this algorithm for my thesis work pertaining to ellipse detection of Kerr microscopy images. 
+  link: https://github.com/Baalkikhaal/CannyEdgeDetection
   image: /assets/projects/project1.svg
   alt: project1 logo
-- name: Project 2
-  description: A brief description of project2
-  link: /project2.html
+- name: LabVIew HOWTOs
+  description: Simple Labview VIs to illustrate not only the fundamentals of generic programming principles but also specific features pertaining to LabVIew. LabVIew is a closed source graphical programming language developed by National Instruments and is used by industry and research community to interface control and manipulate data centric systems
+  link: https://github.com/Baalkikhaal/LabVIewHowTos
   image: /assets/projects/project2.svg
   alt: project2 logo

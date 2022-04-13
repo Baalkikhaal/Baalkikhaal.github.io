@@ -13,7 +13,7 @@ title: Credentials
 	<p>
 		{{ item.description }}
 	</p>
-	<p>
+	<p class=project-reference>
 		For more details, refer to
  		<a
 			href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
