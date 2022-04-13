@@ -1,5 +1,5 @@
 ---
-layout: credentials
+layout: default
 title: Credentials
 ---
 
@@ -7,4 +7,4 @@ title: Credentials
 
 PFA the résumé
 
-[Résumé](../assets/documents/Resume/resume_sreekar.pdf)
+[Résumé](/assets/documents/Resume/resume_sreekar.pdf)
