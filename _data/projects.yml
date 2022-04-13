@@ -1,0 +1,15 @@
+- name: Project 0
+  description: A brief description of project0
+  link: /project0.html
+  image: /assets/projects/project0.svg
+  alt: project0 logo
+- name: Project 
+  description: A brief description of project1
+  link: /project1.html
+  image: /assets/projects/project1.svg
+  alt: project1 logo
+- name: Project 2
+  description: A brief description of project2
+  link: /project2.html
+  image: /assets/projects/project2.svg
+  alt: project2 logo
