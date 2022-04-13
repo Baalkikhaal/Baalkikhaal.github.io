@@ -15,7 +15,7 @@ title: Credentials
 	</p>
 	<p>
 		For more details, refer to
- 		<a>
+ 		<a
 			href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
 				<!-- comment out the image hrefs
 				<img src="{{ item.image }}" alt="{{ item.alt }}"/>
