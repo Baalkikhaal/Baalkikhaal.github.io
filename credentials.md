@@ -1,7 +1,10 @@
 ---
 layout: credentials
+title: Credentials
 ---
 
-## Resume
+## Résumé
+
+PFA the résumé
 
 [Résumé](../assets/documents/Resume/resume_sreekar.pdf)
