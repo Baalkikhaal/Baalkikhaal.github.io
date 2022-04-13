@@ -4,7 +4,7 @@ name: Sreekar Guddeti
 position: Documenter
 ---
 
-From the [user manual of Notepad++](Documentation is like sex, when it’s good, it’s very, very good; when it’s bad, it’s better than nothing.)
+From the [user manual of Notepad++](https://npp-user-manual.org/)
 
 > Documentation is like sex, when it’s good, it’s very, very good; when it’s bad, it’s better than nothing. 
 
