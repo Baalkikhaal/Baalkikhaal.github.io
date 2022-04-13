@@ -7,19 +7,18 @@ title: Credentials
 
 <div class=project>
   {% for item in site.data.projects %}
-	<h2>
-		{{ item.name }}
-	</h2>
+    <h3
+		<a>
+			href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
+				<!-- comment out the image hrefs
+				<img src="{{ item.image }}" alt="{{ item.alt }}"/>
+				-->
+            {{ item.name }}
+		</a>
+    </h3>
 	<p>
 		{{ item.description }}
 	</p>
-    <a
-        href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
-            <!-- comment out the image hrefs
-            <img src="{{ item.image }}" alt="{{ item.alt }}"/>
-        -->
-            {{ item.name }}
-    </a>
   {% endfor %}
 </div>
 
