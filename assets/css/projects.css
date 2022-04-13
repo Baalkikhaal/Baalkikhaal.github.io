@@ -12,7 +12,7 @@
     text-align: left;
 	display: block;
     background: #ff7f5040;
-    color: #ff7f5090;
+    color: black;
     padding: 2px 10px;
     margin : 0em 0em;
     cursor: pointer;
@@ -21,5 +21,5 @@
 .project p {
     font-family: Avenir-Medium;
     background: #6495ED40;
-    color: #6495ED90;
+    color: black;
 }
