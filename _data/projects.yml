@@ -1,15 +1,25 @@
 - name: KerrPy
-  description: An openCV based Python project for processing Kerr microscopy image. KerrPy is used to extract ellipse fits of bubble domains created under the application of out-of-plane and in-plane fields. These fits are used to estimate the underlying Dzyaloshinskii Moriya interaction (DMI) 
+  description: An openCV based Python project for processing Kerr microscopy image. KerrPy is used to extract ellipse fits of bubble domains created under the application of out-of-plane and in-plane fields. These fits are used to estimate the underlying Dzyaloshinskii Moriya interaction (DMI). 
   link: https://github.com/Baalkikhaal/KerrPy
-  image: /assets/projects/project0.svg
-  alt: project0 logo
+  image: /assets/images/projects/process_custom_roi.png
+  alt: kerrpy logo
 - name: Canny Edge Detection
   description: A PyQt5 App based tutorial to understand Canny Edge Detection. I use this algorithm for my thesis work pertaining to ellipse detection of Kerr microscopy images. 
   link: https://github.com/Baalkikhaal/CannyEdgeDetection
-  image: /assets/projects/project1.svg
-  alt: project1 logo
+  image: /assets/images/projects/canny_edge.gif
+  alt: canny_edge_project logo
 - name: LabVIew HOWTOs
-  description: Simple Labview VIs to illustrate not only the fundamentals of generic programming principles but also specific features pertaining to LabVIew. LabVIew is a closed source graphical programming language developed by National Instruments and is used by industry and research community to interface control and manipulate data centric systems
+  description: Simple Labview VIs to illustrate not only the fundamentals of generic programming principles but also specific features pertaining to LabVIew. LabVIew is a closed source graphical programming language developed by National Instruments and is used by industry and research community to interface control and manipulate data centric systems.
   link: https://github.com/Baalkikhaal/LabVIewHowTos
-  image: /assets/projects/project2.svg
-  alt: project2 logo
+  image: /assets/images/projects/labview_logo.jpg
+  alt: labview logo
+- name: Skyrmions
+  description: A FreeCAD project to render Bloch and Nèel skyrmions with Python scripting utility.
+  link: https://github.com/Baalkikhaal/FreeCAD-projects
+  image: /assets/images/projects/pov_bloch_skyrmion.png
+  alt: neel-skyrmion logo  
+- name: Anisotropy
+  description: A Mayavi project to render forms of various sources of anisotropy. Anisotropy is a crucial ingredient for designing magnetic memory technology. For example, uniaxial anisotropy is required for a bistable memory element.
+  link: https://github.com/Baalkikhaal/FreeCADprojects
+  image: /assets/images/projects/cubic_symmetry_positive_anisotropy.png
+  alt: anisotropy logo  

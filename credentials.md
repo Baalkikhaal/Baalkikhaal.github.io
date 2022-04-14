@@ -3,7 +3,7 @@ layout: default
 title: Credentials
 ---
 
-## Projects
+# My projects
 
 
 {% for item in site.data.projects %}
@@ -15,16 +15,17 @@ title: Credentials
 		{{ item.description }}
 	</p>
 </div>
+<div class="project-image">
+	<img src="{{ item.image }}" alt="{{ item.alt }}"/>
+</div>
 <div class="project-reference">
 	<p>
-		For more details, refer to
+		For more details, please refer to
 		<a
 			href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
-				<!-- comment out the image hrefs
-				<img src="{{ item.image }}" alt="{{ item.alt }}"/>
-				-->
-			{{ item.name }}
+			{{ item.name }} Github repository
 		</a>
+		.
 	</p>
 </div>
 {% endfor %}

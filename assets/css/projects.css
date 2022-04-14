@@ -8,13 +8,13 @@
 
 .project h3 {
     font-family: Avenir-Medium;
-    font-weight: bold;
+    font-weight: normal;
     text-align: left;
 	display: block;
     background: #ff7f5040;
     color: black;
     padding: 2px 10px;
-    margin : 0em 0em;
+    margin: 0em 0em;
     cursor: pointer;
 }
 
@@ -23,6 +23,7 @@
     background: #6495ED40;
     color: black;
 	padding: 2px 10px;
+	margin: 0em 0em 0em 0em;
 }
 
 .project-reference p {
@@ -31,4 +32,18 @@
     color: black;
 	font-weight: normal;
 	padding: 2px 10px;
+	margin : 0em 0em 2em 0em;
+
+}
+
+
+.project-image img {
+    background: #ED649540;
+	margin : 0em 0em;
+}
+
+
+.project-image div {
+	display: flex;	/* Refer [How to center an image in HTML and CSS](https://blog.hubspot.com/website/center-an-image-in-html)*/
+	justify-content : center;
 }
