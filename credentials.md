@@ -7,7 +7,7 @@ title: Credentials
 
 
 {% for item in site.data.projects %}
-<div class=project>
+<div class="project">
 	<h3>
 		{{ item.name }}
 	</h3>
@@ -15,7 +15,7 @@ title: Credentials
 		{{ item.description }}
 	</p>
 </div>
-<div class=project-reference>
+<div class="project-reference">
 	<p>
 		For more details, refer to
 		<a
