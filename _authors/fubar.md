@@ -16,4 +16,4 @@ His work broadly revolves around the field of <a href="{% post_url 2020-05-24-sp
 
 ## Credentials
 
-If you have time to waste instead of learning from the little documentation that fubar has attempted here, you may scroll through [his credentials]({% link credentials.md %})
+If you have time to waste instead of learning from the little documentation that fubar has attempted here, you may scroll through [his credentials]({% link credentials.md %}).

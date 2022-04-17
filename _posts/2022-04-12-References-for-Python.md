@@ -5,7 +5,7 @@ title: "References for learning Python"
 tag: programming
 tool: python
 excerpt: "Some of the well curated references for learning Python keeping scientific computing in focus."
-date: 13th April, 2022
+date: 12th April, 2022
 ---
 
 ## What is Python?

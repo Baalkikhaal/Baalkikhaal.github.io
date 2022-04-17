@@ -2,7 +2,7 @@
 layout: post
 author: fubar
 title: "What are python modules?"
-tag: programming
+tag: programming, architecture
 tool: python
 excerpt: "The organization of python program is discussed with module as an entity."
 date: 14th September, 2019
@@ -10,7 +10,11 @@ date: 14th September, 2019
 
 ## Abstract
 
-In this chapter, the author introduces modules. Modules form the highest organization structure in a Python program. The *rationale* behind modules lies in code reusability, a primary feature that Python *wants* you to do. Using module as an example for *namespace*, the author tries to drive home the point that a program is about managing namespaces, i.e. the space of names. This concept is revisted in other topics like [functions](chapter-on-functions) and [classes](chapter-on-classes). This is followed by explaining the internal process when modules are imported, how existing modules are searched, and the freedom of type of module imported.
+Modules form the highest organization structure in a Python program.
+The **rationale** behind modules lies in code reusability, a primary feature that Python *wants* you to do.
+Module also is a *namespace*, so that organizing a program is indirectly about managing namespaces.
+Namespaces is a recurring concept as discussed in [Python functions]({% post_url 2022-04-12-What-are-Python-functions %}) and [Python classes]({% post_url 2022-04-12-What-are-Python-classes %}).
+In the following, we explain the internal process when modules are imported, how to search existing modules, and the various types of modules.
 
 ---
 
@@ -38,7 +42,7 @@ Implementing shared services or metadata
 The names of a module *namespace* can be accessed/imported by two statements and and one important function
 - `import` statement fetches a whole module.
 - `from` statement fetches particular names from a module.
-- `imp.reload` function reloads a module without stopping Python.
+- `reload()` function of the `imp` module reloads a module without stopping Python.
 All names defined at the top level of module file become attributes of the imported module object. In OOP jargon,
 
 > the module file's global scope *morphs* into the module object's attribute namespace when it is imported.
@@ -51,39 +55,10 @@ All names defined at the top level of module file become attributes of the impor
 - The top-level file (a.k.a script) contains the main flow of control of the program.
 - Modules are collections/libraries of tools to be used by the script.
 - Script uses the tools defined in module files, and modules use tools defined in other modules.
-- Module don't do anything when run directly; they define the tools intended for use in other files.
-- [TODO](#TODO)
+- Modules don't do anything when run directly; they define the tools intended for use in other files.
 
-![Image: PythonProgramArchitecture](/path/to/architecture-image.png)
+![Python-program-architecture-modules](/assets/images/Python/program_architecture_with_modules.svg)
 
-<script>
-//Run script right away
-  window.onload = function () {
-//We'll be appending the icon to this DIV later
-          var s = Snap("#iconDiv");
-//Have Snap load the SVG file
-    Snap.load("/assets/images/icon.svg", function(f) {
-//Assign the white rectangle
-                whiteRect = f.select("#whiteRect");
-//Assign the whole icon group
-                icon = f.select("#icon");
-//When the icon is hovered over, have the white rectangle move up slightly with elastic properties
-                icon.hover(function() {
-        whiteRect.animate({y:270.0}, 500, mina.elastic);
-                },
-//And return to original position when not hovered over
-                           function() {
-        whiteRect.animate({y:276.82181}, 500, mina.elastic);
-      }
-                );
-//Finally append the icon to iconDiv in the body
-    s.append(f);
-    });
-  };
-</script>
-
-<!--Here's the DIV that will hold the animated SVG icon-->
-<div id="iconDiv"></div>
 
 ---
 
@@ -139,3 +114,7 @@ Since only the filename without extension is searched, an `import mod` can resol
 ## Summary
 
 The idea of structuring program is the *rationale* behind modules. Modules act as namespaces so that names in one module cannot be seen by another module, unless the former is imported. This Python Program architecture helps in dividing the logic into self-contained components. In addition to the home directory and standard library modules, custom modules can be searched via the module search path setting the `PYTHONPATH` environment variable or .pth files in top-level. While importing a module, Pythons allows freedom to choose from a variety of file extensions like .py, .pyc, .pyo, .so or a directory also (as we will see in the [next chapter](chapter-on-packages)).
+
+## References
+
+Chapter "Modules: The Big Picture" of "Learning Python" by Mark Lutz.

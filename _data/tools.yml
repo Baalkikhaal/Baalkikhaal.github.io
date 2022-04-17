@@ -1,57 +1,76 @@
 - name: jekyll
+  link: /tools/jekyll.html
   alt: jekyll-Logo
-  link: /assets/images/tools/jekyllLogo.svg
+  imagelink: /assets/images/tools/jekyllLogo.svg
 - name: scipy
+  link: /tools/scipy.html
   alt: scipy-Logo
-  link: /assets/images/tools/scipyLogo.svg
+  imagelink: /assets/images/tools/scipyLogo.svg
 - name: matplotlib
+  link: /tools/matplotlib.html
   alt: matplotlib-Logo
-  link: /assets/images/tools/matplotlibLogo.svg
+  imagelink: /assets/images/tools/matplotlibLogo.svg
 - name: python
+  link: /tools/python.html
   alt: python-Logo
-  link: /assets/images/tools/pythonLogo.svg
+  imagelink: /assets/images/tools/pythonLogo.svg
 - name: powershell
+  link: /tools/powershell.html
   alt: powershell-Logo
-  link: /assets/images/tools/powerShellLogo.svg
+  imagelink: /assets/images/tools/powerShellLogo.svg
 - name: javascript
+  link: /tools/javascript.html
   alt: javascript-Logo
-  link: /assets/images/tools/javaScriptLogo.svg
+  imagelink: /assets/images/tools/javaScriptLogo.svg
 - name: yoga
+  link: /tools/yoga.html
   alt: yoga-Logo
-  link: /assets/images/tools/yogaLogo.svg
+  imagelink: /assets/images/tools/yogaLogo.svg
 - name: spintronics
+  link: /tools/spintronics.html
   alt: spintronics-Logo
-  link: /assets/images/tools/spintronicsLogo.png
+  imagelink: /assets/images/tools/spintronicsLogo.png
 - name: education
+  link: /tools/education.html
   alt: swami-vivekananda-Logo
-  link: /assets/images/tools/vivekanandaLogo.jpg
+  imagelink: /assets/images/tools/vivekanandaLogo.jpg
 - name: phd
+  link: /tools/phd.html
   alt: phd-comics-Logo
-  link: /assets/images/tools/phdcomicsLogo.gif
+  imagelink: /assets/images/tools/phdcomicsLogo.gif
 - name: css
+  link: /tools/css.html
   alt: css-Logo
-  link: /assets/images/tools/cssLogo.svg
+  imagelink: /assets/images/tools/cssLogo.svg
 - name: git
+  link: /tools/git.html
   alt: git-Logo
-  link: /assets/images/tools/gitLogo.svg
+  imagelink: /assets/images/tools/gitLogo.svg
 - name: inkscape
+  link: /tools/inkscape.html
   alt: inkscape-Logo
-  link: /assets/images/tools/inkscapeLogo.svg
+  imagelink: /assets/images/tools/inkscapeLogo.svg
 - name: c++
+  link: /tools/cplusplus.html
   alt: c++-Logo
-  link: /assets/images/tools/c++Logo.png
+  imagelink: /assets/images/tools/c++Logo.png
 - name: fonts
+  link: /tools/fonts.html
   alt: fonts-Logo
-  link: /assets/images/tools/fontsLogo.svg
+  imagelink: /assets/images/tools/fontsLogo.svg
 - name: networking
+  link: /tools/networking.html
   alt: networking-Logo
-  link: /assets/images/tools/networkingLogo.svg
+  imagelink: /assets/images/tools/networkingLogo.svg
 - name: microsoft
+  link: /tools/microsoft.html
   alt: microsoft-Logo
-  link: /assets/images/tools/microsoftLogo.svg
+  imagelink: /assets/images/tools/microsoftLogo.svg
 - name: originlab
+  link: /tools/originlab.html
   alt: originlab-Logo
-  link: /assets/images/tools/originLabLogo.png
+  imagelink: /assets/images/tools/originLabLogo.png
 - name: spyder
+  link: /tools/spyder.html
   alt: spyder-Logo
-  link: /assets/images/tools/spyderLogo.svg  
+  imagelink: /assets/images/tools/spyderLogo.svg  

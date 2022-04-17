@@ -26,3 +26,11 @@
         </a>
     {% endfor %}
  </nav>
+
+<nav class=navigation-tools>
+    {% for tool in site.data.tools %}
+        <a href= {{ tool.link }}>
+			<img src="{{ tool.imagelink }}" alt="{{ tool.alt }}"/>
+        </a>
+    {% endfor %}
+ </nav>
