@@ -72,25 +72,29 @@ $$
 A = xy.
 $$
 
+
 To implement this logic, we have
 
 ```python
-x, y = 2, 3
-area = x * y
-print(area)
+x, y = 2, 3		# Define rectangle.
+area = x * y	# Compute area.		
 ```
 
 Now for two rectangles defined by the points $(2, 3)$ and $(3, 4)$ the areas are given by
 
 ```python
-x1, y1 = 2, 3
-area1 = x1 * y1
-print(area1)
-x2, y2 = 3, 4
-area2 = x2 * y2
-print(area2)
+x1, y1 = 2, 3	# Define rectangle1.
+area1 = x1 * y1	# Compute area1.
+
+x2, y2 = 3, 4	# Define rectangle2.
+area2 = x2 * y2	# Compute area2.
 ```
 
+If we observe the above code, both the data that define the rectangles
+ and the logic that computes the area are treated on an equal footing.
+ With the use of function interface, we can redesign the implementation
+ in such a way that the logic is encapsulated
+ 
 ### Code redundancy
 
 Debugging is an important step in the development cycle.
