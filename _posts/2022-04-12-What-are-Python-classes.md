@@ -15,56 +15,93 @@ They facilitate a new kind of programming style called the **object oriented pro
 In contrast to the procedural programming style that constitutes functions,
 the OOP style constitutes classes where data is given precedence over flow of logic.
 This trade-off leads to new ways implementing behaviour and turns out to be more natural for certain use cases,
-for which procedural programming either has no solution or the solution it offers is cumbersome.
+for which procedural programming either has no solutions or the solutions it offer are cumbersome.
 
 As it is a modern approach to progamming, it is pedagogical to compare and contrast classes with other structural units that Python offers like [functions]({% post_url 2022-04-12-What-are-Python-functions %}),
  [modules]({% post_url 2019-09-14-What-are-Python-modules %}). 
 Analogies are also drawn with corresponding structures in natural language.
 
+## TL;DR
+
+For the impatient, from the point of view of programming literacy, reading others code made up of classes is the first step. 
+To read classes, we need to know its three aspects.
+- `object.attribute` syntax,
+- {%raw%}`__init()__`{% endraw %} method to construct instances of a class, and
+- `self` special argument to self-reference attributes of a class within itself.
+
+Writing code is the next step that is about hierarchial composition. The concept of inheritance allows a class to act as a either as superclass or subclass to another class. Syntactically, the superclass is provided as an argument to the class statement.
+
 ## Introduction
 
 We write programs to model reality. There are two complementary interpretations of reality;
 the reductionistic view that the whole is a sum (or composition) of its parts and the hierarchial view 
-that the whole **emerges** from its part [Anderson1972](#references).
+that the whole **emerges** from its parts [Anderson1972](#references). 
+There are other interpretations that may be mimicked in writing programs but will not be considered here [Wolfram1983, Poincare1854, न्याय 2nd century BC](#references).
 
-Therefore, the program architecture is based upon decomposition, i.e.,
- the process of identifying  the parts of the program and stitching them together.
-Any architecture is based on making design decisions, that invariably introduce constraints [Brown2011](#references).
-Moreover with program architecture, depending upon how the decomposition is performed, introduce certain constraints.
 
-The traditional programming languages like Fortran, C, 
-are procedural where a program is **decomposed** into events (or operations or actions). 
-These events are then coded into constructs like subprograms, subroutines or functions. 
-These constructs are essentially logic driven and supplemented by data. 
-Hence procedural can also be called **event-oriented programming** paradigm.
+Irrespective of the interpretation, we need to identify the parts of the program and stitch them together. 
+These parts are called **program constructs** - construct, in English, means to form by combining (con) parts or elements(struct) - and the process of identifying them is called **program decomposition**. Additionally, the way we stitch them defines the **program architecture**.
+Any architecture - program, civil or chip - is based on making design decisions that invariably introduce constraints [Brown2011](#references). Combined with these constraints, an architecture facilitates implementation of only a subset of reality. As long as we are confined to this subset, we may as well call this our reality, like the proverbial "frog in the well". This confinement is called **programming paradigm**. In physics, a paradigm is also called a worldview. As explained in the "The Character of Physical Law", Feynmann gives the example of how the Aristotlean paradigm of differing mechanics for the celestial and terrestrial objects was challenged by Newton and established a new worldview that both are governed by the same mechanics [Feynmann1964](#references). In the following, we describe the programming paradigms available at our disposal using the analogy of natural language.
 
-In the 1980's,  with the advent of the Ada programming language,
-radically new structural elements or constructs called packages and tasks were introduced wherein the data is given prominence over logic [Booch1986](#references). 
-Following Ada, the modern programming languages like C++, Java, Python refurbish these constructs to describe what are called objects. The programs are decomposed into objects. 
-The objects are essentially data driven and supplemented by logic
- resulting in what is called object-oriented programming paradigm.
- 
-In comparison with the natural language, if the data and logic are related to nouns and verbs respectively, 
-then modern programming languages weigh up the nouns over the verbs. To illustrate this comparison, 
-let us model the canonical Ramayana epic. From a procedural perspective, 
-the poem can be famously summarized into just three words-
+## Programming paradigms
+
+Nouns and verbs predominantly constitute a natural language like English, Telugu or Hindi; 
+the other elements of grammar play a supplementary role. 
+In comparison with a programming language, if nouns denote the data, then verbs capture the logic or events.  
+To illustrate this comparison, 
+let us model the canonical Ramayana epic. From an events perspective, 
+the poem is famously summarized in Telugu language into just three verbs -
 
 > Ramayana summary: "కట్టే, కొట్టే, తెచ్చే". which translates in English to "built, beat, brought"
 
-So the summary has essentially three events-- Rama built the bridge, Rama beat Ravana, Rama brought Sita home.
-If we model the epic from the object oriented perspective, then we could as well summarize it into three names-
+So the summary is decomposed into three events-- Rama built the bridge, Rama defeated Ravana, Rama brought back Sita home. 
+Here, the characters and the bridge are the data.
+
+The traditional programming languages like Fortran, C, 
+provide **procedural constructs** like subprograms, subroutines or functions that help decompose program into **events** (or operations or actions).
+These constructs are essentially define the logic and are stitched together by the data i.e. data flows between them.
+
+```python
+def build(character, object):
+	"""
+	Define logic that captures a character building an object.
+	"""
+	pass
+	
+def defeat(character1, character2):
+	"""
+	Define logic that captures a character1 defeating a character2.
+	"""
+	pass
+
+def bring(character1, character2):
+	"""
+	Define logic that captures a character1 bringing back the character2 home.
+	"""
+	pass
+
+build(Rama, bridge)
+defeat(Rama, Ravana)
+bring(Rama, Sita)
+```
+
+So, in what appears to be data gluing the logic, procedural constructs help implement the **procedural programming paradigm** that can also be called the **event-oriented programming paradigm**.
+
+In the 1980's,  with the advent of the Ada programming language, 
+new constructs like packages and tasks were introduced wherein the data is given prominence over logic [Booch1986](#references). 
+Following Ada, the modern programming languages like C++, Java, Python refurbish these constructs into the **class construct** that packages both data and logic. A class generates what are called **objects**. In contrast to the flow of data in the procedural programming paradigm, classes **interact** with each other. To enable interaction between other objects, these have well defined **object interfaces**. The decomposition into objects that are stitched together by the object-interfaces they provide help implement the **object-oriented programming (OOP) paradigm**. Before we look at all the concepts of class in detail below, let us imagine an alternative summary of Ramayana.
+From the object oriented perspective, Ramayana could as well be summarized it into three nouns-
 
 > Ramayana summary: "Rama, Ravana, Sita"
 
 The former summary is very relatable while the latter appears abstract. 
-While the procedural decomposition might be more natural for composing poems like Ramayana,
+While the procedural decomposition might be more natural for systems that exhibit flat structure,
 the object-oriented decomposition, as we will soon see later, is ideal for systems that exhibit hierarchial structure.
  
 The class construct greatly facilitates object-oriented design. 
 It is least to say that to understand OOP is to understand what a class is.
 However, due to our natural tendency to think procedurally, 
 the complementary programming paragdigm dealing with objects may not be grasped easily.
-To exemplify this behaviour, 
 
 As a result, we gradually motivate the transition from procedural to object oriented paradigm 
 by describing the class from the perspective of 
@@ -85,15 +122,13 @@ Let us explore these features of class below.
 
 ## Class as a construct
 
-
-Data and logic can be respectively compared to names and
- their meanings in the dictionary of a natural language.
+As a construct, a class packages or acts as a placeholder of data and logic.
+The data is defined by the attributes an
 
 Moreover, a class itself is a name with underlying names termed as its **attributes**.
-So a class consists of data and method attributes.
+So a class consists of data and method attributes. 
+As a structural element, a classes encapsulate data and logic using the **class construct**.
 
-As a structural element, a classes encapsulate data and logic using the **class construct** 
-(construct, in English, means to form by combining(con) parts or elements(struct).
  
 Syntactically, the class construct is a `class` statement. 
 A `class` statement is a block statement 
@@ -123,11 +158,12 @@ my_function(MyClass)
 > Style Tip: As per the [PEP 8 style guide](https://peps.python.org/pep-0008/), 
 it is recommended to use `CapitalizedWords` naming style for class names. 
 
-
-
-
-
 ### Data attributes
+
+As discussed earlier, data attributes define the state of the class or an instance of the class.
+To access the state attributes from without the class, we use the `object.attribute` syntax again.
+Here the object might be the class itself or the instance of the class. 
+To access the state from within the class, we use the `self.atttribute` syntax
 
 ### Method attributes
 
@@ -167,7 +203,7 @@ the second connotation facilitates **interaction** between objects.
 
 
 As a programming paradigm, this name encapsulation within a single structure is termed
-**object-oriented programming (OOP)** and classes are a natural .
+**object-oriented programming (OOP)**.
 
 In contrast, functions encapsulate logic, whereas modules hold both data and logic.
 So from the above definition of an object, functions and modules are also objects. 
@@ -361,7 +397,7 @@ joker_silver = Reel_Joker("silver", "Christopher Nolan", "Heath Ledger")
 joker_modern = Reel_Joker("modern", "Todd Phillips", "Joachim Phoenix")
 ```
 
-### __init()__ method
+### {% raw %} __init()__ {% endraw %} method
 
 Instantiation needs external data.
 For each of the above three unique instances, 
@@ -558,7 +594,17 @@ that offers efficient code reuse, extension of namespaces, spawning multiple ins
 
 - Anderson1972 - P. W. Anderson, "More Is Different: Broken symmetry and the nature of the hierarchical structure of science.", Science 1972.
 
-- Brown2011 - A. Brown and G. Wilson, "The Architecture of Open Source Applications", Lulu, 2011
+- Wolfram1983 - Based on [cellular automata](https://en.wikipedia.org/wiki/Cellular_automaton) that posits reality as an elaborate state machine
+
+- Poincare1854 -  Poincare's conventionalism asserts that reality is a collection of mere conventions with no inherent meaning, and
+   
+- न्याय 2nd century BC - न्याय school of Indian philosophy that considers reality being no different from the names that we associate with "that" which we percieve - material is called [पदार्थ = पद + अर्थ ](https://en.wikipedia.org/wiki/Nyaya#Sixteen_categories_(pad%C4%81rthas))that means meaning of the word. 
+
+- Brown2011 - A. Brown and G. Wilson, "The Architecture of Open Source Applications", Lulu, 2011.
+
+- Feynmann1964 = [The Character of Physical Law](https://en.wikipedia.org/wiki/The_Character_of_Physical_Law).
+
+
 
 ## Assets
 
