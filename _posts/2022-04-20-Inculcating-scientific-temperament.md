@@ -4,9 +4,11 @@ author: fubar
 title: "Resources for scientific temperament"
 tag: physics
 tool: phd
-excerpt: "Scientific temperament is not a state. It is a continuous process for aligning one's behaviour to the inculcate the spirit of the scientific method. There are many aspects to this process each addressing one or more of the pillars of the scientific method. Here are some guidelines that help nurture these aspects."
+excerpt: "Scientific temperament is not a state. It is a continuous process for aligning one's behaviour to inculcate the spirit of the scientific method. There are many aspects to this process each addressing one or more of the pillars of the scientific method. Here are some guidelines that help nurture these aspects."
 date: 20th April, 2022
 ---
+
+## Scientific method
 
 The scientific method consists of four pillars
 
@@ -16,7 +18,7 @@ The scientific method consists of four pillars
 - Dissemination
 
 While the first three pillars are confined to the researcher, 
-dissemination enable interaction between them. 
+dissemination enables interaction between them. 
 Dissemination has duly gained prominence in modern science. 
 
 The ability to communicate the research is paramount in a fast-paced, attention-deprived world.
@@ -41,6 +43,11 @@ on composing data visualizations. Its philosophy is summarized by
 
 - [Data Visualization](http://blogs.nature.com/methagora/2013/07/data-visualization-points-of-view.html) is a string of points of view on data visualization published in Nature Methods.
 - [Elements of Visual Style](https://www.nature.com/articles/nmeth.2444) is a complementary style guide to Prof. Tufte's "Elements of Style" for data visualization.
+
+## Data accessibility
+
+- On [colour-blind](https://www.nature.com/articles/d41586-021-02696-z)-[friendly](https://www.ascb.org/science-news/how-to-make-scientific-figures-accessible-to-readers-with-color-blindness/) figures. 
+If the use of categorial colormap like rainbow or jet is unavoidable or desirable, then use the improved [Turbo](https://ai.googleblog.com/2019/08/turbo-improved-rainbow-colormap-for.html).
 
 ## Talks
 
