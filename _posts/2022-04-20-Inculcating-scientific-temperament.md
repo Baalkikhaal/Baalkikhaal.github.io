@@ -43,6 +43,11 @@ on composing data visualizations. Its philosophy is summarized by
 
 - [Data Visualization](http://blogs.nature.com/methagora/2013/07/data-visualization-points-of-view.html) is a string of points of view on data visualization published in Nature Methods.
 - [Elements of Visual Style](https://www.nature.com/articles/nmeth.2444) is a complementary style guide to Prof. Tufte's "Elements of Style" for data visualization.
+- Colormaps are frequently used in literature; it is imperative to use the right kind of colormap to represent the data to avoid artifacts associated with visualization as well as for being colorblind friendly. [Matplotlib's colormap guide](https://matplotlib.org/stable/tutorials/colors/colormaps.html) is a useful starting point that helps choose the right kind of colormap for a given map. It also provides detailed references to the related academic research. To summarize, the human vision is predominantly perceptive to the lightness of color (instead of hue as believed previously). Based on the trends in lightness of colors across each colormap, these are divided into four categories -
+	- **Sequential** maps with perceptual uniformity. Perceptual uniformity coloquially means that the human brain is able to satisfactorily map the color trend with the trend in the data. Such maps are useful for representing data that have inherent ordering. Some of the maps are **viridis**, plasma, **inferno**, cividis, magma.
+	- **Diverging** colormaps where the Lightness peaks in the middle and is same at the ends. Such maps are useful for representing data that have 'zero crossings' that is predominant central value in the ordered data. Some of the maps are **coolwarm**, Spectral, seismic.
+	- **Cyclic** colormaps with equal lightness at the ends. Such maps are useful for representing data with cyclic ordering like phase angle, wind direction, time of day. Some of the maps are **twilight**, hsv.
+	- **Qualitative** (also called categorical) colormaps to represent data that has **no** inherent ordering, but can be classified into categories. The lightness of the colors has no particular ordering. Some of the maps are **tab10** (from [Tableau](https://www.tableau.com/)), Accent, Paired.
 
 ## Data accessibility
 
