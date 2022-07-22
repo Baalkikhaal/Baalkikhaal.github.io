@@ -267,14 +267,13 @@ GEM
     thread_safe (0.3.6)
     typhoeus (1.4.0)
       ethon (>= 0.9.0)
-    tzinfo (1.2.9)
+    tzinfo (1.2.10)
       thread_safe (~> 0.1)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.8.1)
     unf_ext (0.0.8.1-x64-mingw32)
     unicode-display_width (1.8.0)
-    wdm (0.1.1)
     zeitwerk (2.5.4)
 
 PLATFORMS
@@ -286,7 +285,6 @@ DEPENDENCIES
   jekyll-feed
   jekyll-seo-tag
   jekyll-sitemap
-  wdm (>= 0.1.0)
 
 BUNDLED WITH
    2.3.11
