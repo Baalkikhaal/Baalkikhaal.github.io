@@ -17,10 +17,8 @@
 
     <!-- Add MathJax rendering for LaTeX style rendering -->
 
-	<script type="text/javascript" async
-		src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.5.3/MathJax.js?config=TeX-MML-AM_CHTML">
-	</script>
-
+	{% include mathjax.html %}
+	
     <!-- MathJax rendering configuration ends here  -->
 
     <title>{{ page.title }}</title>
@@ -36,7 +34,7 @@
 	<!--  include darkVsLightTheme.html  -->
 
     {% include day_night_toggler.html %}
-	{% include swamiVivekananda.html %}
+    {% include swamiVivekananda.html %}
     {% include navigation.html %}
     {{ content }}
   </body>
