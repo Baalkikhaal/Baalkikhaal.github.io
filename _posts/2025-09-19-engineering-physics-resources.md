@@ -5,7 +5,7 @@ title: "Engineering Physics resources"
 tag: physics
 tool: scipy
 excerpt: "Some useful resources"
-date: 19th July, 2023
+date: 19th September, 2025
 ---
 
 # Youtube videos
