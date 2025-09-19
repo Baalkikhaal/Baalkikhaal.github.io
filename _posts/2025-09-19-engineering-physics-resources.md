@@ -3,7 +3,7 @@ layout: post
 author: fubar
 title: "Engineering Physics resources"
 tag: physics
-tool: scipy
+tool: vfstru
 excerpt: "Some useful resources"
 date: 19th September, 2025
 ---

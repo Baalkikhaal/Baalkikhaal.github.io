@@ -73,4 +73,8 @@
 - name: spyder
   link: /tools/spyder.html
   alt: spyder-Logo
-  imagelink: /assets/images/tools/spyderLogo.svg  
+  imagelink: /assets/images/tools/spyderLogo.svg
+- name: vfstru
+  link: /tools/vfstru.html
+  alt: vfstru-Logo
+  imagelink: /assets/images/tools/vfstruLogo.svg
