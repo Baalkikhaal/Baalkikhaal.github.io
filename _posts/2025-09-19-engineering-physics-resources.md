@@ -14,5 +14,6 @@ date: 19th September, 2025
 
 ## New materials
 - [Superconducting levitation](https://youtube.com/shorts/rVfSb_TApzA?si=Rb1Kge0NDwZKMLG0)
+- [Superconducting Maglev](https://youtu.be/xY2BjDp5qEs?si=VYj_hTZRu4j383Hm)
 - [Diamond grown by Chemical Vapour Deposition](https://youtu.be/INKWPKmil9Q?si=tr2QzomZ4obozPsk)
 - [Immersion cooling using dielectric liquid](https://youtu.be/nCBM_LUeXCU?si=p6Xi6_IKJQCj9Z77)
