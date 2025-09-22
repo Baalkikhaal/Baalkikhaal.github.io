@@ -7,6 +7,8 @@ tool: scipy
 excerpt: "Some useful resources"
 date: 19th September, 2025
 ---
+# Lab procedures
+[Lab procedure 101](/assets/documents/vfstru/lab_procedure_101.pdf)
 
 # Youtube videos
 - [Copper electroplating](https://www.youtube.com/shorts/YEqd-IO6T6I)
