@@ -8,7 +8,13 @@ excerpt: "Some useful resources"
 date: 19th September, 2025
 ---
 
-# Youtube videos
+## Slide Handouts
+
+- [Course Structure](/assets/documents/VFSTRU/EP25PY101/EP_25PY101_slides_course_plan.pdf)
+- [Introduction to metals](/assets/documents/VFSTRU/EP25PY101/EP_25PY101_slides_metals.pdf)
+- [Expression for electrical conductivity](/assets/documents/VFSTRU/EP25PY101/EP_25PY101_slides_expression_for_conductivity.pdf)
+
+## Youtube videos
 - [Copper electroplating](https://www.youtube.com/shorts/YEqd-IO6T6I)
 - [LED light in nitrogen](https://www.youtube.com/watch?v=my1bb7R9kaU)
 
