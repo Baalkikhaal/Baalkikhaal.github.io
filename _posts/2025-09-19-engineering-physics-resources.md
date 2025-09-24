@@ -8,6 +8,10 @@ excerpt: "Some useful resources"
 date: 19th September, 2025
 ---
 
+## Tests
+
+- [Tests on basics](/assets/documents/VFSTRU/EP25PY101/tests/test_basics.pdf)
+
 ## Slide Handouts
 
 - [Course Structure](/assets/documents/VFSTRU/EP25PY101/EP_25PY101_slides_course_plan.pdf)
