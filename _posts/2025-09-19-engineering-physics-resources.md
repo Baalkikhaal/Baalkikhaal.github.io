@@ -1,22 +1,24 @@
 ---
 layout: post
 author: fubar
-title: "Engineering Physics resources"
+title: "Engineering Physics 25PY101"
 tag: physics
 tool: vfstru
-excerpt: "Some useful resources"
+excerpt: "Some useful resources for the Engineering Physics that I am taking at Vignan University, Vadlamudi."
 date: 19th September, 2025
 ---
 
 ## Tests
 
-- [Tests on basics](/assets/documents/VFSTRU/EP25PY101/tests/test_basics.pdf)
+- [Test on basics](/assets/documents/VFSTRU/EP25PY101/tests/test_basics.pdf)
 
 ## Slide Handouts
 
-- [Course Structure](/assets/documents/VFSTRU/EP25PY101/EP_25PY101_slides_course_plan.pdf)
-- [Introduction to metals](/assets/documents/VFSTRU/EP25PY101/EP_25PY101_slides_metals.pdf)
-- [Expression for electrical conductivity](/assets/documents/VFSTRU/EP25PY101/EP_25PY101_slides_expression_for_conductivity.pdf)
+- [Course Structure](/assets/documents/VFSTRU/EP25PY101/slides/slides_00_course_plan.pdf)
+- [Introduction to metals](/assets/documents/VFSTRU/EP25PY101/slides/slides_01_metals.pdf)
+- [Expression for electrical conductivity](/assets/documents/VFSTRU/EP25PY101/slides/slides_02_expression_for_conductivity.pdf)
+   - [Electron motion without electrical field](/assets/documents/VFSTRU/EP25PY101/slides/gifs/electron_drift_lattice_animated_drude_electron_without_electric_field.gif)
+   - [Electron motion under electrical field](/assets/documents/VFSTRU/EP25PY101/slides/gifs/electron_drift_lattice_animated_drude_electron_with_electric_field.gif)
 
 ## Youtube videos
 - [Copper electroplating](https://www.youtube.com/shorts/YEqd-IO6T6I)
