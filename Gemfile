@@ -15,7 +15,7 @@ source 'https://rubygems.org'
 # Or update github-pages manually by referring to the latest version being used at GitHub
 # Reference: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site
 
-gem "github-pages", "~> 228"
+gem "github-pages", "~> 232"
 
 # add plugins here
 group :jekyll_plugins do
@@ -28,3 +28,6 @@ end
 # Reference: https://github.com/github/pages-gem/issues/752
 
 gem 'webrick'
+gem 'bigdecimal'
+
+gem 'wdm', '>= 0.1.0' if Gem.win_platform?
