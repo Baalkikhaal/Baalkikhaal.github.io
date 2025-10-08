@@ -20,6 +20,10 @@ date: 19th September, 2025
    - [Electron motion without electrical field](/assets/documents/VFSTRU/EP25PY101/slides/gifs/electron_drift_lattice_animated_drude_electron_without_electric_field.gif)
    - [Electron motion under electrical field](/assets/documents/VFSTRU/EP25PY101/slides/gifs/electron_drift_lattice_animated_drude_electron_with_electric_field.gif)
 
+## Laboratory procedure
+
+- [Lab 101](/assets/documents/VFSTRU/EP25PY101/lab/lab_procedure_101.pdf)
+
 ## Youtube videos
 - [Copper electroplating](https://www.youtube.com/shorts/YEqd-IO6T6I)
 - [LED light in nitrogen](https://www.youtube.com/watch?v=my1bb7R9kaU)
