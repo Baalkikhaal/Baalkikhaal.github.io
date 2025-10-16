@@ -19,6 +19,10 @@ date: 19th September, 2025
 - [Expression for electrical conductivity](/assets/documents/VFSTRU/EP25PY101/slides/slides_02_expression_for_conductivity.pdf)
    - [Electron motion without electrical field](/assets/documents/VFSTRU/EP25PY101/slides/gifs/electron_drift_lattice_animated_drude_electron_without_electric_field.gif)
    - [Electron motion under electrical field](/assets/documents/VFSTRU/EP25PY101/slides/gifs/electron_drift_lattice_animated_drude_electron_with_electric_field.gif)
+- [Introduction to semiconductors](/assets/documents/VFSTRU/EP25PY101/slides/slides_03_introduction_to_semiconductors.pdf)
+- [Electrical conductivity of semiconductors](/assets/documents/VFSTRU/EP25PY101/slides/slides_04_electrical_conductivity_of_semiconductors.pdf)
+- [Hall effect](/assets/documents/VFSTRU/EP25PY101/slides/slides_05_hall_effect.pdf)
+- [Panchabhuta](/assets/documents/VFSTRU/EP25PY101/slides/slides_06_panchabhuta.pdf)
 
 ## Laboratory procedure
 
