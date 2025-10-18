@@ -11,10 +11,18 @@ date: 19th September, 2025
 ## Tests
 
 - [Test on basics](/assets/documents/VFSTRU/EP25PY101/tests/test_basics.pdf)
+- [Test on conversion factors](/assets/documents/VFSTRU/EP25PY101/tests/test_conversion_factors.pdf)
+
+## Solutions
+
+- [Solutions for test on conversion factors](/assets/documents/VFSTRU/EP25PY101/tests/solution_conversion_factors.pdf)
 
 ## Slide Handouts
 
 - [Course Structure](/assets/documents/VFSTRU/EP25PY101/slides/slides_00_course_plan.pdf)
+
+### Unit 1
+
 - [Introduction to metals](/assets/documents/VFSTRU/EP25PY101/slides/slides_01_metals.pdf)
 - [Expression for electrical conductivity](/assets/documents/VFSTRU/EP25PY101/slides/slides_02_expression_for_conductivity.pdf)
    - [Electron motion without electrical field](/assets/documents/VFSTRU/EP25PY101/slides/gifs/electron_drift_lattice_animated_drude_electron_without_electric_field.gif)
@@ -23,6 +31,8 @@ date: 19th September, 2025
 - [Electrical conductivity of semiconductors](/assets/documents/VFSTRU/EP25PY101/slides/slides_04_electrical_conductivity_of_semiconductors.pdf)
 - [Hall effect](/assets/documents/VFSTRU/EP25PY101/slides/slides_05_hall_effect.pdf)
 - [Panchabhuta](/assets/documents/VFSTRU/EP25PY101/slides/slides_06_panchabhuta.pdf)
+
+### Unit 2
 
 ## Laboratory procedure
 
