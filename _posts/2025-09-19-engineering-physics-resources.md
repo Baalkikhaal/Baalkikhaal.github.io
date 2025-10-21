@@ -12,6 +12,7 @@ date: 19th September, 2025
 
 - [Test on basics](/assets/documents/VFSTRU/EP25PY101/tests/test_basics.pdf)
 - [Test on conversion factors](/assets/documents/VFSTRU/EP25PY101/tests/test_conversion_factors.pdf)
+- [Test on model graphs](/assets/documents/VFSTRU/EP25PY101/tests/test_model_graphs.pdf)
 
 ## Solutions
 
