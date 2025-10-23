@@ -33,6 +33,10 @@ date: 19th September, 2025
 - [Hall effect](/assets/documents/VFSTRU/EP25PY101/slides/slides_05_hall_effect.pdf)
 - [Panchabhuta](/assets/documents/VFSTRU/EP25PY101/slides/slides_06_panchabhuta.pdf)
 
+### Unit 2
+
+- [Experiments of quantum physics](/assets/documents/VFSTRU/EP25PY101/slides/slides_07_introduction_to_quantum_mechanics.pdf)
+
 ## Assignments
 
 - [Assignment on extrinsic semiconductors](/assets/documents/VFSTRU/EP25PY101/assignments/assignment_semiconductors.pdf)
