@@ -41,6 +41,7 @@ date: 19th September, 2025
 ## Assignments
 
 - [Assignment on extrinsic semiconductors](/assets/documents/VFSTRU/EP25PY101/assignments/assignment_semiconductors.pdf)
+- [Assignment on carrier drift](/assets/documents/VFSTRU/EP25PY101/assignments/assignment_drift.pdf)
 
 ## Laboratory procedure
 
