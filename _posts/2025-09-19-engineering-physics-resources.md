@@ -42,6 +42,7 @@ date: 19th September, 2025
 
 - [Assignment on extrinsic semiconductors](/assets/documents/VFSTRU/EP25PY101/assignments/assignment_semiconductors.pdf)
 - [Assignment on carrier drift](/assets/documents/VFSTRU/EP25PY101/assignments/assignment_drift.pdf)
+- [Assignment on Hall effect](/assets/documents/VFSTRU/EP25PY101/assignments/assignment_hall_effect.pdf)
 
 ## Laboratory procedure
 
