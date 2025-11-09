@@ -56,8 +56,15 @@ date: 19th September, 2025
 - [Lab 101](/assets/documents/VFSTRU/EP25PY101/lab/lab_procedure_101.pdf)
 
 ## Youtube videos
+
+### Unit 1
+
 - [Copper electroplating](https://www.youtube.com/shorts/YEqd-IO6T6I)
 - [LED light in nitrogen](https://www.youtube.com/watch?v=my1bb7R9kaU)
+
+### Unit 2
+
+- [Frustrated total internal reflection](https://www.youtube.com/watch?v=VaDA4k_68QI&t=1s)
 
 ## New materials
 - [Superconducting levitation](https://youtube.com/shorts/rVfSb_TApzA?si=Rb1Kge0NDwZKMLG0)
