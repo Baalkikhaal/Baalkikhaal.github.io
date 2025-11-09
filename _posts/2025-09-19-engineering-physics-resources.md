@@ -41,9 +41,15 @@ date: 19th September, 2025
 
 ## Assignments
 
+### Unit 1
+
 - [Assignment on extrinsic semiconductors](/assets/documents/VFSTRU/EP25PY101/assignments/assignment_semiconductors.pdf)
 - [Assignment on carrier drift](/assets/documents/VFSTRU/EP25PY101/assignments/assignment_drift.pdf)
 - [Assignment on Hall effect](/assets/documents/VFSTRU/EP25PY101/assignments/assignment_hall_effect.pdf)
+
+### Unit 2
+
+- [Assignment on experiments of quantum physics - Black body radiation](/assets/documents/VFSTRU/EP25PY101/assignments/assignment_quantum_experiments_blackbody_radiation.pdf)
 
 ## Laboratory procedure
 
