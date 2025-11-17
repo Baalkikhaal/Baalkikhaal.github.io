@@ -54,6 +54,7 @@ date: 19th September, 2025
 ### Unit 2
 
 - [Assignment on experiments of quantum physics - Black body radiation](/assets/documents/VFSTRU/EP25PY101/assignments/assignment_quantum_experiments_blackbody_radiation.pdf)
+- [Assignment on wave function of Schrodinger equation](/assets/documents/VFSTRU/EP25PY101/assignments/assignment_wave_function.pdf)
 
 ## Laboratory procedure
 
