@@ -39,6 +39,10 @@ date: 19th September, 2025
 - [Theory of quantum physics](/assets/documents/VFSTRU/EP25PY101/slides/slides_08_theory_of_quantum_mechanics.pdf)
 - [Particle in a 1D box](/assets/documents/VFSTRU/EP25PY101/slides/slides_09_particle_in_1D_box.pdf)
 
+### Unit 3
+
+- [Quantum free electron theory](/assets/documents/VFSTRU/EP25PY101/slides/slides_10_quantum_free_electron_theory.pdf)
+
 ## Assignments
 
 ### Unit 1
