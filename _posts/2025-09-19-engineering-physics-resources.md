@@ -55,6 +55,10 @@ date: 19th September, 2025
 
 - [Assignment on experiments of quantum physics - Black body radiation](/assets/documents/VFSTRU/EP25PY101/assignments/assignment_quantum_experiments_blackbody_radiation.pdf)
 
+## Module banks
+
+- [Module bank for Module 2](/assets/documents/VFSTRU/EP25PY101/module_banks/module_bank_for_M2.pdf)
+
 ## Laboratory procedure
 
 - [Lab 101](/assets/documents/VFSTRU/EP25PY101/lab/lab_procedure_101.pdf)
