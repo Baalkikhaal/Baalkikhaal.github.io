@@ -10,10 +10,23 @@ date: 19th September, 2025
 
 ## Tests
 
-- [Test on basics](/assets/documents/VFSTRU/EP25PY101/tests/test_basics.pdf)
-- [Test on conversion factors](/assets/documents/VFSTRU/EP25PY101/tests/test_conversion_factors.pdf)
-- [Test on model graphs](/assets/documents/VFSTRU/EP25PY101/tests/test_model_graphs.pdf)
+- [Class test on basics](/assets/documents/VFSTRU/EP25PY101/tests/test_basics.pdf)
+
+### pre M1T1 
+
+- [pre M1T1 test Set 1](/assets/documents/VFSTRU/EP25PY101/tests/test_pre_M1T1_Set_1.pdf)
+- [pre M1T1 test Set 2](/assets/documents/VFSTRU/EP25PY101/tests/test_pre_M1T1_Set_2.pdf)
+
+---
+
+- [Class test on conversion factors](/assets/documents/VFSTRU/EP25PY101/tests/test_conversion_factors.pdf)
+- [Class test on model graphs](/assets/documents/VFSTRU/EP25PY101/tests/test_model_graphs.pdf)
 - [Mock M1T1 Test](/assets/documents/VFSTRU/EP25PY101/tests/test_mock_M1T1.pdf)
+
+### M1T1
+
+- [M1T1 test Set 1](/assets/documents/VFSTRU/EP25PY101/tests/test_M1T1_Set_1.pdf)
+- [M1T1 test Set 2](/assets/documents/VFSTRU/EP25PY101/tests/test_M1T1_Set_2.pdf)
 
 ## Solutions
 
