@@ -56,6 +56,7 @@ date: 19th September, 2025
 ### Unit 3
 
 - [Quantum free electron theory](/assets/documents/VFSTRU/EP25PY101/slides/slides_10_quantum_free_electron_theory.pdf)
+- [Fermi-Dirac distribution](/assets/documents/VFSTRU/EP25PY101/slides/slides_11_fermi_dirac_distribution.pdf)
 
 ## Assignments
 
@@ -90,6 +91,7 @@ date: 19th September, 2025
 - [Frustrated total internal reflection](https://www.youtube.com/watch?v=VaDA4k_68QI&t=1s)
 
 ## New materials
+
 - [Superconducting levitation](https://youtube.com/shorts/rVfSb_TApzA?si=Rb1Kge0NDwZKMLG0)
 - [Superconducting Maglev](https://youtu.be/xY2BjDp5qEs?si=VYj_hTZRu4j383Hm)
 - [Diamond grown by Chemical Vapour Deposition](https://youtu.be/INKWPKmil9Q?si=tr2QzomZ4obozPsk)
