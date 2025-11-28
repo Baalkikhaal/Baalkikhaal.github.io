@@ -59,6 +59,7 @@ date: 19th September, 2025
 - [Fermi-Dirac distribution](/assets/documents/VFSTRU/EP25PY101/slides/slides_11_fermi_dirac_distribution.pdf)
 - [Electronic specific heat of solids](/assets/documents/VFSTRU/EP25PY101/slides/slides_12_electronic_specific_heat.pdf)
 - [Quantum band theory](/assets/documents/VFSTRU/EP25PY101/slides/slides_13_quantum_band_theory.pdf)
+- [Fermi level in semiconductors](/assets/documents/VFSTRU/EP25PY101/slides/slides_14_fermi_level_in_semiconductors.pdf)
 
 ## Assignments
 
