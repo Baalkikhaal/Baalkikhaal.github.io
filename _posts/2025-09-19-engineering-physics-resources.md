@@ -78,6 +78,10 @@ date: 19th September, 2025
 
 - [Module bank for Module 2](/assets/documents/VFSTRU/EP25PY101/module_banks/module_bank_for_M2.pdf)
 
+## References
+
+- [For Module 2 pre-T1 slot 2](/assets/documents/VFSTRU/EP25PY101/references/references_M2_pre_T1_slot_2.pdf)
+
 ## Laboratory procedure
 
 - [Lab 101](/assets/documents/VFSTRU/EP25PY101/lab/lab_procedure_101.pdf)
@@ -92,6 +96,7 @@ date: 19th September, 2025
 ### Unit 2
 
 - [Frustrated total internal reflection](https://www.youtube.com/watch?v=VaDA4k_68QI&t=1s)
+- [Scanning Tunneling Microscope](https://www.youtube.com/watch?v=oSCX78-8-q0)
 
 ## New materials
 
