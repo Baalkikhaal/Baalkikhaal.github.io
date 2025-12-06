@@ -40,8 +40,11 @@ date: 19th September, 2025
 ## Slide Handouts
 
 - [Course Structure](/assets/documents/VFSTRU/EP25PY101/slides/slides_00_course_plan.pdf)
+- [M1U1 - Classical Free Electron Theory](/assets/documents/VFSTRU/EP25PY101/slides/EP_25PY101_module_1_unit_1.pdf)
+- [M1U2 - Quantum mechanics](/assets/documents/VFSTRU/EP25PY101/slides/EP_25PY101_module_1_unit_2.pdf)
+- [M2U1 - Quantum theories of solids](/assets/documents/VFSTRU/EP25PY101/slides/EP_25PY101_module_2_unit_1.pdf)
 
-### Unit 1
+### Module 1 Unit 1
 
 - [Introduction to metals](/assets/documents/VFSTRU/EP25PY101/slides/slides_01_metals.pdf)
 - [Expression for electrical conductivity](/assets/documents/VFSTRU/EP25PY101/slides/slides_02_expression_for_conductivity.pdf)
@@ -52,13 +55,13 @@ date: 19th September, 2025
 - [Hall effect](/assets/documents/VFSTRU/EP25PY101/slides/slides_05_hall_effect.pdf)
 - [Panchabhuta](/assets/documents/VFSTRU/EP25PY101/slides/slides_06_panchabhuta.pdf)
 
-### Unit 2
+### Module 1 Unit 2
 
 - [Experiments of quantum physics](/assets/documents/VFSTRU/EP25PY101/slides/slides_07_introduction_to_quantum_mechanics.pdf)
 - [Theory of quantum physics](/assets/documents/VFSTRU/EP25PY101/slides/slides_08_theory_of_quantum_mechanics.pdf)
 - [Particle in a 1D box](/assets/documents/VFSTRU/EP25PY101/slides/slides_09_particle_in_1D_box.pdf)
 
-### Unit 3
+### Module 2 Unit 1
 
 - [Quantum free electron theory](/assets/documents/VFSTRU/EP25PY101/slides/slides_10_quantum_free_electron_theory.pdf)
 - [Fermi-Dirac distribution](/assets/documents/VFSTRU/EP25PY101/slides/slides_11_fermi_dirac_distribution.pdf)
@@ -68,13 +71,13 @@ date: 19th September, 2025
 
 ## Assignments
 
-### Unit 1
+### Module 1 Unit 1
 
 - [Assignment on extrinsic semiconductors](/assets/documents/VFSTRU/EP25PY101/assignments/assignment_semiconductors.pdf)
 - [Assignment on carrier drift](/assets/documents/VFSTRU/EP25PY101/assignments/assignment_drift.pdf)
 - [Assignment on Hall effect](/assets/documents/VFSTRU/EP25PY101/assignments/assignment_hall_effect.pdf)
 
-### Unit 2
+### Module 1 Unit 2
 
 - [Assignment on experiments of quantum physics - Black body radiation](/assets/documents/VFSTRU/EP25PY101/assignments/assignment_quantum_experiments_blackbody_radiation.pdf)
 - [Assignment on wave function of Schrodinger equation](/assets/documents/VFSTRU/EP25PY101/assignments/assignment_wave_function.pdf)
@@ -93,12 +96,12 @@ date: 19th September, 2025
 
 ## Youtube videos
 
-### Unit 1
+### Module 1 Unit 1
 
 - [Copper electroplating](https://www.youtube.com/shorts/YEqd-IO6T6I)
 - [LED light in nitrogen](https://www.youtube.com/watch?v=my1bb7R9kaU)
 
-### Unit 2
+### Module 1 Unit 2
 
 - [Frustrated total internal reflection](https://www.youtube.com/watch?v=VaDA4k_68QI&t=1s)
 - [Scanning Tunneling Microscope](https://www.youtube.com/watch?v=oSCX78-8-q0)
