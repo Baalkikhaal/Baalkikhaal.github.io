@@ -39,7 +39,7 @@ date: 19th September, 2025
 
 ## Slide Handouts
 
-- [Course Structure](/assets/documents/VFSTRU/EP25PY101/slides/slides_00_course_plan.pdf)
+- [Course Structure](/assets/documents/VFSTRU/EP25PY101/slides/EP_25PY101_module_0_unit_0.pdf)
 - [M1U1 - Classical Free Electron Theory](/assets/documents/VFSTRU/EP25PY101/slides/EP_25PY101_module_1_unit_1.pdf)
 - [M1U2 - Quantum mechanics](/assets/documents/VFSTRU/EP25PY101/slides/EP_25PY101_module_1_unit_2.pdf)
 - [M2U1 - Quantum theories of solids](/assets/documents/VFSTRU/EP25PY101/slides/EP_25PY101_module_2_unit_1.pdf)
