@@ -69,6 +69,10 @@ date: 19th September, 2025
 - [Quantum band theory](/assets/documents/VFSTRU/EP25PY101/slides/slides_13_quantum_band_theory.pdf)
 - [Fermi level in semiconductors - intrinsic and extrinsic](/assets/documents/VFSTRU/EP25PY101/slides/slides_14_fermi_level_in_semiconductors.pdf)
 
+### Module 2 Unit 2
+
+- [pn junction](/assets/documents/VFSTRU/EP25PY101/slides/slides_15_pn_junction.pdf)
+
 ## Assignments
 
 ### Module 1 Unit 1
