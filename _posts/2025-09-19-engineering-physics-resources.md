@@ -72,6 +72,7 @@ date: 19th September, 2025
 ### Module 2 Unit 2
 
 - [pn junction](/assets/documents/VFSTRU/EP25PY101/slides/slides_15_pn_junction.pdf)
+- [Solar cell](/assets/documents/VFSTRU/EP25PY101/slides/slides_16_solar_cell.pdf)
 
 ## Assignments
 
