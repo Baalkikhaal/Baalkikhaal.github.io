@@ -111,6 +111,10 @@ date: 19th September, 2025
 - [Frustrated total internal reflection](https://www.youtube.com/watch?v=VaDA4k_68QI&t=1s)
 - [Scanning Tunneling Microscope](https://www.youtube.com/watch?v=oSCX78-8-q0)
 
+### Module 2 Unit 2
+
+- [Chandrayaan 2 Mission at a glance (Video credits: ISRO)](/assets/videos/VFSTRU/EP25PY101/ch2-eng-mp4-8mbps.webm)
+
 ## New materials
 
 - [Superconducting levitation](https://youtube.com/shorts/rVfSb_TApzA?si=Rb1Kge0NDwZKMLG0)
