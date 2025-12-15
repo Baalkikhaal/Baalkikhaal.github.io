@@ -95,6 +95,8 @@ date: 19th September, 2025
 
 - [For Module 2 pre-T1 slot 2](/assets/documents/VFSTRU/EP25PY101/references/references_M2_pre_T1_slot_2.pdf)
 
+- [For post M2 pre-T1 slot 2 and upto M2T1](/assets/documents/VFSTRU/EP25PY101/references/references_M2_T2.pdf)
+
 ## Laboratory procedure
 
 - [Lab 101](/assets/documents/VFSTRU/EP25PY101/lab/lab_procedure_101.pdf)
