@@ -73,6 +73,8 @@ date: 19th September, 2025
 
 - [pn junction](/assets/documents/VFSTRU/EP25PY101/slides/slides_15_pn_junction.pdf)
 - [Solar cell](/assets/documents/VFSTRU/EP25PY101/slides/slides_16_solar_cell.pdf)
+- [Direct and indirect bandgap semiconductor](/assets/documents/VFSTRU/EP25PY101/slides/slides_18_direct_indirect_bandgap.pdf)
+- [LED](/assets/documents/VFSTRU/EP25PY101/slides/slides_19_led.pdf)
 
 ## Assignments
 
