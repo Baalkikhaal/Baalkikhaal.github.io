@@ -93,6 +93,7 @@ date: 19th September, 2025
 ## Module banks
 
 - [Module bank for Module 2](/assets/documents/VFSTRU/EP25PY101/module_banks/module_bank_for_M2.pdf)
+- [Solutions for Module bank](/assets/documents/VFSTRU/EP25PY101/module_banks/solutions/M2T1_part_A_all.pdf)
 
 ## References
 
