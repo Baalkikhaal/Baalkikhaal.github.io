@@ -76,6 +76,11 @@ date: 19th September, 2025
 - [Photodiode](/assets/documents/VFSTRU/EP25PY101/slides/slides_17_photodiode.pdf)
 - [Direct and indirect bandgap semiconductor](/assets/documents/VFSTRU/EP25PY101/slides/slides_18_direct_indirect_bandgap.pdf)
 - [LED](/assets/documents/VFSTRU/EP25PY101/slides/slides_19_led.pdf)
+- [Tunneling diode](/assets/documents/VFSTRU/EP25PY101/slides/slides_20_tunneling_diode.pdf)
+
+## Module 2 Unit 3
+
+- [LASER - principles of lasing action](/assets/documents/VFSTRU/EP25PY101/slides/slides_21_laser_principles_of_lasing.pdf)
 
 ## Assignments
 
