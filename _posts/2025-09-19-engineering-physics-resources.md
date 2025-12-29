@@ -99,6 +99,8 @@ date: 19th September, 2025
 
 - [Module bank for Module 2](/assets/documents/VFSTRU/EP25PY101/module_banks/module_bank_for_M2.pdf)
 - [Solutions for Module bank](/assets/documents/VFSTRU/EP25PY101/module_banks/solutions/M2T1_part_A_all.pdf)
+- [Module bank part B for Module 2](/assets/documents/VFSTRU/EP25PY101/module_banks/M2_module_bank_part_B_for_students.pdf)
+- [Solutions for Module bank part B](/assets/documents/VFSTRU/EP25PY101/module_banks/solutions/M2T1_part_B_all.pdf)
 
 ## References
 
