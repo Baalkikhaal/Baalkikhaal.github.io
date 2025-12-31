@@ -136,3 +136,9 @@ date: 19th September, 2025
 - [Superconducting Maglev](https://youtu.be/xY2BjDp5qEs?si=VYj_hTZRu4j383Hm)
 - [Diamond grown by Chemical Vapour Deposition](https://youtu.be/INKWPKmil9Q?si=tr2QzomZ4obozPsk)
 - [Immersion cooling using dielectric liquid](https://youtu.be/nCBM_LUeXCU?si=p6Xi6_IKJQCj9Z77)
+
+## Assessment
+
+- [Assessment - Marks distribution and qualifying criteria](/assets/documents/VFSTRU/EP25PY101/assessment/R25-Assessment-marks-distribution-and-qualifying-criteria.pdf)
+- [Assessment of L based course](/assets/documents/VFSTRU/EP25PY101/assessment/R25-Assessment-of-L-based-course.pdf)
+- [Assessment of P based course](/assets/documents/VFSTRU/EP25PY101/assessment/R25-Assessment-of-P-based-course.pdf)
