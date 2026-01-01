@@ -33,6 +33,10 @@ date: 19th September, 2025
 - [pre M2T1 test Set 1](/assets/documents/VFSTRU/EP25PY101/tests/test_M2_pre_T1_Set_1.pdf)
 - [pre M2T1 test Set 2](/assets/documents/VFSTRU/EP25PY101/tests/test_M2_pre_T1_Set_2.pdf)
 
+### M2T2 and T3
+
+- [Instructions for T2 and T3 assessments](/assets/documents/VFSTRU/EP25PY101/assessment/Instructions_for_T2_and_T3.pdf)
+
 ## Solutions
 
 - [Solutions for test on conversion factors](/assets/documents/VFSTRU/EP25PY101/tests/solution_conversion_factors.pdf)
@@ -113,6 +117,7 @@ date: 19th September, 2025
 ## Laboratory procedure
 
 - [Lab 101](/assets/documents/VFSTRU/EP25PY101/lab/lab_procedure_101.pdf)
+- [Practices demonstrations](https://vignanuniversityorg-my.sharepoint.com/:f:/g/personal/gs_phy_vignan_ac_in/IgA1VI79Uo_CQbSXsfZtsSDdAa-wcWoCOaA7QTG-CGcz7tc?e=n7EJed)
 
 ## Youtube videos
 
