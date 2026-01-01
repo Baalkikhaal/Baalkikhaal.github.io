@@ -32,6 +32,8 @@ date: 19th September, 2025
 
 - [pre M2T1 test Set 1](/assets/documents/VFSTRU/EP25PY101/tests/test_M2_pre_T1_Set_1.pdf)
 - [pre M2T1 test Set 2](/assets/documents/VFSTRU/EP25PY101/tests/test_M2_pre_T1_Set_2.pdf)
+- [pre M2T1 slot 2 test Set 1](/assets/documents/VFSTRU/EP25PY101/tests/test_M2_pre_T1_slot_2_Set_1.pdf)
+- [pre M2T1 slot 2 test Set 2](/assets/documents/VFSTRU/EP25PY101/tests/test_M2_pre_T1_slot_2_Set_2.pdf)
 
 ### M2T2 and T3
 
