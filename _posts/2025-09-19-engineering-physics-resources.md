@@ -119,7 +119,10 @@ date: 19th September, 2025
 ## Laboratory procedure
 
 - [Lab 101](/assets/documents/VFSTRU/EP25PY101/lab/lab_procedure_101.pdf)
-- [Practices demonstrations](https://vignanuniversityorg-my.sharepoint.com/:f:/g/personal/gs_phy_vignan_ac_in/IgA1VI79Uo_CQbSXsfZtsSDdAa-wcWoCOaA7QTG-CGcz7tc?e=n7EJed)
+
+- [Demonstration videos on practices](https://vignanuniversityorg-my.sharepoint.com/:f:/g/personal/gs_phy_vignan_ac_in/IgA1VI79Uo_CQbSXsfZtsSDdAa-wcWoCOaA7QTG-CGcz7tc?e=n7EJed)
+
+- [T5 summative assessment instructions](/assets/documents/VFSTRU/EP25PY101/lab/T5-summative-assessment-instructions.pdf)
 
 ## Youtube videos
 
