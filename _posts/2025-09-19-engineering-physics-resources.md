@@ -86,7 +86,13 @@ date: 19th September, 2025
 
 ## Module 2 Unit 3
 
-- [LASER - principles of lasing action](/assets/documents/VFSTRU/EP25PY101/slides/slides_21_laser_principles_of_lasing.pdf)
+- [LASER - principle of lasing action](/assets/documents/VFSTRU/EP25PY101/slides/slides_21_laser_principles_of_lasing.pdf)
+- [LASER - components](/assets/documents/VFSTRU/EP25PY101/slides/slides_22_laser-components.pdf)
+- [Lasing action and characteristics](/assets/documents/VFSTRU/EP25PY101/slides/slides_23_laser-lasing-action-and-characteristics.pdf)
+- [Diode laser](/assets/documents/VFSTRU/EP25PY101/slides/slides_24_diode-laser.pdf)
+- [Optical fibre - principle](/assets/documents/VFSTRU/EP25PY101/slides/slides_25_optical-fibre-components-and-requirements.pdf)
+- [Optical fibre - condition for TIR](/assets/documents/VFSTRU/EP25PY101/slides/slides_26_optical-fibre-conditions.pdf)
+- [Optical fibre based communication](/assets/documents/VFSTRU/EP25PY101/slides/slides_27_optical-fibre-numerical-aperture-and-communication-system.pdf)
 
 ## Assignments
 
