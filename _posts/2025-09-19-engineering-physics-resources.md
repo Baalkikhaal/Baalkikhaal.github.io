@@ -35,6 +35,12 @@ date: 19th September, 2025
 - [pre M2T1 slot 2 test Set 1](/assets/documents/VFSTRU/EP25PY101/tests/test_M2_pre_T1_slot_2_Set_1.pdf)
 - [pre M2T1 slot 2 test Set 2](/assets/documents/VFSTRU/EP25PY101/tests/test_M2_pre_T1_slot_2_Set_2.pdf)
 
+### Previous years summative
+
+- [2025 Spring Off campus](/assets/documents/VFSTRU/EP25PY101/summative/previous_year/24PY102_Off_campus_Question_paper.pdf)
+- [2025 Autumn](/assets/documents/VFSTRU/EP25PY101/summative/previous_year/D__qp_BTECH_1YEAR_1SEM_REG_R22C24_December_2024_24PY102-5.pdf)
+- [2025 Spring](/assets/documents/VFSTRU/EP25PY101/summative/previous_year/Sem-II-question-paper-2024-25.pdf)
+
 ### M2T2 and T3
 
 - [Instructions for T2 and T3 assessments](/assets/documents/VFSTRU/EP25PY101/assessment/Instructions_for_T2_and_T3.pdf)
