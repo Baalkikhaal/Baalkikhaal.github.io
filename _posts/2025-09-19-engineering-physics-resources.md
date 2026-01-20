@@ -114,21 +114,18 @@ date: 19th September, 2025
 - [Module bank part B for Module 2](/assets/documents/VFSTRU/EP25PY101/module_banks/M2_module_bank_part_B_for_students.pdf)
 - [Solutions for Module bank part B](/assets/documents/VFSTRU/EP25PY101/module_banks/solutions/M2T1_part_B_all.pdf)
 - [MCQ bank for T4](/assets/documents/VFSTRU/EP25PY101/module_banks/MCQ_bank_T4.pdf)
+- [Solutions for T4 MCQ bank ](/assets/documents/VFSTRU/EP25PY101/module_banks/solutions/MCQ_bank_T4_with_solutions.pdf)
 
 ## References
 
 - [For Module 2 pre-T1 slot 2](/assets/documents/VFSTRU/EP25PY101/references/references_M2_pre_T1_slot_2.pdf)
-
 - [For post M2 pre-T1 slot 2 and upto M2T1](/assets/documents/VFSTRU/EP25PY101/references/references_M2_T1.pdf)
-
 - [For post M2T1](/assets/documents/VFSTRU/EP25PY101/references/references_post_M2_T1.pdf)
 
 ## Laboratory procedure
 
 - [Lab 101](/assets/documents/VFSTRU/EP25PY101/lab/lab_procedure_101.pdf)
-
 - [Demonstration videos on practices](https://vignanuniversityorg-my.sharepoint.com/:f:/g/personal/gs_phy_vignan_ac_in/IgA1VI79Uo_CQbSXsfZtsSDdAa-wcWoCOaA7QTG-CGcz7tc?e=n7EJed)
-
 - [T5 summative assessment instructions](/assets/documents/VFSTRU/EP25PY101/lab/T5-summative-assessment-instructions.pdf)
 
 ## Youtube videos
