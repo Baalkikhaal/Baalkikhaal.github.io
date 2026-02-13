@@ -7,6 +7,8 @@ tool: vfstru
 excerpt: "Some useful resources for the Engineering Physics that I am taking at Vignan University, Vadlamudi."
 date: 19th September, 2025
 ---
+# Lab procedures
+[Lab procedure 101](/assets/documents/vfstru/lab_procedure_101.pdf)
 
 ## Tests
 
